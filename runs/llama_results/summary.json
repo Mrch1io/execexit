@@ -1,0 +1,83 @@
+{
+  "status": "COMPLETE_WITH_DECLARED_LIMITATIONS",
+  "hypotheses": {
+    "R1": {
+      "ci": {
+        "lower": 0.09946514242791021,
+        "undefined_replicates": 0,
+        "upper": 0.2105480721572554,
+        "valid_replicates": 10000
+      },
+      "difference": 0.1514866993466758,
+      "decision": "REPLICATED"
+    },
+    "R2": {
+      "ci": {
+        "lower": -0.20994399849489093,
+        "undefined_replicates": 0,
+        "upper": -0.07268525580614534,
+        "valid_replicates": 10000
+      },
+      "difference": -0.14089446249203053,
+      "decision": "REPLICATED"
+    },
+    "H-ACD": {
+      "status": "COMPLETE",
+      "difference": 0.003076923076923077,
+      "ci95": {
+        "lower": -0.0198023575223376,
+        "upper": 0.024922118380062305,
+        "valid_replicates": 10000,
+        "undefined_replicates": 0
+      },
+      "decision": "NOT_SUPPORTED"
+    },
+    "H-EG": {
+      "candidate": "EG:k4:m0",
+      "candidate_mean_passed_questions": 55.5,
+      "candidate_mean_tokens": 12672.597989949749,
+      "candidate_unknown_costs": 0,
+      "candidate_unknown_outcomes": 0,
+      "complete": true,
+      "formal_decision": null,
+      "mean_token_difference": -1411.9359296482417,
+      "mean_token_difference_ci95": [
+        -2049.851978643216,
+        -811.7146984924626
+      ],
+      "native_mean_passed_questions": 55.0,
+      "native_mean_tokens": 14084.53391959799,
+      "native_unknown_costs": 0,
+      "native_unknown_outcomes": 0,
+      "pass_difference_pp": 0.25125628140703626,
+      "pass_difference_pp_ci95": [
+        -1.6331658291457274,
+        2.010050251256285
+      ],
+      "reference": "N",
+      "role": "SECONDARY_POINTWISE_NOT_SIMULTANEOUS",
+      "token_saving_percent": 10.02472597040358,
+      "token_saving_percent_ci95": [
+        5.751146353641111,
+        14.507715369643764
+      ],
+      "unknown_rule": "Keep all scheduled questions/samples; affected metric stays UNKNOWN, never complete-case deletion",
+      "decision": "NOT_SUPPORTED"
+    }
+  },
+  "remaining_priv_ind_unknown": 5,
+  "audits": {
+    "integrity": "PASS_WITH_DECLARED_UNKNOWN",
+    "statistics": "PASS",
+    "acd": "PASS"
+  },
+  "frozen_unchanged": true,
+  "git_head_unchanged": true,
+  "git_index_unchanged": true,
+  "GPU_used": false,
+  "programs_executed": 0,
+  "changes": [
+    "docs/execexit/REPORT.md",
+    "runs/llama_results/"
+  ]
+}

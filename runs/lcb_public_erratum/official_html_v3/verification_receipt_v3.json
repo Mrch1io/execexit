@@ -1,0 +1,54 @@
+{
+  "schema": "exec_exit.lcbpro_public_erratum.v3_author_and_official",
+  "status": "PASS",
+  "task_count": 73,
+  "sample_count": 78,
+  "author_verified_tasks": 3,
+  "author_verified_samples": 5,
+  "official_verified_tasks": 73,
+  "official_verified_samples": 78,
+  "official_unknown_tasks": 0,
+  "combined_verified_tasks": 73,
+  "combined_verified_samples": 78,
+  "unknown_tasks": [],
+  "unknown_samples": 0,
+  "official_conflict_tasks": [],
+  "http_status_counts": {
+    "200": 73
+  },
+  "input_raw_bytes_equal_count": 78,
+  "output_raw_bytes_equal_count": 70,
+  "output_line_byte_difference_samples": 8,
+  "html5_dom_crosscheck_pass_tasks": 73,
+  "author_v2_receipt": {
+    "path": "/root/autodl-tmp/cs336-new/runs/lcb_public_erratum/verification_receipt_v2.json",
+    "sha256": "c4e1c9c64692a61129e4726b20639524d41f8a471d9ee0312f4a21ca577d2cd6"
+  },
+  "initial_strict_byte_record": {
+    "path": "/root/autodl-tmp/cs336-new/runs/lcb_public_erratum/official_v3/verification_receipt_v3.json",
+    "sha256": "b465daeb6904b676b1d25d1fd685673d0b13a0a1b60b14fc3860f3cbc1b13c66"
+  },
+  "verified_projection": {
+    "path": "/root/autodl-tmp/cs336-new/runs/lcb_public_erratum/official_v3_html_semantics/data_verified_public_samples_v3.json",
+    "sha256": "006ed6e0fb1b8df4c91a189cb3a2d7fe576de4a27085c52aa2d382fab8d64eb8"
+  },
+  "verification_records": {
+    "path": "/root/autodl-tmp/cs336-new/runs/lcb_public_erratum/official_v3_html_semantics/task_verification_v3.jsonl",
+    "sha256": "5986d6d943a925a3bb48169decef4471a2f5c300c9b4c9d377cc891620cc2afe"
+  },
+  "sample_verification_records": {
+    "path": "/root/autodl-tmp/cs336-new/runs/lcb_public_erratum/official_v3_html_semantics/sample_verification_v3.jsonl",
+    "sha256": "5801afed7b396b10f09d4d01cbbe5ac8e28e73e142a7f91f3fcb4d2e9f225b49"
+  },
+  "config": {
+    "path": "/root/autodl-tmp/cs336-new/runs/lcb_public_erratum/official_v3_html_semantics/config.yaml",
+    "sha256": "f0a261318010e3e0931af985aa8453f8cedfca9a0060b13d9aa6c7606daa129e"
+  },
+  "normalizer": {
+    "path": "/root/autodl-tmp/cs336-new/runs/lcb_public_erratum/source/official_html_semantics_v3.py",
+    "sha256": "d96216f3cceef249950d08486b6c5e7a322580dd92e5fff6e92f16f68b3e9afb"
+  },
+  "model_executions": 0,
+  "scoring_started": false,
+  "research_decision": "Coverage reported before corrected scoring; no filtering by model outputs"
+}

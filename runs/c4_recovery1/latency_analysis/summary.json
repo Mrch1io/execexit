@@ -1,0 +1,3584 @@
+{
+  "status": "COMPLETE",
+  "planned_questions": 40,
+  "primary": {
+    "ratio_of_means": 0.9825668486295999,
+    "ci95_percentile": [
+      0.8699116036720199,
+      1.1009540928338835
+    ],
+    "pairs": 40,
+    "bootstrap_repetitions": 10000,
+    "bootstrap_seed": 20261016
+  },
+  "serial": {
+    "N": {
+      "planned": 40,
+      "complete": 40,
+      "mean_e2e_seconds": 227.21873187975,
+      "observed_token_total": 783162,
+      "unknown_cancelled_work_requests": 0
+    },
+    "BF@4096": {
+      "planned": 40,
+      "complete": 40,
+      "mean_e2e_seconds": 212.67096544555002,
+      "observed_token_total": 736543,
+      "unknown_cancelled_work_requests": 38
+    },
+    "CONF-50": {
+      "planned": 40,
+      "complete": 40,
+      "mean_e2e_seconds": 151.651229003,
+      "observed_token_total": 535855,
+      "unknown_cancelled_work_requests": 40
+    },
+    "HYB-B-SYNC": {
+      "planned": 40,
+      "complete": 40,
+      "mean_e2e_seconds": 225.49654330947502,
+      "observed_token_total": 778168,
+      "unknown_cancelled_work_requests": 40
+    },
+    "HYB-B-ASYNC": {
+      "planned": 40,
+      "complete": 40,
+      "mean_e2e_seconds": 223.25759333269997,
+      "observed_token_total": 812296,
+      "unknown_cancelled_work_requests": 39
+    },
+    "H": {
+      "planned": 40,
+      "complete": 40,
+      "mean_e2e_seconds": 223.200415483575,
+      "observed_token_total": 768903,
+      "unknown_cancelled_work_requests": 40
+    }
+  },
+  "poisson": {
+    "4": {
+      "status": "COMPLETE",
+      "counts": {
+        "N": {
+          "planned": 40,
+          "complete": 40
+        },
+        "HYB-B-ASYNC": {
+          "planned": 40,
+          "complete": 40
+        }
+      },
+      "ratio": {
+        "mean": 1.1584680512136225,
+        "p50": 1.4244155398276752,
+        "p90": 1.1161916473913107
+      }
+    },
+    "8": {
+      "status": "COMPLETE",
+      "counts": {
+        "N": {
+          "planned": 40,
+          "complete": 40
+        },
+        "HYB-B-ASYNC": {
+          "planned": 40,
+          "complete": 40
+        }
+      },
+      "ratio": {
+        "mean": 0.8858311226169454,
+        "p50": 0.9588986552900326,
+        "p90": 0.9980070745495409
+      }
+    }
+  },
+  "prefix_checks": [
+    {
+      "case_id": "atcoder:abc388_b",
+      "sync_selected_kind": "PROBE",
+      "sync_main_stage0_visible_tokens": 344,
+      "schedule_comparison_scope": "Nominal positions through SYNC accepted/end stage0 observed prefix; H positions beyond this boundary listed separately",
+      "sync_positions": [
+        344
+      ],
+      "h_positions_in_sync_prefix": [
+        344
+      ],
+      "h_later_positions": [],
+      "nominal_positions_equal": true,
+      "sync_vs_h": {
+        "left_tokens": 344,
+        "right_tokens": 344,
+        "overlap_tokens": 344,
+        "matching_tokens": 344,
+        "overlap_agreement": 1.0,
+        "identical_prefix_tokens": 344,
+        "first_divergence_generated_position_1based": null,
+        "first_divergence_token_ids": null,
+        "overlap_equal": true,
+        "full_equal": true,
+        "length_difference": 0,
+        "empty_overlap": null
+      },
+      "sync_vs_h_thinking": {
+        "left_tokens": 344,
+        "right_tokens": 344,
+        "overlap_tokens": 344,
+        "matching_tokens": 344,
+        "overlap_agreement": 1.0,
+        "identical_prefix_tokens": 344,
+        "first_divergence_generated_position_1based": null,
+        "first_divergence_token_ids": null,
+        "overlap_equal": true,
+        "full_equal": true,
+        "length_difference": 0,
+        "empty_overlap": null
+      },
+      "boundary_evidence": "Whole observed calls included only when last_output_ns <= server_accept_ns; no straddling interpolation",
+      "caveat": "Identical nominal lists do not establish identical prefix/state; H later prefix excluded from SYNC/H agreement",
+      "h_vs_n": {
+        "left_tokens": 1473,
+        "right_tokens": 1887,
+        "overlap_tokens": 1473,
+        "matching_tokens": 430,
+        "overlap_agreement": 0.2919212491513917,
+        "identical_prefix_tokens": 390,
+        "first_divergence_generated_position_1based": 391,
+        "first_divergence_token_ids": [
+          2494,
+          1447
+        ],
+        "overlap_equal": false,
+        "full_equal": false,
+        "length_difference": -414,
+        "empty_overlap": null
+      },
+      "async_vs_n": {
+        "left_tokens": 470,
+        "right_tokens": 1887,
+        "overlap_tokens": 470,
+        "matching_tokens": 392,
+        "overlap_agreement": 0.8340425531914893,
+        "identical_prefix_tokens": 390,
+        "first_divergence_generated_position_1based": 391,
+        "first_divergence_token_ids": [
+          2494,
+          1447
+        ],
+        "overlap_equal": false,
+        "full_equal": false,
+        "length_difference": -1417,
+        "empty_overlap": null
+      },
+      "async_scope": "All actually returned main tokens including observed cancellation tail; actual overlap only"
+    },
+    {
+      "case_id": "atcoder:abc395_b",
+      "sync_selected_kind": "PROBE",
+      "sync_main_stage0_visible_tokens": 310,
+      "schedule_comparison_scope": "Nominal positions through SYNC accepted/end stage0 observed prefix; H positions beyond this boundary listed separately",
+      "sync_positions": [
+        310
+      ],
+      "h_positions_in_sync_prefix": [
+        310
+      ],
+      "h_later_positions": [
+        4096
+      ],
+      "nominal_positions_equal": true,
+      "sync_vs_h": {
+        "left_tokens": 310,
+        "right_tokens": 310,
+        "overlap_tokens": 310,
+        "matching_tokens": 310,
+        "overlap_agreement": 1.0,
+        "identical_prefix_tokens": 310,
+        "first_divergence_generated_position_1based": null,
+        "first_divergence_token_ids": null,
+        "overlap_equal": true,
+        "full_equal": true,
+        "length_difference": 0,
+        "empty_overlap": null
+      },
+      "sync_vs_h_thinking": {
+        "left_tokens": 310,
+        "right_tokens": 310,
+        "overlap_tokens": 310,
+        "matching_tokens": 310,
+        "overlap_agreement": 1.0,
+        "identical_prefix_tokens": 310,
+        "first_divergence_generated_position_1based": null,
+        "first_divergence_token_ids": null,
+        "overlap_equal": true,
+        "full_equal": true,
+        "length_difference": 0,
+        "empty_overlap": null
+      },
+      "boundary_evidence": "Whole observed calls included only when last_output_ns <= server_accept_ns; no straddling interpolation",
+      "caveat": "Identical nominal lists do not establish identical prefix/state; H later prefix excluded from SYNC/H agreement",
+      "h_vs_n": {
+        "left_tokens": 5487,
+        "right_tokens": 5019,
+        "overlap_tokens": 5019,
+        "matching_tokens": 495,
+        "overlap_agreement": 0.0986252241482367,
+        "identical_prefix_tokens": 355,
+        "first_divergence_generated_position_1based": 356,
+        "first_divergence_token_ids": [
+          11,
+          311
+        ],
+        "overlap_equal": false,
+        "full_equal": false,
+        "length_difference": 468,
+        "empty_overlap": null
+      },
+      "async_vs_n": {
+        "left_tokens": 500,
+        "right_tokens": 5019,
+        "overlap_tokens": 500,
+        "matching_tokens": 416,
+        "overlap_agreement": 0.832,
+        "identical_prefix_tokens": 355,
+        "first_divergence_generated_position_1based": 356,
+        "first_divergence_token_ids": [
+          11,
+          311
+        ],
+        "overlap_equal": false,
+        "full_equal": false,
+        "length_difference": -4519,
+        "empty_overlap": null
+      },
+      "async_scope": "All actually returned main tokens including observed cancellation tail; actual overlap only"
+    },
+    {
+      "case_id": "atcoder:abc396_b",
+      "sync_selected_kind": "N",
+      "sync_main_stage0_visible_tokens": 1899,
+      "schedule_comparison_scope": "Nominal positions through SYNC accepted/end stage0 observed prefix; H positions beyond this boundary listed separately",
+      "sync_positions": [
+        228
+      ],
+      "h_positions_in_sync_prefix": [
+        228
+      ],
+      "h_later_positions": [],
+      "nominal_positions_equal": true,
+      "sync_vs_h": {
+        "left_tokens": 1965,
+        "right_tokens": 1965,
+        "overlap_tokens": 1965,
+        "matching_tokens": 1965,
+        "overlap_agreement": 1.0,
+        "identical_prefix_tokens": 1965,
+        "first_divergence_generated_position_1based": null,
+        "first_divergence_token_ids": null,
+        "overlap_equal": true,
+        "full_equal": true,
+        "length_difference": 0,
+        "empty_overlap": null
+      },
+      "sync_vs_h_thinking": {
+        "left_tokens": 1899,
+        "right_tokens": 1899,
+        "overlap_tokens": 1899,
+        "matching_tokens": 1899,
+        "overlap_agreement": 1.0,
+        "identical_prefix_tokens": 1899,
+        "first_divergence_generated_position_1based": null,
+        "first_divergence_token_ids": null,
+        "overlap_equal": true,
+        "full_equal": true,
+        "length_difference": 0,
+        "empty_overlap": null
+      },
+      "boundary_evidence": "Whole observed calls included only when last_output_ns <= server_accept_ns; no straddling interpolation",
+      "caveat": "Identical nominal lists do not establish identical prefix/state; H later prefix excluded from SYNC/H agreement",
+      "h_vs_n": {
+        "left_tokens": 1965,
+        "right_tokens": 2122,
+        "overlap_tokens": 1965,
+        "matching_tokens": 331,
+        "overlap_agreement": 0.16844783715012723,
+        "identical_prefix_tokens": 300,
+        "first_divergence_generated_position_1based": 301,
+        "first_divergence_token_ids": [
+          279,
+          421
+        ],
+        "overlap_equal": false,
+        "full_equal": false,
+        "length_difference": -157,
+        "empty_overlap": null
+      },
+      "async_vs_n": {
+        "left_tokens": 1796,
+        "right_tokens": 2122,
+        "overlap_tokens": 1796,
+        "matching_tokens": 329,
+        "overlap_agreement": 0.183184855233853,
+        "identical_prefix_tokens": 300,
+        "first_divergence_generated_position_1based": 301,
+        "first_divergence_token_ids": [
+          279,
+          421
+        ],
+        "overlap_equal": false,
+        "full_equal": false,
+        "length_difference": -326,
+        "empty_overlap": null
+      },
+      "async_scope": "All actually returned main tokens including observed cancellation tail; actual overlap only"
+    },
+    {
+      "case_id": "atcoder:abc389_f",
+      "sync_selected_kind": "N",
+      "sync_main_stage0_visible_tokens": 22392,
+      "schedule_comparison_scope": "Nominal positions through SYNC accepted/end stage0 observed prefix; H positions beyond this boundary listed separately",
+      "sync_positions": [
+        773,
+        4096
+      ],
+      "h_positions_in_sync_prefix": [
+        773,
+        4096
+      ],
+      "h_later_positions": [],
+      "nominal_positions_equal": true,
+      "sync_vs_h": {
+        "left_tokens": 23257,
+        "right_tokens": 23257,
+        "overlap_tokens": 23257,
+        "matching_tokens": 23257,
+        "overlap_agreement": 1.0,
+        "identical_prefix_tokens": 23257,
+        "first_divergence_generated_position_1based": null,
+        "first_divergence_token_ids": null,
+        "overlap_equal": true,
+        "full_equal": true,
+        "length_difference": 0,
+        "empty_overlap": null
+      },
+      "sync_vs_h_thinking": {
+        "left_tokens": 22392,
+        "right_tokens": 22392,
+        "overlap_tokens": 22392,
+        "matching_tokens": 22392,
+        "overlap_agreement": 1.0,
+        "identical_prefix_tokens": 22392,
+        "first_divergence_generated_position_1based": null,
+        "first_divergence_token_ids": null,
+        "overlap_equal": true,
+        "full_equal": true,
+        "length_difference": 0,
+        "empty_overlap": null
+      },
+      "boundary_evidence": "Whole observed calls included only when last_output_ns <= server_accept_ns; no straddling interpolation",
+      "caveat": "Identical nominal lists do not establish identical prefix/state; H later prefix excluded from SYNC/H agreement",
+      "h_vs_n": {
+        "left_tokens": 23257,
+        "right_tokens": 21719,
+        "overlap_tokens": 21719,
+        "matching_tokens": 1082,
+        "overlap_agreement": 0.0498181315898522,
+        "identical_prefix_tokens": 799,
+        "first_divergence_generated_position_1based": 800,
+        "first_divergence_token_ids": [
+          1744,
+          1614
+        ],
+        "overlap_equal": false,
+        "full_equal": false,
+        "length_difference": 1538,
+        "empty_overlap": null
+      },
+      "async_vs_n": {
+        "left_tokens": 19728,
+        "right_tokens": 21719,
+        "overlap_tokens": 19728,
+        "matching_tokens": 1090,
+        "overlap_agreement": 0.05525141930251419,
+        "identical_prefix_tokens": 849,
+        "first_divergence_generated_position_1based": 850,
+        "first_divergence_token_ids": [
+          16,
+          333
+        ],
+        "overlap_equal": false,
+        "full_equal": false,
+        "length_difference": -1991,
+        "empty_overlap": null
+      },
+      "async_scope": "All actually returned main tokens including observed cancellation tail; actual overlap only"
+    },
+    {
+      "case_id": "atcoder:abc390_e",
+      "sync_selected_kind": "N",
+      "sync_main_stage0_visible_tokens": 20377,
+      "schedule_comparison_scope": "Nominal positions through SYNC accepted/end stage0 observed prefix; H positions beyond this boundary listed separately",
+      "sync_positions": [
+        281,
+        4096
+      ],
+      "h_positions_in_sync_prefix": [
+        281,
+        4096
+      ],
+      "h_later_positions": [],
+      "nominal_positions_equal": true,
+      "sync_vs_h": {
+        "left_tokens": 21396,
+        "right_tokens": 21396,
+        "overlap_tokens": 21396,
+        "matching_tokens": 21396,
+        "overlap_agreement": 1.0,
+        "identical_prefix_tokens": 21396,
+        "first_divergence_generated_position_1based": null,
+        "first_divergence_token_ids": null,
+        "overlap_equal": true,
+        "full_equal": true,
+        "length_difference": 0,
+        "empty_overlap": null
+      },
+      "sync_vs_h_thinking": {
+        "left_tokens": 20377,
+        "right_tokens": 20377,
+        "overlap_tokens": 20377,
+        "matching_tokens": 20377,
+        "overlap_agreement": 1.0,
+        "identical_prefix_tokens": 20377,
+        "first_divergence_generated_position_1based": null,
+        "first_divergence_token_ids": null,
+        "overlap_equal": true,
+        "full_equal": true,
+        "length_difference": 0,
+        "empty_overlap": null
+      },
+      "boundary_evidence": "Whole observed calls included only when last_output_ns <= server_accept_ns; no straddling interpolation",
+      "caveat": "Identical nominal lists do not establish identical prefix/state; H later prefix excluded from SYNC/H agreement",
+      "h_vs_n": {
+        "left_tokens": 21396,
+        "right_tokens": 23274,
+        "overlap_tokens": 21396,
+        "matching_tokens": 754,
+        "overlap_agreement": 0.035240231819031596,
+        "identical_prefix_tokens": 431,
+        "first_divergence_generated_position_1based": 432,
+        "first_divergence_token_ids": [
+          1416,
+          576
+        ],
+        "overlap_equal": false,
+        "full_equal": false,
+        "length_difference": -1878,
+        "empty_overlap": null
+      },
+      "async_vs_n": {
+        "left_tokens": 40334,
+        "right_tokens": 23274,
+        "overlap_tokens": 23274,
+        "matching_tokens": 803,
+        "overlap_agreement": 0.03450201942081292,
+        "identical_prefix_tokens": 431,
+        "first_divergence_generated_position_1based": 432,
+        "first_divergence_token_ids": [
+          1416,
+          576
+        ],
+        "overlap_equal": false,
+        "full_equal": false,
+        "length_difference": 17060,
+        "empty_overlap": null
+      },
+      "async_scope": "All actually returned main tokens including observed cancellation tail; actual overlap only"
+    },
+    {
+      "case_id": "atcoder:abc390_f",
+      "sync_selected_kind": "N",
+      "sync_main_stage0_visible_tokens": 28000,
+      "schedule_comparison_scope": "Nominal positions through SYNC accepted/end stage0 observed prefix; H positions beyond this boundary listed separately",
+      "sync_positions": [
+        374,
+        4065,
+        4096
+      ],
+      "h_positions_in_sync_prefix": [
+        374,
+        4065,
+        4096
+      ],
+      "h_later_positions": [],
+      "nominal_positions_equal": true,
+      "sync_vs_h": {
+        "left_tokens": 28811,
+        "right_tokens": 28811,
+        "overlap_tokens": 28811,
+        "matching_tokens": 28811,
+        "overlap_agreement": 1.0,
+        "identical_prefix_tokens": 28811,
+        "first_divergence_generated_position_1based": null,
+        "first_divergence_token_ids": null,
+        "overlap_equal": true,
+        "full_equal": true,
+        "length_difference": 0,
+        "empty_overlap": null
+      },
+      "sync_vs_h_thinking": {
+        "left_tokens": 28000,
+        "right_tokens": 28000,
+        "overlap_tokens": 28000,
+        "matching_tokens": 28000,
+        "overlap_agreement": 1.0,
+        "identical_prefix_tokens": 28000,
+        "first_divergence_generated_position_1based": null,
+        "first_divergence_token_ids": null,
+        "overlap_equal": true,
+        "full_equal": true,
+        "length_difference": 0,
+        "empty_overlap": null
+      },
+      "boundary_evidence": "Whole observed calls included only when last_output_ns <= server_accept_ns; no straddling interpolation",
+      "caveat": "Identical nominal lists do not establish identical prefix/state; H later prefix excluded from SYNC/H agreement",
+      "h_vs_n": {
+        "left_tokens": 28811,
+        "right_tokens": 26462,
+        "overlap_tokens": 26462,
+        "matching_tokens": 1060,
+        "overlap_agreement": 0.04005744085858968,
+        "identical_prefix_tokens": 496,
+        "first_divergence_generated_position_1based": 497,
+        "first_divergence_token_ids": [
+          17,
+          18
+        ],
+        "overlap_equal": false,
+        "full_equal": false,
+        "length_difference": 2349,
+        "empty_overlap": null
+      },
+      "async_vs_n": {
+        "left_tokens": 28637,
+        "right_tokens": 26462,
+        "overlap_tokens": 26462,
+        "matching_tokens": 1084,
+        "overlap_agreement": 0.04096440178368982,
+        "identical_prefix_tokens": 479,
+        "first_divergence_generated_position_1based": 480,
+        "first_divergence_token_ids": [
+          429,
+          7196
+        ],
+        "overlap_equal": false,
+        "full_equal": false,
+        "length_difference": 2175,
+        "empty_overlap": null
+      },
+      "async_scope": "All actually returned main tokens including observed cancellation tail; actual overlap only"
+    },
+    {
+      "case_id": "atcoder:abc392_f",
+      "sync_selected_kind": "PROBE",
+      "sync_main_stage0_visible_tokens": 364,
+      "schedule_comparison_scope": "Nominal positions through SYNC accepted/end stage0 observed prefix; H positions beyond this boundary listed separately",
+      "sync_positions": [
+        364
+      ],
+      "h_positions_in_sync_prefix": [
+        364
+      ],
+      "h_later_positions": [
+        3723,
+        4096
+      ],
+      "nominal_positions_equal": true,
+      "sync_vs_h": {
+        "left_tokens": 364,
+        "right_tokens": 364,
+        "overlap_tokens": 364,
+        "matching_tokens": 364,
+        "overlap_agreement": 1.0,
+        "identical_prefix_tokens": 364,
+        "first_divergence_generated_position_1based": null,
+        "first_divergence_token_ids": null,
+        "overlap_equal": true,
+        "full_equal": true,
+        "length_difference": 0,
+        "empty_overlap": null
+      },
+      "sync_vs_h_thinking": {
+        "left_tokens": 364,
+        "right_tokens": 364,
+        "overlap_tokens": 364,
+        "matching_tokens": 364,
+        "overlap_agreement": 1.0,
+        "identical_prefix_tokens": 364,
+        "first_divergence_generated_position_1based": null,
+        "first_divergence_token_ids": null,
+        "overlap_equal": true,
+        "full_equal": true,
+        "length_difference": 0,
+        "empty_overlap": null
+      },
+      "boundary_evidence": "Whole observed calls included only when last_output_ns <= server_accept_ns; no straddling interpolation",
+      "caveat": "Identical nominal lists do not establish identical prefix/state; H later prefix excluded from SYNC/H agreement",
+      "h_vs_n": {
+        "left_tokens": 20329,
+        "right_tokens": 24718,
+        "overlap_tokens": 20329,
+        "matching_tokens": 801,
+        "overlap_agreement": 0.03940183973633725,
+        "identical_prefix_tokens": 489,
+        "first_divergence_generated_position_1based": 490,
+        "first_divergence_token_ids": [
+          11,
+          315
+        ],
+        "overlap_equal": false,
+        "full_equal": false,
+        "length_difference": -4389,
+        "empty_overlap": null
+      },
+      "async_vs_n": {
+        "left_tokens": 526,
+        "right_tokens": 24718,
+        "overlap_tokens": 526,
+        "matching_tokens": 379,
+        "overlap_agreement": 0.720532319391635,
+        "identical_prefix_tokens": 372,
+        "first_divergence_generated_position_1based": 373,
+        "first_divergence_token_ids": [
+          9892,
+          5656
+        ],
+        "overlap_equal": false,
+        "full_equal": false,
+        "length_difference": -24192,
+        "empty_overlap": null
+      },
+      "async_scope": "All actually returned main tokens including observed cancellation tail; actual overlap only"
+    },
+    {
+      "case_id": "atcoder:abc393_e",
+      "sync_selected_kind": "PROBE",
+      "sync_main_stage0_visible_tokens": 3935,
+      "schedule_comparison_scope": "Nominal positions through SYNC accepted/end stage0 observed prefix; H positions beyond this boundary listed separately",
+      "sync_positions": [
+        185,
+        3935
+      ],
+      "h_positions_in_sync_prefix": [
+        185,
+        3935
+      ],
+      "h_later_positions": [
+        4096
+      ],
+      "nominal_positions_equal": true,
+      "sync_vs_h": {
+        "left_tokens": 3935,
+        "right_tokens": 3935,
+        "overlap_tokens": 3935,
+        "matching_tokens": 3935,
+        "overlap_agreement": 1.0,
+        "identical_prefix_tokens": 3935,
+        "first_divergence_generated_position_1based": null,
+        "first_divergence_token_ids": null,
+        "overlap_equal": true,
+        "full_equal": true,
+        "length_difference": 0,
+        "empty_overlap": null
+      },
+      "sync_vs_h_thinking": {
+        "left_tokens": 3935,
+        "right_tokens": 3935,
+        "overlap_tokens": 3935,
+        "matching_tokens": 3935,
+        "overlap_agreement": 1.0,
+        "identical_prefix_tokens": 3935,
+        "first_divergence_generated_position_1based": null,
+        "first_divergence_token_ids": null,
+        "overlap_equal": true,
+        "full_equal": true,
+        "length_difference": 0,
+        "empty_overlap": null
+      },
+      "boundary_evidence": "Whole observed calls included only when last_output_ns <= server_accept_ns; no straddling interpolation",
+      "caveat": "Identical nominal lists do not establish identical prefix/state; H later prefix excluded from SYNC/H agreement",
+      "h_vs_n": {
+        "left_tokens": 9819,
+        "right_tokens": 8783,
+        "overlap_tokens": 8783,
+        "matching_tokens": 329,
+        "overlap_agreement": 0.03745872708641694,
+        "identical_prefix_tokens": 194,
+        "first_divergence_generated_position_1based": 195,
+        "first_divergence_token_ids": [
+          264,
+          5248
+        ],
+        "overlap_equal": false,
+        "full_equal": false,
+        "length_difference": 1036,
+        "empty_overlap": null
+      },
+      "async_vs_n": {
+        "left_tokens": 4787,
+        "right_tokens": 8783,
+        "overlap_tokens": 4787,
+        "matching_tokens": 470,
+        "overlap_agreement": 0.09818257781491539,
+        "identical_prefix_tokens": 395,
+        "first_divergence_generated_position_1based": 396,
+        "first_divergence_token_ids": [
+          11,
+          279
+        ],
+        "overlap_equal": false,
+        "full_equal": false,
+        "length_difference": -3996,
+        "empty_overlap": null
+      },
+      "async_scope": "All actually returned main tokens including observed cancellation tail; actual overlap only"
+    },
+    {
+      "case_id": "atcoder:abc394_f",
+      "sync_selected_kind": "N",
+      "sync_main_stage0_visible_tokens": 18855,
+      "schedule_comparison_scope": "Nominal positions through SYNC accepted/end stage0 observed prefix; H positions beyond this boundary listed separately",
+      "sync_positions": [
+        678,
+        4096
+      ],
+      "h_positions_in_sync_prefix": [
+        678,
+        4096
+      ],
+      "h_later_positions": [],
+      "nominal_positions_equal": true,
+      "sync_vs_h": {
+        "left_tokens": 19811,
+        "right_tokens": 19811,
+        "overlap_tokens": 19811,
+        "matching_tokens": 19811,
+        "overlap_agreement": 1.0,
+        "identical_prefix_tokens": 19811,
+        "first_divergence_generated_position_1based": null,
+        "first_divergence_token_ids": null,
+        "overlap_equal": true,
+        "full_equal": true,
+        "length_difference": 0,
+        "empty_overlap": null
+      },
+      "sync_vs_h_thinking": {
+        "left_tokens": 18855,
+        "right_tokens": 18855,
+        "overlap_tokens": 18855,
+        "matching_tokens": 18855,
+        "overlap_agreement": 1.0,
+        "identical_prefix_tokens": 18855,
+        "first_divergence_generated_position_1based": null,
+        "first_divergence_token_ids": null,
+        "overlap_equal": true,
+        "full_equal": true,
+        "length_difference": 0,
+        "empty_overlap": null
+      },
+      "boundary_evidence": "Whole observed calls included only when last_output_ns <= server_accept_ns; no straddling interpolation",
+      "caveat": "Identical nominal lists do not establish identical prefix/state; H later prefix excluded from SYNC/H agreement",
+      "h_vs_n": {
+        "left_tokens": 19811,
+        "right_tokens": 17398,
+        "overlap_tokens": 17398,
+        "matching_tokens": 1014,
+        "overlap_agreement": 0.05828256121393264,
+        "identical_prefix_tokens": 700,
+        "first_divergence_generated_position_1based": 701,
+        "first_divergence_token_ids": [
+          518,
+          6896
+        ],
+        "overlap_equal": false,
+        "full_equal": false,
+        "length_difference": 2413,
+        "empty_overlap": null
+      },
+      "async_vs_n": {
+        "left_tokens": 20422,
+        "right_tokens": 17398,
+        "overlap_tokens": 17398,
+        "matching_tokens": 1002,
+        "overlap_agreement": 0.05759282676169675,
+        "identical_prefix_tokens": 691,
+        "first_divergence_generated_position_1based": 692,
+        "first_divergence_token_ids": [
+          264,
+          7798
+        ],
+        "overlap_equal": false,
+        "full_equal": false,
+        "length_difference": 3024,
+        "empty_overlap": null
+      },
+      "async_scope": "All actually returned main tokens including observed cancellation tail; actual overlap only"
+    },
+    {
+      "case_id": "atcoder:abc395_f",
+      "sync_selected_kind": "N",
+      "sync_main_stage0_visible_tokens": 11973,
+      "schedule_comparison_scope": "Nominal positions through SYNC accepted/end stage0 observed prefix; H positions beyond this boundary listed separately",
+      "sync_positions": [
+        110,
+        3433,
+        4096
+      ],
+      "h_positions_in_sync_prefix": [
+        110,
+        3433,
+        4096
+      ],
+      "h_later_positions": [],
+      "nominal_positions_equal": true,
+      "sync_vs_h": {
+        "left_tokens": 12786,
+        "right_tokens": 12786,
+        "overlap_tokens": 12786,
+        "matching_tokens": 12786,
+        "overlap_agreement": 1.0,
+        "identical_prefix_tokens": 12786,
+        "first_divergence_generated_position_1based": null,
+        "first_divergence_token_ids": null,
+        "overlap_equal": true,
+        "full_equal": true,
+        "length_difference": 0,
+        "empty_overlap": null
+      },
+      "sync_vs_h_thinking": {
+        "left_tokens": 11973,
+        "right_tokens": 11973,
+        "overlap_tokens": 11973,
+        "matching_tokens": 11973,
+        "overlap_agreement": 1.0,
+        "identical_prefix_tokens": 11973,
+        "first_divergence_generated_position_1based": null,
+        "first_divergence_token_ids": null,
+        "overlap_equal": true,
+        "full_equal": true,
+        "length_difference": 0,
+        "empty_overlap": null
+      },
+      "boundary_evidence": "Whole observed calls included only when last_output_ns <= server_accept_ns; no straddling interpolation",
+      "caveat": "Identical nominal lists do not establish identical prefix/state; H later prefix excluded from SYNC/H agreement",
+      "h_vs_n": {
+        "left_tokens": 12786,
+        "right_tokens": 12465,
+        "overlap_tokens": 12465,
+        "matching_tokens": 462,
+        "overlap_agreement": 0.03706377858002407,
+        "identical_prefix_tokens": 261,
+        "first_divergence_generated_position_1based": 262,
+        "first_divergence_token_ids": [
+          1246,
+          2474
+        ],
+        "overlap_equal": false,
+        "full_equal": false,
+        "length_difference": 321,
+        "empty_overlap": null
+      },
+      "async_vs_n": {
+        "left_tokens": 4381,
+        "right_tokens": 12465,
+        "overlap_tokens": 4381,
+        "matching_tokens": 369,
+        "overlap_agreement": 0.0842273453549418,
+        "identical_prefix_tokens": 259,
+        "first_divergence_generated_position_1based": 260,
+        "first_divergence_token_ids": [
+          2055,
+          4710
+        ],
+        "overlap_equal": false,
+        "full_equal": false,
+        "length_difference": -8084,
+        "empty_overlap": null
+      },
+      "async_scope": "All actually returned main tokens including observed cancellation tail; actual overlap only"
+    },
+    {
+      "case_id": "atcoder:abc397_g",
+      "sync_selected_kind": "N",
+      "sync_main_stage0_visible_tokens": 28000,
+      "schedule_comparison_scope": "Nominal positions through SYNC accepted/end stage0 observed prefix; H positions beyond this boundary listed separately",
+      "sync_positions": [
+        134,
+        3552,
+        4096
+      ],
+      "h_positions_in_sync_prefix": [
+        134,
+        3552,
+        4096
+      ],
+      "h_later_positions": [],
+      "nominal_positions_equal": true,
+      "sync_vs_h": {
+        "left_tokens": 29087,
+        "right_tokens": 29087,
+        "overlap_tokens": 29087,
+        "matching_tokens": 29087,
+        "overlap_agreement": 1.0,
+        "identical_prefix_tokens": 29087,
+        "first_divergence_generated_position_1based": null,
+        "first_divergence_token_ids": null,
+        "overlap_equal": true,
+        "full_equal": true,
+        "length_difference": 0,
+        "empty_overlap": null
+      },
+      "sync_vs_h_thinking": {
+        "left_tokens": 28000,
+        "right_tokens": 28000,
+        "overlap_tokens": 28000,
+        "matching_tokens": 28000,
+        "overlap_agreement": 1.0,
+        "identical_prefix_tokens": 28000,
+        "first_divergence_generated_position_1based": null,
+        "first_divergence_token_ids": null,
+        "overlap_equal": true,
+        "full_equal": true,
+        "length_difference": 0,
+        "empty_overlap": null
+      },
+      "boundary_evidence": "Whole observed calls included only when last_output_ns <= server_accept_ns; no straddling interpolation",
+      "caveat": "Identical nominal lists do not establish identical prefix/state; H later prefix excluded from SYNC/H agreement",
+      "h_vs_n": {
+        "left_tokens": 29087,
+        "right_tokens": 21480,
+        "overlap_tokens": 21480,
+        "matching_tokens": 569,
+        "overlap_agreement": 0.02648975791433892,
+        "identical_prefix_tokens": 241,
+        "first_divergence_generated_position_1based": 242,
+        "first_divergence_token_ids": [
+          26301,
+          9271
+        ],
+        "overlap_equal": false,
+        "full_equal": false,
+        "length_difference": 7607,
+        "empty_overlap": null
+      },
+      "async_vs_n": {
+        "left_tokens": 22776,
+        "right_tokens": 21480,
+        "overlap_tokens": 21480,
+        "matching_tokens": 476,
+        "overlap_agreement": 0.022160148975791435,
+        "identical_prefix_tokens": 207,
+        "first_divergence_generated_position_1based": 208,
+        "first_divergence_token_ids": [
+          34508,
+          3293
+        ],
+        "overlap_equal": false,
+        "full_equal": false,
+        "length_difference": 1296,
+        "empty_overlap": null
+      },
+      "async_scope": "All actually returned main tokens including observed cancellation tail; actual overlap only"
+    },
+    {
+      "case_id": "atcoder:abc399_e",
+      "sync_selected_kind": "N",
+      "sync_main_stage0_visible_tokens": 21327,
+      "schedule_comparison_scope": "Nominal positions through SYNC accepted/end stage0 observed prefix; H positions beyond this boundary listed separately",
+      "sync_positions": [
+        168,
+        3522,
+        4096
+      ],
+      "h_positions_in_sync_prefix": [
+        168,
+        3522,
+        4096
+      ],
+      "h_later_positions": [],
+      "nominal_positions_equal": true,
+      "sync_vs_h": {
+        "left_tokens": 21902,
+        "right_tokens": 21902,
+        "overlap_tokens": 21902,
+        "matching_tokens": 21902,
+        "overlap_agreement": 1.0,
+        "identical_prefix_tokens": 21902,
+        "first_divergence_generated_position_1based": null,
+        "first_divergence_token_ids": null,
+        "overlap_equal": true,
+        "full_equal": true,
+        "length_difference": 0,
+        "empty_overlap": null
+      },
+      "sync_vs_h_thinking": {
+        "left_tokens": 21327,
+        "right_tokens": 21327,
+        "overlap_tokens": 21327,
+        "matching_tokens": 21327,
+        "overlap_agreement": 1.0,
+        "identical_prefix_tokens": 21327,
+        "first_divergence_generated_position_1based": null,
+        "first_divergence_token_ids": null,
+        "overlap_equal": true,
+        "full_equal": true,
+        "length_difference": 0,
+        "empty_overlap": null
+      },
+      "boundary_evidence": "Whole observed calls included only when last_output_ns <= server_accept_ns; no straddling interpolation",
+      "caveat": "Identical nominal lists do not establish identical prefix/state; H later prefix excluded from SYNC/H agreement",
+      "h_vs_n": {
+        "left_tokens": 21902,
+        "right_tokens": 22178,
+        "overlap_tokens": 21902,
+        "matching_tokens": 3936,
+        "overlap_agreement": 0.1797096155602228,
+        "identical_prefix_tokens": 3557,
+        "first_divergence_generated_position_1based": 3558,
+        "first_divergence_token_ids": [
+          30,
+          13
+        ],
+        "overlap_equal": false,
+        "full_equal": false,
+        "length_difference": -276,
+        "empty_overlap": null
+      },
+      "async_vs_n": {
+        "left_tokens": 22921,
+        "right_tokens": 22178,
+        "overlap_tokens": 22178,
+        "matching_tokens": 858,
+        "overlap_agreement": 0.038686987104337635,
+        "identical_prefix_tokens": 449,
+        "first_divergence_generated_position_1based": 450,
+        "first_divergence_token_ids": [
+          369,
+          429
+        ],
+        "overlap_equal": false,
+        "full_equal": false,
+        "length_difference": 743,
+        "empty_overlap": null
+      },
+      "async_scope": "All actually returned main tokens including observed cancellation tail; actual overlap only"
+    },
+    {
+      "case_id": "atcoder:abc400_e",
+      "sync_selected_kind": "N",
+      "sync_main_stage0_visible_tokens": 14485,
+      "schedule_comparison_scope": "Nominal positions through SYNC accepted/end stage0 observed prefix; H positions beyond this boundary listed separately",
+      "sync_positions": [
+        218,
+        4096
+      ],
+      "h_positions_in_sync_prefix": [
+        218,
+        4096
+      ],
+      "h_later_positions": [],
+      "nominal_positions_equal": true,
+      "sync_vs_h": {
+        "left_tokens": 15398,
+        "right_tokens": 15398,
+        "overlap_tokens": 15398,
+        "matching_tokens": 15398,
+        "overlap_agreement": 1.0,
+        "identical_prefix_tokens": 15398,
+        "first_divergence_generated_position_1based": null,
+        "first_divergence_token_ids": null,
+        "overlap_equal": true,
+        "full_equal": true,
+        "length_difference": 0,
+        "empty_overlap": null
+      },
+      "sync_vs_h_thinking": {
+        "left_tokens": 14485,
+        "right_tokens": 14485,
+        "overlap_tokens": 14485,
+        "matching_tokens": 14485,
+        "overlap_agreement": 1.0,
+        "identical_prefix_tokens": 14485,
+        "first_divergence_generated_position_1based": null,
+        "first_divergence_token_ids": null,
+        "overlap_equal": true,
+        "full_equal": true,
+        "length_difference": 0,
+        "empty_overlap": null
+      },
+      "boundary_evidence": "Whole observed calls included only when last_output_ns <= server_accept_ns; no straddling interpolation",
+      "caveat": "Identical nominal lists do not establish identical prefix/state; H later prefix excluded from SYNC/H agreement",
+      "h_vs_n": {
+        "left_tokens": 15398,
+        "right_tokens": 10990,
+        "overlap_tokens": 10990,
+        "matching_tokens": 404,
+        "overlap_agreement": 0.036760691537761604,
+        "identical_prefix_tokens": 220,
+        "first_divergence_generated_position_1based": 221,
+        "first_divergence_token_ids": [
+          451,
+          279
+        ],
+        "overlap_equal": false,
+        "full_equal": false,
+        "length_difference": 4408,
+        "empty_overlap": null
+      },
+      "async_vs_n": {
+        "left_tokens": 4134,
+        "right_tokens": 10990,
+        "overlap_tokens": 4134,
+        "matching_tokens": 286,
+        "overlap_agreement": 0.06918238993710692,
+        "identical_prefix_tokens": 220,
+        "first_divergence_generated_position_1based": 221,
+        "first_divergence_token_ids": [
+          451,
+          279
+        ],
+        "overlap_equal": false,
+        "full_equal": false,
+        "length_difference": -6856,
+        "empty_overlap": null
+      },
+      "async_scope": "All actually returned main tokens including observed cancellation tail; actual overlap only"
+    },
+    {
+      "case_id": "atcoder:arc193_d",
+      "sync_selected_kind": "N",
+      "sync_main_stage0_visible_tokens": 24158,
+      "schedule_comparison_scope": "Nominal positions through SYNC accepted/end stage0 observed prefix; H positions beyond this boundary listed separately",
+      "sync_positions": [
+        314,
+        3829,
+        4096
+      ],
+      "h_positions_in_sync_prefix": [
+        314,
+        3829,
+        4096
+      ],
+      "h_later_positions": [],
+      "nominal_positions_equal": true,
+      "sync_vs_h": {
+        "left_tokens": 24875,
+        "right_tokens": 24875,
+        "overlap_tokens": 24875,
+        "matching_tokens": 24875,
+        "overlap_agreement": 1.0,
+        "identical_prefix_tokens": 24875,
+        "first_divergence_generated_position_1based": null,
+        "first_divergence_token_ids": null,
+        "overlap_equal": true,
+        "full_equal": true,
+        "length_difference": 0,
+        "empty_overlap": null
+      },
+      "sync_vs_h_thinking": {
+        "left_tokens": 24158,
+        "right_tokens": 24158,
+        "overlap_tokens": 24158,
+        "matching_tokens": 24158,
+        "overlap_agreement": 1.0,
+        "identical_prefix_tokens": 24158,
+        "first_divergence_generated_position_1based": null,
+        "first_divergence_token_ids": null,
+        "overlap_equal": true,
+        "full_equal": true,
+        "length_difference": 0,
+        "empty_overlap": null
+      },
+      "boundary_evidence": "Whole observed calls included only when last_output_ns <= server_accept_ns; no straddling interpolation",
+      "caveat": "Identical nominal lists do not establish identical prefix/state; H later prefix excluded from SYNC/H agreement",
+      "h_vs_n": {
+        "left_tokens": 24875,
+        "right_tokens": 13580,
+        "overlap_tokens": 13580,
+        "matching_tokens": 561,
+        "overlap_agreement": 0.041310751104565537,
+        "identical_prefix_tokens": 323,
+        "first_divergence_generated_position_1based": 324,
+        "first_divergence_token_ids": [
+          279,
+          678
+        ],
+        "overlap_equal": false,
+        "full_equal": false,
+        "length_difference": 11295,
+        "empty_overlap": null
+      },
+      "async_vs_n": {
+        "left_tokens": 22057,
+        "right_tokens": 13580,
+        "overlap_tokens": 13580,
+        "matching_tokens": 538,
+        "overlap_agreement": 0.03961708394698085,
+        "identical_prefix_tokens": 323,
+        "first_divergence_generated_position_1based": 324,
+        "first_divergence_token_ids": [
+          279,
+          678
+        ],
+        "overlap_equal": false,
+        "full_equal": false,
+        "length_difference": 8477,
+        "empty_overlap": null
+      },
+      "async_scope": "All actually returned main tokens including observed cancellation tail; actual overlap only"
+    },
+    {
+      "case_id": "atcoder:arc194_d",
+      "sync_selected_kind": "N",
+      "sync_main_stage0_visible_tokens": 20075,
+      "schedule_comparison_scope": "Nominal positions through SYNC accepted/end stage0 observed prefix; H positions beyond this boundary listed separately",
+      "sync_positions": [
+        115,
+        3401,
+        4096
+      ],
+      "h_positions_in_sync_prefix": [
+        115,
+        3401,
+        4096
+      ],
+      "h_later_positions": [],
+      "nominal_positions_equal": true,
+      "sync_vs_h": {
+        "left_tokens": 20843,
+        "right_tokens": 20843,
+        "overlap_tokens": 20843,
+        "matching_tokens": 20843,
+        "overlap_agreement": 1.0,
+        "identical_prefix_tokens": 20843,
+        "first_divergence_generated_position_1based": null,
+        "first_divergence_token_ids": null,
+        "overlap_equal": true,
+        "full_equal": true,
+        "length_difference": 0,
+        "empty_overlap": null
+      },
+      "sync_vs_h_thinking": {
+        "left_tokens": 20075,
+        "right_tokens": 20075,
+        "overlap_tokens": 20075,
+        "matching_tokens": 20075,
+        "overlap_agreement": 1.0,
+        "identical_prefix_tokens": 20075,
+        "first_divergence_generated_position_1based": null,
+        "first_divergence_token_ids": null,
+        "overlap_equal": true,
+        "full_equal": true,
+        "length_difference": 0,
+        "empty_overlap": null
+      },
+      "boundary_evidence": "Whole observed calls included only when last_output_ns <= server_accept_ns; no straddling interpolation",
+      "caveat": "Identical nominal lists do not establish identical prefix/state; H later prefix excluded from SYNC/H agreement",
+      "h_vs_n": {
+        "left_tokens": 20843,
+        "right_tokens": 30048,
+        "overlap_tokens": 20843,
+        "matching_tokens": 381,
+        "overlap_agreement": 0.018279518303507172,
+        "identical_prefix_tokens": 117,
+        "first_divergence_generated_position_1based": 118,
+        "first_divergence_token_ids": [
+          9931,
+          58114
+        ],
+        "overlap_equal": false,
+        "full_equal": false,
+        "length_difference": -9205,
+        "empty_overlap": null
+      },
+      "async_vs_n": {
+        "left_tokens": 30048,
+        "right_tokens": 30048,
+        "overlap_tokens": 30048,
+        "matching_tokens": 433,
+        "overlap_agreement": 0.014410276890308838,
+        "identical_prefix_tokens": 117,
+        "first_divergence_generated_position_1based": 118,
+        "first_divergence_token_ids": [
+          9931,
+          58114
+        ],
+        "overlap_equal": false,
+        "full_equal": false,
+        "length_difference": 0,
+        "empty_overlap": null
+      },
+      "async_scope": "All actually returned main tokens including observed cancellation tail; actual overlap only"
+    },
+    {
+      "case_id": "atcoder:abc387_c",
+      "sync_selected_kind": "N",
+      "sync_main_stage0_visible_tokens": 28000,
+      "schedule_comparison_scope": "Nominal positions through SYNC accepted/end stage0 observed prefix; H positions beyond this boundary listed separately",
+      "sync_positions": [
+        379,
+        3697,
+        4096
+      ],
+      "h_positions_in_sync_prefix": [
+        379,
+        3697,
+        4096
+      ],
+      "h_later_positions": [],
+      "nominal_positions_equal": true,
+      "sync_vs_h": {
+        "left_tokens": 28435,
+        "right_tokens": 28435,
+        "overlap_tokens": 28435,
+        "matching_tokens": 28435,
+        "overlap_agreement": 1.0,
+        "identical_prefix_tokens": 28435,
+        "first_divergence_generated_position_1based": null,
+        "first_divergence_token_ids": null,
+        "overlap_equal": true,
+        "full_equal": true,
+        "length_difference": 0,
+        "empty_overlap": null
+      },
+      "sync_vs_h_thinking": {
+        "left_tokens": 28000,
+        "right_tokens": 28000,
+        "overlap_tokens": 28000,
+        "matching_tokens": 28000,
+        "overlap_agreement": 1.0,
+        "identical_prefix_tokens": 28000,
+        "first_divergence_generated_position_1based": null,
+        "first_divergence_token_ids": null,
+        "overlap_equal": true,
+        "full_equal": true,
+        "length_difference": 0,
+        "empty_overlap": null
+      },
+      "boundary_evidence": "Whole observed calls included only when last_output_ns <= server_accept_ns; no straddling interpolation",
+      "caveat": "Identical nominal lists do not establish identical prefix/state; H later prefix excluded from SYNC/H agreement",
+      "h_vs_n": {
+        "left_tokens": 28435,
+        "right_tokens": 19299,
+        "overlap_tokens": 19299,
+        "matching_tokens": 842,
+        "overlap_agreement": 0.04362920358567801,
+        "identical_prefix_tokens": 499,
+        "first_divergence_generated_position_1based": 500,
+        "first_divergence_token_ids": [
+          2308,
+          13824
+        ],
+        "overlap_equal": false,
+        "full_equal": false,
+        "length_difference": 9136,
+        "empty_overlap": null
+      },
+      "async_vs_n": {
+        "left_tokens": 19449,
+        "right_tokens": 19299,
+        "overlap_tokens": 19299,
+        "matching_tokens": 740,
+        "overlap_agreement": 0.03834395564537023,
+        "identical_prefix_tokens": 389,
+        "first_divergence_generated_position_1based": 390,
+        "first_divergence_token_ids": [
+          504,
+          894
+        ],
+        "overlap_equal": false,
+        "full_equal": false,
+        "length_difference": 150,
+        "empty_overlap": null
+      },
+      "async_scope": "All actually returned main tokens including observed cancellation tail; actual overlap only"
+    },
+    {
+      "case_id": "atcoder:arc191_a",
+      "sync_selected_kind": "N",
+      "sync_main_stage0_visible_tokens": 25702,
+      "schedule_comparison_scope": "Nominal positions through SYNC accepted/end stage0 observed prefix; H positions beyond this boundary listed separately",
+      "sync_positions": [
+        152,
+        3399,
+        4096
+      ],
+      "h_positions_in_sync_prefix": [
+        152,
+        3399,
+        4096
+      ],
+      "h_later_positions": [],
+      "nominal_positions_equal": true,
+      "sync_vs_h": {
+        "left_tokens": 26176,
+        "right_tokens": 26176,
+        "overlap_tokens": 26176,
+        "matching_tokens": 26176,
+        "overlap_agreement": 1.0,
+        "identical_prefix_tokens": 26176,
+        "first_divergence_generated_position_1based": null,
+        "first_divergence_token_ids": null,
+        "overlap_equal": true,
+        "full_equal": true,
+        "length_difference": 0,
+        "empty_overlap": null
+      },
+      "sync_vs_h_thinking": {
+        "left_tokens": 25702,
+        "right_tokens": 25702,
+        "overlap_tokens": 25702,
+        "matching_tokens": 25702,
+        "overlap_agreement": 1.0,
+        "identical_prefix_tokens": 25702,
+        "first_divergence_generated_position_1based": null,
+        "first_divergence_token_ids": null,
+        "overlap_equal": true,
+        "full_equal": true,
+        "length_difference": 0,
+        "empty_overlap": null
+      },
+      "boundary_evidence": "Whole observed calls included only when last_output_ns <= server_accept_ns; no straddling interpolation",
+      "caveat": "Identical nominal lists do not establish identical prefix/state; H later prefix excluded from SYNC/H agreement",
+      "h_vs_n": {
+        "left_tokens": 26176,
+        "right_tokens": 28306,
+        "overlap_tokens": 26176,
+        "matching_tokens": 695,
+        "overlap_agreement": 0.0265510391198044,
+        "identical_prefix_tokens": 181,
+        "first_divergence_generated_position_1based": 182,
+        "first_divergence_token_ids": [
+          1850,
+          7772
+        ],
+        "overlap_equal": false,
+        "full_equal": false,
+        "length_difference": -2130,
+        "empty_overlap": null
+      },
+      "async_vs_n": {
+        "left_tokens": 21366,
+        "right_tokens": 28306,
+        "overlap_tokens": 21366,
+        "matching_tokens": 583,
+        "overlap_agreement": 0.027286342787606478,
+        "identical_prefix_tokens": 181,
+        "first_divergence_generated_position_1based": 182,
+        "first_divergence_token_ids": [
+          1850,
+          7772
+        ],
+        "overlap_equal": false,
+        "full_equal": false,
+        "length_difference": -6940,
+        "empty_overlap": null
+      },
+      "async_scope": "All actually returned main tokens including observed cancellation tail; actual overlap only"
+    },
+    {
+      "case_id": "atcoder:arc195_a",
+      "sync_selected_kind": "N",
+      "sync_main_stage0_visible_tokens": 8122,
+      "schedule_comparison_scope": "Nominal positions through SYNC accepted/end stage0 observed prefix; H positions beyond this boundary listed separately",
+      "sync_positions": [
+        341,
+        4096
+      ],
+      "h_positions_in_sync_prefix": [
+        341,
+        4096
+      ],
+      "h_later_positions": [],
+      "nominal_positions_equal": true,
+      "sync_vs_h": {
+        "left_tokens": 8770,
+        "right_tokens": 8770,
+        "overlap_tokens": 8770,
+        "matching_tokens": 8770,
+        "overlap_agreement": 1.0,
+        "identical_prefix_tokens": 8770,
+        "first_divergence_generated_position_1based": null,
+        "first_divergence_token_ids": null,
+        "overlap_equal": true,
+        "full_equal": true,
+        "length_difference": 0,
+        "empty_overlap": null
+      },
+      "sync_vs_h_thinking": {
+        "left_tokens": 8122,
+        "right_tokens": 8122,
+        "overlap_tokens": 8122,
+        "matching_tokens": 8122,
+        "overlap_agreement": 1.0,
+        "identical_prefix_tokens": 8122,
+        "first_divergence_generated_position_1based": null,
+        "first_divergence_token_ids": null,
+        "overlap_equal": true,
+        "full_equal": true,
+        "length_difference": 0,
+        "empty_overlap": null
+      },
+      "boundary_evidence": "Whole observed calls included only when last_output_ns <= server_accept_ns; no straddling interpolation",
+      "caveat": "Identical nominal lists do not establish identical prefix/state; H later prefix excluded from SYNC/H agreement",
+      "h_vs_n": {
+        "left_tokens": 8770,
+        "right_tokens": 16003,
+        "overlap_tokens": 8770,
+        "matching_tokens": 573,
+        "overlap_agreement": 0.0653363740022805,
+        "identical_prefix_tokens": 440,
+        "first_divergence_generated_position_1based": 441,
+        "first_divergence_token_ids": [
+          279,
+          582
+        ],
+        "overlap_equal": false,
+        "full_equal": false,
+        "length_difference": -7233,
+        "empty_overlap": null
+      },
+      "async_vs_n": {
+        "left_tokens": 13071,
+        "right_tokens": 16003,
+        "overlap_tokens": 13071,
+        "matching_tokens": 644,
+        "overlap_agreement": 0.049269374952184225,
+        "identical_prefix_tokens": 440,
+        "first_divergence_generated_position_1based": 441,
+        "first_divergence_token_ids": [
+          279,
+          582
+        ],
+        "overlap_equal": false,
+        "full_equal": false,
+        "length_difference": -2932,
+        "empty_overlap": null
+      },
+      "async_scope": "All actually returned main tokens including observed cancellation tail; actual overlap only"
+    },
+    {
+      "case_id": "codeforces:2109A",
+      "sync_selected_kind": "N",
+      "sync_main_stage0_visible_tokens": 11403,
+      "schedule_comparison_scope": "Nominal positions through SYNC accepted/end stage0 observed prefix; H positions beyond this boundary listed separately",
+      "sync_positions": [
+        394,
+        4096
+      ],
+      "h_positions_in_sync_prefix": [
+        394,
+        4096
+      ],
+      "h_later_positions": [],
+      "nominal_positions_equal": true,
+      "sync_vs_h": {
+        "left_tokens": 11531,
+        "right_tokens": 11531,
+        "overlap_tokens": 11531,
+        "matching_tokens": 11531,
+        "overlap_agreement": 1.0,
+        "identical_prefix_tokens": 11531,
+        "first_divergence_generated_position_1based": null,
+        "first_divergence_token_ids": null,
+        "overlap_equal": true,
+        "full_equal": true,
+        "length_difference": 0,
+        "empty_overlap": null
+      },
+      "sync_vs_h_thinking": {
+        "left_tokens": 11403,
+        "right_tokens": 11403,
+        "overlap_tokens": 11403,
+        "matching_tokens": 11403,
+        "overlap_agreement": 1.0,
+        "identical_prefix_tokens": 11403,
+        "first_divergence_generated_position_1based": null,
+        "first_divergence_token_ids": null,
+        "overlap_equal": true,
+        "full_equal": true,
+        "length_difference": 0,
+        "empty_overlap": null
+      },
+      "boundary_evidence": "Whole observed calls included only when last_output_ns <= server_accept_ns; no straddling interpolation",
+      "caveat": "Identical nominal lists do not establish identical prefix/state; H later prefix excluded from SYNC/H agreement",
+      "h_vs_n": {
+        "left_tokens": 11531,
+        "right_tokens": 9817,
+        "overlap_tokens": 9817,
+        "matching_tokens": 697,
+        "overlap_agreement": 0.0709992869512071,
+        "identical_prefix_tokens": 542,
+        "first_divergence_generated_position_1based": 543,
+        "first_divergence_token_ids": [
+          1817,
+          279
+        ],
+        "overlap_equal": false,
+        "full_equal": false,
+        "length_difference": 1714,
+        "empty_overlap": null
+      },
+      "async_vs_n": {
+        "left_tokens": 27477,
+        "right_tokens": 9817,
+        "overlap_tokens": 9817,
+        "matching_tokens": 986,
+        "overlap_agreement": 0.10043801568707345,
+        "identical_prefix_tokens": 822,
+        "first_divergence_generated_position_1based": 823,
+        "first_divergence_token_ids": [
+          421,
+          2781
+        ],
+        "overlap_equal": false,
+        "full_equal": false,
+        "length_difference": 17660,
+        "empty_overlap": null
+      },
+      "async_scope": "All actually returned main tokens including observed cancellation tail; actual overlap only"
+    },
+    {
+      "case_id": "codeforces:2111A",
+      "sync_selected_kind": "N",
+      "sync_main_stage0_visible_tokens": 28000,
+      "schedule_comparison_scope": "Nominal positions through SYNC accepted/end stage0 observed prefix; H positions beyond this boundary listed separately",
+      "sync_positions": [
+        255,
+        3611,
+        4096
+      ],
+      "h_positions_in_sync_prefix": [
+        255,
+        3611,
+        4096
+      ],
+      "h_later_positions": [],
+      "nominal_positions_equal": true,
+      "sync_vs_h": {
+        "left_tokens": 28134,
+        "right_tokens": 28134,
+        "overlap_tokens": 28134,
+        "matching_tokens": 28134,
+        "overlap_agreement": 1.0,
+        "identical_prefix_tokens": 28134,
+        "first_divergence_generated_position_1based": null,
+        "first_divergence_token_ids": null,
+        "overlap_equal": true,
+        "full_equal": true,
+        "length_difference": 0,
+        "empty_overlap": null
+      },
+      "sync_vs_h_thinking": {
+        "left_tokens": 28000,
+        "right_tokens": 28000,
+        "overlap_tokens": 28000,
+        "matching_tokens": 28000,
+        "overlap_agreement": 1.0,
+        "identical_prefix_tokens": 28000,
+        "first_divergence_generated_position_1based": null,
+        "first_divergence_token_ids": null,
+        "overlap_equal": true,
+        "full_equal": true,
+        "length_difference": 0,
+        "empty_overlap": null
+      },
+      "boundary_evidence": "Whole observed calls included only when last_output_ns <= server_accept_ns; no straddling interpolation",
+      "caveat": "Identical nominal lists do not establish identical prefix/state; H later prefix excluded from SYNC/H agreement",
+      "h_vs_n": {
+        "left_tokens": 28134,
+        "right_tokens": 30048,
+        "overlap_tokens": 28134,
+        "matching_tokens": 1287,
+        "overlap_agreement": 0.045745361484325016,
+        "identical_prefix_tokens": 640,
+        "first_divergence_generated_position_1based": 641,
+        "first_divergence_token_ids": [
+          1372,
+          7354
+        ],
+        "overlap_equal": false,
+        "full_equal": false,
+        "length_difference": -1914,
+        "empty_overlap": null
+      },
+      "async_vs_n": {
+        "left_tokens": 23067,
+        "right_tokens": 30048,
+        "overlap_tokens": 23067,
+        "matching_tokens": 925,
+        "overlap_agreement": 0.04010057658126328,
+        "identical_prefix_tokens": 432,
+        "first_divergence_generated_position_1based": 433,
+        "first_divergence_token_ids": [
+          13,
+          382
+        ],
+        "overlap_equal": false,
+        "full_equal": false,
+        "length_difference": -6981,
+        "empty_overlap": null
+      },
+      "async_scope": "All actually returned main tokens including observed cancellation tail; actual overlap only"
+    },
+    {
+      "case_id": "codeforces:2114D",
+      "sync_selected_kind": "N",
+      "sync_main_stage0_visible_tokens": 21796,
+      "schedule_comparison_scope": "Nominal positions through SYNC accepted/end stage0 observed prefix; H positions beyond this boundary listed separately",
+      "sync_positions": [
+        230,
+        3700,
+        4096
+      ],
+      "h_positions_in_sync_prefix": [
+        230,
+        3700,
+        4096
+      ],
+      "h_later_positions": [],
+      "nominal_positions_equal": true,
+      "sync_vs_h": {
+        "left_tokens": 22529,
+        "right_tokens": 22529,
+        "overlap_tokens": 22529,
+        "matching_tokens": 22529,
+        "overlap_agreement": 1.0,
+        "identical_prefix_tokens": 22529,
+        "first_divergence_generated_position_1based": null,
+        "first_divergence_token_ids": null,
+        "overlap_equal": true,
+        "full_equal": true,
+        "length_difference": 0,
+        "empty_overlap": null
+      },
+      "sync_vs_h_thinking": {
+        "left_tokens": 21796,
+        "right_tokens": 21796,
+        "overlap_tokens": 21796,
+        "matching_tokens": 21796,
+        "overlap_agreement": 1.0,
+        "identical_prefix_tokens": 21796,
+        "first_divergence_generated_position_1based": null,
+        "first_divergence_token_ids": null,
+        "overlap_equal": true,
+        "full_equal": true,
+        "length_difference": 0,
+        "empty_overlap": null
+      },
+      "boundary_evidence": "Whole observed calls included only when last_output_ns <= server_accept_ns; no straddling interpolation",
+      "caveat": "Identical nominal lists do not establish identical prefix/state; H later prefix excluded from SYNC/H agreement",
+      "h_vs_n": {
+        "left_tokens": 22529,
+        "right_tokens": 22270,
+        "overlap_tokens": 22270,
+        "matching_tokens": 552,
+        "overlap_agreement": 0.024786708576560394,
+        "identical_prefix_tokens": 232,
+        "first_divergence_generated_position_1based": 233,
+        "first_divergence_token_ids": [
+          1052,
+          279
+        ],
+        "overlap_equal": false,
+        "full_equal": false,
+        "length_difference": 259,
+        "empty_overlap": null
+      },
+      "async_vs_n": {
+        "left_tokens": 22961,
+        "right_tokens": 22270,
+        "overlap_tokens": 22270,
+        "matching_tokens": 689,
+        "overlap_agreement": 0.03093848226313426,
+        "identical_prefix_tokens": 387,
+        "first_divergence_generated_position_1based": 388,
+        "first_divergence_token_ids": [
+          432,
+          264
+        ],
+        "overlap_equal": false,
+        "full_equal": false,
+        "length_difference": 691,
+        "empty_overlap": null
+      },
+      "async_scope": "All actually returned main tokens including observed cancellation tail; actual overlap only"
+    },
+    {
+      "case_id": "codeforces:2114E",
+      "sync_selected_kind": "N",
+      "sync_main_stage0_visible_tokens": 17090,
+      "schedule_comparison_scope": "Nominal positions through SYNC accepted/end stage0 observed prefix; H positions beyond this boundary listed separately",
+      "sync_positions": [
+        387,
+        3640,
+        4096
+      ],
+      "h_positions_in_sync_prefix": [
+        387,
+        3640,
+        4096
+      ],
+      "h_later_positions": [],
+      "nominal_positions_equal": true,
+      "sync_vs_h": {
+        "left_tokens": 18051,
+        "right_tokens": 18051,
+        "overlap_tokens": 18051,
+        "matching_tokens": 18051,
+        "overlap_agreement": 1.0,
+        "identical_prefix_tokens": 18051,
+        "first_divergence_generated_position_1based": null,
+        "first_divergence_token_ids": null,
+        "overlap_equal": true,
+        "full_equal": true,
+        "length_difference": 0,
+        "empty_overlap": null
+      },
+      "sync_vs_h_thinking": {
+        "left_tokens": 17090,
+        "right_tokens": 17090,
+        "overlap_tokens": 17090,
+        "matching_tokens": 17090,
+        "overlap_agreement": 1.0,
+        "identical_prefix_tokens": 17090,
+        "first_divergence_generated_position_1based": null,
+        "first_divergence_token_ids": null,
+        "overlap_equal": true,
+        "full_equal": true,
+        "length_difference": 0,
+        "empty_overlap": null
+      },
+      "boundary_evidence": "Whole observed calls included only when last_output_ns <= server_accept_ns; no straddling interpolation",
+      "caveat": "Identical nominal lists do not establish identical prefix/state; H later prefix excluded from SYNC/H agreement",
+      "h_vs_n": {
+        "left_tokens": 18051,
+        "right_tokens": 25322,
+        "overlap_tokens": 18051,
+        "matching_tokens": 759,
+        "overlap_agreement": 0.04204753199268738,
+        "identical_prefix_tokens": 470,
+        "first_divergence_generated_position_1based": 471,
+        "first_divergence_token_ids": [
+          2681,
+          1682
+        ],
+        "overlap_equal": false,
+        "full_equal": false,
+        "length_difference": -7271,
+        "empty_overlap": null
+      },
+      "async_vs_n": {
+        "left_tokens": 22989,
+        "right_tokens": 25322,
+        "overlap_tokens": 22989,
+        "matching_tokens": 770,
+        "overlap_agreement": 0.03349427987298273,
+        "identical_prefix_tokens": 435,
+        "first_divergence_generated_position_1based": 436,
+        "first_divergence_token_ids": [
+          6771,
+          1752
+        ],
+        "overlap_equal": false,
+        "full_equal": false,
+        "length_difference": -2333,
+        "empty_overlap": null
+      },
+      "async_scope": "All actually returned main tokens including observed cancellation tail; actual overlap only"
+    },
+    {
+      "case_id": "codeforces:2116A",
+      "sync_selected_kind": "N",
+      "sync_main_stage0_visible_tokens": 16113,
+      "schedule_comparison_scope": "Nominal positions through SYNC accepted/end stage0 observed prefix; H positions beyond this boundary listed separately",
+      "sync_positions": [
+        382,
+        3733,
+        4096
+      ],
+      "h_positions_in_sync_prefix": [
+        382,
+        3733,
+        4096
+      ],
+      "h_later_positions": [],
+      "nominal_positions_equal": true,
+      "sync_vs_h": {
+        "left_tokens": 16622,
+        "right_tokens": 16622,
+        "overlap_tokens": 16622,
+        "matching_tokens": 16622,
+        "overlap_agreement": 1.0,
+        "identical_prefix_tokens": 16622,
+        "first_divergence_generated_position_1based": null,
+        "first_divergence_token_ids": null,
+        "overlap_equal": true,
+        "full_equal": true,
+        "length_difference": 0,
+        "empty_overlap": null
+      },
+      "sync_vs_h_thinking": {
+        "left_tokens": 16113,
+        "right_tokens": 16113,
+        "overlap_tokens": 16113,
+        "matching_tokens": 16113,
+        "overlap_agreement": 1.0,
+        "identical_prefix_tokens": 16113,
+        "first_divergence_generated_position_1based": null,
+        "first_divergence_token_ids": null,
+        "overlap_equal": true,
+        "full_equal": true,
+        "length_difference": 0,
+        "empty_overlap": null
+      },
+      "boundary_evidence": "Whole observed calls included only when last_output_ns <= server_accept_ns; no straddling interpolation",
+      "caveat": "Identical nominal lists do not establish identical prefix/state; H later prefix excluded from SYNC/H agreement",
+      "h_vs_n": {
+        "left_tokens": 16622,
+        "right_tokens": 18617,
+        "overlap_tokens": 16622,
+        "matching_tokens": 684,
+        "overlap_agreement": 0.04115028275779088,
+        "identical_prefix_tokens": 421,
+        "first_divergence_generated_position_1based": 422,
+        "first_divergence_token_ids": [
+          6771,
+          4354
+        ],
+        "overlap_equal": false,
+        "full_equal": false,
+        "length_difference": -1995,
+        "empty_overlap": null
+      },
+      "async_vs_n": {
+        "left_tokens": 24841,
+        "right_tokens": 18617,
+        "overlap_tokens": 18617,
+        "matching_tokens": 778,
+        "overlap_agreement": 0.04178976204544234,
+        "identical_prefix_tokens": 503,
+        "first_divergence_generated_position_1based": 504,
+        "first_divergence_token_ids": [
+          320,
+          476
+        ],
+        "overlap_equal": false,
+        "full_equal": false,
+        "length_difference": 6224,
+        "empty_overlap": null
+      },
+      "async_scope": "All actually returned main tokens including observed cancellation tail; actual overlap only"
+    },
+    {
+      "case_id": "codeforces:2116B",
+      "sync_selected_kind": "N",
+      "sync_main_stage0_visible_tokens": 24021,
+      "schedule_comparison_scope": "Nominal positions through SYNC accepted/end stage0 observed prefix; H positions beyond this boundary listed separately",
+      "sync_positions": [
+        258,
+        3668,
+        4096
+      ],
+      "h_positions_in_sync_prefix": [
+        258,
+        3668,
+        4096
+      ],
+      "h_later_positions": [],
+      "nominal_positions_equal": true,
+      "sync_vs_h": {
+        "left_tokens": 25033,
+        "right_tokens": 25033,
+        "overlap_tokens": 25033,
+        "matching_tokens": 25033,
+        "overlap_agreement": 1.0,
+        "identical_prefix_tokens": 25033,
+        "first_divergence_generated_position_1based": null,
+        "first_divergence_token_ids": null,
+        "overlap_equal": true,
+        "full_equal": true,
+        "length_difference": 0,
+        "empty_overlap": null
+      },
+      "sync_vs_h_thinking": {
+        "left_tokens": 24021,
+        "right_tokens": 24021,
+        "overlap_tokens": 24021,
+        "matching_tokens": 24021,
+        "overlap_agreement": 1.0,
+        "identical_prefix_tokens": 24021,
+        "first_divergence_generated_position_1based": null,
+        "first_divergence_token_ids": null,
+        "overlap_equal": true,
+        "full_equal": true,
+        "length_difference": 0,
+        "empty_overlap": null
+      },
+      "boundary_evidence": "Whole observed calls included only when last_output_ns <= server_accept_ns; no straddling interpolation",
+      "caveat": "Identical nominal lists do not establish identical prefix/state; H later prefix excluded from SYNC/H agreement",
+      "h_vs_n": {
+        "left_tokens": 25033,
+        "right_tokens": 24488,
+        "overlap_tokens": 24488,
+        "matching_tokens": 4046,
+        "overlap_agreement": 0.1652237830774257,
+        "identical_prefix_tokens": 3720,
+        "first_divergence_generated_position_1based": 3721,
+        "first_divergence_token_ids": [
+          1221,
+          323
+        ],
+        "overlap_equal": false,
+        "full_equal": false,
+        "length_difference": 545,
+        "empty_overlap": null
+      },
+      "async_vs_n": {
+        "left_tokens": 25151,
+        "right_tokens": 24488,
+        "overlap_tokens": 24488,
+        "matching_tokens": 826,
+        "overlap_agreement": 0.033730806925841225,
+        "identical_prefix_tokens": 403,
+        "first_divergence_generated_position_1based": 404,
+        "first_divergence_token_ids": [
+          279,
+          1246
+        ],
+        "overlap_equal": false,
+        "full_equal": false,
+        "length_difference": 663,
+        "empty_overlap": null
+      },
+      "async_scope": "All actually returned main tokens including observed cancellation tail; actual overlap only"
+    },
+    {
+      "case_id": "codeforces:2117A",
+      "sync_selected_kind": "N",
+      "sync_main_stage0_visible_tokens": 8373,
+      "schedule_comparison_scope": "Nominal positions through SYNC accepted/end stage0 observed prefix; H positions beyond this boundary listed separately",
+      "sync_positions": [
+        268,
+        4090,
+        4096
+      ],
+      "h_positions_in_sync_prefix": [
+        268,
+        4090,
+        4096
+      ],
+      "h_later_positions": [],
+      "nominal_positions_equal": true,
+      "sync_vs_h": {
+        "left_tokens": 9013,
+        "right_tokens": 9013,
+        "overlap_tokens": 9013,
+        "matching_tokens": 9013,
+        "overlap_agreement": 1.0,
+        "identical_prefix_tokens": 9013,
+        "first_divergence_generated_position_1based": null,
+        "first_divergence_token_ids": null,
+        "overlap_equal": true,
+        "full_equal": true,
+        "length_difference": 0,
+        "empty_overlap": null
+      },
+      "sync_vs_h_thinking": {
+        "left_tokens": 8373,
+        "right_tokens": 8373,
+        "overlap_tokens": 8373,
+        "matching_tokens": 8373,
+        "overlap_agreement": 1.0,
+        "identical_prefix_tokens": 8373,
+        "first_divergence_generated_position_1based": null,
+        "first_divergence_token_ids": null,
+        "overlap_equal": true,
+        "full_equal": true,
+        "length_difference": 0,
+        "empty_overlap": null
+      },
+      "boundary_evidence": "Whole observed calls included only when last_output_ns <= server_accept_ns; no straddling interpolation",
+      "caveat": "Identical nominal lists do not establish identical prefix/state; H later prefix excluded from SYNC/H agreement",
+      "h_vs_n": {
+        "left_tokens": 9013,
+        "right_tokens": 15502,
+        "overlap_tokens": 9013,
+        "matching_tokens": 590,
+        "overlap_agreement": 0.06546100077665594,
+        "identical_prefix_tokens": 441,
+        "first_divergence_generated_position_1based": 442,
+        "first_divergence_token_ids": [
+          4854,
+          10061
+        ],
+        "overlap_equal": false,
+        "full_equal": false,
+        "length_difference": -6489,
+        "empty_overlap": null
+      },
+      "async_vs_n": {
+        "left_tokens": 17978,
+        "right_tokens": 15502,
+        "overlap_tokens": 15502,
+        "matching_tokens": 612,
+        "overlap_agreement": 0.039478776932008776,
+        "identical_prefix_tokens": 368,
+        "first_divergence_generated_position_1based": 369,
+        "first_divergence_token_ids": [
+          11,
+          279
+        ],
+        "overlap_equal": false,
+        "full_equal": false,
+        "length_difference": 2476,
+        "empty_overlap": null
+      },
+      "async_scope": "All actually returned main tokens including observed cancellation tail; actual overlap only"
+    },
+    {
+      "case_id": "codeforces:2117D",
+      "sync_selected_kind": "N",
+      "sync_main_stage0_visible_tokens": 9664,
+      "schedule_comparison_scope": "Nominal positions through SYNC accepted/end stage0 observed prefix; H positions beyond this boundary listed separately",
+      "sync_positions": [
+        89,
+        4096
+      ],
+      "h_positions_in_sync_prefix": [
+        89,
+        4096
+      ],
+      "h_later_positions": [],
+      "nominal_positions_equal": true,
+      "sync_vs_h": {
+        "left_tokens": 9953,
+        "right_tokens": 9953,
+        "overlap_tokens": 9953,
+        "matching_tokens": 9953,
+        "overlap_agreement": 1.0,
+        "identical_prefix_tokens": 9953,
+        "first_divergence_generated_position_1based": null,
+        "first_divergence_token_ids": null,
+        "overlap_equal": true,
+        "full_equal": true,
+        "length_difference": 0,
+        "empty_overlap": null
+      },
+      "sync_vs_h_thinking": {
+        "left_tokens": 9664,
+        "right_tokens": 9664,
+        "overlap_tokens": 9664,
+        "matching_tokens": 9664,
+        "overlap_agreement": 1.0,
+        "identical_prefix_tokens": 9664,
+        "first_divergence_generated_position_1based": null,
+        "first_divergence_token_ids": null,
+        "overlap_equal": true,
+        "full_equal": true,
+        "length_difference": 0,
+        "empty_overlap": null
+      },
+      "boundary_evidence": "Whole observed calls included only when last_output_ns <= server_accept_ns; no straddling interpolation",
+      "caveat": "Identical nominal lists do not establish identical prefix/state; H later prefix excluded from SYNC/H agreement",
+      "h_vs_n": {
+        "left_tokens": 9953,
+        "right_tokens": 10860,
+        "overlap_tokens": 9953,
+        "matching_tokens": 530,
+        "overlap_agreement": 0.05325027629860343,
+        "identical_prefix_tokens": 370,
+        "first_divergence_generated_position_1based": 371,
+        "first_divergence_token_ids": [
+          369,
+          421
+        ],
+        "overlap_equal": false,
+        "full_equal": false,
+        "length_difference": -907,
+        "empty_overlap": null
+      },
+      "async_vs_n": {
+        "left_tokens": 8385,
+        "right_tokens": 10860,
+        "overlap_tokens": 8385,
+        "matching_tokens": 272,
+        "overlap_agreement": 0.03243887895050686,
+        "identical_prefix_tokens": 166,
+        "first_divergence_generated_position_1based": 167,
+        "first_divergence_token_ids": [
+          1128,
+          279
+        ],
+        "overlap_equal": false,
+        "full_equal": false,
+        "length_difference": -2475,
+        "empty_overlap": null
+      },
+      "async_scope": "All actually returned main tokens including observed cancellation tail; actual overlap only"
+    },
+    {
+      "case_id": "codeforces:2117E",
+      "sync_selected_kind": "N",
+      "sync_main_stage0_visible_tokens": 19686,
+      "schedule_comparison_scope": "Nominal positions through SYNC accepted/end stage0 observed prefix; H positions beyond this boundary listed separately",
+      "sync_positions": [
+        422,
+        4059,
+        4096
+      ],
+      "h_positions_in_sync_prefix": [
+        422,
+        4059,
+        4096
+      ],
+      "h_later_positions": [],
+      "nominal_positions_equal": true,
+      "sync_vs_h": {
+        "left_tokens": 20777,
+        "right_tokens": 20777,
+        "overlap_tokens": 20777,
+        "matching_tokens": 20777,
+        "overlap_agreement": 1.0,
+        "identical_prefix_tokens": 20777,
+        "first_divergence_generated_position_1based": null,
+        "first_divergence_token_ids": null,
+        "overlap_equal": true,
+        "full_equal": true,
+        "length_difference": 0,
+        "empty_overlap": null
+      },
+      "sync_vs_h_thinking": {
+        "left_tokens": 19686,
+        "right_tokens": 19686,
+        "overlap_tokens": 19686,
+        "matching_tokens": 19686,
+        "overlap_agreement": 1.0,
+        "identical_prefix_tokens": 19686,
+        "first_divergence_generated_position_1based": null,
+        "first_divergence_token_ids": null,
+        "overlap_equal": true,
+        "full_equal": true,
+        "length_difference": 0,
+        "empty_overlap": null
+      },
+      "boundary_evidence": "Whole observed calls included only when last_output_ns <= server_accept_ns; no straddling interpolation",
+      "caveat": "Identical nominal lists do not establish identical prefix/state; H later prefix excluded from SYNC/H agreement",
+      "h_vs_n": {
+        "left_tokens": 20777,
+        "right_tokens": 28385,
+        "overlap_tokens": 20777,
+        "matching_tokens": 847,
+        "overlap_agreement": 0.04076623189103335,
+        "identical_prefix_tokens": 555,
+        "first_divergence_generated_position_1based": 556,
+        "first_divergence_token_ids": [
+          61,
+          8
+        ],
+        "overlap_equal": false,
+        "full_equal": false,
+        "length_difference": -7608,
+        "empty_overlap": null
+      },
+      "async_vs_n": {
+        "left_tokens": 26872,
+        "right_tokens": 28385,
+        "overlap_tokens": 26872,
+        "matching_tokens": 1045,
+        "overlap_agreement": 0.03888806192319143,
+        "identical_prefix_tokens": 702,
+        "first_divergence_generated_position_1based": 703,
+        "first_divergence_token_ids": [
+          358,
+          11
+        ],
+        "overlap_equal": false,
+        "full_equal": false,
+        "length_difference": -1513,
+        "empty_overlap": null
+      },
+      "async_scope": "All actually returned main tokens including observed cancellation tail; actual overlap only"
+    },
+    {
+      "case_id": "codeforces:2120D",
+      "sync_selected_kind": "N",
+      "sync_main_stage0_visible_tokens": 25782,
+      "schedule_comparison_scope": "Nominal positions through SYNC accepted/end stage0 observed prefix; H positions beyond this boundary listed separately",
+      "sync_positions": [
+        102,
+        3288,
+        4096
+      ],
+      "h_positions_in_sync_prefix": [
+        102,
+        3288,
+        4096
+      ],
+      "h_later_positions": [],
+      "nominal_positions_equal": true,
+      "sync_vs_h": {
+        "left_tokens": 26465,
+        "right_tokens": 26465,
+        "overlap_tokens": 26465,
+        "matching_tokens": 26465,
+        "overlap_agreement": 1.0,
+        "identical_prefix_tokens": 26465,
+        "first_divergence_generated_position_1based": null,
+        "first_divergence_token_ids": null,
+        "overlap_equal": true,
+        "full_equal": true,
+        "length_difference": 0,
+        "empty_overlap": null
+      },
+      "sync_vs_h_thinking": {
+        "left_tokens": 25782,
+        "right_tokens": 25782,
+        "overlap_tokens": 25782,
+        "matching_tokens": 25782,
+        "overlap_agreement": 1.0,
+        "identical_prefix_tokens": 25782,
+        "first_divergence_generated_position_1based": null,
+        "first_divergence_token_ids": null,
+        "overlap_equal": true,
+        "full_equal": true,
+        "length_difference": 0,
+        "empty_overlap": null
+      },
+      "boundary_evidence": "Whole observed calls included only when last_output_ns <= server_accept_ns; no straddling interpolation",
+      "caveat": "Identical nominal lists do not establish identical prefix/state; H later prefix excluded from SYNC/H agreement",
+      "h_vs_n": {
+        "left_tokens": 26465,
+        "right_tokens": 28251,
+        "overlap_tokens": 26465,
+        "matching_tokens": 667,
+        "overlap_agreement": 0.025203098431891176,
+        "identical_prefix_tokens": 119,
+        "first_divergence_generated_position_1based": 120,
+        "first_divergence_token_ids": [
+          13,
+          382
+        ],
+        "overlap_equal": false,
+        "full_equal": false,
+        "length_difference": -1786,
+        "empty_overlap": null
+      },
+      "async_vs_n": {
+        "left_tokens": 22625,
+        "right_tokens": 28251,
+        "overlap_tokens": 22625,
+        "matching_tokens": 473,
+        "overlap_agreement": 0.020906077348066297,
+        "identical_prefix_tokens": 116,
+        "first_divergence_generated_position_1based": 117,
+        "first_divergence_token_ids": [
+          13,
+          911
+        ],
+        "overlap_equal": false,
+        "full_equal": false,
+        "length_difference": -5626,
+        "empty_overlap": null
+      },
+      "async_scope": "All actually returned main tokens including observed cancellation tail; actual overlap only"
+    },
+    {
+      "case_id": "codeforces:2121A",
+      "sync_selected_kind": "PROBE",
+      "sync_main_stage0_visible_tokens": 3630,
+      "schedule_comparison_scope": "Nominal positions through SYNC accepted/end stage0 observed prefix; H positions beyond this boundary listed separately",
+      "sync_positions": [
+        112,
+        3630
+      ],
+      "h_positions_in_sync_prefix": [
+        112,
+        3630
+      ],
+      "h_later_positions": [
+        4096
+      ],
+      "nominal_positions_equal": true,
+      "sync_vs_h": {
+        "left_tokens": 3630,
+        "right_tokens": 3630,
+        "overlap_tokens": 3630,
+        "matching_tokens": 3630,
+        "overlap_agreement": 1.0,
+        "identical_prefix_tokens": 3630,
+        "first_divergence_generated_position_1based": null,
+        "first_divergence_token_ids": null,
+        "overlap_equal": true,
+        "full_equal": true,
+        "length_difference": 0,
+        "empty_overlap": null
+      },
+      "sync_vs_h_thinking": {
+        "left_tokens": 3630,
+        "right_tokens": 3630,
+        "overlap_tokens": 3630,
+        "matching_tokens": 3630,
+        "overlap_agreement": 1.0,
+        "identical_prefix_tokens": 3630,
+        "first_divergence_generated_position_1based": null,
+        "first_divergence_token_ids": null,
+        "overlap_equal": true,
+        "full_equal": true,
+        "length_difference": 0,
+        "empty_overlap": null
+      },
+      "boundary_evidence": "Whole observed calls included only when last_output_ns <= server_accept_ns; no straddling interpolation",
+      "caveat": "Identical nominal lists do not establish identical prefix/state; H later prefix excluded from SYNC/H agreement",
+      "h_vs_n": {
+        "left_tokens": 8358,
+        "right_tokens": 7684,
+        "overlap_tokens": 7684,
+        "matching_tokens": 286,
+        "overlap_agreement": 0.03722019781363873,
+        "identical_prefix_tokens": 114,
+        "first_divergence_generated_position_1based": 115,
+        "first_divergence_token_ids": [
+          3330,
+          279
+        ],
+        "overlap_equal": false,
+        "full_equal": false,
+        "length_difference": 674,
+        "empty_overlap": null
+      },
+      "async_vs_n": {
+        "left_tokens": 20499,
+        "right_tokens": 7684,
+        "overlap_tokens": 7684,
+        "matching_tokens": 235,
+        "overlap_agreement": 0.03058302967204581,
+        "identical_prefix_tokens": 114,
+        "first_divergence_generated_position_1based": 115,
+        "first_divergence_token_ids": [
+          3330,
+          279
+        ],
+        "overlap_equal": false,
+        "full_equal": false,
+        "length_difference": 12815,
+        "empty_overlap": null
+      },
+      "async_scope": "All actually returned main tokens including observed cancellation tail; actual overlap only"
+    },
+    {
+      "case_id": "codeforces:2121B",
+      "sync_selected_kind": "N",
+      "sync_main_stage0_visible_tokens": 23147,
+      "schedule_comparison_scope": "Nominal positions through SYNC accepted/end stage0 observed prefix; H positions beyond this boundary listed separately",
+      "sync_positions": [
+        259,
+        3529,
+        4096
+      ],
+      "h_positions_in_sync_prefix": [
+        259,
+        3529,
+        4096
+      ],
+      "h_later_positions": [],
+      "nominal_positions_equal": true,
+      "sync_vs_h": {
+        "left_tokens": 23846,
+        "right_tokens": 23846,
+        "overlap_tokens": 23846,
+        "matching_tokens": 23846,
+        "overlap_agreement": 1.0,
+        "identical_prefix_tokens": 23846,
+        "first_divergence_generated_position_1based": null,
+        "first_divergence_token_ids": null,
+        "overlap_equal": true,
+        "full_equal": true,
+        "length_difference": 0,
+        "empty_overlap": null
+      },
+      "sync_vs_h_thinking": {
+        "left_tokens": 23147,
+        "right_tokens": 23147,
+        "overlap_tokens": 23147,
+        "matching_tokens": 23147,
+        "overlap_agreement": 1.0,
+        "identical_prefix_tokens": 23147,
+        "first_divergence_generated_position_1based": null,
+        "first_divergence_token_ids": null,
+        "overlap_equal": true,
+        "full_equal": true,
+        "length_difference": 0,
+        "empty_overlap": null
+      },
+      "boundary_evidence": "Whole observed calls included only when last_output_ns <= server_accept_ns; no straddling interpolation",
+      "caveat": "Identical nominal lists do not establish identical prefix/state; H later prefix excluded from SYNC/H agreement",
+      "h_vs_n": {
+        "left_tokens": 23846,
+        "right_tokens": 19924,
+        "overlap_tokens": 19924,
+        "matching_tokens": 607,
+        "overlap_agreement": 0.03046576992571773,
+        "identical_prefix_tokens": 376,
+        "first_divergence_generated_position_1based": 377,
+        "first_divergence_token_ids": [
+          13,
+          382
+        ],
+        "overlap_equal": false,
+        "full_equal": false,
+        "length_difference": 3922,
+        "empty_overlap": null
+      },
+      "async_vs_n": {
+        "left_tokens": 26045,
+        "right_tokens": 19924,
+        "overlap_tokens": 19924,
+        "matching_tokens": 656,
+        "overlap_agreement": 0.032925115438666934,
+        "identical_prefix_tokens": 365,
+        "first_divergence_generated_position_1based": 366,
+        "first_divergence_token_ids": [
+          568,
+          701
+        ],
+        "overlap_equal": false,
+        "full_equal": false,
+        "length_difference": 6121,
+        "empty_overlap": null
+      },
+      "async_scope": "All actually returned main tokens including observed cancellation tail; actual overlap only"
+    },
+    {
+      "case_id": "codeforces:2101E",
+      "sync_selected_kind": "N",
+      "sync_main_stage0_visible_tokens": 20398,
+      "schedule_comparison_scope": "Nominal positions through SYNC accepted/end stage0 observed prefix; H positions beyond this boundary listed separately",
+      "sync_positions": [
+        865,
+        4096
+      ],
+      "h_positions_in_sync_prefix": [
+        865,
+        4096
+      ],
+      "h_later_positions": [],
+      "nominal_positions_equal": true,
+      "sync_vs_h": {
+        "left_tokens": 21496,
+        "right_tokens": 21496,
+        "overlap_tokens": 21496,
+        "matching_tokens": 21496,
+        "overlap_agreement": 1.0,
+        "identical_prefix_tokens": 21496,
+        "first_divergence_generated_position_1based": null,
+        "first_divergence_token_ids": null,
+        "overlap_equal": true,
+        "full_equal": true,
+        "length_difference": 0,
+        "empty_overlap": null
+      },
+      "sync_vs_h_thinking": {
+        "left_tokens": 20398,
+        "right_tokens": 20398,
+        "overlap_tokens": 20398,
+        "matching_tokens": 20398,
+        "overlap_agreement": 1.0,
+        "identical_prefix_tokens": 20398,
+        "first_divergence_generated_position_1based": null,
+        "first_divergence_token_ids": null,
+        "overlap_equal": true,
+        "full_equal": true,
+        "length_difference": 0,
+        "empty_overlap": null
+      },
+      "boundary_evidence": "Whole observed calls included only when last_output_ns <= server_accept_ns; no straddling interpolation",
+      "caveat": "Identical nominal lists do not establish identical prefix/state; H later prefix excluded from SYNC/H agreement",
+      "h_vs_n": {
+        "left_tokens": 21496,
+        "right_tokens": 23093,
+        "overlap_tokens": 21496,
+        "matching_tokens": 1188,
+        "overlap_agreement": 0.05526609601786379,
+        "identical_prefix_tokens": 893,
+        "first_divergence_generated_position_1based": 894,
+        "first_divergence_token_ids": [
+          432,
+          419
+        ],
+        "overlap_equal": false,
+        "full_equal": false,
+        "length_difference": -1597,
+        "empty_overlap": null
+      },
+      "async_vs_n": {
+        "left_tokens": 25621,
+        "right_tokens": 23093,
+        "overlap_tokens": 23093,
+        "matching_tokens": 1287,
+        "overlap_agreement": 0.05573117394881566,
+        "identical_prefix_tokens": 990,
+        "first_divergence_generated_position_1based": 991,
+        "first_divergence_token_ids": [
+          576,
+          6771
+        ],
+        "overlap_equal": false,
+        "full_equal": false,
+        "length_difference": 2528,
+        "empty_overlap": null
+      },
+      "async_scope": "All actually returned main tokens including observed cancellation tail; actual overlap only"
+    },
+    {
+      "case_id": "codeforces:2115E",
+      "sync_selected_kind": "N",
+      "sync_main_stage0_visible_tokens": 19380,
+      "schedule_comparison_scope": "Nominal positions through SYNC accepted/end stage0 observed prefix; H positions beyond this boundary listed separately",
+      "sync_positions": [
+        308,
+        3857,
+        4096
+      ],
+      "h_positions_in_sync_prefix": [
+        308,
+        3857,
+        4096
+      ],
+      "h_later_positions": [],
+      "nominal_positions_equal": true,
+      "sync_vs_h": {
+        "left_tokens": 20343,
+        "right_tokens": 20343,
+        "overlap_tokens": 20343,
+        "matching_tokens": 20343,
+        "overlap_agreement": 1.0,
+        "identical_prefix_tokens": 20343,
+        "first_divergence_generated_position_1based": null,
+        "first_divergence_token_ids": null,
+        "overlap_equal": true,
+        "full_equal": true,
+        "length_difference": 0,
+        "empty_overlap": null
+      },
+      "sync_vs_h_thinking": {
+        "left_tokens": 19380,
+        "right_tokens": 19380,
+        "overlap_tokens": 19380,
+        "matching_tokens": 19380,
+        "overlap_agreement": 1.0,
+        "identical_prefix_tokens": 19380,
+        "first_divergence_generated_position_1based": null,
+        "first_divergence_token_ids": null,
+        "overlap_equal": true,
+        "full_equal": true,
+        "length_difference": 0,
+        "empty_overlap": null
+      },
+      "boundary_evidence": "Whole observed calls included only when last_output_ns <= server_accept_ns; no straddling interpolation",
+      "caveat": "Identical nominal lists do not establish identical prefix/state; H later prefix excluded from SYNC/H agreement",
+      "h_vs_n": {
+        "left_tokens": 20343,
+        "right_tokens": 22384,
+        "overlap_tokens": 20343,
+        "matching_tokens": 729,
+        "overlap_agreement": 0.03583542250405545,
+        "identical_prefix_tokens": 382,
+        "first_divergence_generated_position_1based": 383,
+        "first_divergence_token_ids": [
+          2155,
+          11833
+        ],
+        "overlap_equal": false,
+        "full_equal": false,
+        "length_difference": -2041,
+        "empty_overlap": null
+      },
+      "async_vs_n": {
+        "left_tokens": 23060,
+        "right_tokens": 22384,
+        "overlap_tokens": 22384,
+        "matching_tokens": 786,
+        "overlap_agreement": 0.03511436740528949,
+        "identical_prefix_tokens": 396,
+        "first_divergence_generated_position_1based": 397,
+        "first_divergence_token_ids": [
+          7218,
+          498
+        ],
+        "overlap_equal": false,
+        "full_equal": false,
+        "length_difference": 676,
+        "empty_overlap": null
+      },
+      "async_scope": "All actually returned main tokens including observed cancellation tail; actual overlap only"
+    },
+    {
+      "case_id": "codeforces:2101C",
+      "sync_selected_kind": "N",
+      "sync_main_stage0_visible_tokens": 22730,
+      "schedule_comparison_scope": "Nominal positions through SYNC accepted/end stage0 observed prefix; H positions beyond this boundary listed separately",
+      "sync_positions": [
+        272,
+        4096
+      ],
+      "h_positions_in_sync_prefix": [
+        272,
+        4096
+      ],
+      "h_later_positions": [],
+      "nominal_positions_equal": true,
+      "sync_vs_h": {
+        "left_tokens": 23730,
+        "right_tokens": 23730,
+        "overlap_tokens": 23730,
+        "matching_tokens": 23730,
+        "overlap_agreement": 1.0,
+        "identical_prefix_tokens": 23730,
+        "first_divergence_generated_position_1based": null,
+        "first_divergence_token_ids": null,
+        "overlap_equal": true,
+        "full_equal": true,
+        "length_difference": 0,
+        "empty_overlap": null
+      },
+      "sync_vs_h_thinking": {
+        "left_tokens": 22730,
+        "right_tokens": 22730,
+        "overlap_tokens": 22730,
+        "matching_tokens": 22730,
+        "overlap_agreement": 1.0,
+        "identical_prefix_tokens": 22730,
+        "first_divergence_generated_position_1based": null,
+        "first_divergence_token_ids": null,
+        "overlap_equal": true,
+        "full_equal": true,
+        "length_difference": 0,
+        "empty_overlap": null
+      },
+      "boundary_evidence": "Whole observed calls included only when last_output_ns <= server_accept_ns; no straddling interpolation",
+      "caveat": "Identical nominal lists do not establish identical prefix/state; H later prefix excluded from SYNC/H agreement",
+      "h_vs_n": {
+        "left_tokens": 23730,
+        "right_tokens": 23460,
+        "overlap_tokens": 23460,
+        "matching_tokens": 678,
+        "overlap_agreement": 0.028900255754475704,
+        "identical_prefix_tokens": 336,
+        "first_divergence_generated_position_1based": 337,
+        "first_divergence_token_ids": [
+          13798,
+          374
+        ],
+        "overlap_equal": false,
+        "full_equal": false,
+        "length_difference": 270,
+        "empty_overlap": null
+      },
+      "async_vs_n": {
+        "left_tokens": 22924,
+        "right_tokens": 23460,
+        "overlap_tokens": 22924,
+        "matching_tokens": 728,
+        "overlap_agreement": 0.03175711045192811,
+        "identical_prefix_tokens": 336,
+        "first_divergence_generated_position_1based": 337,
+        "first_divergence_token_ids": [
+          13798,
+          374
+        ],
+        "overlap_equal": false,
+        "full_equal": false,
+        "length_difference": -536,
+        "empty_overlap": null
+      },
+      "async_scope": "All actually returned main tokens including observed cancellation tail; actual overlap only"
+    },
+    {
+      "case_id": "codeforces:2109E",
+      "sync_selected_kind": "N",
+      "sync_main_stage0_visible_tokens": 21660,
+      "schedule_comparison_scope": "Nominal positions through SYNC accepted/end stage0 observed prefix; H positions beyond this boundary listed separately",
+      "sync_positions": [
+        248,
+        3413,
+        4096
+      ],
+      "h_positions_in_sync_prefix": [
+        248,
+        3413,
+        4096
+      ],
+      "h_later_positions": [],
+      "nominal_positions_equal": true,
+      "sync_vs_h": {
+        "left_tokens": 22398,
+        "right_tokens": 22398,
+        "overlap_tokens": 22398,
+        "matching_tokens": 22398,
+        "overlap_agreement": 1.0,
+        "identical_prefix_tokens": 22398,
+        "first_divergence_generated_position_1based": null,
+        "first_divergence_token_ids": null,
+        "overlap_equal": true,
+        "full_equal": true,
+        "length_difference": 0,
+        "empty_overlap": null
+      },
+      "sync_vs_h_thinking": {
+        "left_tokens": 21660,
+        "right_tokens": 21660,
+        "overlap_tokens": 21660,
+        "matching_tokens": 21660,
+        "overlap_agreement": 1.0,
+        "identical_prefix_tokens": 21660,
+        "first_divergence_generated_position_1based": null,
+        "first_divergence_token_ids": null,
+        "overlap_equal": true,
+        "full_equal": true,
+        "length_difference": 0,
+        "empty_overlap": null
+      },
+      "boundary_evidence": "Whole observed calls included only when last_output_ns <= server_accept_ns; no straddling interpolation",
+      "caveat": "Identical nominal lists do not establish identical prefix/state; H later prefix excluded from SYNC/H agreement",
+      "h_vs_n": {
+        "left_tokens": 22398,
+        "right_tokens": 25889,
+        "overlap_tokens": 22398,
+        "matching_tokens": 694,
+        "overlap_agreement": 0.03098490936690776,
+        "identical_prefix_tokens": 285,
+        "first_divergence_generated_position_1based": 286,
+        "first_divergence_token_ids": [
+          382,
+          13
+        ],
+        "overlap_equal": false,
+        "full_equal": false,
+        "length_difference": -3491,
+        "empty_overlap": null
+      },
+      "async_vs_n": {
+        "left_tokens": 22416,
+        "right_tokens": 25889,
+        "overlap_tokens": 22416,
+        "matching_tokens": 925,
+        "overlap_agreement": 0.04126516773733048,
+        "identical_prefix_tokens": 588,
+        "first_divergence_generated_position_1based": 589,
+        "first_divergence_token_ids": [
+          49615,
+          1590
+        ],
+        "overlap_equal": false,
+        "full_equal": false,
+        "length_difference": -3473,
+        "empty_overlap": null
+      },
+      "async_scope": "All actually returned main tokens including observed cancellation tail; actual overlap only"
+    },
+    {
+      "case_id": "codeforces:2111E",
+      "sync_selected_kind": "N",
+      "sync_main_stage0_visible_tokens": 15654,
+      "schedule_comparison_scope": "Nominal positions through SYNC accepted/end stage0 observed prefix; H positions beyond this boundary listed separately",
+      "sync_positions": [
+        159,
+        4096
+      ],
+      "h_positions_in_sync_prefix": [
+        159,
+        4096
+      ],
+      "h_later_positions": [],
+      "nominal_positions_equal": true,
+      "sync_vs_h": {
+        "left_tokens": 16259,
+        "right_tokens": 16259,
+        "overlap_tokens": 16259,
+        "matching_tokens": 16259,
+        "overlap_agreement": 1.0,
+        "identical_prefix_tokens": 16259,
+        "first_divergence_generated_position_1based": null,
+        "first_divergence_token_ids": null,
+        "overlap_equal": true,
+        "full_equal": true,
+        "length_difference": 0,
+        "empty_overlap": null
+      },
+      "sync_vs_h_thinking": {
+        "left_tokens": 15654,
+        "right_tokens": 15654,
+        "overlap_tokens": 15654,
+        "matching_tokens": 15654,
+        "overlap_agreement": 1.0,
+        "identical_prefix_tokens": 15654,
+        "first_divergence_generated_position_1based": null,
+        "first_divergence_token_ids": null,
+        "overlap_equal": true,
+        "full_equal": true,
+        "length_difference": 0,
+        "empty_overlap": null
+      },
+      "boundary_evidence": "Whole observed calls included only when last_output_ns <= server_accept_ns; no straddling interpolation",
+      "caveat": "Identical nominal lists do not establish identical prefix/state; H later prefix excluded from SYNC/H agreement",
+      "h_vs_n": {
+        "left_tokens": 16259,
+        "right_tokens": 23350,
+        "overlap_tokens": 16259,
+        "matching_tokens": 434,
+        "overlap_agreement": 0.02669290854296082,
+        "identical_prefix_tokens": 170,
+        "first_divergence_generated_position_1based": 171,
+        "first_divergence_token_ids": [
+          387,
+          13581
+        ],
+        "overlap_equal": false,
+        "full_equal": false,
+        "length_difference": -7091,
+        "empty_overlap": null
+      },
+      "async_vs_n": {
+        "left_tokens": 19131,
+        "right_tokens": 23350,
+        "overlap_tokens": 19131,
+        "matching_tokens": 392,
+        "overlap_agreement": 0.020490303695572632,
+        "identical_prefix_tokens": 170,
+        "first_divergence_generated_position_1based": 171,
+        "first_divergence_token_ids": [
+          387,
+          13581
+        ],
+        "overlap_equal": false,
+        "full_equal": false,
+        "length_difference": -4219,
+        "empty_overlap": null
+      },
+      "async_scope": "All actually returned main tokens including observed cancellation tail; actual overlap only"
+    },
+    {
+      "case_id": "codeforces:2114F",
+      "sync_selected_kind": "N",
+      "sync_main_stage0_visible_tokens": 16885,
+      "schedule_comparison_scope": "Nominal positions through SYNC accepted/end stage0 observed prefix; H positions beyond this boundary listed separately",
+      "sync_positions": [
+        149,
+        3650,
+        4096
+      ],
+      "h_positions_in_sync_prefix": [
+        149,
+        3650,
+        4096
+      ],
+      "h_later_positions": [],
+      "nominal_positions_equal": true,
+      "sync_vs_h": {
+        "left_tokens": 17636,
+        "right_tokens": 17636,
+        "overlap_tokens": 17636,
+        "matching_tokens": 17636,
+        "overlap_agreement": 1.0,
+        "identical_prefix_tokens": 17636,
+        "first_divergence_generated_position_1based": null,
+        "first_divergence_token_ids": null,
+        "overlap_equal": true,
+        "full_equal": true,
+        "length_difference": 0,
+        "empty_overlap": null
+      },
+      "sync_vs_h_thinking": {
+        "left_tokens": 16885,
+        "right_tokens": 16885,
+        "overlap_tokens": 16885,
+        "matching_tokens": 16885,
+        "overlap_agreement": 1.0,
+        "identical_prefix_tokens": 16885,
+        "first_divergence_generated_position_1based": null,
+        "first_divergence_token_ids": null,
+        "overlap_equal": true,
+        "full_equal": true,
+        "length_difference": 0,
+        "empty_overlap": null
+      },
+      "boundary_evidence": "Whole observed calls included only when last_output_ns <= server_accept_ns; no straddling interpolation",
+      "caveat": "Identical nominal lists do not establish identical prefix/state; H later prefix excluded from SYNC/H agreement",
+      "h_vs_n": {
+        "left_tokens": 17636,
+        "right_tokens": 21567,
+        "overlap_tokens": 17636,
+        "matching_tokens": 460,
+        "overlap_agreement": 0.02608301202086641,
+        "identical_prefix_tokens": 197,
+        "first_divergence_generated_position_1based": 198,
+        "first_divergence_token_ids": [
+          582,
+          279
+        ],
+        "overlap_equal": false,
+        "full_equal": false,
+        "length_difference": -3931,
+        "empty_overlap": null
+      },
+      "async_vs_n": {
+        "left_tokens": 19184,
+        "right_tokens": 21567,
+        "overlap_tokens": 19184,
+        "matching_tokens": 675,
+        "overlap_agreement": 0.03518557130942452,
+        "identical_prefix_tokens": 375,
+        "first_divergence_generated_position_1based": 376,
+        "first_divergence_token_ids": [
+          279,
+          369
+        ],
+        "overlap_equal": false,
+        "full_equal": false,
+        "length_difference": -2383,
+        "empty_overlap": null
+      },
+      "async_scope": "All actually returned main tokens including observed cancellation tail; actual overlap only"
+    },
+    {
+      "case_id": "codeforces:2114G",
+      "sync_selected_kind": "N",
+      "sync_main_stage0_visible_tokens": 21381,
+      "schedule_comparison_scope": "Nominal positions through SYNC accepted/end stage0 observed prefix; H positions beyond this boundary listed separately",
+      "sync_positions": [
+        135,
+        3480,
+        4096
+      ],
+      "h_positions_in_sync_prefix": [
+        135,
+        3480,
+        4096
+      ],
+      "h_later_positions": [],
+      "nominal_positions_equal": true,
+      "sync_vs_h": {
+        "left_tokens": 21928,
+        "right_tokens": 21928,
+        "overlap_tokens": 21928,
+        "matching_tokens": 21928,
+        "overlap_agreement": 1.0,
+        "identical_prefix_tokens": 21928,
+        "first_divergence_generated_position_1based": null,
+        "first_divergence_token_ids": null,
+        "overlap_equal": true,
+        "full_equal": true,
+        "length_difference": 0,
+        "empty_overlap": null
+      },
+      "sync_vs_h_thinking": {
+        "left_tokens": 21381,
+        "right_tokens": 21381,
+        "overlap_tokens": 21381,
+        "matching_tokens": 21381,
+        "overlap_agreement": 1.0,
+        "identical_prefix_tokens": 21381,
+        "first_divergence_generated_position_1based": null,
+        "first_divergence_token_ids": null,
+        "overlap_equal": true,
+        "full_equal": true,
+        "length_difference": 0,
+        "empty_overlap": null
+      },
+      "boundary_evidence": "Whole observed calls included only when last_output_ns <= server_accept_ns; no straddling interpolation",
+      "caveat": "Identical nominal lists do not establish identical prefix/state; H later prefix excluded from SYNC/H agreement",
+      "h_vs_n": {
+        "left_tokens": 21928,
+        "right_tokens": 25383,
+        "overlap_tokens": 21928,
+        "matching_tokens": 562,
+        "overlap_agreement": 0.02562933236045239,
+        "identical_prefix_tokens": 194,
+        "first_divergence_generated_position_1based": 195,
+        "first_divergence_token_ids": [
+          2337,
+          279
+        ],
+        "overlap_equal": false,
+        "full_equal": false,
+        "length_difference": -3455,
+        "empty_overlap": null
+      },
+      "async_vs_n": {
+        "left_tokens": 23282,
+        "right_tokens": 25383,
+        "overlap_tokens": 23282,
+        "matching_tokens": 521,
+        "overlap_agreement": 0.022377802594278844,
+        "identical_prefix_tokens": 154,
+        "first_divergence_generated_position_1based": 155,
+        "first_divergence_token_ids": [
+          11508,
+          6696
+        ],
+        "overlap_equal": false,
+        "full_equal": false,
+        "length_difference": -2101,
+        "empty_overlap": null
+      },
+      "async_scope": "All actually returned main tokens including observed cancellation tail; actual overlap only"
+    },
+    {
+      "case_id": "codeforces:2115D",
+      "sync_selected_kind": "N",
+      "sync_main_stage0_visible_tokens": 22895,
+      "schedule_comparison_scope": "Nominal positions through SYNC accepted/end stage0 observed prefix; H positions beyond this boundary listed separately",
+      "sync_positions": [
+        274,
+        3585,
+        4096
+      ],
+      "h_positions_in_sync_prefix": [
+        274,
+        3585,
+        4096
+      ],
+      "h_later_positions": [],
+      "nominal_positions_equal": true,
+      "sync_vs_h": {
+        "left_tokens": 23620,
+        "right_tokens": 23620,
+        "overlap_tokens": 23620,
+        "matching_tokens": 23620,
+        "overlap_agreement": 1.0,
+        "identical_prefix_tokens": 23620,
+        "first_divergence_generated_position_1based": null,
+        "first_divergence_token_ids": null,
+        "overlap_equal": true,
+        "full_equal": true,
+        "length_difference": 0,
+        "empty_overlap": null
+      },
+      "sync_vs_h_thinking": {
+        "left_tokens": 22895,
+        "right_tokens": 22895,
+        "overlap_tokens": 22895,
+        "matching_tokens": 22895,
+        "overlap_agreement": 1.0,
+        "identical_prefix_tokens": 22895,
+        "first_divergence_generated_position_1based": null,
+        "first_divergence_token_ids": null,
+        "overlap_equal": true,
+        "full_equal": true,
+        "length_difference": 0,
+        "empty_overlap": null
+      },
+      "boundary_evidence": "Whole observed calls included only when last_output_ns <= server_accept_ns; no straddling interpolation",
+      "caveat": "Identical nominal lists do not establish identical prefix/state; H later prefix excluded from SYNC/H agreement",
+      "h_vs_n": {
+        "left_tokens": 23620,
+        "right_tokens": 23067,
+        "overlap_tokens": 23067,
+        "matching_tokens": 3883,
+        "overlap_agreement": 0.16833571769194086,
+        "identical_prefix_tokens": 3597,
+        "first_divergence_generated_position_1based": 3598,
+        "first_divergence_token_ids": [
+          3681,
+          279
+        ],
+        "overlap_equal": false,
+        "full_equal": false,
+        "length_difference": 553,
+        "empty_overlap": null
+      },
+      "async_vs_n": {
+        "left_tokens": 20875,
+        "right_tokens": 23067,
+        "overlap_tokens": 20875,
+        "matching_tokens": 656,
+        "overlap_agreement": 0.0314251497005988,
+        "identical_prefix_tokens": 319,
+        "first_divergence_generated_position_1based": 320,
+        "first_divergence_token_ids": [
+          11,
+          320
+        ],
+        "overlap_equal": false,
+        "full_equal": false,
+        "length_difference": -2192,
+        "empty_overlap": null
+      },
+      "async_scope": "All actually returned main tokens including observed cancellation tail; actual overlap only"
+    },
+    {
+      "case_id": "codeforces:2120E",
+      "sync_selected_kind": "N",
+      "sync_main_stage0_visible_tokens": 22967,
+      "schedule_comparison_scope": "Nominal positions through SYNC accepted/end stage0 observed prefix; H positions beyond this boundary listed separately",
+      "sync_positions": [
+        225,
+        3421,
+        4096
+      ],
+      "h_positions_in_sync_prefix": [
+        225,
+        3421,
+        4096
+      ],
+      "h_later_positions": [],
+      "nominal_positions_equal": true,
+      "sync_vs_h": {
+        "left_tokens": 39976,
+        "right_tokens": 39976,
+        "overlap_tokens": 39976,
+        "matching_tokens": 39976,
+        "overlap_agreement": 1.0,
+        "identical_prefix_tokens": 39976,
+        "first_divergence_generated_position_1based": null,
+        "first_divergence_token_ids": null,
+        "overlap_equal": true,
+        "full_equal": true,
+        "length_difference": 0,
+        "empty_overlap": null
+      },
+      "sync_vs_h_thinking": {
+        "left_tokens": 22967,
+        "right_tokens": 22967,
+        "overlap_tokens": 22967,
+        "matching_tokens": 22967,
+        "overlap_agreement": 1.0,
+        "identical_prefix_tokens": 22967,
+        "first_divergence_generated_position_1based": null,
+        "first_divergence_token_ids": null,
+        "overlap_equal": true,
+        "full_equal": true,
+        "length_difference": 0,
+        "empty_overlap": null
+      },
+      "boundary_evidence": "Whole observed calls included only when last_output_ns <= server_accept_ns; no straddling interpolation",
+      "caveat": "Identical nominal lists do not establish identical prefix/state; H later prefix excluded from SYNC/H agreement",
+      "h_vs_n": {
+        "left_tokens": 39976,
+        "right_tokens": 30048,
+        "overlap_tokens": 30048,
+        "matching_tokens": 722,
+        "overlap_agreement": 0.02402822151224707,
+        "identical_prefix_tokens": 328,
+        "first_divergence_generated_position_1based": 329,
+        "first_divergence_token_ids": [
+          4344,
+          10797
+        ],
+        "overlap_equal": false,
+        "full_equal": false,
+        "length_difference": 9928,
+        "empty_overlap": null
+      },
+      "async_vs_n": {
+        "left_tokens": 24694,
+        "right_tokens": 30048,
+        "overlap_tokens": 24694,
+        "matching_tokens": 597,
+        "overlap_agreement": 0.02417591317729003,
+        "identical_prefix_tokens": 261,
+        "first_divergence_generated_position_1based": 262,
+        "first_divergence_token_ids": [
+          2087,
+          279
+        ],
+        "overlap_equal": false,
+        "full_equal": false,
+        "length_difference": -5354,
+        "empty_overlap": null
+      },
+      "async_scope": "All actually returned main tokens including observed cancellation tail; actual overlap only"
+    },
+    {
+      "case_id": "codeforces:2120F",
+      "sync_selected_kind": "N",
+      "sync_main_stage0_visible_tokens": 19809,
+      "schedule_comparison_scope": "Nominal positions through SYNC accepted/end stage0 observed prefix; H positions beyond this boundary listed separately",
+      "sync_positions": [
+        311,
+        3853,
+        4096
+      ],
+      "h_positions_in_sync_prefix": [
+        311,
+        3853,
+        4096
+      ],
+      "h_later_positions": [],
+      "nominal_positions_equal": true,
+      "sync_vs_h": {
+        "left_tokens": 20585,
+        "right_tokens": 20585,
+        "overlap_tokens": 20585,
+        "matching_tokens": 20585,
+        "overlap_agreement": 1.0,
+        "identical_prefix_tokens": 20585,
+        "first_divergence_generated_position_1based": null,
+        "first_divergence_token_ids": null,
+        "overlap_equal": true,
+        "full_equal": true,
+        "length_difference": 0,
+        "empty_overlap": null
+      },
+      "sync_vs_h_thinking": {
+        "left_tokens": 19809,
+        "right_tokens": 19809,
+        "overlap_tokens": 19809,
+        "matching_tokens": 19809,
+        "overlap_agreement": 1.0,
+        "identical_prefix_tokens": 19809,
+        "first_divergence_generated_position_1based": null,
+        "first_divergence_token_ids": null,
+        "overlap_equal": true,
+        "full_equal": true,
+        "length_difference": 0,
+        "empty_overlap": null
+      },
+      "boundary_evidence": "Whole observed calls included only when last_output_ns <= server_accept_ns; no straddling interpolation",
+      "caveat": "Identical nominal lists do not establish identical prefix/state; H later prefix excluded from SYNC/H agreement",
+      "h_vs_n": {
+        "left_tokens": 20585,
+        "right_tokens": 18022,
+        "overlap_tokens": 18022,
+        "matching_tokens": 867,
+        "overlap_agreement": 0.04810786816113639,
+        "identical_prefix_tokens": 612,
+        "first_divergence_generated_position_1based": 613,
+        "first_divergence_token_ids": [
+          11,
+          594
+        ],
+        "overlap_equal": false,
+        "full_equal": false,
+        "length_difference": 2563,
+        "empty_overlap": null
+      },
+      "async_vs_n": {
+        "left_tokens": 15791,
+        "right_tokens": 18022,
+        "overlap_tokens": 15791,
+        "matching_tokens": 771,
+        "overlap_agreement": 0.048825280222911785,
+        "identical_prefix_tokens": 534,
+        "first_divergence_generated_position_1based": 535,
+        "first_divergence_token_ids": [
+          369,
+          279
+        ],
+        "overlap_equal": false,
+        "full_equal": false,
+        "length_difference": -2231,
+        "empty_overlap": null
+      },
+      "async_scope": "All actually returned main tokens including observed cancellation tail; actual overlap only"
+    }
+  ],
+  "correctness": "NOT_SCORED_HERE; actual delivered programs require separate frozen full-test scoring",
+  "tokens": "observed_generated_tokens already includes observed cancelled/post-abort output; never add tail twice",
+  "no_drop_missing": true,
+  "missing": [],
+  "P5": {
+    "descriptive_only": true,
+    "ASYNC": {
+      "descriptive_only": true,
+      "latency_saving": 0.017433151370400135,
+      "observed_token_saving": -0.037200477040510105,
+      "latency_saving_at_least_80percent_observed_token_saving": true,
+      "probe_decision_groups": {
+        "ACCEPTED": 6,
+        "ALL_COMPLETED_PROBES_REJECTED": 34
+      },
+      "nonaccepting_with_actual_probe_case_ids": [
+        "atcoder:abc396_b",
+        "atcoder:abc389_f",
+        "atcoder:abc390_e",
+        "atcoder:abc390_f",
+        "atcoder:abc394_f",
+        "atcoder:abc397_g",
+        "atcoder:abc399_e",
+        "atcoder:arc193_d",
+        "atcoder:arc194_d",
+        "atcoder:abc387_c",
+        "atcoder:arc191_a",
+        "atcoder:arc195_a",
+        "codeforces:2109A",
+        "codeforces:2111A",
+        "codeforces:2114D",
+        "codeforces:2114E",
+        "codeforces:2116A",
+        "codeforces:2116B",
+        "codeforces:2117A",
+        "codeforces:2117D",
+        "codeforces:2117E",
+        "codeforces:2120D",
+        "codeforces:2121A",
+        "codeforces:2121B",
+        "codeforces:2101E",
+        "codeforces:2115E",
+        "codeforces:2101C",
+        "codeforces:2109E",
+        "codeforces:2111E",
+        "codeforces:2114F",
+        "codeforces:2114G",
+        "codeforces:2115D",
+        "codeforces:2120E",
+        "codeforces:2120F"
+      ],
+      "known_all_rejected_case_ids": [
+        "atcoder:abc396_b",
+        "atcoder:abc389_f",
+        "atcoder:abc390_e",
+        "atcoder:abc390_f",
+        "atcoder:abc394_f",
+        "atcoder:abc397_g",
+        "atcoder:abc399_e",
+        "atcoder:arc193_d",
+        "atcoder:arc194_d",
+        "atcoder:abc387_c",
+        "atcoder:arc191_a",
+        "atcoder:arc195_a",
+        "codeforces:2109A",
+        "codeforces:2111A",
+        "codeforces:2114D",
+        "codeforces:2114E",
+        "codeforces:2116A",
+        "codeforces:2116B",
+        "codeforces:2117A",
+        "codeforces:2117D",
+        "codeforces:2117E",
+        "codeforces:2120D",
+        "codeforces:2121A",
+        "codeforces:2121B",
+        "codeforces:2101E",
+        "codeforces:2115E",
+        "codeforces:2101C",
+        "codeforces:2109E",
+        "codeforces:2111E",
+        "codeforces:2114F",
+        "codeforces:2114G",
+        "codeforces:2115D",
+        "codeforces:2120E",
+        "codeforces:2120F"
+      ],
+      "unknown_or_raced_decision_case_ids": [],
+      "subgroup_definition": "P5: >=1 actual probe and all clearly rejected; no pending, cancelled, unknown or acceptance. Nonaccepting is supplementary only",
+      "all_rejected_latency_ratio": 1.047712116250143,
+      "all_rejected_overhead_at_most_5percent": true,
+      "subgroup_identification": "COMPLETE",
+      "nonaccepting_latency_ratio_supplementary": 1.047712116250143,
+      "unknown_inflight_work": "Unexposed cancellation remains UNKNOWN; no physical token guarantee"
+    },
+    "SYNC": {
+      "descriptive_only": true,
+      "latency_saving": 0.007579430428237943,
+      "observed_token_saving": 0.006376713885505203,
+      "latency_saving_at_least_80percent_observed_token_saving": true,
+      "probe_decision_groups": {
+        "ACCEPTED": 5,
+        "ALL_COMPLETED_PROBES_REJECTED": 35
+      },
+      "nonaccepting_with_actual_probe_case_ids": [
+        "atcoder:abc396_b",
+        "atcoder:abc389_f",
+        "atcoder:abc390_e",
+        "atcoder:abc390_f",
+        "atcoder:abc394_f",
+        "atcoder:abc395_f",
+        "atcoder:abc397_g",
+        "atcoder:abc399_e",
+        "atcoder:abc400_e",
+        "atcoder:arc193_d",
+        "atcoder:arc194_d",
+        "atcoder:abc387_c",
+        "atcoder:arc191_a",
+        "atcoder:arc195_a",
+        "codeforces:2109A",
+        "codeforces:2111A",
+        "codeforces:2114D",
+        "codeforces:2114E",
+        "codeforces:2116A",
+        "codeforces:2116B",
+        "codeforces:2117A",
+        "codeforces:2117D",
+        "codeforces:2117E",
+        "codeforces:2120D",
+        "codeforces:2121B",
+        "codeforces:2101E",
+        "codeforces:2115E",
+        "codeforces:2101C",
+        "codeforces:2109E",
+        "codeforces:2111E",
+        "codeforces:2114F",
+        "codeforces:2114G",
+        "codeforces:2115D",
+        "codeforces:2120E",
+        "codeforces:2120F"
+      ],
+      "known_all_rejected_case_ids": [
+        "atcoder:abc396_b",
+        "atcoder:abc389_f",
+        "atcoder:abc390_e",
+        "atcoder:abc390_f",
+        "atcoder:abc394_f",
+        "atcoder:abc395_f",
+        "atcoder:abc397_g",
+        "atcoder:abc399_e",
+        "atcoder:abc400_e",
+        "atcoder:arc193_d",
+        "atcoder:arc194_d",
+        "atcoder:abc387_c",
+        "atcoder:arc191_a",
+        "atcoder:arc195_a",
+        "codeforces:2109A",
+        "codeforces:2111A",
+        "codeforces:2114D",
+        "codeforces:2114E",
+        "codeforces:2116A",
+        "codeforces:2116B",
+        "codeforces:2117A",
+        "codeforces:2117D",
+        "codeforces:2117E",
+        "codeforces:2120D",
+        "codeforces:2121B",
+        "codeforces:2101E",
+        "codeforces:2115E",
+        "codeforces:2101C",
+        "codeforces:2109E",
+        "codeforces:2111E",
+        "codeforces:2114F",
+        "codeforces:2114G",
+        "codeforces:2115D",
+        "codeforces:2120E",
+        "codeforces:2120F"
+      ],
+      "unknown_or_raced_decision_case_ids": [],
+      "subgroup_definition": "P5: >=1 actual probe and all clearly rejected; no pending, cancelled, unknown or acceptance. Nonaccepting is supplementary only",
+      "all_rejected_latency_ratio": 1.0424857348800456,
+      "all_rejected_overhead_at_most_5percent": true,
+      "subgroup_identification": "COMPLETE",
+      "nonaccepting_latency_ratio_supplementary": 1.0424857348800456,
+      "unknown_inflight_work": "Unexposed cancellation remains UNKNOWN; no physical token guarantee"
+    }
+  },
+  "secondary_sync_ratio": {
+    "ratio_of_means": 0.9924205695717621,
+    "ci95_percentile": [
+      0.8912442146231759,
+      1.092019568384767
+    ],
+    "pairs": 40,
+    "bootstrap_repetitions": 10000,
+    "bootstrap_seed": 20261016
+  }
+}

@@ -1,0 +1,640 @@
+{
+  "status": "COMPLETE",
+  "error": null,
+  "planned": 400,
+  "outcomes": {
+    "PASS": 150,
+    "FAIL": 250
+  },
+  "groups": [
+    {
+      "dataset": "hv6_atcoder",
+      "arm": "N",
+      "load": "serial",
+      "planned": 18,
+      "outcomes": {
+        "PASS": 10,
+        "FAIL": 8
+      }
+    },
+    {
+      "dataset": "hv6_atcoder",
+      "arm": "BF@4096",
+      "load": "serial",
+      "planned": 18,
+      "outcomes": {
+        "PASS": 9,
+        "FAIL": 9
+      }
+    },
+    {
+      "dataset": "hv6_atcoder",
+      "arm": "CONF-50",
+      "load": "serial",
+      "planned": 18,
+      "outcomes": {
+        "PASS": 9,
+        "FAIL": 9
+      }
+    },
+    {
+      "dataset": "hv6_atcoder",
+      "arm": "HYB-B-SYNC",
+      "load": "serial",
+      "planned": 18,
+      "outcomes": {
+        "PASS": 8,
+        "FAIL": 10
+      }
+    },
+    {
+      "dataset": "hv6_atcoder",
+      "arm": "HYB-B-ASYNC",
+      "load": "serial",
+      "planned": 18,
+      "outcomes": {
+        "PASS": 9,
+        "FAIL": 9
+      }
+    },
+    {
+      "dataset": "hv6_atcoder",
+      "arm": "H",
+      "load": "serial",
+      "planned": 18,
+      "outcomes": {
+        "PASS": 8,
+        "FAIL": 10
+      }
+    },
+    {
+      "dataset": "lcbpro_2025",
+      "arm": "N",
+      "load": "serial",
+      "planned": 22,
+      "outcomes": {
+        "PASS": 6,
+        "FAIL": 16
+      }
+    },
+    {
+      "dataset": "lcbpro_2025",
+      "arm": "BF@4096",
+      "load": "serial",
+      "planned": 22,
+      "outcomes": {
+        "PASS": 6,
+        "FAIL": 16
+      }
+    },
+    {
+      "dataset": "lcbpro_2025",
+      "arm": "CONF-50",
+      "load": "serial",
+      "planned": 22,
+      "outcomes": {
+        "FAIL": 19,
+        "PASS": 3
+      }
+    },
+    {
+      "dataset": "lcbpro_2025",
+      "arm": "HYB-B-SYNC",
+      "load": "serial",
+      "planned": 22,
+      "outcomes": {
+        "PASS": 7,
+        "FAIL": 15
+      }
+    },
+    {
+      "dataset": "lcbpro_2025",
+      "arm": "HYB-B-ASYNC",
+      "load": "serial",
+      "planned": 22,
+      "outcomes": {
+        "FAIL": 17,
+        "PASS": 5
+      }
+    },
+    {
+      "dataset": "lcbpro_2025",
+      "arm": "H",
+      "load": "serial",
+      "planned": 22,
+      "outcomes": {
+        "PASS": 7,
+        "FAIL": 15
+      }
+    },
+    {
+      "dataset": "lcbpro_2025",
+      "arm": "N",
+      "load": "poisson_c4",
+      "planned": 22,
+      "outcomes": {
+        "PASS": 6,
+        "FAIL": 16
+      }
+    },
+    {
+      "dataset": "hv6_atcoder",
+      "arm": "N",
+      "load": "poisson_c4",
+      "planned": 18,
+      "outcomes": {
+        "FAIL": 9,
+        "PASS": 9
+      }
+    },
+    {
+      "dataset": "lcbpro_2025",
+      "arm": "HYB-B-ASYNC",
+      "load": "poisson_c4",
+      "planned": 22,
+      "outcomes": {
+        "PASS": 7,
+        "FAIL": 15
+      }
+    },
+    {
+      "dataset": "hv6_atcoder",
+      "arm": "HYB-B-ASYNC",
+      "load": "poisson_c4",
+      "planned": 18,
+      "outcomes": {
+        "FAIL": 9,
+        "PASS": 9
+      }
+    },
+    {
+      "dataset": "lcbpro_2025",
+      "arm": "HYB-B-ASYNC",
+      "load": "poisson_c8",
+      "planned": 22,
+      "outcomes": {
+        "PASS": 7,
+        "FAIL": 15
+      }
+    },
+    {
+      "dataset": "hv6_atcoder",
+      "arm": "HYB-B-ASYNC",
+      "load": "poisson_c8",
+      "planned": 18,
+      "outcomes": {
+        "FAIL": 9,
+        "PASS": 9
+      }
+    },
+    {
+      "dataset": "lcbpro_2025",
+      "arm": "N",
+      "load": "poisson_c8",
+      "planned": 22,
+      "outcomes": {
+        "PASS": 6,
+        "FAIL": 16
+      }
+    },
+    {
+      "dataset": "hv6_atcoder",
+      "arm": "N",
+      "load": "poisson_c8",
+      "planned": 18,
+      "outcomes": {
+        "FAIL": 8,
+        "PASS": 10
+      }
+    }
+  ],
+  "scoring_groups": [
+    {
+      "group": [
+        "hv6_atcoder",
+        "N",
+        "serial",
+        "N"
+      ],
+      "status": "COMPLETE",
+      "evaluation": "/root/autodl-tmp/cs336-new/runs/c4_recovery1/delivered_evaluation/groups/group_000/evaluation",
+      "summary": {
+        "path": "/root/autodl-tmp/cs336-new/runs/c4_recovery1/delivered_evaluation/groups/group_000/evaluation/summary.json",
+        "sha256": "87bea5efac49b66918b2d86424ebff65da5e5c718c9a9bead1a1809821e327c6"
+      }
+    },
+    {
+      "group": [
+        "hv6_atcoder",
+        "BF@4096",
+        "serial",
+        "N"
+      ],
+      "status": "COMPLETE",
+      "evaluation": "/root/autodl-tmp/cs336-new/runs/c4_recovery1/delivered_evaluation/groups/group_001/evaluation",
+      "summary": {
+        "path": "/root/autodl-tmp/cs336-new/runs/c4_recovery1/delivered_evaluation/groups/group_001/evaluation/summary.json",
+        "sha256": "5c73165f3266b01e7483465574e01a897117caf3a98fdef07e04af1bfcf68638"
+      }
+    },
+    {
+      "group": [
+        "hv6_atcoder",
+        "CONF-50",
+        "serial",
+        "probe"
+      ],
+      "status": "COMPLETE",
+      "evaluation": "/root/autodl-tmp/cs336-new/runs/c4_recovery1/delivered_evaluation/groups/group_002/evaluation",
+      "summary": {
+        "path": "/root/autodl-tmp/cs336-new/runs/c4_recovery1/delivered_evaluation/groups/group_002/evaluation/summary.json",
+        "sha256": "1b872fb70fe40f7890c5b60f32e819a89c6b44231c1129aeb7c9dd880ce16081"
+      }
+    },
+    {
+      "group": [
+        "hv6_atcoder",
+        "HYB-B-SYNC",
+        "serial",
+        "probe"
+      ],
+      "status": "COMPLETE",
+      "evaluation": "/root/autodl-tmp/cs336-new/runs/c4_recovery1/delivered_evaluation/groups/group_003/evaluation",
+      "summary": {
+        "path": "/root/autodl-tmp/cs336-new/runs/c4_recovery1/delivered_evaluation/groups/group_003/evaluation/summary.json",
+        "sha256": "29434484405c23eaddb05ca4a5e8d215d770d2c6f2a02f850f5114707d5086c6"
+      }
+    },
+    {
+      "group": [
+        "hv6_atcoder",
+        "HYB-B-ASYNC",
+        "serial",
+        "probe"
+      ],
+      "status": "COMPLETE",
+      "evaluation": "/root/autodl-tmp/cs336-new/runs/c4_recovery1/delivered_evaluation/groups/group_004/evaluation",
+      "summary": {
+        "path": "/root/autodl-tmp/cs336-new/runs/c4_recovery1/delivered_evaluation/groups/group_004/evaluation/summary.json",
+        "sha256": "9db2642800b198a7966238f88064d124c837b641cd8649541059bd6466d5ea8e"
+      }
+    },
+    {
+      "group": [
+        "hv6_atcoder",
+        "H",
+        "serial",
+        "N"
+      ],
+      "status": "COMPLETE",
+      "evaluation": "/root/autodl-tmp/cs336-new/runs/c4_recovery1/delivered_evaluation/groups/group_005/evaluation",
+      "summary": {
+        "path": "/root/autodl-tmp/cs336-new/runs/c4_recovery1/delivered_evaluation/groups/group_005/evaluation/summary.json",
+        "sha256": "3988aebf0636b0fe10b345b543536be3a57bebb83a919aac934e9b339346926b"
+      }
+    },
+    {
+      "group": [
+        "hv6_atcoder",
+        "BF@4096",
+        "serial",
+        "probe"
+      ],
+      "status": "COMPLETE",
+      "evaluation": "/root/autodl-tmp/cs336-new/runs/c4_recovery1/delivered_evaluation/groups/group_006/evaluation",
+      "summary": {
+        "path": "/root/autodl-tmp/cs336-new/runs/c4_recovery1/delivered_evaluation/groups/group_006/evaluation/summary.json",
+        "sha256": "647270ad6c855a668e2c2f58cd48d927a2a575932e9441eb97119a40989b62b5"
+      }
+    },
+    {
+      "group": [
+        "hv6_atcoder",
+        "HYB-B-ASYNC",
+        "serial",
+        "N"
+      ],
+      "status": "COMPLETE",
+      "evaluation": "/root/autodl-tmp/cs336-new/runs/c4_recovery1/delivered_evaluation/groups/group_007/evaluation",
+      "summary": {
+        "path": "/root/autodl-tmp/cs336-new/runs/c4_recovery1/delivered_evaluation/groups/group_007/evaluation/summary.json",
+        "sha256": "d577ab8f0f4dbebb11deb140a21f03ef82e8f87735ae3a4ac9b2bcad96641ee2"
+      }
+    },
+    {
+      "group": [
+        "hv6_atcoder",
+        "HYB-B-SYNC",
+        "serial",
+        "N"
+      ],
+      "status": "COMPLETE",
+      "evaluation": "/root/autodl-tmp/cs336-new/runs/c4_recovery1/delivered_evaluation/groups/group_008/evaluation",
+      "summary": {
+        "path": "/root/autodl-tmp/cs336-new/runs/c4_recovery1/delivered_evaluation/groups/group_008/evaluation/summary.json",
+        "sha256": "59c705b95eb902d2e33ae3b34e8a7fa838e75fe39e852c8fc8f9adc4a8a24ad0"
+      }
+    },
+    {
+      "group": [
+        "hv6_atcoder",
+        "CONF-50",
+        "serial",
+        "N"
+      ],
+      "status": "COMPLETE",
+      "evaluation": "/root/autodl-tmp/cs336-new/runs/c4_recovery1/delivered_evaluation/groups/group_009/evaluation",
+      "summary": {
+        "path": "/root/autodl-tmp/cs336-new/runs/c4_recovery1/delivered_evaluation/groups/group_009/evaluation/summary.json",
+        "sha256": "ed9236ae82aa094410ca2f6e41c3d89b1ebea4135d202aa7e1be4948ab8187f3"
+      }
+    },
+    {
+      "group": [
+        "lcbpro_2025",
+        "N",
+        "serial",
+        "N"
+      ],
+      "status": "COMPLETE",
+      "evaluation": "/root/autodl-tmp/cs336-new/runs/c4_recovery1/delivered_evaluation/groups/group_010/evaluation",
+      "summary": {
+        "path": "/root/autodl-tmp/cs336-new/runs/c4_recovery1/delivered_evaluation/groups/group_010/evaluation/summary.json",
+        "sha256": "b474495577737494e2c442a48cccdb5afa5e70952b895224e404e875b7d4a791"
+      }
+    },
+    {
+      "group": [
+        "lcbpro_2025",
+        "BF@4096",
+        "serial",
+        "N"
+      ],
+      "status": "COMPLETE",
+      "evaluation": "/root/autodl-tmp/cs336-new/runs/c4_recovery1/delivered_evaluation/groups/group_011/evaluation",
+      "summary": {
+        "path": "/root/autodl-tmp/cs336-new/runs/c4_recovery1/delivered_evaluation/groups/group_011/evaluation/summary.json",
+        "sha256": "56a2a8acd137d6882634865c478ff6a4684ee28a9c843180d59f6561d44ae67d"
+      }
+    },
+    {
+      "group": [
+        "lcbpro_2025",
+        "CONF-50",
+        "serial",
+        "probe"
+      ],
+      "status": "COMPLETE",
+      "evaluation": "/root/autodl-tmp/cs336-new/runs/c4_recovery1/delivered_evaluation/groups/group_012/evaluation",
+      "summary": {
+        "path": "/root/autodl-tmp/cs336-new/runs/c4_recovery1/delivered_evaluation/groups/group_012/evaluation/summary.json",
+        "sha256": "cea234334ef1b4414e68232908ce6b121c49d17fb55d675c81c8eeff6c27b2f2"
+      }
+    },
+    {
+      "group": [
+        "lcbpro_2025",
+        "HYB-B-SYNC",
+        "serial",
+        "N"
+      ],
+      "status": "COMPLETE",
+      "evaluation": "/root/autodl-tmp/cs336-new/runs/c4_recovery1/delivered_evaluation/groups/group_013/evaluation",
+      "summary": {
+        "path": "/root/autodl-tmp/cs336-new/runs/c4_recovery1/delivered_evaluation/groups/group_013/evaluation/summary.json",
+        "sha256": "4a76ac9edd9debdd212996543eaf41035612f3c223ded46079372e2f39b8cf14"
+      }
+    },
+    {
+      "group": [
+        "lcbpro_2025",
+        "HYB-B-ASYNC",
+        "serial",
+        "N"
+      ],
+      "status": "COMPLETE",
+      "evaluation": "/root/autodl-tmp/cs336-new/runs/c4_recovery1/delivered_evaluation/groups/group_014/evaluation",
+      "summary": {
+        "path": "/root/autodl-tmp/cs336-new/runs/c4_recovery1/delivered_evaluation/groups/group_014/evaluation/summary.json",
+        "sha256": "5f5554e800633ca261ea07433aa66a243c001bf901be7e655b2748bb38b8466c"
+      }
+    },
+    {
+      "group": [
+        "lcbpro_2025",
+        "H",
+        "serial",
+        "N"
+      ],
+      "status": "COMPLETE",
+      "evaluation": "/root/autodl-tmp/cs336-new/runs/c4_recovery1/delivered_evaluation/groups/group_015/evaluation",
+      "summary": {
+        "path": "/root/autodl-tmp/cs336-new/runs/c4_recovery1/delivered_evaluation/groups/group_015/evaluation/summary.json",
+        "sha256": "d067d81e084ed2d8bcf58ff4cac9bc90bc2bcd9b38115c071555d133f794ed61"
+      }
+    },
+    {
+      "group": [
+        "lcbpro_2025",
+        "BF@4096",
+        "serial",
+        "probe"
+      ],
+      "status": "COMPLETE",
+      "evaluation": "/root/autodl-tmp/cs336-new/runs/c4_recovery1/delivered_evaluation/groups/group_016/evaluation",
+      "summary": {
+        "path": "/root/autodl-tmp/cs336-new/runs/c4_recovery1/delivered_evaluation/groups/group_016/evaluation/summary.json",
+        "sha256": "63506f1422bf6a102ebb4cf1657a701c9c92ea40c389c5f826045804e1bce3ae"
+      }
+    },
+    {
+      "group": [
+        "lcbpro_2025",
+        "HYB-B-SYNC",
+        "serial",
+        "probe"
+      ],
+      "status": "COMPLETE",
+      "evaluation": "/root/autodl-tmp/cs336-new/runs/c4_recovery1/delivered_evaluation/groups/group_017/evaluation",
+      "summary": {
+        "path": "/root/autodl-tmp/cs336-new/runs/c4_recovery1/delivered_evaluation/groups/group_017/evaluation/summary.json",
+        "sha256": "45d10a95a688bfa9d454f5d021eb7ed93d76e1fa56ee5fcd7f99b582595ae302"
+      }
+    },
+    {
+      "group": [
+        "lcbpro_2025",
+        "CONF-50",
+        "serial",
+        "N"
+      ],
+      "status": "COMPLETE",
+      "evaluation": "/root/autodl-tmp/cs336-new/runs/c4_recovery1/delivered_evaluation/groups/group_018/evaluation",
+      "summary": {
+        "path": "/root/autodl-tmp/cs336-new/runs/c4_recovery1/delivered_evaluation/groups/group_018/evaluation/summary.json",
+        "sha256": "fe0f3491f2d775213807d22d69854db817f9a2e50ab8467e2176d20290762913"
+      }
+    },
+    {
+      "group": [
+        "lcbpro_2025",
+        "N",
+        "poisson_c4",
+        "N"
+      ],
+      "status": "COMPLETE",
+      "evaluation": "/root/autodl-tmp/cs336-new/runs/c4_recovery1/delivered_evaluation/groups/group_019/evaluation",
+      "summary": {
+        "path": "/root/autodl-tmp/cs336-new/runs/c4_recovery1/delivered_evaluation/groups/group_019/evaluation/summary.json",
+        "sha256": "c6719c70ef029a22b19485c9abafd920eb490535904b2373e2b38a9bcc59289c"
+      }
+    },
+    {
+      "group": [
+        "hv6_atcoder",
+        "N",
+        "poisson_c4",
+        "N"
+      ],
+      "status": "COMPLETE",
+      "evaluation": "/root/autodl-tmp/cs336-new/runs/c4_recovery1/delivered_evaluation/groups/group_020/evaluation",
+      "summary": {
+        "path": "/root/autodl-tmp/cs336-new/runs/c4_recovery1/delivered_evaluation/groups/group_020/evaluation/summary.json",
+        "sha256": "208623cc8e736e330d26f7aa0f28ab2d443c95ab7fa0d13ec0f98ca0deaa8f3c"
+      }
+    },
+    {
+      "group": [
+        "lcbpro_2025",
+        "HYB-B-ASYNC",
+        "poisson_c4",
+        "N"
+      ],
+      "status": "COMPLETE",
+      "evaluation": "/root/autodl-tmp/cs336-new/runs/c4_recovery1/delivered_evaluation/groups/group_021/evaluation",
+      "summary": {
+        "path": "/root/autodl-tmp/cs336-new/runs/c4_recovery1/delivered_evaluation/groups/group_021/evaluation/summary.json",
+        "sha256": "23fe826bdd38415402a2582b1c16aa5b5a34bd23faf8b60bfc1b770c2a6d084a"
+      }
+    },
+    {
+      "group": [
+        "hv6_atcoder",
+        "HYB-B-ASYNC",
+        "poisson_c4",
+        "N"
+      ],
+      "status": "COMPLETE",
+      "evaluation": "/root/autodl-tmp/cs336-new/runs/c4_recovery1/delivered_evaluation/groups/group_022/evaluation",
+      "summary": {
+        "path": "/root/autodl-tmp/cs336-new/runs/c4_recovery1/delivered_evaluation/groups/group_022/evaluation/summary.json",
+        "sha256": "c41136362c8cd8a659d0e0cb9e961ec6be1e77c16caf2f685c16afbf91d0ad6f"
+      }
+    },
+    {
+      "group": [
+        "hv6_atcoder",
+        "HYB-B-ASYNC",
+        "poisson_c4",
+        "probe"
+      ],
+      "status": "COMPLETE",
+      "evaluation": "/root/autodl-tmp/cs336-new/runs/c4_recovery1/delivered_evaluation/groups/group_023/evaluation",
+      "summary": {
+        "path": "/root/autodl-tmp/cs336-new/runs/c4_recovery1/delivered_evaluation/groups/group_023/evaluation/summary.json",
+        "sha256": "c1a2adf7a5c9c9eb9f5f280d417bfe0f8e36a91b880faacee2ec3bc3c1e030bf"
+      }
+    },
+    {
+      "group": [
+        "lcbpro_2025",
+        "HYB-B-ASYNC",
+        "poisson_c8",
+        "N"
+      ],
+      "status": "COMPLETE",
+      "evaluation": "/root/autodl-tmp/cs336-new/runs/c4_recovery1/delivered_evaluation/groups/group_024/evaluation",
+      "summary": {
+        "path": "/root/autodl-tmp/cs336-new/runs/c4_recovery1/delivered_evaluation/groups/group_024/evaluation/summary.json",
+        "sha256": "e70b3b4070cd4c5225c429d4bff90c559333240bf282789e122cd2f0c6e6f973"
+      }
+    },
+    {
+      "group": [
+        "hv6_atcoder",
+        "HYB-B-ASYNC",
+        "poisson_c8",
+        "N"
+      ],
+      "status": "COMPLETE",
+      "evaluation": "/root/autodl-tmp/cs336-new/runs/c4_recovery1/delivered_evaluation/groups/group_025/evaluation",
+      "summary": {
+        "path": "/root/autodl-tmp/cs336-new/runs/c4_recovery1/delivered_evaluation/groups/group_025/evaluation/summary.json",
+        "sha256": "a192b370d1542794d1c8c3ff0b863b2c7d1f4c80bd2178235c67290270959f91"
+      }
+    },
+    {
+      "group": [
+        "hv6_atcoder",
+        "HYB-B-ASYNC",
+        "poisson_c8",
+        "probe"
+      ],
+      "status": "COMPLETE",
+      "evaluation": "/root/autodl-tmp/cs336-new/runs/c4_recovery1/delivered_evaluation/groups/group_026/evaluation",
+      "summary": {
+        "path": "/root/autodl-tmp/cs336-new/runs/c4_recovery1/delivered_evaluation/groups/group_026/evaluation/summary.json",
+        "sha256": "2a9b18d68ad1e2de6fd898b69133ed3cb03438c9f1838dcd41f77629ea1ec48b"
+      }
+    },
+    {
+      "group": [
+        "lcbpro_2025",
+        "HYB-B-ASYNC",
+        "poisson_c8",
+        "probe"
+      ],
+      "status": "COMPLETE",
+      "evaluation": "/root/autodl-tmp/cs336-new/runs/c4_recovery1/delivered_evaluation/groups/group_027/evaluation",
+      "summary": {
+        "path": "/root/autodl-tmp/cs336-new/runs/c4_recovery1/delivered_evaluation/groups/group_027/evaluation/summary.json",
+        "sha256": "95154d63980e6279fe31cbc51ec042be4cddf2589859d992b832598bc58c2f02"
+      }
+    },
+    {
+      "group": [
+        "lcbpro_2025",
+        "N",
+        "poisson_c8",
+        "N"
+      ],
+      "status": "COMPLETE",
+      "evaluation": "/root/autodl-tmp/cs336-new/runs/c4_recovery1/delivered_evaluation/groups/group_028/evaluation",
+      "summary": {
+        "path": "/root/autodl-tmp/cs336-new/runs/c4_recovery1/delivered_evaluation/groups/group_028/evaluation/summary.json",
+        "sha256": "11d27294c579e1b0e18c2fdb8ec1ff028579420e9eb8ca020bb11aeae06bf046"
+      }
+    },
+    {
+      "group": [
+        "hv6_atcoder",
+        "N",
+        "poisson_c8",
+        "N"
+      ],
+      "status": "COMPLETE",
+      "evaluation": "/root/autodl-tmp/cs336-new/runs/c4_recovery1/delivered_evaluation/groups/group_029/evaluation",
+      "summary": {
+        "path": "/root/autodl-tmp/cs336-new/runs/c4_recovery1/delivered_evaluation/groups/group_029/evaluation/summary.json",
+        "sha256": "a074aca42a2002f77a1695fad834a1acb0622c709d897895c057a32f9e1df2a4"
+      }
+    }
+  ],
+  "heldout_tests_read": true,
+  "model_generation": false,
+  "blind_quality_labels_read": false,
+  "descriptive_correctness_only": true,
+  "wall_seconds": 3532.2161968648434,
+  "cpu_seconds": 220.61791686200002,
+  "resource_scope": "Controller CPU only; child execution and cache use are in exact group evaluation summaries, not added twice"
+}

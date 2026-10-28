@@ -1,0 +1,58 @@
+{
+  "status": "COMPLETE",
+  "scope": "INPUT_OVERLAP_ONLY_NO_OUTCOMES",
+  "questions": 199,
+  "strict_rule": "CRLF -> LF; remove exactly one final LF; retain every other byte",
+  "loose_rule": "Descriptive only: CRLF -> LF; strip trailing space/tab on each LF-delimited line; ignore all final empty lines",
+  "functional_input_rule": "Original per-argument JSON-line bytes, no JSON reserialization",
+  "by_collection": {
+    "hv6_atcoder": {
+      "public_count": 165,
+      "private_count": 2288,
+      "strict_overlap_count": 63,
+      "loose_additional_count": 0,
+      "remaining_private_count": 2225,
+      "questions": 63
+    },
+    "hv6_leetcode": {
+      "public_count": 161,
+      "private_count": 2367,
+      "strict_overlap_count": 10,
+      "loose_additional_count": 0,
+      "remaining_private_count": 2357,
+      "questions": 63
+    },
+    "lcbpro_2025": {
+      "public_count": 78,
+      "private_count": 4243,
+      "strict_overlap_count": 5,
+      "loose_additional_count": 0,
+      "remaining_private_count": 4238,
+      "questions": 73
+    }
+  },
+  "empty_private_remainder_questions": [],
+  "empty_private_remainder_count": 0,
+  "labels_computed": false,
+  "scoring_or_model_execution": false,
+  "gpu_used": false,
+  "large_decoded_files_written": false,
+  "wall_seconds": 340.3852369636297,
+  "source": {
+    "original_freeze": {
+      "path": "/root/autodl-tmp/cs336-new/FROZEN.json",
+      "sha256": "96d736acf124a2699363c9298f9604d73c20bd3d65491a0c58eb713cf75d794e",
+      "bytes": 87830
+    },
+    "module": {
+      "path": "/root/autodl-tmp/cs336-new/exec_exit/analysis/private_overlap.py",
+      "sha256": "04abd0a5aa828c2c00214f0f1b5ddc08fd4d86fd9177ddd9600eb336c4cb638f",
+      "bytes": 12640
+    }
+  },
+  "rows": {
+    "path": "/root/autodl-tmp/cs336-new/runs/c2_label_independence/raw/overlap_tasks.jsonl",
+    "sha256": "35de9d4367d8cccaeb2e4f84231995c0994e6b8ce32692fe55e07d7752c05f94",
+    "bytes": 4303949
+  }
+}

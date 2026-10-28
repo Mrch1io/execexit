@@ -1,0 +1,2670 @@
+{
+  "status": "COMPUTATION_COMPLETE_WITH_SELECTIVE_UNKNOWN",
+  "interpretation": "事后计算，定义先于计算；仅观测到PRIV-IND的子集诊断，不构成完整总体R1判定",
+  "models": {
+    "qwen": {
+      "labels": {
+        "rows": 4204,
+        "PASS": 1159,
+        "first_timeout": 310,
+        "first_timeout_flipped_to_pass": 2,
+        "different_from_original_joint": 858,
+        "known_label_changes": 15,
+        "became_unknown": 843,
+        "FAIL": 2202,
+        "UNKNOWN": 843,
+        "unknown_UNOBSERVED_RETAINED_CASES": 843
+      },
+      "labels_by_collection": {
+        "hv6_atcoder": {
+          "rows": 1469,
+          "PASS": 459,
+          "first_timeout": 83,
+          "first_timeout_flipped_to_pass": 0,
+          "different_from_original_joint": 37,
+          "known_label_changes": 15,
+          "became_unknown": 22,
+          "FAIL": 988,
+          "UNKNOWN": 22,
+          "unknown_UNOBSERVED_RETAINED_CASES": 22
+        },
+        "hv6_leetcode": {
+          "rows": 1843,
+          "UNKNOWN": 821,
+          "first_timeout": 187,
+          "first_timeout_flipped_to_pass": 2,
+          "different_from_original_joint": 821,
+          "known_label_changes": 0,
+          "became_unknown": 821,
+          "unknown_UNOBSERVED_RETAINED_CASES": 821,
+          "PASS": 518,
+          "FAIL": 504
+        },
+        "lcbpro_2025": {
+          "rows": 892,
+          "FAIL": 710,
+          "first_timeout": 40,
+          "first_timeout_flipped_to_pass": 0,
+          "different_from_original_joint": 0,
+          "known_label_changes": 0,
+          "became_unknown": 0,
+          "PASS": 182
+        }
+      },
+      "R1": {
+        "pooled": {
+          "status": "COMPLETE",
+          "coverage": {
+            "source_drafts": 4204,
+            "source_questions": 197,
+            "unknown_label_drafts": 843,
+            "missing_signal_drafts": 0,
+            "matched_drafts": 3361,
+            "matched_questions": 193,
+            "excluded_drafts": 843,
+            "unknown_folds": 0,
+            "empty_validation_folds": 0
+          },
+          "signal_metrics": {
+            "auroc": 0.8123344143588472,
+            "auroc_ci": {
+              "lower": 0.7747884203976967,
+              "upper": 0.8487371840088334,
+              "valid_replicates": 10000,
+              "undefined_replicates": 0
+            },
+            "precision": 0.6313317681700518,
+            "precision_ci": {
+              "lower": 0.5571985338588159,
+              "upper": 0.7032076213973739,
+              "valid_replicates": 10000,
+              "undefined_replicates": 0
+            },
+            "recall": 0.9922128753388253,
+            "recall_ci": {
+              "lower": 0.9767890898892567,
+              "upper": 1.0,
+              "valid_replicates": 10000,
+              "undefined_replicates": 0
+            },
+            "threshold": 0.5,
+            "raw_counts": {
+              "tp": 1144,
+              "fp": 862,
+              "fn": 15,
+              "tn": 1340
+            },
+            "raw_precision": 0.5702891326021934,
+            "raw_recall": 0.9870578084555651,
+            "rows": 3361,
+            "questions": 193,
+            "positives": 1159,
+            "negatives": 2202,
+            "weighting": "equal questions, equal covered samples within each question",
+            "ci_scope": "Question bootstrap of fixed OOF predictions; no model refit"
+          },
+          "baseline": {
+            "auroc": 0.7980154740866124,
+            "auroc_ci": {
+              "lower": 0.7461798372089582,
+              "upper": 0.8441954240110515,
+              "valid_replicates": 10000,
+              "undefined_replicates": 0
+            },
+            "precision": 0.7260292316767986,
+            "precision_ci": {
+              "lower": 0.6401189249986357,
+              "upper": 0.7991173129451472,
+              "valid_replicates": 10000,
+              "undefined_replicates": 0
+            },
+            "recall": 0.5577826524637308,
+            "recall_ci": {
+              "lower": 0.46512795380818645,
+              "upper": 0.6466162144579422,
+              "valid_replicates": 10000,
+              "undefined_replicates": 0
+            },
+            "threshold": 0.5,
+            "raw_counts": {
+              "tp": 586,
+              "fp": 314,
+              "fn": 573,
+              "tn": 1888
+            },
+            "raw_precision": 0.6511111111111111,
+            "raw_recall": 0.5056082830025884,
+            "rows": 3361,
+            "questions": 193,
+            "positives": 1159,
+            "negatives": 2202,
+            "weighting": "equal questions, equal covered samples within each question",
+            "ci_scope": "Question bootstrap of fixed OOF predictions; no model refit"
+          },
+          "paired_differences": {
+            "signal_minus_baseline": {
+              "auroc": {
+                "difference": 0.014318940272234792,
+                "ci": {
+                  "lower": -0.03963386867485719,
+                  "upper": 0.07000682147359569,
+                  "valid_replicates": 10000,
+                  "undefined_replicates": 0
+                }
+              },
+              "precision": {
+                "difference": -0.09469746350674679,
+                "ci": {
+                  "lower": -0.16336954444839838,
+                  "upper": -0.024333710367983777,
+                  "valid_replicates": 10000,
+                  "undefined_replicates": 0
+                }
+              },
+              "recall": {
+                "difference": 0.4344302228750945,
+                "ci": {
+                  "lower": 0.3470217114780805,
+                  "upper": 0.5253064267649864,
+                  "valid_replicates": 10000,
+                  "undefined_replicates": 0
+                }
+              }
+            },
+            "baseline_plus_signal_minus_baseline": {
+              "auroc": {
+                "difference": 0.11164345612620996,
+                "ci": {
+                  "lower": 0.08147474723827988,
+                  "upper": 0.14619972240230186,
+                  "valid_replicates": 10000,
+                  "undefined_replicates": 0
+                }
+              },
+              "precision": {
+                "difference": 0.04508077168775171,
+                "ci": {
+                  "lower": -0.010712708998272513,
+                  "upper": 0.10252803502133086,
+                  "valid_replicates": 10000,
+                  "undefined_replicates": 0
+                }
+              },
+              "recall": {
+                "difference": 0.24430486631945214,
+                "ci": {
+                  "lower": 0.17442670116186287,
+                  "upper": 0.31885038547015043,
+                  "valid_replicates": 10000,
+                  "undefined_replicates": 0
+                }
+              }
+            }
+          }
+        },
+        "collection:hv6_atcoder": {
+          "status": "COMPLETE",
+          "coverage": {
+            "source_drafts": 1469,
+            "source_questions": 63,
+            "unknown_label_drafts": 22,
+            "missing_signal_drafts": 0,
+            "matched_drafts": 1447,
+            "matched_questions": 63,
+            "excluded_drafts": 22,
+            "unknown_folds": 0,
+            "empty_validation_folds": 0
+          },
+          "signal_metrics": {
+            "auroc": 0.8574925044318189,
+            "auroc_ci": {
+              "lower": 0.8001286552172677,
+              "upper": 0.9118959593822508,
+              "valid_replicates": 10000,
+              "undefined_replicates": 0
+            },
+            "precision": 0.731061858258979,
+            "precision_ci": {
+              "lower": 0.6023859902956209,
+              "upper": 0.8439239609406278,
+              "valid_replicates": 10000,
+              "undefined_replicates": 0
+            },
+            "recall": 0.9780776671200491,
+            "recall_ci": {
+              "lower": 0.9343855127182793,
+              "upper": 1.0,
+              "valid_replicates": 10000,
+              "undefined_replicates": 0
+            },
+            "threshold": 0.5,
+            "raw_counts": {
+              "tp": 444,
+              "fp": 262,
+              "fn": 15,
+              "tn": 726
+            },
+            "raw_precision": 0.6288951841359773,
+            "raw_recall": 0.9673202614379085,
+            "rows": 1447,
+            "questions": 63,
+            "positives": 459,
+            "negatives": 988,
+            "weighting": "equal questions, equal covered samples within each question",
+            "ci_scope": "Question bootstrap of fixed OOF predictions; no model refit"
+          },
+          "baseline": {
+            "auroc": 0.8724573927879118,
+            "auroc_ci": {
+              "lower": 0.7926923520943832,
+              "upper": 0.9322106204737923,
+              "valid_replicates": 10000,
+              "undefined_replicates": 0
+            },
+            "precision": 0.8511104922548027,
+            "precision_ci": {
+              "lower": 0.7439400887398583,
+              "upper": 0.9257220386233039,
+              "valid_replicates": 10000,
+              "undefined_replicates": 0
+            },
+            "recall": 0.6863766560996212,
+            "recall_ci": {
+              "lower": 0.5312888556115556,
+              "upper": 0.822389251641627,
+              "valid_replicates": 10000,
+              "undefined_replicates": 0
+            },
+            "threshold": 0.5,
+            "raw_counts": {
+              "tp": 263,
+              "fp": 118,
+              "fn": 196,
+              "tn": 870
+            },
+            "raw_precision": 0.6902887139107612,
+            "raw_recall": 0.5729847494553377,
+            "rows": 1447,
+            "questions": 63,
+            "positives": 459,
+            "negatives": 988,
+            "weighting": "equal questions, equal covered samples within each question",
+            "ci_scope": "Question bootstrap of fixed OOF predictions; no model refit"
+          },
+          "paired_differences": {
+            "signal_minus_baseline": {
+              "auroc": {
+                "difference": -0.014964888356092887,
+                "ci": {
+                  "lower": -0.09117972024319727,
+                  "upper": 0.06921340752555258,
+                  "valid_replicates": 10000,
+                  "undefined_replicates": 0
+                }
+              },
+              "precision": {
+                "difference": -0.12004863399582377,
+                "ci": {
+                  "lower": -0.23636549198298024,
+                  "upper": -0.0009434796198829714,
+                  "valid_replicates": 10000,
+                  "undefined_replicates": 0
+                }
+              },
+              "recall": {
+                "difference": 0.2917010110204279,
+                "ci": {
+                  "lower": 0.16323071170784642,
+                  "upper": 0.4384466763359759,
+                  "valid_replicates": 10000,
+                  "undefined_replicates": 0
+                }
+              }
+            },
+            "baseline_plus_signal_minus_baseline": {
+              "auroc": {
+                "difference": 0.07293074380156972,
+                "ci": {
+                  "lower": 0.03663503441997343,
+                  "upper": 0.12385520930244903,
+                  "valid_replicates": 10000,
+                  "undefined_replicates": 0
+                }
+              },
+              "precision": {
+                "difference": 0.00822551761699386,
+                "ci": {
+                  "lower": -0.07905654307232807,
+                  "upper": 0.09612604363578202,
+                  "valid_replicates": 10000,
+                  "undefined_replicates": 0
+                }
+              },
+              "recall": {
+                "difference": 0.1323091943725172,
+                "ci": {
+                  "lower": 0.057826146392536665,
+                  "upper": 0.22382443288748294,
+                  "valid_replicates": 10000,
+                  "undefined_replicates": 0
+                }
+              }
+            }
+          }
+        },
+        "collection:hv6_leetcode": {
+          "status": "COMPLETE",
+          "coverage": {
+            "source_drafts": 1843,
+            "source_questions": 63,
+            "unknown_label_drafts": 821,
+            "missing_signal_drafts": 0,
+            "matched_drafts": 1022,
+            "matched_questions": 59,
+            "excluded_drafts": 821,
+            "unknown_folds": 0,
+            "empty_validation_folds": 0
+          },
+          "signal_metrics": {
+            "auroc": 0.5,
+            "auroc_ci": {
+              "lower": 0.4999999999999999,
+              "upper": 0.5000000000000001,
+              "valid_replicates": 10000,
+              "undefined_replicates": 0
+            },
+            "precision": 0.5607832257196664,
+            "precision_ci": {
+              "lower": 0.4522058699892387,
+              "upper": 0.6705579516411083,
+              "valid_replicates": 10000,
+              "undefined_replicates": 0
+            },
+            "recall": 1.0,
+            "recall_ci": {
+              "lower": 1.0,
+              "upper": 1.0,
+              "valid_replicates": 10000,
+              "undefined_replicates": 0
+            },
+            "threshold": 0.5,
+            "raw_counts": {
+              "tp": 518,
+              "fp": 504,
+              "fn": 0,
+              "tn": 0
+            },
+            "raw_precision": 0.5068493150684932,
+            "raw_recall": 1.0,
+            "rows": 1022,
+            "questions": 59,
+            "positives": 518,
+            "negatives": 504,
+            "weighting": "equal questions, equal covered samples within each question",
+            "ci_scope": "Question bootstrap of fixed OOF predictions; no model refit"
+          },
+          "baseline": {
+            "auroc": 0.7652016224157921,
+            "auroc_ci": {
+              "lower": 0.6590460617003397,
+              "upper": 0.8554056923754744,
+              "valid_replicates": 10000,
+              "undefined_replicates": 0
+            },
+            "precision": 0.7131209598115891,
+            "precision_ci": {
+              "lower": 0.5821630653540156,
+              "upper": 0.8320527914816083,
+              "valid_replicates": 10000,
+              "undefined_replicates": 0
+            },
+            "recall": 0.8160439448410688,
+            "recall_ci": {
+              "lower": 0.6981486550770392,
+              "upper": 0.9124820061606501,
+              "valid_replicates": 10000,
+              "undefined_replicates": 0
+            },
+            "threshold": 0.5,
+            "raw_counts": {
+              "tp": 438,
+              "fp": 225,
+              "fn": 80,
+              "tn": 279
+            },
+            "raw_precision": 0.6606334841628959,
+            "raw_recall": 0.8455598455598455,
+            "rows": 1022,
+            "questions": 59,
+            "positives": 518,
+            "negatives": 504,
+            "weighting": "equal questions, equal covered samples within each question",
+            "ci_scope": "Question bootstrap of fixed OOF predictions; no model refit"
+          },
+          "paired_differences": {
+            "signal_minus_baseline": {
+              "auroc": {
+                "difference": -0.26520162241579215,
+                "ci": {
+                  "lower": -0.35540569237547437,
+                  "upper": -0.1590460617003398,
+                  "valid_replicates": 10000,
+                  "undefined_replicates": 0
+                }
+              },
+              "precision": {
+                "difference": -0.15233773409192264,
+                "ci": {
+                  "lower": -0.24067659213508402,
+                  "upper": -0.07465164776006462,
+                  "valid_replicates": 10000,
+                  "undefined_replicates": 0
+                }
+              },
+              "recall": {
+                "difference": 0.1839560551589312,
+                "ci": {
+                  "lower": 0.08751799383934983,
+                  "upper": 0.30185134492296073,
+                  "valid_replicates": 10000,
+                  "undefined_replicates": 0
+                }
+              }
+            },
+            "baseline_plus_signal_minus_baseline": {
+              "auroc": {
+                "difference": 0.0,
+                "ci": {
+                  "lower": 0.0,
+                  "upper": 0.0,
+                  "valid_replicates": 10000,
+                  "undefined_replicates": 0
+                }
+              },
+              "precision": {
+                "difference": 0.0,
+                "ci": {
+                  "lower": 0.0,
+                  "upper": 0.0,
+                  "valid_replicates": 10000,
+                  "undefined_replicates": 0
+                }
+              },
+              "recall": {
+                "difference": 0.0,
+                "ci": {
+                  "lower": 0.0,
+                  "upper": 0.0,
+                  "valid_replicates": 10000,
+                  "undefined_replicates": 0
+                }
+              }
+            }
+          }
+        },
+        "collection:lcbpro_2025": {
+          "status": "COMPLETE",
+          "coverage": {
+            "source_drafts": 892,
+            "source_questions": 71,
+            "unknown_label_drafts": 0,
+            "missing_signal_drafts": 0,
+            "matched_drafts": 892,
+            "matched_questions": 71,
+            "excluded_drafts": 0,
+            "unknown_folds": 0,
+            "empty_validation_folds": 0
+          },
+          "signal_metrics": {
+            "auroc": 0.9290555882292808,
+            "auroc_ci": {
+              "lower": 0.8959912113483222,
+              "upper": 0.9581473442284968,
+              "valid_replicates": 10000,
+              "undefined_replicates": 0
+            },
+            "precision": 0.6577900135492895,
+            "precision_ci": {
+              "lower": 0.5028963869685128,
+              "upper": 0.7940378628762682,
+              "valid_replicates": 10000,
+              "undefined_replicates": 0
+            },
+            "recall": 1.0,
+            "recall_ci": {
+              "lower": 1.0,
+              "upper": 1.0,
+              "valid_replicates": 10000,
+              "undefined_replicates": 0
+            },
+            "threshold": 0.5,
+            "raw_counts": {
+              "tp": 182,
+              "fp": 96,
+              "fn": 0,
+              "tn": 614
+            },
+            "raw_precision": 0.6546762589928058,
+            "raw_recall": 1.0,
+            "rows": 892,
+            "questions": 71,
+            "positives": 182,
+            "negatives": 710,
+            "weighting": "equal questions, equal covered samples within each question",
+            "ci_scope": "Question bootstrap of fixed OOF predictions; no model refit"
+          },
+          "baseline": {
+            "auroc": 0.7893319229056244,
+            "auroc_ci": {
+              "lower": 0.7011973985336549,
+              "upper": 0.8644016588221585,
+              "valid_replicates": 10000,
+              "undefined_replicates": 0
+            },
+            "precision": 0.2889769973155384,
+            "precision_ci": {
+              "lower": 0.09550687540051828,
+              "upper": 0.5047466671448352,
+              "valid_replicates": 10000,
+              "undefined_replicates": 0
+            },
+            "recall": 0.07759320532118763,
+            "recall_ci": {
+              "lower": 0.023523217980793668,
+              "upper": 0.14058623293420902,
+              "valid_replicates": 10000,
+              "undefined_replicates": 0
+            },
+            "threshold": 0.5,
+            "raw_counts": {
+              "tp": 17,
+              "fp": 43,
+              "fn": 165,
+              "tn": 667
+            },
+            "raw_precision": 0.2833333333333333,
+            "raw_recall": 0.09340659340659341,
+            "rows": 892,
+            "questions": 71,
+            "positives": 182,
+            "negatives": 710,
+            "weighting": "equal questions, equal covered samples within each question",
+            "ci_scope": "Question bootstrap of fixed OOF predictions; no model refit"
+          },
+          "paired_differences": {
+            "signal_minus_baseline": {
+              "auroc": {
+                "difference": 0.13972366532365643,
+                "ci": {
+                  "lower": 0.07098408765335078,
+                  "upper": 0.22118775267000507,
+                  "valid_replicates": 10000,
+                  "undefined_replicates": 0
+                }
+              },
+              "precision": {
+                "difference": 0.36881301623375107,
+                "ci": {
+                  "lower": 0.17473753519925686,
+                  "upper": 0.5521337109980183,
+                  "valid_replicates": 10000,
+                  "undefined_replicates": 0
+                }
+              },
+              "recall": {
+                "difference": 0.9224067946788124,
+                "ci": {
+                  "lower": 0.859413767065791,
+                  "upper": 0.9764767820192064,
+                  "valid_replicates": 10000,
+                  "undefined_replicates": 0
+                }
+              }
+            },
+            "baseline_plus_signal_minus_baseline": {
+              "auroc": {
+                "difference": 0.1537434667905806,
+                "ci": {
+                  "lower": 0.08827291448969452,
+                  "upper": 0.22911166718818524,
+                  "valid_replicates": 10000,
+                  "undefined_replicates": 0
+                }
+              },
+              "precision": {
+                "difference": 0.4508800553977398,
+                "ci": {
+                  "lower": 0.2668188975675333,
+                  "upper": 0.6384846869471403,
+                  "valid_replicates": 10000,
+                  "undefined_replicates": 0
+                }
+              },
+              "recall": {
+                "difference": 0.8944732407631848,
+                "ci": {
+                  "lower": 0.8084983551723002,
+                  "upper": 0.9644112260396125,
+                  "valid_replicates": 10000,
+                  "undefined_replicates": 0
+                }
+              }
+            }
+          }
+        }
+      },
+      "PUB_pass_secondary": {
+        "pooled": {
+          "status": "COMPLETE",
+          "coverage": {
+            "source_drafts": 2006,
+            "source_questions": 148,
+            "unknown_label_drafts": 0,
+            "missing_signal_drafts": 0,
+            "matched_drafts": 2006,
+            "matched_questions": 148,
+            "excluded_drafts": 0,
+            "unknown_folds": 0,
+            "empty_validation_folds": 0
+          },
+          "signal_metrics": {
+            "auroc": 0.6123646581575295,
+            "auroc_ci": {
+              "lower": 0.557128663594013,
+              "upper": 0.6654211137600093,
+              "valid_replicates": 10000,
+              "undefined_replicates": 0
+            },
+            "precision": 0.5909447393822393,
+            "precision_ci": {
+              "lower": 0.5184499343093092,
+              "upper": 0.6623355219058343,
+              "valid_replicates": 10000,
+              "undefined_replicates": 0
+            },
+            "recall": 1.0,
+            "recall_ci": {
+              "lower": 1.0,
+              "upper": 1.0,
+              "valid_replicates": 10000,
+              "undefined_replicates": 0
+            },
+            "threshold": 0.5,
+            "raw_counts": {
+              "tp": 1144,
+              "fp": 862,
+              "fn": 0,
+              "tn": 0
+            },
+            "raw_precision": 0.5702891326021934,
+            "raw_recall": 1.0,
+            "rows": 2006,
+            "questions": 148,
+            "positives": 1144,
+            "negatives": 862,
+            "weighting": "equal questions, equal covered samples within each question",
+            "ci_scope": "Question bootstrap of fixed OOF predictions; no model refit"
+          },
+          "baseline": {
+            "auroc": 0.7368252395173486,
+            "auroc_ci": {
+              "lower": 0.6686331963051839,
+              "upper": 0.8002315106263526,
+              "valid_replicates": 10000,
+              "undefined_replicates": 0
+            },
+            "precision": 0.7456539669298149,
+            "precision_ci": {
+              "lower": 0.665863744793746,
+              "upper": 0.8184400727156077,
+              "valid_replicates": 10000,
+              "undefined_replicates": 0
+            },
+            "recall": 0.7327254316586153,
+            "recall_ci": {
+              "lower": 0.6518385900892849,
+              "upper": 0.8078134862647628,
+              "valid_replicates": 10000,
+              "undefined_replicates": 0
+            },
+            "threshold": 0.5,
+            "raw_counts": {
+              "tp": 828,
+              "fp": 310,
+              "fn": 316,
+              "tn": 552
+            },
+            "raw_precision": 0.7275922671353251,
+            "raw_recall": 0.7237762237762237,
+            "rows": 2006,
+            "questions": 148,
+            "positives": 1144,
+            "negatives": 862,
+            "weighting": "equal questions, equal covered samples within each question",
+            "ci_scope": "Question bootstrap of fixed OOF predictions; no model refit"
+          },
+          "paired_differences": {
+            "signal_minus_baseline": {
+              "auroc": {
+                "difference": -0.12446058135981908,
+                "ci": {
+                  "lower": -0.20600149592925604,
+                  "upper": -0.04136421638025394,
+                  "valid_replicates": 10000,
+                  "undefined_replicates": 0
+                }
+              },
+              "precision": {
+                "difference": -0.15470922754757555,
+                "ci": {
+                  "lower": -0.21004016645670187,
+                  "upper": -0.10204630165621817,
+                  "valid_replicates": 10000,
+                  "undefined_replicates": 0
+                }
+              },
+              "recall": {
+                "difference": 0.26727456834138474,
+                "ci": {
+                  "lower": 0.1921865137352372,
+                  "upper": 0.34816140991071504,
+                  "valid_replicates": 10000,
+                  "undefined_replicates": 0
+                }
+              }
+            },
+            "baseline_plus_signal_minus_baseline": {
+              "auroc": {
+                "difference": 0.006105658391536428,
+                "ci": {
+                  "lower": -0.008733830324493949,
+                  "upper": 0.01979386802200228,
+                  "valid_replicates": 10000,
+                  "undefined_replicates": 0
+                }
+              },
+              "precision": {
+                "difference": -0.001936645772213308,
+                "ci": {
+                  "lower": -0.02610030930303521,
+                  "upper": 0.019261404713088407,
+                  "valid_replicates": 10000,
+                  "undefined_replicates": 0
+                }
+              },
+              "recall": {
+                "difference": 1.6054816728505727e-05,
+                "ci": {
+                  "lower": -0.022810636354906995,
+                  "upper": 0.021024750004565756,
+                  "valid_replicates": 10000,
+                  "undefined_replicates": 0
+                }
+              }
+            }
+          }
+        },
+        "collection:hv6_atcoder": {
+          "status": "COMPLETE",
+          "coverage": {
+            "source_drafts": 706,
+            "source_questions": 49,
+            "unknown_label_drafts": 0,
+            "missing_signal_drafts": 0,
+            "matched_drafts": 706,
+            "matched_questions": 49,
+            "excluded_drafts": 0,
+            "unknown_folds": 0,
+            "empty_validation_folds": 0
+          },
+          "signal_metrics": {
+            "auroc": 0.677855107048431,
+            "auroc_ci": {
+              "lower": 0.5962326476803526,
+              "upper": 0.7522010040013886,
+              "valid_replicates": 10000,
+              "undefined_replicates": 0
+            },
+            "precision": 0.6673185941043084,
+            "precision_ci": {
+              "lower": 0.5445280612244898,
+              "upper": 0.7866227324263039,
+              "valid_replicates": 10000,
+              "undefined_replicates": 0
+            },
+            "recall": 1.0,
+            "recall_ci": {
+              "lower": 1.0,
+              "upper": 1.0,
+              "valid_replicates": 10000,
+              "undefined_replicates": 0
+            },
+            "threshold": 0.5,
+            "raw_counts": {
+              "tp": 444,
+              "fp": 262,
+              "fn": 0,
+              "tn": 0
+            },
+            "raw_precision": 0.6288951841359773,
+            "raw_recall": 1.0,
+            "rows": 706,
+            "questions": 49,
+            "positives": 444,
+            "negatives": 262,
+            "weighting": "equal questions, equal covered samples within each question",
+            "ci_scope": "Question bootstrap of fixed OOF predictions; no model refit"
+          },
+          "baseline": {
+            "auroc": 0.7264669231763988,
+            "auroc_ci": {
+              "lower": 0.5951022032119343,
+              "upper": 0.8435791845309802,
+              "valid_replicates": 10000,
+              "undefined_replicates": 0
+            },
+            "precision": 0.7776072366919246,
+            "precision_ci": {
+              "lower": 0.6556361917183404,
+              "upper": 0.8807501606519975,
+              "valid_replicates": 10000,
+              "undefined_replicates": 0
+            },
+            "recall": 0.7729245014850077,
+            "recall_ci": {
+              "lower": 0.6570854955043942,
+              "upper": 0.8751814224861972,
+              "valid_replicates": 10000,
+              "undefined_replicates": 0
+            },
+            "threshold": 0.5,
+            "raw_counts": {
+              "tp": 361,
+              "fp": 114,
+              "fn": 83,
+              "tn": 148
+            },
+            "raw_precision": 0.76,
+            "raw_recall": 0.8130630630630631,
+            "rows": 706,
+            "questions": 49,
+            "positives": 444,
+            "negatives": 262,
+            "weighting": "equal questions, equal covered samples within each question",
+            "ci_scope": "Question bootstrap of fixed OOF predictions; no model refit"
+          },
+          "paired_differences": {
+            "signal_minus_baseline": {
+              "auroc": {
+                "difference": -0.04861181612796783,
+                "ci": {
+                  "lower": -0.17845376062868248,
+                  "upper": 0.09833089116588514,
+                  "valid_replicates": 10000,
+                  "undefined_replicates": 0
+                }
+              },
+              "precision": {
+                "difference": -0.11028864258761617,
+                "ci": {
+                  "lower": -0.1751315348577274,
+                  "upper": -0.047643480012221115,
+                  "valid_replicates": 10000,
+                  "undefined_replicates": 0
+                }
+              },
+              "recall": {
+                "difference": 0.2270754985149923,
+                "ci": {
+                  "lower": 0.12481857751380274,
+                  "upper": 0.3429145044956058,
+                  "valid_replicates": 10000,
+                  "undefined_replicates": 0
+                }
+              }
+            },
+            "baseline_plus_signal_minus_baseline": {
+              "auroc": {
+                "difference": 0.02727006512977348,
+                "ci": {
+                  "lower": 0.00433803774847881,
+                  "upper": 0.05311936048904516,
+                  "valid_replicates": 10000,
+                  "undefined_replicates": 0
+                }
+              },
+              "precision": {
+                "difference": 0.004533641239234498,
+                "ci": {
+                  "lower": -0.025354716027817453,
+                  "upper": 0.03583876079450599,
+                  "valid_replicates": 10000,
+                  "undefined_replicates": 0
+                }
+              },
+              "recall": {
+                "difference": 0.036295289470331005,
+                "ci": {
+                  "lower": -0.0033541918506697233,
+                  "upper": 0.08830775631352084,
+                  "valid_replicates": 10000,
+                  "undefined_replicates": 0
+                }
+              }
+            }
+          }
+        },
+        "collection:hv6_leetcode": {
+          "status": "COMPLETE",
+          "coverage": {
+            "source_drafts": 1022,
+            "source_questions": 59,
+            "unknown_label_drafts": 0,
+            "missing_signal_drafts": 0,
+            "matched_drafts": 1022,
+            "matched_questions": 59,
+            "excluded_drafts": 0,
+            "unknown_folds": 0,
+            "empty_validation_folds": 0
+          },
+          "signal_metrics": {
+            "auroc": 0.6001729511726958,
+            "auroc_ci": {
+              "lower": 0.5196076957155169,
+              "upper": 0.6793394299443474,
+              "valid_replicates": 10000,
+              "undefined_replicates": 0
+            },
+            "precision": 0.5607832257196664,
+            "precision_ci": {
+              "lower": 0.4522058699892387,
+              "upper": 0.6705579516411083,
+              "valid_replicates": 10000,
+              "undefined_replicates": 0
+            },
+            "recall": 1.0,
+            "recall_ci": {
+              "lower": 1.0,
+              "upper": 1.0,
+              "valid_replicates": 10000,
+              "undefined_replicates": 0
+            },
+            "threshold": 0.5,
+            "raw_counts": {
+              "tp": 518,
+              "fp": 504,
+              "fn": 0,
+              "tn": 0
+            },
+            "raw_precision": 0.5068493150684932,
+            "raw_recall": 1.0,
+            "rows": 1022,
+            "questions": 59,
+            "positives": 518,
+            "negatives": 504,
+            "weighting": "equal questions, equal covered samples within each question",
+            "ci_scope": "Question bootstrap of fixed OOF predictions; no model refit"
+          },
+          "baseline": {
+            "auroc": 0.7652016224157921,
+            "auroc_ci": {
+              "lower": 0.6590460617003397,
+              "upper": 0.8554056923754744,
+              "valid_replicates": 10000,
+              "undefined_replicates": 0
+            },
+            "precision": 0.7131209598115891,
+            "precision_ci": {
+              "lower": 0.5821630653540156,
+              "upper": 0.8320527914816083,
+              "valid_replicates": 10000,
+              "undefined_replicates": 0
+            },
+            "recall": 0.8160439448410688,
+            "recall_ci": {
+              "lower": 0.6981486550770392,
+              "upper": 0.9124820061606501,
+              "valid_replicates": 10000,
+              "undefined_replicates": 0
+            },
+            "threshold": 0.5,
+            "raw_counts": {
+              "tp": 438,
+              "fp": 225,
+              "fn": 80,
+              "tn": 279
+            },
+            "raw_precision": 0.6606334841628959,
+            "raw_recall": 0.8455598455598455,
+            "rows": 1022,
+            "questions": 59,
+            "positives": 518,
+            "negatives": 504,
+            "weighting": "equal questions, equal covered samples within each question",
+            "ci_scope": "Question bootstrap of fixed OOF predictions; no model refit"
+          },
+          "paired_differences": {
+            "signal_minus_baseline": {
+              "auroc": {
+                "difference": -0.1650286712430964,
+                "ci": {
+                  "lower": -0.2804600899571269,
+                  "upper": -0.04565653900892563,
+                  "valid_replicates": 10000,
+                  "undefined_replicates": 0
+                }
+              },
+              "precision": {
+                "difference": -0.15233773409192264,
+                "ci": {
+                  "lower": -0.24067659213508402,
+                  "upper": -0.07465164776006462,
+                  "valid_replicates": 10000,
+                  "undefined_replicates": 0
+                }
+              },
+              "recall": {
+                "difference": 0.1839560551589312,
+                "ci": {
+                  "lower": 0.08751799383934983,
+                  "upper": 0.30185134492296073,
+                  "valid_replicates": 10000,
+                  "undefined_replicates": 0
+                }
+              }
+            },
+            "baseline_plus_signal_minus_baseline": {
+              "auroc": {
+                "difference": -0.00926215203909131,
+                "ci": {
+                  "lower": -0.031575778452188605,
+                  "upper": 0.006198387357745852,
+                  "valid_replicates": 10000,
+                  "undefined_replicates": 0
+                }
+              },
+              "precision": {
+                "difference": 0.0038186667383531825,
+                "ci": {
+                  "lower": -0.020372591069167844,
+                  "upper": 0.02413067283820765,
+                  "valid_replicates": 10000,
+                  "undefined_replicates": 0
+                }
+              },
+              "recall": {
+                "difference": -0.014272478403881239,
+                "ci": {
+                  "lower": -0.061024008170020475,
+                  "upper": 0.024779920642384507,
+                  "valid_replicates": 10000,
+                  "undefined_replicates": 0
+                }
+              }
+            }
+          }
+        },
+        "collection:lcbpro_2025": {
+          "status": "COMPLETE",
+          "coverage": {
+            "source_drafts": 278,
+            "source_questions": 40,
+            "unknown_label_drafts": 0,
+            "missing_signal_drafts": 0,
+            "matched_drafts": 278,
+            "matched_questions": 40,
+            "excluded_drafts": 0,
+            "unknown_folds": 0,
+            "empty_validation_folds": 0
+          },
+          "signal_metrics": {
+            "auroc": 0.5649593061575966,
+            "auroc_ci": {
+              "lower": 0.4363229302690765,
+              "upper": 0.6910853825490355,
+              "valid_replicates": 10000,
+              "undefined_replicates": 0
+            },
+            "precision": 0.5418749999999999,
+            "precision_ci": {
+              "lower": 0.39373958333333325,
+              "upper": 0.6893802083333332,
+              "valid_replicates": 10000,
+              "undefined_replicates": 0
+            },
+            "recall": 1.0,
+            "recall_ci": {
+              "lower": 1.0,
+              "upper": 1.0,
+              "valid_replicates": 10000,
+              "undefined_replicates": 0
+            },
+            "threshold": 0.5,
+            "raw_counts": {
+              "tp": 182,
+              "fp": 96,
+              "fn": 0,
+              "tn": 0
+            },
+            "raw_precision": 0.6546762589928058,
+            "raw_recall": 1.0,
+            "rows": 278,
+            "questions": 40,
+            "positives": 182,
+            "negatives": 96,
+            "weighting": "equal questions, equal covered samples within each question",
+            "ci_scope": "Question bootstrap of fixed OOF predictions; no model refit"
+          },
+          "baseline": {
+            "auroc": 0.6499601091748199,
+            "auroc_ci": {
+              "lower": 0.4797513870739351,
+              "upper": 0.8102176600763032,
+              "valid_replicates": 10000,
+              "undefined_replicates": 0
+            },
+            "precision": 0.6740249609984399,
+            "precision_ci": {
+              "lower": 0.5157966836671841,
+              "upper": 0.8265521041144474,
+              "valid_replicates": 10000,
+              "undefined_replicates": 0
+            },
+            "recall": 0.949195364420278,
+            "recall_ci": {
+              "lower": 0.873644036978265,
+              "upper": 1.0,
+              "valid_replicates": 10000,
+              "undefined_replicates": 0
+            },
+            "threshold": 0.5,
+            "raw_counts": {
+              "tp": 175,
+              "fp": 67,
+              "fn": 7,
+              "tn": 29
+            },
+            "raw_precision": 0.7231404958677686,
+            "raw_recall": 0.9615384615384616,
+            "rows": 278,
+            "questions": 40,
+            "positives": 182,
+            "negatives": 96,
+            "weighting": "equal questions, equal covered samples within each question",
+            "ci_scope": "Question bootstrap of fixed OOF predictions; no model refit"
+          },
+          "paired_differences": {
+            "signal_minus_baseline": {
+              "auroc": {
+                "difference": -0.08500080301722335,
+                "ci": {
+                  "lower": -0.2832148857800966,
+                  "upper": 0.11392577606111869,
+                  "valid_replicates": 10000,
+                  "undefined_replicates": 0
+                }
+              },
+              "precision": {
+                "difference": -0.13214996099844,
+                "ci": {
+                  "lower": -0.2344851432286402,
+                  "upper": -0.0497029548548094,
+                  "valid_replicates": 10000,
+                  "undefined_replicates": 0
+                }
+              },
+              "recall": {
+                "difference": 0.050804635579722035,
+                "ci": {
+                  "lower": 0.0,
+                  "upper": 0.1263559630217349,
+                  "valid_replicates": 10000,
+                  "undefined_replicates": 0
+                }
+              }
+            },
+            "baseline_plus_signal_minus_baseline": {
+              "auroc": {
+                "difference": -0.0076281793503577555,
+                "ci": {
+                  "lower": -0.024938321244637227,
+                  "upper": 0.0059088734625071,
+                  "valid_replicates": 10000,
+                  "undefined_replicates": 0
+                }
+              },
+              "precision": {
+                "difference": -0.002821184444545377,
+                "ci": {
+                  "lower": -0.01215443893651628,
+                  "upper": 0.0021123989765927144,
+                  "valid_replicates": 10000,
+                  "undefined_replicates": 0
+                }
+              },
+              "recall": {
+                "difference": -0.012083264678420358,
+                "ci": {
+                  "lower": -0.04876078071431044,
+                  "upper": 0.009151154302399747,
+                  "valid_replicates": 10000,
+                  "undefined_replicates": 0
+                }
+              }
+            }
+          }
+        }
+      },
+      "statistics_source": "raw/qwen_statistics_phase/summary.json"
+    },
+    "ds": {
+      "labels": {
+        "rows": 7128,
+        "PASS": 820,
+        "first_timeout": 314,
+        "first_timeout_flipped_to_pass": 0,
+        "different_from_original_joint": 2151,
+        "known_label_changes": 14,
+        "became_unknown": 2137,
+        "FAIL": 4171,
+        "UNKNOWN": 2137,
+        "unknown_UNOBSERVED_RETAINED_CASES": 2137
+      },
+      "labels_by_collection": {
+        "hv6_atcoder": {
+          "rows": 2559,
+          "PASS": 356,
+          "first_timeout": 161,
+          "first_timeout_flipped_to_pass": 0,
+          "different_from_original_joint": 88,
+          "known_label_changes": 14,
+          "became_unknown": 74,
+          "FAIL": 2129,
+          "UNKNOWN": 74,
+          "unknown_UNOBSERVED_RETAINED_CASES": 74
+        },
+        "hv6_leetcode": {
+          "rows": 2735,
+          "UNKNOWN": 2063,
+          "first_timeout": 88,
+          "first_timeout_flipped_to_pass": 0,
+          "different_from_original_joint": 2063,
+          "known_label_changes": 0,
+          "became_unknown": 2063,
+          "unknown_UNOBSERVED_RETAINED_CASES": 2063,
+          "FAIL": 306,
+          "PASS": 366
+        },
+        "lcbpro_2025": {
+          "rows": 1834,
+          "FAIL": 1736,
+          "first_timeout": 65,
+          "first_timeout_flipped_to_pass": 0,
+          "different_from_original_joint": 0,
+          "known_label_changes": 0,
+          "became_unknown": 0,
+          "PASS": 98
+        }
+      },
+      "R1": {
+        "pooled": {
+          "status": "COMPLETE",
+          "coverage": {
+            "source_drafts": 7128,
+            "source_questions": 199,
+            "unknown_label_drafts": 2137,
+            "missing_signal_drafts": 0,
+            "matched_drafts": 4991,
+            "matched_questions": 191,
+            "excluded_drafts": 2137,
+            "unknown_folds": 0,
+            "empty_validation_folds": 0
+          },
+          "signal_metrics": {
+            "auroc": 0.8523501422888972,
+            "auroc_ci": {
+              "lower": 0.8195804032984818,
+              "upper": 0.8842050183243392,
+              "valid_replicates": 10000,
+              "undefined_replicates": 0
+            },
+            "precision": 0.5453708071066976,
+            "precision_ci": {
+              "lower": 0.4573991110876317,
+              "upper": 0.6319410648186502,
+              "valid_replicates": 10000,
+              "undefined_replicates": 0
+            },
+            "recall": 0.9909525159409933,
+            "recall_ci": {
+              "lower": 0.9703554747942577,
+              "upper": 1.0,
+              "valid_replicates": 10000,
+              "undefined_replicates": 0
+            },
+            "threshold": 0.5,
+            "raw_counts": {
+              "tp": 806,
+              "fp": 647,
+              "fn": 14,
+              "tn": 3524
+            },
+            "raw_precision": 0.5547143840330351,
+            "raw_recall": 0.9829268292682927,
+            "rows": 4991,
+            "questions": 191,
+            "positives": 820,
+            "negatives": 4171,
+            "weighting": "equal questions, equal covered samples within each question",
+            "ci_scope": "Question bootstrap of fixed OOF predictions; no model refit"
+          },
+          "baseline": {
+            "auroc": 0.7845762620018908,
+            "auroc_ci": {
+              "lower": 0.7269506673270026,
+              "upper": 0.8334384813881959,
+              "valid_replicates": 10000,
+              "undefined_replicates": 0
+            },
+            "precision": 0.6658114172915626,
+            "precision_ci": {
+              "lower": 0.5581665093592043,
+              "upper": 0.7507784270277842,
+              "valid_replicates": 10000,
+              "undefined_replicates": 0
+            },
+            "recall": 0.4691716910721289,
+            "recall_ci": {
+              "lower": 0.36197506923346257,
+              "upper": 0.5674202346587784,
+              "valid_replicates": 10000,
+              "undefined_replicates": 0
+            },
+            "threshold": 0.5,
+            "raw_counts": {
+              "tp": 227,
+              "fp": 269,
+              "fn": 593,
+              "tn": 3902
+            },
+            "raw_precision": 0.4576612903225806,
+            "raw_recall": 0.27682926829268295,
+            "rows": 4991,
+            "questions": 191,
+            "positives": 820,
+            "negatives": 4171,
+            "weighting": "equal questions, equal covered samples within each question",
+            "ci_scope": "Question bootstrap of fixed OOF predictions; no model refit"
+          },
+          "paired_differences": {
+            "signal_minus_baseline": {
+              "auroc": {
+                "difference": 0.06777388028700637,
+                "ci": {
+                  "lower": 0.011187477974975168,
+                  "upper": 0.13032404942681639,
+                  "valid_replicates": 10000,
+                  "undefined_replicates": 0
+                }
+              },
+              "precision": {
+                "difference": -0.12044061018486496,
+                "ci": {
+                  "lower": -0.20760590028570475,
+                  "upper": -0.02311880600344991,
+                  "valid_replicates": 10000,
+                  "undefined_replicates": 0
+                }
+              },
+              "recall": {
+                "difference": 0.5217808248688645,
+                "ci": {
+                  "lower": 0.4231837013432296,
+                  "upper": 0.6262349969323421,
+                  "valid_replicates": 10000,
+                  "undefined_replicates": 0
+                }
+              }
+            },
+            "baseline_plus_signal_minus_baseline": {
+              "auroc": {
+                "difference": 0.14853688593124859,
+                "ci": {
+                  "lower": 0.11166367512703439,
+                  "upper": 0.19208570067139227,
+                  "valid_replicates": 10000,
+                  "undefined_replicates": 0
+                }
+              },
+              "precision": {
+                "difference": 0.062161068259885544,
+                "ci": {
+                  "lower": -0.019657778376065832,
+                  "upper": 0.15439771355335644,
+                  "valid_replicates": 10000,
+                  "undefined_replicates": 0
+                }
+              },
+              "recall": {
+                "difference": 0.2805014519705777,
+                "ci": {
+                  "lower": 0.21429530491839913,
+                  "upper": 0.35261411926580655,
+                  "valid_replicates": 10000,
+                  "undefined_replicates": 0
+                }
+              }
+            }
+          }
+        },
+        "collection:hv6_atcoder": {
+          "status": "COMPLETE",
+          "coverage": {
+            "source_drafts": 2559,
+            "source_questions": 63,
+            "unknown_label_drafts": 74,
+            "missing_signal_drafts": 0,
+            "matched_drafts": 2485,
+            "matched_questions": 63,
+            "excluded_drafts": 74,
+            "unknown_folds": 0,
+            "empty_validation_folds": 0
+          },
+          "signal_metrics": {
+            "auroc": 0.9208071095547462,
+            "auroc_ci": {
+              "lower": 0.8768914146172371,
+              "upper": 0.9579799435996141,
+              "valid_replicates": 10000,
+              "undefined_replicates": 0
+            },
+            "precision": 0.7423788509098687,
+            "precision_ci": {
+              "lower": 0.5959006554581869,
+              "upper": 0.8628113020155088,
+              "valid_replicates": 10000,
+              "undefined_replicates": 0
+            },
+            "recall": 0.975040137343807,
+            "recall_ci": {
+              "lower": 0.9136605437374957,
+              "upper": 1.0,
+              "valid_replicates": 10000,
+              "undefined_replicates": 0
+            },
+            "threshold": 0.5,
+            "raw_counts": {
+              "tp": 342,
+              "fp": 221,
+              "fn": 14,
+              "tn": 1908
+            },
+            "raw_precision": 0.6074600355239786,
+            "raw_recall": 0.9606741573033708,
+            "rows": 2485,
+            "questions": 63,
+            "positives": 356,
+            "negatives": 2129,
+            "weighting": "equal questions, equal covered samples within each question",
+            "ci_scope": "Question bootstrap of fixed OOF predictions; no model refit"
+          },
+          "baseline": {
+            "auroc": 0.8738721882948823,
+            "auroc_ci": {
+              "lower": 0.8031502135453632,
+              "upper": 0.930235663473645,
+              "valid_replicates": 10000,
+              "undefined_replicates": 0
+            },
+            "precision": 0.7884236891647294,
+            "precision_ci": {
+              "lower": 0.6507422319107867,
+              "upper": 0.8876635132202457,
+              "valid_replicates": 10000,
+              "undefined_replicates": 0
+            },
+            "recall": 0.6550883038615452,
+            "recall_ci": {
+              "lower": 0.4693156991663514,
+              "upper": 0.8132525353364324,
+              "valid_replicates": 10000,
+              "undefined_replicates": 0
+            },
+            "threshold": 0.5,
+            "raw_counts": {
+              "tp": 141,
+              "fp": 122,
+              "fn": 215,
+              "tn": 2007
+            },
+            "raw_precision": 0.5361216730038023,
+            "raw_recall": 0.3960674157303371,
+            "rows": 2485,
+            "questions": 63,
+            "positives": 356,
+            "negatives": 2129,
+            "weighting": "equal questions, equal covered samples within each question",
+            "ci_scope": "Question bootstrap of fixed OOF predictions; no model refit"
+          },
+          "paired_differences": {
+            "signal_minus_baseline": {
+              "auroc": {
+                "difference": 0.04693492125986387,
+                "ci": {
+                  "lower": -0.01823546067340577,
+                  "upper": 0.1243390289150942,
+                  "valid_replicates": 10000,
+                  "undefined_replicates": 0
+                }
+              },
+              "precision": {
+                "difference": -0.04604483825486072,
+                "ci": {
+                  "lower": -0.19222894050294703,
+                  "upper": 0.09943981138101986,
+                  "valid_replicates": 10000,
+                  "undefined_replicates": 0
+                }
+              },
+              "recall": {
+                "difference": 0.31995183348226186,
+                "ci": {
+                  "lower": 0.16797794382900885,
+                  "upper": 0.5020985286471594,
+                  "valid_replicates": 10000,
+                  "undefined_replicates": 0
+                }
+              }
+            },
+            "baseline_plus_signal_minus_baseline": {
+              "auroc": {
+                "difference": 0.08554541864426901,
+                "ci": {
+                  "lower": 0.02965979614946456,
+                  "upper": 0.1506987137343437,
+                  "valid_replicates": 10000,
+                  "undefined_replicates": 0
+                }
+              },
+              "precision": {
+                "difference": 0.05559395118349386,
+                "ci": {
+                  "lower": -0.06380722959331465,
+                  "upper": 0.1744014175218335,
+                  "valid_replicates": 10000,
+                  "undefined_replicates": 0
+                }
+              },
+              "recall": {
+                "difference": 0.18457548161211912,
+                "ci": {
+                  "lower": 0.07635103241280558,
+                  "upper": 0.3121192163590903,
+                  "valid_replicates": 10000,
+                  "undefined_replicates": 0
+                }
+              }
+            }
+          }
+        },
+        "collection:hv6_leetcode": {
+          "status": "COMPLETE",
+          "coverage": {
+            "source_drafts": 2735,
+            "source_questions": 63,
+            "unknown_label_drafts": 2063,
+            "missing_signal_drafts": 0,
+            "matched_drafts": 672,
+            "matched_questions": 55,
+            "excluded_drafts": 2063,
+            "unknown_folds": 0,
+            "empty_validation_folds": 0
+          },
+          "signal_metrics": {
+            "auroc": 0.5,
+            "auroc_ci": {
+              "lower": 0.49999999999999983,
+              "upper": 0.5000000000000001,
+              "valid_replicates": 10000,
+              "undefined_replicates": 0
+            },
+            "precision": 0.460513653013653,
+            "precision_ci": {
+              "lower": 0.34688392857142847,
+              "upper": 0.5760893897768897,
+              "valid_replicates": 10000,
+              "undefined_replicates": 0
+            },
+            "recall": 1.0,
+            "recall_ci": {
+              "lower": 1.0,
+              "upper": 1.0,
+              "valid_replicates": 10000,
+              "undefined_replicates": 0
+            },
+            "threshold": 0.5,
+            "raw_counts": {
+              "tp": 366,
+              "fp": 306,
+              "fn": 0,
+              "tn": 0
+            },
+            "raw_precision": 0.5446428571428571,
+            "raw_recall": 1.0,
+            "rows": 672,
+            "questions": 55,
+            "positives": 366,
+            "negatives": 306,
+            "weighting": "equal questions, equal covered samples within each question",
+            "ci_scope": "Question bootstrap of fixed OOF predictions; no model refit"
+          },
+          "baseline": {
+            "auroc": 0.7794481430890117,
+            "auroc_ci": {
+              "lower": 0.6727102500288128,
+              "upper": 0.8692305946487284,
+              "valid_replicates": 10000,
+              "undefined_replicates": 0
+            },
+            "precision": 0.6821333075065716,
+            "precision_ci": {
+              "lower": 0.5116035393721052,
+              "upper": 0.8345384033910738,
+              "valid_replicates": 10000,
+              "undefined_replicates": 0
+            },
+            "recall": 0.6451081556148904,
+            "recall_ci": {
+              "lower": 0.4832832701905441,
+              "upper": 0.7893764920603553,
+              "valid_replicates": 10000,
+              "undefined_replicates": 0
+            },
+            "threshold": 0.5,
+            "raw_counts": {
+              "tp": 199,
+              "fp": 83,
+              "fn": 167,
+              "tn": 223
+            },
+            "raw_precision": 0.7056737588652482,
+            "raw_recall": 0.5437158469945356,
+            "rows": 672,
+            "questions": 55,
+            "positives": 366,
+            "negatives": 306,
+            "weighting": "equal questions, equal covered samples within each question",
+            "ci_scope": "Question bootstrap of fixed OOF predictions; no model refit"
+          },
+          "paired_differences": {
+            "signal_minus_baseline": {
+              "auroc": {
+                "difference": -0.27944814308901167,
+                "ci": {
+                  "lower": -0.36923059464872854,
+                  "upper": -0.1727102500288129,
+                  "valid_replicates": 10000,
+                  "undefined_replicates": 0
+                }
+              },
+              "precision": {
+                "difference": -0.22161965449291865,
+                "ci": {
+                  "lower": -0.34600078819511426,
+                  "upper": -0.10295389335641701,
+                  "valid_replicates": 10000,
+                  "undefined_replicates": 0
+                }
+              },
+              "recall": {
+                "difference": 0.35489184438510957,
+                "ci": {
+                  "lower": 0.21062350793964463,
+                  "upper": 0.5167167298094558,
+                  "valid_replicates": 10000,
+                  "undefined_replicates": 0
+                }
+              }
+            },
+            "baseline_plus_signal_minus_baseline": {
+              "auroc": {
+                "difference": 0.0,
+                "ci": {
+                  "lower": 0.0,
+                  "upper": 0.0,
+                  "valid_replicates": 10000,
+                  "undefined_replicates": 0
+                }
+              },
+              "precision": {
+                "difference": 0.0,
+                "ci": {
+                  "lower": 0.0,
+                  "upper": 0.0,
+                  "valid_replicates": 10000,
+                  "undefined_replicates": 0
+                }
+              },
+              "recall": {
+                "difference": 0.0,
+                "ci": {
+                  "lower": 0.0,
+                  "upper": 0.0,
+                  "valid_replicates": 10000,
+                  "undefined_replicates": 0
+                }
+              }
+            }
+          }
+        },
+        "collection:lcbpro_2025": {
+          "status": "COMPLETE",
+          "coverage": {
+            "source_drafts": 1834,
+            "source_questions": 73,
+            "unknown_label_drafts": 0,
+            "missing_signal_drafts": 0,
+            "matched_drafts": 1834,
+            "matched_questions": 73,
+            "excluded_drafts": 0,
+            "unknown_folds": 0,
+            "empty_validation_folds": 0
+          },
+          "signal_metrics": {
+            "auroc": 0.9634011485779378,
+            "auroc_ci": {
+              "lower": 0.9447983458041979,
+              "upper": 0.9791719035572326,
+              "valid_replicates": 10000,
+              "undefined_replicates": 0
+            },
+            "precision": 0.5505921354140219,
+            "precision_ci": {
+              "lower": 0.36173937402543216,
+              "upper": 0.7183987863031678,
+              "valid_replicates": 10000,
+              "undefined_replicates": 0
+            },
+            "recall": 1.0,
+            "recall_ci": {
+              "lower": 1.0,
+              "upper": 1.0,
+              "valid_replicates": 10000,
+              "undefined_replicates": 0
+            },
+            "threshold": 0.5,
+            "raw_counts": {
+              "tp": 98,
+              "fp": 120,
+              "fn": 0,
+              "tn": 1616
+            },
+            "raw_precision": 0.44954128440366975,
+            "raw_recall": 1.0,
+            "rows": 1834,
+            "questions": 73,
+            "positives": 98,
+            "negatives": 1736,
+            "weighting": "equal questions, equal covered samples within each question",
+            "ci_scope": "Question bootstrap of fixed OOF predictions; no model refit"
+          },
+          "baseline": {
+            "auroc": 0.7795700708296572,
+            "auroc_ci": {
+              "lower": 0.7090336893297782,
+              "upper": 0.8423926790926316,
+              "valid_replicates": 10000,
+              "undefined_replicates": 0
+            },
+            "precision": null,
+            "precision_ci": {
+              "lower": null,
+              "upper": null,
+              "valid_replicates": 0,
+              "undefined_replicates": 10000
+            },
+            "recall": 0.0,
+            "recall_ci": {
+              "lower": 0.0,
+              "upper": 0.0,
+              "valid_replicates": 10000,
+              "undefined_replicates": 0
+            },
+            "threshold": 0.5,
+            "raw_counts": {
+              "tp": 0,
+              "fp": 0,
+              "fn": 98,
+              "tn": 1736
+            },
+            "raw_precision": null,
+            "raw_recall": 0.0,
+            "rows": 1834,
+            "questions": 73,
+            "positives": 98,
+            "negatives": 1736,
+            "weighting": "equal questions, equal covered samples within each question",
+            "ci_scope": "Question bootstrap of fixed OOF predictions; no model refit"
+          },
+          "paired_differences": {
+            "signal_minus_baseline": {
+              "auroc": {
+                "difference": 0.18383107774828056,
+                "ci": {
+                  "lower": 0.1231086841952081,
+                  "upper": 0.25350784604328014,
+                  "valid_replicates": 10000,
+                  "undefined_replicates": 0
+                }
+              },
+              "precision": {
+                "difference": null,
+                "ci": {
+                  "lower": null,
+                  "upper": null,
+                  "valid_replicates": 0,
+                  "undefined_replicates": 10000
+                }
+              },
+              "recall": {
+                "difference": 1.0,
+                "ci": {
+                  "lower": 1.0,
+                  "upper": 1.0,
+                  "valid_replicates": 10000,
+                  "undefined_replicates": 0
+                }
+              }
+            },
+            "baseline_plus_signal_minus_baseline": {
+              "auroc": {
+                "difference": 0.18162575443933437,
+                "ci": {
+                  "lower": 0.1266194407686748,
+                  "upper": 0.2467127744486743,
+                  "valid_replicates": 10000,
+                  "undefined_replicates": 0
+                }
+              },
+              "precision": {
+                "difference": null,
+                "ci": {
+                  "lower": null,
+                  "upper": null,
+                  "valid_replicates": 0,
+                  "undefined_replicates": 10000
+                }
+              },
+              "recall": {
+                "difference": 0.8680265437939574,
+                "ci": {
+                  "lower": 0.7575056236147168,
+                  "upper": 0.942293135595542,
+                  "valid_replicates": 10000,
+                  "undefined_replicates": 0
+                }
+              }
+            }
+          }
+        }
+      },
+      "PUB_pass_secondary": {
+        "pooled": {
+          "status": "COMPLETE",
+          "coverage": {
+            "source_drafts": 1453,
+            "source_questions": 133,
+            "unknown_label_drafts": 0,
+            "missing_signal_drafts": 0,
+            "matched_drafts": 1453,
+            "matched_questions": 133,
+            "excluded_drafts": 0,
+            "unknown_folds": 0,
+            "empty_validation_folds": 0
+          },
+          "signal_metrics": {
+            "auroc": 0.6648802408074441,
+            "auroc_ci": {
+              "lower": 0.6045790190514897,
+              "upper": 0.7233231041070158,
+              "valid_replicates": 10000,
+              "undefined_replicates": 0
+            },
+            "precision": 0.48903355938130366,
+            "precision_ci": {
+              "lower": 0.4153254847439528,
+              "upper": 0.5640734995998155,
+              "valid_replicates": 10000,
+              "undefined_replicates": 0
+            },
+            "recall": 1.0,
+            "recall_ci": {
+              "lower": 1.0,
+              "upper": 1.0,
+              "valid_replicates": 10000,
+              "undefined_replicates": 0
+            },
+            "threshold": 0.5,
+            "raw_counts": {
+              "tp": 806,
+              "fp": 647,
+              "fn": 0,
+              "tn": 0
+            },
+            "raw_precision": 0.5547143840330351,
+            "raw_recall": 1.0,
+            "rows": 1453,
+            "questions": 133,
+            "positives": 806,
+            "negatives": 647,
+            "weighting": "equal questions, equal covered samples within each question",
+            "ci_scope": "Question bootstrap of fixed OOF predictions; no model refit"
+          },
+          "baseline": {
+            "auroc": 0.7348793684723598,
+            "auroc_ci": {
+              "lower": 0.6590347937954876,
+              "upper": 0.8054355964333615,
+              "valid_replicates": 10000,
+              "undefined_replicates": 0
+            },
+            "precision": 0.6726261733048481,
+            "precision_ci": {
+              "lower": 0.5756163763274749,
+              "upper": 0.7664094990735615,
+              "valid_replicates": 10000,
+              "undefined_replicates": 0
+            },
+            "recall": 0.6614995064657253,
+            "recall_ci": {
+              "lower": 0.5627327180564281,
+              "upper": 0.755075590289114,
+              "valid_replicates": 10000,
+              "undefined_replicates": 0
+            },
+            "threshold": 0.5,
+            "raw_counts": {
+              "tp": 433,
+              "fp": 193,
+              "fn": 373,
+              "tn": 454
+            },
+            "raw_precision": 0.6916932907348243,
+            "raw_recall": 0.5372208436724566,
+            "rows": 1453,
+            "questions": 133,
+            "positives": 806,
+            "negatives": 647,
+            "weighting": "equal questions, equal covered samples within each question",
+            "ci_scope": "Question bootstrap of fixed OOF predictions; no model refit"
+          },
+          "paired_differences": {
+            "signal_minus_baseline": {
+              "auroc": {
+                "difference": -0.06999912766491567,
+                "ci": {
+                  "lower": -0.1508028100804717,
+                  "upper": 0.014251373759642994,
+                  "valid_replicates": 10000,
+                  "undefined_replicates": 0
+                }
+              },
+              "precision": {
+                "difference": -0.18359261392354442,
+                "ci": {
+                  "lower": -0.25897063629892686,
+                  "upper": -0.11386083905885501,
+                  "valid_replicates": 10000,
+                  "undefined_replicates": 0
+                }
+              },
+              "recall": {
+                "difference": 0.3385004935342747,
+                "ci": {
+                  "lower": 0.24492440971088597,
+                  "upper": 0.4372672819435719,
+                  "valid_replicates": 10000,
+                  "undefined_replicates": 0
+                }
+              }
+            },
+            "baseline_plus_signal_minus_baseline": {
+              "auroc": {
+                "difference": 0.024620662137085247,
+                "ci": {
+                  "lower": -0.004443018776463764,
+                  "upper": 0.055003818157492716,
+                  "valid_replicates": 10000,
+                  "undefined_replicates": 0
+                }
+              },
+              "precision": {
+                "difference": 0.013755418504595052,
+                "ci": {
+                  "lower": -0.018992853366182706,
+                  "upper": 0.04707585368237965,
+                  "valid_replicates": 10000,
+                  "undefined_replicates": 0
+                }
+              },
+              "recall": {
+                "difference": 0.04019386311747064,
+                "ci": {
+                  "lower": -0.0014839568912988874,
+                  "upper": 0.08746563809656746,
+                  "valid_replicates": 10000,
+                  "undefined_replicates": 0
+                }
+              }
+            }
+          }
+        },
+        "collection:hv6_atcoder": {
+          "status": "COMPLETE",
+          "coverage": {
+            "source_drafts": 563,
+            "source_questions": 45,
+            "unknown_label_drafts": 0,
+            "missing_signal_drafts": 0,
+            "matched_drafts": 563,
+            "matched_questions": 45,
+            "excluded_drafts": 0,
+            "unknown_folds": 0,
+            "empty_validation_folds": 0
+          },
+          "signal_metrics": {
+            "auroc": 0.6901229443078433,
+            "auroc_ci": {
+              "lower": 0.5803681643530232,
+              "upper": 0.7897136267832016,
+              "valid_replicates": 10000,
+              "undefined_replicates": 0
+            },
+            "precision": 0.5615899070065737,
+            "precision_ci": {
+              "lower": 0.42600470979637656,
+              "upper": 0.6939645662978995,
+              "valid_replicates": 10000,
+              "undefined_replicates": 0
+            },
+            "recall": 1.0,
+            "recall_ci": {
+              "lower": 1.0,
+              "upper": 1.0,
+              "valid_replicates": 10000,
+              "undefined_replicates": 0
+            },
+            "threshold": 0.5,
+            "raw_counts": {
+              "tp": 342,
+              "fp": 221,
+              "fn": 0,
+              "tn": 0
+            },
+            "raw_precision": 0.6074600355239786,
+            "raw_recall": 1.0,
+            "rows": 563,
+            "questions": 45,
+            "positives": 342,
+            "negatives": 221,
+            "weighting": "equal questions, equal covered samples within each question",
+            "ci_scope": "Question bootstrap of fixed OOF predictions; no model refit"
+          },
+          "baseline": {
+            "auroc": 0.8253279182960044,
+            "auroc_ci": {
+              "lower": 0.7180692991747603,
+              "upper": 0.9113439976313593,
+              "valid_replicates": 10000,
+              "undefined_replicates": 0
+            },
+            "precision": 0.8010358791670495,
+            "precision_ci": {
+              "lower": 0.65855008183866,
+              "upper": 0.9172373112757981,
+              "valid_replicates": 10000,
+              "undefined_replicates": 0
+            },
+            "recall": 0.7188399880233067,
+            "recall_ci": {
+              "lower": 0.5644949290818013,
+              "upper": 0.8547681815822112,
+              "valid_replicates": 10000,
+              "undefined_replicates": 0
+            },
+            "threshold": 0.5,
+            "raw_counts": {
+              "tp": 211,
+              "fp": 66,
+              "fn": 131,
+              "tn": 155
+            },
+            "raw_precision": 0.7617328519855595,
+            "raw_recall": 0.6169590643274854,
+            "rows": 563,
+            "questions": 45,
+            "positives": 342,
+            "negatives": 221,
+            "weighting": "equal questions, equal covered samples within each question",
+            "ci_scope": "Question bootstrap of fixed OOF predictions; no model refit"
+          },
+          "paired_differences": {
+            "signal_minus_baseline": {
+              "auroc": {
+                "difference": -0.13520497398816111,
+                "ci": {
+                  "lower": -0.25191855229417276,
+                  "upper": -0.012589402406200266,
+                  "valid_replicates": 10000,
+                  "undefined_replicates": 0
+                }
+              },
+              "precision": {
+                "difference": -0.2394459721604758,
+                "ci": {
+                  "lower": -0.3610317140230959,
+                  "upper": -0.12167525769948853,
+                  "valid_replicates": 10000,
+                  "undefined_replicates": 0
+                }
+              },
+              "recall": {
+                "difference": 0.28116001197669327,
+                "ci": {
+                  "lower": 0.1452318184177887,
+                  "upper": 0.4355050709181986,
+                  "valid_replicates": 10000,
+                  "undefined_replicates": 0
+                }
+              }
+            },
+            "baseline_plus_signal_minus_baseline": {
+              "auroc": {
+                "difference": 0.018475867480925667,
+                "ci": {
+                  "lower": -0.019987377864705697,
+                  "upper": 0.06102883915813906,
+                  "valid_replicates": 10000,
+                  "undefined_replicates": 0
+                }
+              },
+              "precision": {
+                "difference": -0.02526643221984104,
+                "ci": {
+                  "lower": -0.09891671867927017,
+                  "upper": 0.04036482938564212,
+                  "valid_replicates": 10000,
+                  "undefined_replicates": 0
+                }
+              },
+              "recall": {
+                "difference": 0.06532222693692502,
+                "ci": {
+                  "lower": 0.0025383015304795264,
+                  "upper": 0.16063301532719595,
+                  "valid_replicates": 10000,
+                  "undefined_replicates": 0
+                }
+              }
+            }
+          }
+        },
+        "collection:hv6_leetcode": {
+          "status": "COMPLETE",
+          "coverage": {
+            "source_drafts": 672,
+            "source_questions": 55,
+            "unknown_label_drafts": 0,
+            "missing_signal_drafts": 0,
+            "matched_drafts": 672,
+            "matched_questions": 55,
+            "excluded_drafts": 0,
+            "unknown_folds": 0,
+            "empty_validation_folds": 0
+          },
+          "signal_metrics": {
+            "auroc": 0.699339881503772,
+            "auroc_ci": {
+              "lower": 0.61552198894206,
+              "upper": 0.7794804649332209,
+              "valid_replicates": 10000,
+              "undefined_replicates": 0
+            },
+            "precision": 0.460513653013653,
+            "precision_ci": {
+              "lower": 0.34688392857142847,
+              "upper": 0.5760893897768897,
+              "valid_replicates": 10000,
+              "undefined_replicates": 0
+            },
+            "recall": 1.0,
+            "recall_ci": {
+              "lower": 1.0,
+              "upper": 1.0,
+              "valid_replicates": 10000,
+              "undefined_replicates": 0
+            },
+            "threshold": 0.5,
+            "raw_counts": {
+              "tp": 366,
+              "fp": 306,
+              "fn": 0,
+              "tn": 0
+            },
+            "raw_precision": 0.5446428571428571,
+            "raw_recall": 1.0,
+            "rows": 672,
+            "questions": 55,
+            "positives": 366,
+            "negatives": 306,
+            "weighting": "equal questions, equal covered samples within each question",
+            "ci_scope": "Question bootstrap of fixed OOF predictions; no model refit"
+          },
+          "baseline": {
+            "auroc": 0.7794481430890117,
+            "auroc_ci": {
+              "lower": 0.6727102500288128,
+              "upper": 0.8692305946487284,
+              "valid_replicates": 10000,
+              "undefined_replicates": 0
+            },
+            "precision": 0.6821333075065716,
+            "precision_ci": {
+              "lower": 0.5116035393721052,
+              "upper": 0.8345384033910738,
+              "valid_replicates": 10000,
+              "undefined_replicates": 0
+            },
+            "recall": 0.6451081556148904,
+            "recall_ci": {
+              "lower": 0.4832832701905441,
+              "upper": 0.7893764920603553,
+              "valid_replicates": 10000,
+              "undefined_replicates": 0
+            },
+            "threshold": 0.5,
+            "raw_counts": {
+              "tp": 199,
+              "fp": 83,
+              "fn": 167,
+              "tn": 223
+            },
+            "raw_precision": 0.7056737588652482,
+            "raw_recall": 0.5437158469945356,
+            "rows": 672,
+            "questions": 55,
+            "positives": 366,
+            "negatives": 306,
+            "weighting": "equal questions, equal covered samples within each question",
+            "ci_scope": "Question bootstrap of fixed OOF predictions; no model refit"
+          },
+          "paired_differences": {
+            "signal_minus_baseline": {
+              "auroc": {
+                "difference": -0.08010826158523965,
+                "ci": {
+                  "lower": -0.181787194473054,
+                  "upper": 0.028577821816439312,
+                  "valid_replicates": 10000,
+                  "undefined_replicates": 0
+                }
+              },
+              "precision": {
+                "difference": -0.22161965449291865,
+                "ci": {
+                  "lower": -0.34600078819511426,
+                  "upper": -0.10295389335641701,
+                  "valid_replicates": 10000,
+                  "undefined_replicates": 0
+                }
+              },
+              "recall": {
+                "difference": 0.35489184438510957,
+                "ci": {
+                  "lower": 0.21062350793964463,
+                  "upper": 0.5167167298094558,
+                  "valid_replicates": 10000,
+                  "undefined_replicates": 0
+                }
+              }
+            },
+            "baseline_plus_signal_minus_baseline": {
+              "auroc": {
+                "difference": 0.02884856622750287,
+                "ci": {
+                  "lower": 0.0002407967539017314,
+                  "upper": 0.06762086456631619,
+                  "valid_replicates": 10000,
+                  "undefined_replicates": 0
+                }
+              },
+              "precision": {
+                "difference": 0.04540184550244852,
+                "ci": {
+                  "lower": -0.04128988169835209,
+                  "upper": 0.14398820308328109,
+                  "valid_replicates": 10000,
+                  "undefined_replicates": 0
+                }
+              },
+              "recall": {
+                "difference": 0.07984961798895696,
+                "ci": {
+                  "lower": 0.010117348722014951,
+                  "upper": 0.16672076301141328,
+                  "valid_replicates": 10000,
+                  "undefined_replicates": 0
+                }
+              }
+            }
+          }
+        },
+        "collection:lcbpro_2025": {
+          "status": "COMPLETE",
+          "coverage": {
+            "source_drafts": 218,
+            "source_questions": 33,
+            "unknown_label_drafts": 0,
+            "missing_signal_drafts": 0,
+            "matched_drafts": 218,
+            "matched_questions": 33,
+            "excluded_drafts": 0,
+            "unknown_folds": 0,
+            "empty_validation_folds": 0
+          },
+          "signal_metrics": {
+            "auroc": 0.561373975980109,
+            "auroc_ci": {
+              "lower": 0.4083040392300636,
+              "upper": 0.7066626332832414,
+              "valid_replicates": 10000,
+              "undefined_replicates": 0
+            },
+            "precision": 0.43762626262626264,
+            "precision_ci": {
+              "lower": 0.2924242424242424,
+              "upper": 0.5891414141414142,
+              "valid_replicates": 10000,
+              "undefined_replicates": 0
+            },
+            "recall": 1.0,
+            "recall_ci": {
+              "lower": 1.0,
+              "upper": 1.0,
+              "valid_replicates": 10000,
+              "undefined_replicates": 0
+            },
+            "threshold": 0.5,
+            "raw_counts": {
+              "tp": 98,
+              "fp": 120,
+              "fn": 0,
+              "tn": 0
+            },
+            "raw_precision": 0.44954128440366975,
+            "raw_recall": 1.0,
+            "rows": 218,
+            "questions": 33,
+            "positives": 98,
+            "negatives": 120,
+            "weighting": "equal questions, equal covered samples within each question",
+            "ci_scope": "Question bootstrap of fixed OOF predictions; no model refit"
+          },
+          "baseline": {
+            "auroc": 0.5239875839678281,
+            "auroc_ci": {
+              "lower": 0.355846665889434,
+              "upper": 0.6863113956058172,
+              "valid_replicates": 10000,
+              "undefined_replicates": 0
+            },
+            "precision": 0.4342497269903201,
+            "precision_ci": {
+              "lower": 0.2547739363364824,
+              "upper": 0.6232301798960115,
+              "valid_replicates": 10000,
+              "undefined_replicates": 0
+            },
+            "recall": 0.4604057223791788,
+            "recall_ci": {
+              "lower": 0.29114129394292554,
+              "upper": 0.6438395313052064,
+              "valid_replicates": 10000,
+              "undefined_replicates": 0
+            },
+            "threshold": 0.5,
+            "raw_counts": {
+              "tp": 41,
+              "fp": 65,
+              "fn": 57,
+              "tn": 55
+            },
+            "raw_precision": 0.3867924528301887,
+            "raw_recall": 0.41836734693877553,
+            "rows": 218,
+            "questions": 33,
+            "positives": 98,
+            "negatives": 120,
+            "weighting": "equal questions, equal covered samples within each question",
+            "ci_scope": "Question bootstrap of fixed OOF predictions; no model refit"
+          },
+          "paired_differences": {
+            "signal_minus_baseline": {
+              "auroc": {
+                "difference": 0.03738639201228089,
+                "ci": {
+                  "lower": -0.18491626562662386,
+                  "upper": 0.2615672190553365,
+                  "valid_replicates": 10000,
+                  "undefined_replicates": 0
+                }
+              },
+              "precision": {
+                "difference": 0.0033765356359425347,
+                "ci": {
+                  "lower": -0.13768827562020308,
+                  "upper": 0.13412347359600024,
+                  "valid_replicates": 10000,
+                  "undefined_replicates": 0
+                }
+              },
+              "recall": {
+                "difference": 0.5395942776208211,
+                "ci": {
+                  "lower": 0.3561604686947935,
+                  "upper": 0.7088587060570745,
+                  "valid_replicates": 10000,
+                  "undefined_replicates": 0
+                }
+              }
+            },
+            "baseline_plus_signal_minus_baseline": {
+              "auroc": {
+                "difference": 0.0719291434659296,
+                "ci": {
+                  "lower": -0.03637669831201323,
+                  "upper": 0.19632431738399986,
+                  "valid_replicates": 10000,
+                  "undefined_replicates": 0
+                }
+              },
+              "precision": {
+                "difference": 0.059638391363817767,
+                "ci": {
+                  "lower": -0.08028931518568701,
+                  "upper": 0.2037917933171696,
+                  "valid_replicates": 10000,
+                  "undefined_replicates": 0
+                }
+              },
+              "recall": {
+                "difference": 0.14001693632391848,
+                "ci": {
+                  "lower": -0.10297331083033966,
+                  "upper": 0.3561646102025315,
+                  "valid_replicates": 10000,
+                  "undefined_replicates": 0
+                }
+              }
+            }
+          }
+        }
+      },
+      "statistics_source": "raw/ds_statistics_phase/summary.json"
+    }
+  },
+  "overlap": {
+    "status": "COMPLETE",
+    "scope": "INPUT_OVERLAP_ONLY_NO_OUTCOMES",
+    "questions": 199,
+    "strict_rule": "CRLF -> LF; remove exactly one final LF; retain every other byte",
+    "loose_rule": "Descriptive only: CRLF -> LF; strip trailing space/tab on each LF-delimited line; ignore all final empty lines",
+    "functional_input_rule": "Original per-argument JSON-line bytes, no JSON reserialization",
+    "by_collection": {
+      "hv6_atcoder": {
+        "public_count": 165,
+        "private_count": 2288,
+        "strict_overlap_count": 63,
+        "loose_additional_count": 0,
+        "remaining_private_count": 2225,
+        "questions": 63
+      },
+      "hv6_leetcode": {
+        "public_count": 161,
+        "private_count": 2367,
+        "strict_overlap_count": 10,
+        "loose_additional_count": 0,
+        "remaining_private_count": 2357,
+        "questions": 63
+      },
+      "lcbpro_2025": {
+        "public_count": 78,
+        "private_count": 4243,
+        "strict_overlap_count": 5,
+        "loose_additional_count": 0,
+        "remaining_private_count": 4238,
+        "questions": 73
+      }
+    },
+    "empty_private_remainder_questions": [],
+    "empty_private_remainder_count": 0,
+    "labels_computed": false,
+    "scoring_or_model_execution": false,
+    "gpu_used": false,
+    "large_decoded_files_written": false,
+    "wall_seconds": 340.3852369636297,
+    "source": {
+      "original_freeze": {
+        "path": "/root/autodl-tmp/cs336-new/FROZEN.json",
+        "sha256": "96d736acf124a2699363c9298f9604d73c20bd3d65491a0c58eb713cf75d794e",
+        "bytes": 87830
+      },
+      "module": {
+        "path": "/root/autodl-tmp/cs336-new/exec_exit/analysis/private_overlap.py",
+        "sha256": "04abd0a5aa828c2c00214f0f1b5ddc08fd4d86fd9177ddd9600eb336c4cb638f",
+        "bytes": 12640
+      }
+    },
+    "rows": {
+      "path": "/root/autodl-tmp/cs336-new/runs/c2_label_independence/raw/overlap_tasks.jsonl",
+      "sha256": "35de9d4367d8cccaeb2e4f84231995c0994e6b8ce32692fe55e07d7752c05f94",
+      "bytes": 4303949
+    }
+  },
+  "label_audit": "raw/label_audit.json",
+  "state_check_static": "raw/lc_state_summary.json",
+  "state_check_execution": "raw/lc_state_execution.jsonl",
+  "GPU_used": false,
+  "frozen_results_modified": false,
+  "addendum_state": "DRAFT_NOT_FROZEN",
+  "canonical_statistics_environment": "raw/statistics_environment_check.json",
+  "state_check_completion": "raw/lc_state_completion.json",
+  "state_check_result": {
+    "status": "PASS",
+    "actual_programs_executed": 93,
+    "planned_unique_programs": 93,
+    "actual_suite_attempts": 105,
+    "unexecuted_programs": 0,
+    "programs_with_repeated_attempts": 6,
+    "candidate_child_cpu_seconds": 1140.670247,
+    "wall_seconds": 1152.4830933138728,
+    "budget_cap_hit": false,
+    "source_sha256_at_start_and_end": "c667367fc2ae8d7f778b2ad931a3251ac7f0465784f55593716a3b5dfff2252a",
+    "all_cache_records_match_current_machine_identity": true,
+    "first_failure_status_by_attempt": {
+      "TIMEOUT_CPU": 18,
+      "WRONG_ANSWER": 61,
+      "RUNTIME_ERROR": 26
+    },
+    "labels_observed_sha256_at_completion": {
+      "qwen": "7333283297144bee28fe39c6ba084e35028bd3b03cb18c2c08d2a9e8f879868d",
+      "ds": "e6715fcbf3b2cf7871a6e8c110691c038a59f9ce71a3e230ab977082f1ddf76b"
+    },
+    "comparison": {
+      "status": "COMPLETE",
+      "groups": [
+        {
+          "model": "qwen",
+          "public_group": "PASS",
+          "drafts": 7,
+          "transitions": {
+            "FAIL -> FAIL": 7
+          },
+          "known_pass_fail_flips": 0,
+          "old_unknown_now_known": 0,
+          "old_known_now_unknown": 0
+        },
+        {
+          "model": "qwen",
+          "public_group": "NOT_PASS",
+          "drafts": 29,
+          "transitions": {
+            "UNKNOWN -> FAIL": 29
+          },
+          "known_pass_fail_flips": 0,
+          "old_unknown_now_known": 29,
+          "old_known_now_unknown": 0
+        },
+        {
+          "model": "ds",
+          "public_group": "PASS",
+          "drafts": 0,
+          "transitions": {},
+          "known_pass_fail_flips": 0,
+          "old_unknown_now_known": 0,
+          "old_known_now_unknown": 0
+        },
+        {
+          "model": "ds",
+          "public_group": "NOT_PASS",
+          "drafts": 59,
+          "transitions": {
+            "UNKNOWN -> FAIL": 59
+          },
+          "known_pass_fail_flips": 0,
+          "old_unknown_now_known": 59,
+          "old_known_now_unknown": 0
+        }
+      ],
+      "interpretation": "Descriptive repeat on a new private-only call sequence, not a causal state estimate; machine/time variation is not separately controlled."
+    },
+    "limitations": [
+      "Static flags do not prove state persistence; unflagged code may still contain indirect state.",
+      "All seven previously known labels in the flagged population were FAIL; no previously known PASS was covered.",
+      "88 UNKNOWN-to-FAIL descriptions are not PASS/FAIL flips and were not written back into main labels.",
+      "CPU machine differs from historical scoring, so this is not a causal state-only experiment.",
+      "Child CPU here sums candidate suite children; setup child CPU was about 0.82 seconds in the live /proc check."
+    ]
+  },
+  "disk_available_gib_at_completion": 31.34158706665039,
+  "unmodified_addendum_issues": [
+    {
+      "section": "6",
+      "issue": "不得预设Qwen基座两个模型的R1成立；召回率由定义决定仅适用于原联合标签。"
+    },
+    {
+      "section": "4",
+      "issue": "缓存键不含机器身份与实际执行缓存身份不符。"
+    }
+  ]
+}

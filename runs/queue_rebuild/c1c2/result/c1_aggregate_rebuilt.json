@@ -1,0 +1,1098 @@
+{
+  "pooled": {
+    "all": {
+      "status": "COMPLETE",
+      "questions": 199,
+      "question_samples": 650,
+      "observed_first_pass": 304,
+      "no_pass_observed": 346,
+      "thinking_cap_hit": 53,
+      "observed_margin_quantiles": {
+        "0": 35.0,
+        "0.25": 2484.0,
+        "0.5": 4301.5,
+        "0.75": 7152.25,
+        "1": 27811.0
+      },
+      "margin_not_net_token_saving": true,
+      "delivery_charged": {
+        "mean_pass_count": 87.25,
+        "mean_pass_fraction": 0.43844221105527637,
+        "mean_generated_tokens": 14750.165829145728,
+        "native_mean_generated_tokens": 17310.39824120603,
+        "native_mean_pass_count": 81.5,
+        "cost_saving_fraction": 0.14790141603824403,
+        "mean_tokens_ci": {
+          "lower": 13431.02311557789,
+          "upper": 16010.629114321608,
+          "valid_replicates": 10000,
+          "undefined_replicates": 0
+        },
+        "pass_fraction_ci": {
+          "lower": 0.3756281407035176,
+          "upper": 0.5025125628140703,
+          "valid_replicates": 10000,
+          "undefined_replicates": 0
+        },
+        "cost_saving_fraction_ci": {
+          "lower": 0.11731261562175684,
+          "upper": 0.18185537192980356,
+          "valid_replicates": 10000,
+          "undefined_replicates": 0
+        }
+      },
+      "delivery_free": {
+        "mean_pass_count": 87.25,
+        "mean_pass_fraction": 0.43844221105527637,
+        "mean_generated_tokens": 14613.081658291458,
+        "native_mean_generated_tokens": 17310.39824120603,
+        "native_mean_pass_count": 81.5,
+        "cost_saving_fraction": 0.15582059669163606,
+        "mean_tokens_ci": {
+          "lower": 13275.575785175879,
+          "upper": 15884.800753768843,
+          "valid_replicates": 10000,
+          "undefined_replicates": 0
+        },
+        "pass_fraction_ci": {
+          "lower": 0.3756281407035176,
+          "upper": 0.5025125628140703,
+          "valid_replicates": 10000,
+          "undefined_replicates": 0
+        },
+        "cost_saving_fraction_ci": {
+          "lower": 0.12368625771190819,
+          "upper": 0.1914264952517026,
+          "valid_replicates": 10000,
+          "undefined_replicates": 0
+        }
+      }
+    },
+    "easy": {
+      "status": "COMPLETE",
+      "questions": 70,
+      "question_samples": 196,
+      "observed_first_pass": 142,
+      "no_pass_observed": 54,
+      "thinking_cap_hit": 11,
+      "observed_margin_quantiles": {
+        "0": 35.0,
+        "0.25": 1336.25,
+        "0.5": 2875.5,
+        "0.75": 4835.0,
+        "1": 18839.0
+      },
+      "margin_not_net_token_saving": true,
+      "delivery_charged": {
+        "mean_pass_count": 45.0,
+        "mean_pass_fraction": 0.6428571428571429,
+        "mean_generated_tokens": 10349.346428571429,
+        "native_mean_generated_tokens": 13507.285714285714,
+        "native_mean_pass_count": 43.5,
+        "cost_saving_fraction": 0.23379525335533202,
+        "mean_tokens_ci": {
+          "lower": 8166.6248214285715,
+          "upper": 12573.519553571428,
+          "valid_replicates": 10000,
+          "undefined_replicates": 0
+        },
+        "pass_fraction_ci": {
+          "lower": 0.5392857142857143,
+          "upper": 0.7428571428571429,
+          "valid_replicates": 10000,
+          "undefined_replicates": 0
+        },
+        "cost_saving_fraction_ci": {
+          "lower": 0.1687884602360094,
+          "upper": 0.30755405005093267,
+          "valid_replicates": 10000,
+          "undefined_replicates": 0
+        }
+      },
+      "delivery_free": {
+        "mean_pass_count": 45.0,
+        "mean_pass_fraction": 0.6428571428571429,
+        "mean_generated_tokens": 10202.075,
+        "native_mean_generated_tokens": 13507.285714285714,
+        "native_mean_pass_count": 43.5,
+        "cost_saving_fraction": 0.24469836384596666,
+        "mean_tokens_ci": {
+          "lower": 8003.335892857143,
+          "upper": 12440.222410714287,
+          "valid_replicates": 10000,
+          "undefined_replicates": 0
+        },
+        "pass_fraction_ci": {
+          "lower": 0.5392857142857143,
+          "upper": 0.7428571428571429,
+          "valid_replicates": 10000,
+          "undefined_replicates": 0
+        },
+        "cost_saving_fraction_ci": {
+          "lower": 0.17660388686499767,
+          "upper": 0.3216833922885522,
+          "valid_replicates": 10000,
+          "undefined_replicates": 0
+        }
+      }
+    },
+    "medium": {
+      "status": "COMPLETE",
+      "questions": 63,
+      "question_samples": 200,
+      "observed_first_pass": 91,
+      "no_pass_observed": 109,
+      "thinking_cap_hit": 14,
+      "observed_margin_quantiles": {
+        "0": 934.0,
+        "0.25": 3682.5,
+        "0.5": 5881.0,
+        "0.75": 7842.0,
+        "1": 19394.0
+      },
+      "margin_not_net_token_saving": true,
+      "delivery_charged": {
+        "mean_pass_count": 23.75,
+        "mean_pass_fraction": 0.376984126984127,
+        "mean_generated_tokens": 15909.892857142857,
+        "native_mean_generated_tokens": 18226.634920634922,
+        "native_mean_pass_count": 22.25,
+        "cost_saving_fraction": 0.1271075035836271,
+        "mean_tokens_ci": {
+          "lower": 13584.36240079365,
+          "upper": 18255.741071428572,
+          "valid_replicates": 10000,
+          "undefined_replicates": 0
+        },
+        "pass_fraction_ci": {
+          "lower": 0.26587301587301587,
+          "upper": 0.4880952380952381,
+          "valid_replicates": 10000,
+          "undefined_replicates": 0
+        },
+        "cost_saving_fraction_ci": {
+          "lower": 0.08077881752479125,
+          "upper": 0.1818593554868019,
+          "valid_replicates": 10000,
+          "undefined_replicates": 0
+        }
+      },
+      "delivery_free": {
+        "mean_pass_count": 23.75,
+        "mean_pass_fraction": 0.376984126984127,
+        "mean_generated_tokens": 15773.829365079366,
+        "native_mean_generated_tokens": 18226.634920634922,
+        "native_mean_pass_count": 22.25,
+        "cost_saving_fraction": 0.13457259478976347,
+        "mean_tokens_ci": {
+          "lower": 13418.719047619048,
+          "upper": 18155.4935515873,
+          "valid_replicates": 10000,
+          "undefined_replicates": 0
+        },
+        "pass_fraction_ci": {
+          "lower": 0.26587301587301587,
+          "upper": 0.4880952380952381,
+          "valid_replicates": 10000,
+          "undefined_replicates": 0
+        },
+        "cost_saving_fraction_ci": {
+          "lower": 0.08544416205468648,
+          "upper": 0.19250066996812784,
+          "valid_replicates": 10000,
+          "undefined_replicates": 0
+        }
+      }
+    },
+    "hard": {
+      "status": "COMPLETE",
+      "questions": 66,
+      "question_samples": 254,
+      "observed_first_pass": 71,
+      "no_pass_observed": 183,
+      "thinking_cap_hit": 28,
+      "observed_margin_quantiles": {
+        "0": 516.0,
+        "0.25": 3946.5,
+        "0.5": 6106.0,
+        "0.75": 9573.5,
+        "1": 27811.0
+      },
+      "margin_not_net_token_saving": true,
+      "delivery_charged": {
+        "mean_pass_count": 18.5,
+        "mean_pass_fraction": 0.2803030303030303,
+        "mean_generated_tokens": 18310.689393939392,
+        "native_mean_generated_tokens": 20469.41287878788,
+        "native_mean_pass_count": 15.75,
+        "cost_saving_fraction": 0.10546093811442625,
+        "mean_tokens_ci": {
+          "lower": 16631.65340909091,
+          "upper": 19930.983333333334,
+          "valid_replicates": 10000,
+          "undefined_replicates": 0
+        },
+        "pass_fraction_ci": {
+          "lower": 0.1893939393939394,
+          "upper": 0.375,
+          "valid_replicates": 10000,
+          "undefined_replicates": 0
+        },
+        "cost_saving_fraction_ci": {
+          "lower": 0.06153025090512293,
+          "upper": 0.15815189026515936,
+          "valid_replicates": 10000,
+          "undefined_replicates": 0
+        }
+      },
+      "delivery_free": {
+        "mean_pass_count": 18.5,
+        "mean_pass_fraction": 0.2803030303030303,
+        "mean_generated_tokens": 18183.435606060608,
+        "native_mean_generated_tokens": 20469.41287878788,
+        "native_mean_pass_count": 15.75,
+        "cost_saving_fraction": 0.11167771573439667,
+        "mean_tokens_ci": {
+          "lower": 16472.20568181818,
+          "upper": 19836.25265151515,
+          "valid_replicates": 10000,
+          "undefined_replicates": 0
+        },
+        "pass_fraction_ci": {
+          "lower": 0.1893939393939394,
+          "upper": 0.375,
+          "valid_replicates": 10000,
+          "undefined_replicates": 0
+        },
+        "cost_saving_fraction_ci": {
+          "lower": 0.06571576069224869,
+          "upper": 0.16636660604393702,
+          "valid_replicates": 10000,
+          "undefined_replicates": 0
+        }
+      }
+    }
+  },
+  "collection:hv6_atcoder": {
+    "all": {
+      "status": "COMPLETE",
+      "questions": 63,
+      "question_samples": 252,
+      "observed_first_pass": 125,
+      "no_pass_observed": 127,
+      "thinking_cap_hit": 29,
+      "observed_margin_quantiles": {
+        "0": 230.0,
+        "0.25": 2100.0,
+        "0.5": 4246.0,
+        "0.75": 6112.0,
+        "1": 27811.0
+      },
+      "margin_not_net_token_saving": true,
+      "delivery_charged": {
+        "mean_pass_count": 32.25,
+        "mean_pass_fraction": 0.5119047619047619,
+        "mean_generated_tokens": 13947.67857142857,
+        "native_mean_generated_tokens": 16681.242063492064,
+        "native_mean_pass_count": 30.0,
+        "cost_saving_fraction": 0.16387050086912092,
+        "mean_tokens_ci": {
+          "lower": 11421.447222222223,
+          "upper": 16365.325793650793,
+          "valid_replicates": 10000,
+          "undefined_replicates": 0
+        },
+        "pass_fraction_ci": {
+          "lower": 0.3968253968253968,
+          "upper": 0.626984126984127,
+          "valid_replicates": 10000,
+          "undefined_replicates": 0
+        },
+        "cost_saving_fraction_ci": {
+          "lower": 0.10767503572953048,
+          "upper": 0.2346438769903286,
+          "valid_replicates": 10000,
+          "undefined_replicates": 0
+        }
+      },
+      "delivery_free": {
+        "mean_pass_count": 32.25,
+        "mean_pass_fraction": 0.5119047619047619,
+        "mean_generated_tokens": 13795.015873015873,
+        "native_mean_generated_tokens": 16681.242063492064,
+        "native_mean_pass_count": 30.0,
+        "cost_saving_fraction": 0.17302225934319826,
+        "mean_tokens_ci": {
+          "lower": 11246.34503968254,
+          "upper": 16239.440873015872,
+          "valid_replicates": 10000,
+          "undefined_replicates": 0
+        },
+        "pass_fraction_ci": {
+          "lower": 0.3968253968253968,
+          "upper": 0.626984126984127,
+          "valid_replicates": 10000,
+          "undefined_replicates": 0
+        },
+        "cost_saving_fraction_ci": {
+          "lower": 0.11404803303300814,
+          "upper": 0.24627764442284308,
+          "valid_replicates": 10000,
+          "undefined_replicates": 0
+        }
+      }
+    },
+    "easy": {
+      "status": "COMPLETE",
+      "questions": 11,
+      "question_samples": 44,
+      "observed_first_pass": 43,
+      "no_pass_observed": 1,
+      "thinking_cap_hit": 0,
+      "observed_margin_quantiles": {
+        "0": 230.0,
+        "0.25": 481.0,
+        "0.5": 1693.0,
+        "0.75": 3746.0,
+        "1": 6092.0
+      },
+      "margin_not_net_token_saving": true,
+      "delivery_charged": {
+        "mean_pass_count": 11.0,
+        "mean_pass_fraction": 1.0,
+        "mean_generated_tokens": 533.1818181818181,
+        "native_mean_generated_tokens": 2751.159090909091,
+        "native_mean_pass_count": 11.0,
+        "cost_saving_fraction": 0.8061973878778367,
+        "mean_tokens_ci": {
+          "lower": 370.1806818181818,
+          "upper": 751.865340909091,
+          "valid_replicates": 10000,
+          "undefined_replicates": 0
+        },
+        "pass_fraction_ci": {
+          "lower": 1.0,
+          "upper": 1.0,
+          "valid_replicates": 10000,
+          "undefined_replicates": 0
+        },
+        "cost_saving_fraction_ci": {
+          "lower": 0.68283851685452,
+          "upper": 0.8756947950276633,
+          "valid_replicates": 10000,
+          "undefined_replicates": 0
+        }
+      },
+      "delivery_free": {
+        "mean_pass_count": 11.0,
+        "mean_pass_fraction": 1.0,
+        "mean_generated_tokens": 416.6818181818182,
+        "native_mean_generated_tokens": 2751.159090909091,
+        "native_mean_pass_count": 11.0,
+        "cost_saving_fraction": 0.8485431760167202,
+        "mean_tokens_ci": {
+          "lower": 263.33579545454546,
+          "upper": 633.1392045454545,
+          "valid_replicates": 10000,
+          "undefined_replicates": 0
+        },
+        "pass_fraction_ci": {
+          "lower": 1.0,
+          "upper": 1.0,
+          "valid_replicates": 10000,
+          "undefined_replicates": 0
+        },
+        "cost_saving_fraction_ci": {
+          "lower": 0.7316360978689429,
+          "upper": 0.9135557241126673,
+          "valid_replicates": 10000,
+          "undefined_replicates": 0
+        }
+      }
+    },
+    "medium": {
+      "status": "COMPLETE",
+      "questions": 11,
+      "question_samples": 44,
+      "observed_first_pass": 32,
+      "no_pass_observed": 12,
+      "thinking_cap_hit": 4,
+      "observed_margin_quantiles": {
+        "0": 934.0,
+        "0.25": 3587.0,
+        "0.5": 4534.0,
+        "0.75": 6051.0,
+        "1": 19394.0
+      },
+      "margin_not_net_token_saving": true,
+      "delivery_charged": {
+        "mean_pass_count": 8.25,
+        "mean_pass_fraction": 0.75,
+        "mean_generated_tokens": 10013.954545454546,
+        "native_mean_generated_tokens": 14005.704545454546,
+        "native_mean_pass_count": 7.75,
+        "cost_saving_fraction": 0.28500886813976767,
+        "mean_tokens_ci": {
+          "lower": 4682.052840909091,
+          "upper": 15907.896022727271,
+          "valid_replicates": 10000,
+          "undefined_replicates": 0
+        },
+        "pass_fraction_ci": {
+          "lower": 0.5,
+          "upper": 0.9545454545454546,
+          "valid_replicates": 10000,
+          "undefined_replicates": 0
+        },
+        "cost_saving_fraction_ci": {
+          "lower": 0.13819732277024555,
+          "upper": 0.5183009589854971,
+          "valid_replicates": 10000,
+          "undefined_replicates": 0
+        }
+      },
+      "delivery_free": {
+        "mean_pass_count": 8.25,
+        "mean_pass_fraction": 0.75,
+        "mean_generated_tokens": 9766.5,
+        "native_mean_generated_tokens": 14005.704545454546,
+        "native_mean_pass_count": 7.75,
+        "cost_saving_fraction": 0.3026769936275966,
+        "mean_tokens_ci": {
+          "lower": 4382.946022727273,
+          "upper": 15724.069318181819,
+          "valid_replicates": 10000,
+          "undefined_replicates": 0
+        },
+        "pass_fraction_ci": {
+          "lower": 0.5,
+          "upper": 0.9545454545454546,
+          "valid_replicates": 10000,
+          "undefined_replicates": 0
+        },
+        "cost_saving_fraction_ci": {
+          "lower": 0.14687019896557432,
+          "upper": 0.5515830998398349,
+          "valid_replicates": 10000,
+          "undefined_replicates": 0
+        }
+      }
+    },
+    "hard": {
+      "status": "COMPLETE",
+      "questions": 41,
+      "question_samples": 164,
+      "observed_first_pass": 50,
+      "no_pass_observed": 114,
+      "thinking_cap_hit": 25,
+      "observed_margin_quantiles": {
+        "0": 516.0,
+        "0.25": 4057.5,
+        "0.5": 6127.0,
+        "0.75": 9240.25,
+        "1": 27811.0
+      },
+      "margin_not_net_token_saving": true,
+      "delivery_charged": {
+        "mean_pass_count": 13.0,
+        "mean_pass_fraction": 0.3170731707317073,
+        "mean_generated_tokens": 18602.079268292684,
+        "native_mean_generated_tokens": 21136.408536585364,
+        "native_mean_pass_count": 11.25,
+        "cost_saving_fraction": 0.11990349561544322,
+        "mean_tokens_ci": {
+          "lower": 16343.879725609757,
+          "upper": 20813.93048780488,
+          "valid_replicates": 10000,
+          "undefined_replicates": 0
+        },
+        "pass_fraction_ci": {
+          "lower": 0.1951219512195122,
+          "upper": 0.4451219512195122,
+          "valid_replicates": 10000,
+          "undefined_replicates": 0
+        },
+        "cost_saving_fraction_ci": {
+          "lower": 0.062634501273734,
+          "upper": 0.19346772781422347,
+          "valid_replicates": 10000,
+          "undefined_replicates": 0
+        }
+      },
+      "delivery_free": {
+        "mean_pass_count": 13.0,
+        "mean_pass_fraction": 0.3170731707317073,
+        "mean_generated_tokens": 18465.146341463416,
+        "native_mean_generated_tokens": 21136.408536585364,
+        "native_mean_pass_count": 11.25,
+        "cost_saving_fraction": 0.12638202892881334,
+        "mean_tokens_ci": {
+          "lower": 16156.31768292683,
+          "upper": 20723.427591463416,
+          "valid_replicates": 10000,
+          "undefined_replicates": 0
+        },
+        "pass_fraction_ci": {
+          "lower": 0.1951219512195122,
+          "upper": 0.4451219512195122,
+          "valid_replicates": 10000,
+          "undefined_replicates": 0
+        },
+        "cost_saving_fraction_ci": {
+          "lower": 0.06669786017789263,
+          "upper": 0.20299637487508926,
+          "valid_replicates": 10000,
+          "undefined_replicates": 0
+        }
+      }
+    }
+  },
+  "collection:hv6_leetcode": {
+    "all": {
+      "status": "COMPLETE",
+      "questions": 63,
+      "question_samples": 252,
+      "observed_first_pass": 141,
+      "no_pass_observed": 111,
+      "thinking_cap_hit": 6,
+      "observed_margin_quantiles": {
+        "0": 35.0,
+        "0.25": 2142.0,
+        "0.5": 3938.0,
+        "0.75": 6575.0,
+        "1": 14943.0
+      },
+      "margin_not_net_token_saving": true,
+      "delivery_charged": {
+        "mean_pass_count": 36.0,
+        "mean_pass_fraction": 0.5714285714285714,
+        "mean_generated_tokens": 10728.95634920635,
+        "native_mean_generated_tokens": 13576.666666666666,
+        "native_mean_pass_count": 34.0,
+        "cost_saving_fraction": 0.2097503302818794,
+        "mean_tokens_ci": {
+          "lower": 8675.342261904761,
+          "upper": 12787.829464285713,
+          "valid_replicates": 10000,
+          "undefined_replicates": 0
+        },
+        "pass_fraction_ci": {
+          "lower": 0.4642857142857143,
+          "upper": 0.6785714285714286,
+          "valid_replicates": 10000,
+          "undefined_replicates": 0
+        },
+        "cost_saving_fraction_ci": {
+          "lower": 0.14874357979806083,
+          "upper": 0.28291646133449566,
+          "valid_replicates": 10000,
+          "undefined_replicates": 0
+        }
+      },
+      "delivery_free": {
+        "mean_pass_count": 36.0,
+        "mean_pass_fraction": 0.5714285714285714,
+        "mean_generated_tokens": 10567.464285714286,
+        "native_mean_generated_tokens": 13576.666666666666,
+        "native_mean_pass_count": 34.0,
+        "cost_saving_fraction": 0.22164515450177114,
+        "mean_tokens_ci": {
+          "lower": 8490.994345238096,
+          "upper": 12647.1,
+          "valid_replicates": 10000,
+          "undefined_replicates": 0
+        },
+        "pass_fraction_ci": {
+          "lower": 0.4642857142857143,
+          "upper": 0.6785714285714286,
+          "valid_replicates": 10000,
+          "undefined_replicates": 0
+        },
+        "cost_saving_fraction_ci": {
+          "lower": 0.1572642454324348,
+          "upper": 0.2981544790618294,
+          "valid_replicates": 10000,
+          "undefined_replicates": 0
+        }
+      }
+    },
+    "easy": {
+      "status": "COMPLETE",
+      "questions": 17,
+      "question_samples": 68,
+      "observed_first_pass": 63,
+      "no_pass_observed": 5,
+      "thinking_cap_hit": 0,
+      "observed_margin_quantiles": {
+        "0": 35.0,
+        "0.25": 1204.5,
+        "0.5": 2212.0,
+        "0.75": 3637.5,
+        "1": 6256.0
+      },
+      "margin_not_net_token_saving": true,
+      "delivery_charged": {
+        "mean_pass_count": 16.0,
+        "mean_pass_fraction": 0.9411764705882353,
+        "mean_generated_tokens": 2592.25,
+        "native_mean_generated_tokens": 5131.426470588235,
+        "native_mean_pass_count": 16.0,
+        "cost_saving_fraction": 0.4948285793710613,
+        "mean_tokens_ci": {
+          "lower": 872.7044117647059,
+          "upper": 4939.181985294117,
+          "valid_replicates": 10000,
+          "undefined_replicates": 0
+        },
+        "pass_fraction_ci": {
+          "lower": 0.8382352941176471,
+          "upper": 1.0,
+          "valid_replicates": 10000,
+          "undefined_replicates": 0
+        },
+        "cost_saving_fraction_ci": {
+          "lower": 0.2990640607625113,
+          "upper": 0.7568390101054114,
+          "valid_replicates": 10000,
+          "undefined_replicates": 0
+        }
+      },
+      "delivery_free": {
+        "mean_pass_count": 16.0,
+        "mean_pass_fraction": 0.9411764705882353,
+        "mean_generated_tokens": 2478.720588235294,
+        "native_mean_generated_tokens": 5131.426470588235,
+        "native_mean_pass_count": 16.0,
+        "cost_saving_fraction": 0.5169529170022096,
+        "mean_tokens_ci": {
+          "lower": 753.8305147058824,
+          "upper": 4834.624999999996,
+          "valid_replicates": 10000,
+          "undefined_replicates": 0
+        },
+        "pass_fraction_ci": {
+          "lower": 0.8382352941176471,
+          "upper": 1.0,
+          "valid_replicates": 10000,
+          "undefined_replicates": 0
+        },
+        "cost_saving_fraction_ci": {
+          "lower": 0.31274568862582625,
+          "upper": 0.789383671004853,
+          "valid_replicates": 10000,
+          "undefined_replicates": 0
+        }
+      }
+    },
+    "medium": {
+      "status": "COMPLETE",
+      "questions": 26,
+      "question_samples": 104,
+      "observed_first_pass": 57,
+      "no_pass_observed": 47,
+      "thinking_cap_hit": 4,
+      "observed_margin_quantiles": {
+        "0": 1132.0,
+        "0.25": 4258.0,
+        "0.5": 6351.0,
+        "0.75": 8440.0,
+        "1": 13190.0
+      },
+      "margin_not_net_token_saving": true,
+      "delivery_charged": {
+        "mean_pass_count": 14.5,
+        "mean_pass_fraction": 0.5576923076923077,
+        "mean_generated_tokens": 11282.35576923077,
+        "native_mean_generated_tokens": 15038.951923076924,
+        "native_mean_pass_count": 13.5,
+        "cost_saving_fraction": 0.2497910873750281,
+        "mean_tokens_ci": {
+          "lower": 8304.790865384615,
+          "upper": 14208.901923076923,
+          "valid_replicates": 10000,
+          "undefined_replicates": 0
+        },
+        "pass_fraction_ci": {
+          "lower": 0.3942307692307692,
+          "upper": 0.7307692307692307,
+          "valid_replicates": 10000,
+          "undefined_replicates": 0
+        },
+        "cost_saving_fraction_ci": {
+          "lower": 0.15441237827585183,
+          "upper": 0.3712831357581666,
+          "valid_replicates": 10000,
+          "undefined_replicates": 0
+        }
+      },
+      "delivery_free": {
+        "mean_pass_count": 14.5,
+        "mean_pass_fraction": 0.5576923076923077,
+        "mean_generated_tokens": 11072.375,
+        "native_mean_generated_tokens": 15038.951923076924,
+        "native_mean_pass_count": 13.5,
+        "cost_saving_fraction": 0.2637535476784325,
+        "mean_tokens_ci": {
+          "lower": 8039.597836538462,
+          "upper": 14058.901201923076,
+          "valid_replicates": 10000,
+          "undefined_replicates": 0
+        },
+        "pass_fraction_ci": {
+          "lower": 0.3942307692307692,
+          "upper": 0.7307692307692307,
+          "valid_replicates": 10000,
+          "undefined_replicates": 0
+        },
+        "cost_saving_fraction_ci": {
+          "lower": 0.1633076844058436,
+          "upper": 0.39205349426649966,
+          "valid_replicates": 10000,
+          "undefined_replicates": 0
+        }
+      }
+    },
+    "hard": {
+      "status": "COMPLETE",
+      "questions": 20,
+      "question_samples": 80,
+      "observed_first_pass": 21,
+      "no_pass_observed": 59,
+      "thinking_cap_hit": 2,
+      "observed_margin_quantiles": {
+        "0": 793.0,
+        "0.25": 3795.0,
+        "0.5": 5474.0,
+        "0.75": 9792.0,
+        "1": 14943.0
+      },
+      "margin_not_net_token_saving": true,
+      "delivery_charged": {
+        "mean_pass_count": 5.5,
+        "mean_pass_fraction": 0.275,
+        "mean_generated_tokens": 16925.7375,
+        "native_mean_generated_tokens": 18854.15,
+        "native_mean_pass_count": 4.5,
+        "cost_saving_fraction": 0.10228053240268065,
+        "mean_tokens_ci": {
+          "lower": 14236.580625,
+          "upper": 19376.678125,
+          "valid_replicates": 10000,
+          "undefined_replicates": 0
+        },
+        "pass_fraction_ci": {
+          "lower": 0.125,
+          "upper": 0.45,
+          "valid_replicates": 10000,
+          "undefined_replicates": 0
+        },
+        "cost_saving_fraction_ci": {
+          "lower": 0.036232087537698514,
+          "upper": 0.19229836504085268,
+          "valid_replicates": 10000,
+          "undefined_replicates": 0
+        }
+      },
+      "delivery_free": {
+        "mean_pass_count": 5.5,
+        "mean_pass_fraction": 0.275,
+        "mean_generated_tokens": 16786.5125,
+        "native_mean_generated_tokens": 18854.15,
+        "native_mean_pass_count": 4.5,
+        "cost_saving_fraction": 0.10966484832251788,
+        "mean_tokens_ci": {
+          "lower": 14037.636875,
+          "upper": 19290.2459375,
+          "valid_replicates": 10000,
+          "undefined_replicates": 0
+        },
+        "pass_fraction_ci": {
+          "lower": 0.125,
+          "upper": 0.45,
+          "valid_replicates": 10000,
+          "undefined_replicates": 0
+        },
+        "cost_saving_fraction_ci": {
+          "lower": 0.03964886378022424,
+          "upper": 0.2042440699925533,
+          "valid_replicates": 10000,
+          "undefined_replicates": 0
+        }
+      }
+    }
+  },
+  "collection:lcbpro_2025": {
+    "all": {
+      "status": "COMPLETE",
+      "questions": 73,
+      "question_samples": 146,
+      "observed_first_pass": 38,
+      "no_pass_observed": 108,
+      "thinking_cap_hit": 18,
+      "observed_margin_quantiles": {
+        "0": 1530.0,
+        "0.25": 4395.5,
+        "0.5": 7437.5,
+        "0.75": 11190.25,
+        "1": 18839.0
+      },
+      "margin_not_net_token_saving": true,
+      "delivery_charged": {
+        "mean_pass_count": 19.0,
+        "mean_pass_fraction": 0.2602739726027397,
+        "mean_generated_tokens": 18913.08219178082,
+        "native_mean_generated_tokens": 21075.630136986303,
+        "native_mean_pass_count": 17.5,
+        "cost_saving_fraction": 0.10260893416469463,
+        "mean_tokens_ci": {
+          "lower": 17166.24212328767,
+          "upper": 20588.283732876713,
+          "valid_replicates": 10000,
+          "undefined_replicates": 0
+        },
+        "pass_fraction_ci": {
+          "lower": 0.17123287671232876,
+          "upper": 0.3561643835616438,
+          "valid_replicates": 10000,
+          "undefined_replicates": 0
+        },
+        "cost_saving_fraction_ci": {
+          "lower": 0.0625492683341036,
+          "upper": 0.14885418941049788,
+          "valid_replicates": 10000,
+          "undefined_replicates": 0
+        }
+      },
+      "delivery_free": {
+        "mean_pass_count": 19.0,
+        "mean_pass_fraction": 0.2602739726027397,
+        "mean_generated_tokens": 18810.50684931507,
+        "native_mean_generated_tokens": 21075.630136986303,
+        "native_mean_pass_count": 17.5,
+        "cost_saving_fraction": 0.10747594605468502,
+        "mean_tokens_ci": {
+          "lower": 17034.669006849315,
+          "upper": 20519.22020547945,
+          "valid_replicates": 10000,
+          "undefined_replicates": 0
+        },
+        "pass_fraction_ci": {
+          "lower": 0.17123287671232876,
+          "upper": 0.3561643835616438,
+          "valid_replicates": 10000,
+          "undefined_replicates": 0
+        },
+        "cost_saving_fraction_ci": {
+          "lower": 0.06556069517169538,
+          "upper": 0.15578339082507597,
+          "valid_replicates": 10000,
+          "undefined_replicates": 0
+        }
+      }
+    },
+    "easy": {
+      "status": "COMPLETE",
+      "questions": 42,
+      "question_samples": 84,
+      "observed_first_pass": 36,
+      "no_pass_observed": 48,
+      "thinking_cap_hit": 11,
+      "observed_margin_quantiles": {
+        "0": 1530.0,
+        "0.25": 4702.5,
+        "0.5": 7666.5,
+        "0.75": 11606.0,
+        "1": 18839.0
+      },
+      "margin_not_net_token_saving": true,
+      "delivery_charged": {
+        "mean_pass_count": 18.0,
+        "mean_pass_fraction": 0.42857142857142855,
+        "mean_generated_tokens": 16060.02380952381,
+        "native_mean_generated_tokens": 19714.595238095237,
+        "native_mean_pass_count": 16.5,
+        "cost_saving_fraction": 0.18537390113440244,
+        "mean_tokens_ci": {
+          "lower": 13729.604166666666,
+          "upper": 18392.973214285714,
+          "valid_replicates": 10000,
+          "undefined_replicates": 0
+        },
+        "pass_fraction_ci": {
+          "lower": 0.2976190476190476,
+          "upper": 0.5595238095238095,
+          "valid_replicates": 10000,
+          "undefined_replicates": 0
+        },
+        "cost_saving_fraction_ci": {
+          "lower": 0.11833851429113353,
+          "upper": 0.2616005330947386,
+          "valid_replicates": 10000,
+          "undefined_replicates": 0
+        }
+      },
+      "delivery_free": {
+        "mean_pass_count": 18.0,
+        "mean_pass_fraction": 0.42857142857142855,
+        "mean_generated_tokens": 15891.035714285714,
+        "native_mean_generated_tokens": 19714.595238095237,
+        "native_mean_pass_count": 16.5,
+        "cost_saving_fraction": 0.19394562645755564,
+        "mean_tokens_ci": {
+          "lower": 13511.927083333334,
+          "upper": 18270.86220238095,
+          "valid_replicates": 10000,
+          "undefined_replicates": 0
+        },
+        "pass_fraction_ci": {
+          "lower": 0.2976190476190476,
+          "upper": 0.5595238095238095,
+          "valid_replicates": 10000,
+          "undefined_replicates": 0
+        },
+        "cost_saving_fraction_ci": {
+          "lower": 0.12378969181428935,
+          "upper": 0.2735114091281707,
+          "valid_replicates": 10000,
+          "undefined_replicates": 0
+        }
+      }
+    },
+    "medium": {
+      "status": "COMPLETE",
+      "questions": 26,
+      "question_samples": 52,
+      "observed_first_pass": 2,
+      "no_pass_observed": 50,
+      "thinking_cap_hit": 6,
+      "observed_margin_quantiles": {
+        "0": 2670.0,
+        "0.25": 3364.75,
+        "0.5": 4059.5,
+        "0.75": 4754.25,
+        "1": 5449.0
+      },
+      "margin_not_net_token_saving": true,
+      "delivery_charged": {
+        "mean_pass_count": 1.0,
+        "mean_pass_fraction": 0.038461538461538464,
+        "mean_generated_tokens": 23031.865384615383,
+        "native_mean_generated_tokens": 23200.096153846152,
+        "native_mean_pass_count": 1.0,
+        "cost_saving_fraction": 0.0072512962064977815,
+        "mean_tokens_ci": {
+          "lower": 20749.521634615383,
+          "upper": 25004.567788461536,
+          "valid_replicates": 10000,
+          "undefined_replicates": 0
+        },
+        "pass_fraction_ci": {
+          "lower": 0.0,
+          "upper": 0.11538461538461539,
+          "valid_replicates": 10000,
+          "undefined_replicates": 0
+        },
+        "cost_saving_fraction_ci": {
+          "lower": 0.0,
+          "upper": 0.02377947661834115,
+          "valid_replicates": 10000,
+          "undefined_replicates": 0
+        }
+      },
+      "delivery_free": {
+        "mean_pass_count": 1.0,
+        "mean_pass_fraction": 0.038461538461538464,
+        "mean_generated_tokens": 23016.846153846152,
+        "native_mean_generated_tokens": 23200.096153846152,
+        "native_mean_pass_count": 1.0,
+        "cost_saving_fraction": 0.007898674160004338,
+        "mean_tokens_ci": {
+          "lower": 20713.409134615384,
+          "upper": 25003.580288461537,
+          "valid_replicates": 10000,
+          "undefined_replicates": 0
+        },
+        "pass_fraction_ci": {
+          "lower": 0.0,
+          "upper": 0.11538461538461539,
+          "valid_replicates": 10000,
+          "undefined_replicates": 0
+        },
+        "cost_saving_fraction_ci": {
+          "lower": 0.0,
+          "upper": 0.025902450010993703,
+          "valid_replicates": 10000,
+          "undefined_replicates": 0
+        }
+      }
+    },
+    "hard": {
+      "status": "COMPLETE",
+      "questions": 5,
+      "question_samples": 10,
+      "observed_first_pass": 0,
+      "no_pass_observed": 10,
+      "thinking_cap_hit": 1,
+      "observed_margin_quantiles": {
+        "0": null,
+        "0.25": null,
+        "0.5": null,
+        "0.75": null,
+        "1": null
+      },
+      "margin_not_net_token_saving": true,
+      "delivery_charged": {
+        "mean_pass_count": 0.0,
+        "mean_pass_fraction": 0.0,
+        "mean_generated_tokens": 21461.1,
+        "native_mean_generated_tokens": 21461.1,
+        "native_mean_pass_count": 0.0,
+        "cost_saving_fraction": 0.0,
+        "mean_tokens_ci": {
+          "lower": 18933.9,
+          "upper": 24291.3,
+          "valid_replicates": 10000,
+          "undefined_replicates": 0
+        },
+        "pass_fraction_ci": {
+          "lower": 0.0,
+          "upper": 0.0,
+          "valid_replicates": 10000,
+          "undefined_replicates": 0
+        },
+        "cost_saving_fraction_ci": {
+          "lower": 0.0,
+          "upper": 0.0,
+          "valid_replicates": 10000,
+          "undefined_replicates": 0
+        }
+      },
+      "delivery_free": {
+        "mean_pass_count": 0.0,
+        "mean_pass_fraction": 0.0,
+        "mean_generated_tokens": 21461.1,
+        "native_mean_generated_tokens": 21461.1,
+        "native_mean_pass_count": 0.0,
+        "cost_saving_fraction": 0.0,
+        "mean_tokens_ci": {
+          "lower": 18933.9,
+          "upper": 24291.3,
+          "valid_replicates": 10000,
+          "undefined_replicates": 0
+        },
+        "pass_fraction_ci": {
+          "lower": 0.0,
+          "upper": 0.0,
+          "valid_replicates": 10000,
+          "undefined_replicates": 0
+        },
+        "cost_saving_fraction_ci": {
+          "lower": 0.0,
+          "upper": 0.0,
+          "valid_replicates": 10000,
+          "undefined_replicates": 0
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,3315 @@
+{
+  "status": "PRESENTED_AUDITED_STATISTICS",
+  "source_identities": {
+    "original": {
+      "path": "/root/autodl-tmp/cs336-new/runs/qwen_frozen_primary_recovery1/statistics/summary.json",
+      "sha256": "ac837953042d4969120c612fdd0f4e446ebdbbf2062c23d3ff009da1a9c0cabc"
+    },
+    "erratum": {
+      "path": "/root/autodl-tmp/cs336-new/runs/qwen_erratum/statistics/summary.json",
+      "sha256": "75b180d7dd64d6fbc987296f4f1780841a2f7866af66d9c9b4f29e408b870125"
+    },
+    "independent_audit": {
+      "path": "/root/autodl-tmp/cs336-new/runs/qwen_public_erratum_independent_audit/audit_result.json",
+      "sha256": "998e16182065177ff352196ca6a7646b21016f0d87bf09314e1c168ca7743e12"
+    },
+    "public_source_recheck": {
+      "path": "/root/autodl-tmp/cs336-new/runs/primary_erratum_presentation_prepare/public_source_recheck.json",
+      "sha256": "d8412910ff867de097a5fe13f480b572b2e3c50937395d8b6e8a75ac6094bd92"
+    },
+    "presentation_source": {
+      "path": "/root/autodl-tmp/cs336-new/runs/primary_erratum_presentation_prepare/source/render_primary_comparison.py",
+      "sha256": "fa5378a392c3284e9f9f4ac20b79702bc90cb95b5ff97f70978a620d35c77652"
+    }
+  },
+  "original_result_status": "SUSPENDED_PUBLIC_INPUT_DEFECT_PRESERVED",
+  "erratum_result_status": "INDEPENDENT_AUDIT_PASS",
+  "questions": 199,
+  "question_samples": 650,
+  "configurations": 43,
+  "unchanged_collections_verified": [
+    "hv6_atcoder",
+    "hv6_leetcode"
+  ],
+  "bootstrap_same": true,
+  "recomputed_statistics": false,
+  "new_generation": false,
+  "new_scoring": false,
+  "comparisons": [
+    {
+      "version": "original",
+      "population": "pooled",
+      "questions": 199,
+      "estimates": {
+        "N": {
+          "name": "N",
+          "questions": 199,
+          "fixed_samples": 650,
+          "unknown_outcomes": 0,
+          "unknown_costs": 0,
+          "mean_passed_questions": 73.0,
+          "pass_rate": 0.36683417085427134,
+          "pass_rate_ci95": [
+            0.3241206030150754,
+            0.4120603015075377
+          ],
+          "pass_rate_bounds": [
+            0.36683417085427134,
+            0.36683417085427134
+          ],
+          "mean_tokens": 17310.39824120603,
+          "mean_tokens_ci95": [
+            16602.898680904524,
+            18021.921388190956
+          ],
+          "known_token_sum": 10702035.0
+        },
+        "BF@4096": {
+          "name": "BF@4096",
+          "questions": 199,
+          "fixed_samples": 650,
+          "unknown_outcomes": 0,
+          "unknown_costs": 0,
+          "mean_passed_questions": 67.5,
+          "pass_rate": 0.3391959798994975,
+          "pass_rate_ci95": [
+            0.2952261306532663,
+            0.3844221105527638
+          ],
+          "pass_rate_bounds": [
+            0.3391959798994975,
+            0.3391959798994975
+          ],
+          "mean_tokens": 14522.776381909547,
+          "mean_tokens_ci95": [
+            13643.712374371858,
+            15402.757883165828
+          ],
+          "known_token_sum": 8784879.0
+        },
+        "HYB-B": {
+          "name": "HYB-B",
+          "questions": 199,
+          "fixed_samples": 650,
+          "unknown_outcomes": 0,
+          "unknown_costs": 0,
+          "mean_passed_questions": 70.75,
+          "pass_rate": 0.3555276381909548,
+          "pass_rate_ci95": [
+            0.3103015075376884,
+            0.40326633165829145
+          ],
+          "pass_rate_bounds": [
+            0.3555276381909548,
+            0.3555276381909548
+          ],
+          "mean_tokens": 16007.060301507538,
+          "mean_tokens_ci95": [
+            15025.315295226132,
+            16957.47851758794
+          ],
+          "known_token_sum": 9613588.0
+        }
+      },
+      "comparisons": {
+        "N": {
+          "candidate": "HYB-B",
+          "reference": "N",
+          "complete": true,
+          "formal_eligible": true,
+          "pass_difference_pp": -1.1306532663316549,
+          "pass_difference_pp_ci95": [
+            -2.7638190954773876,
+            0.37688442211055717
+          ],
+          "pass_difference_pp_bounds": [
+            -1.1306532663316584,
+            -1.1306532663316584
+          ],
+          "token_saving_percent": 7.529219845422153,
+          "token_saving_percent_ci95": [
+            4.614876946336083,
+            10.767405806389451
+          ],
+          "mean_token_difference": -1303.337939698491,
+          "mean_token_difference_ci95": [
+            -1844.1419597989927,
+            -812.4424623115555
+          ],
+          "rescued_question_equivalents": 2.0,
+          "harmed_question_equivalents": 4.25,
+          "paired_outcome_unknown": 0,
+          "rescued_pairs": [
+            {
+              "case_id": "codeforces:2113A",
+              "sample_index": 0
+            },
+            {
+              "case_id": "codeforces:2117D",
+              "sample_index": 0
+            },
+            {
+              "case_id": "codeforces:2121G",
+              "sample_index": 1
+            },
+            {
+              "case_id": "atcoder:abc396_d",
+              "sample_index": 3
+            },
+            {
+              "case_id": "leetcode:3714",
+              "sample_index": 1
+            }
+          ],
+          "harmed_pairs": [
+            {
+              "case_id": "leetcode:3677",
+              "sample_index": 1
+            },
+            {
+              "case_id": "leetcode:3714",
+              "sample_index": 0
+            },
+            {
+              "case_id": "leetcode:3753",
+              "sample_index": 0
+            },
+            {
+              "case_id": "leetcode:3753",
+              "sample_index": 1
+            },
+            {
+              "case_id": "leetcode:3753",
+              "sample_index": 2
+            },
+            {
+              "case_id": "leetcode:3753",
+              "sample_index": 3
+            },
+            {
+              "case_id": "leetcode:3760",
+              "sample_index": 1
+            },
+            {
+              "case_id": "leetcode:3705",
+              "sample_index": 0
+            },
+            {
+              "case_id": "leetcode:3705",
+              "sample_index": 2
+            },
+            {
+              "case_id": "leetcode:3705",
+              "sample_index": 3
+            },
+            {
+              "case_id": "leetcode:3788",
+              "sample_index": 0
+            },
+            {
+              "case_id": "leetcode:3750",
+              "sample_index": 2
+            },
+            {
+              "case_id": "leetcode:3801",
+              "sample_index": 0
+            },
+            {
+              "case_id": "leetcode:3744",
+              "sample_index": 0
+            },
+            {
+              "case_id": "leetcode:3739",
+              "sample_index": 0
+            },
+            {
+              "case_id": "leetcode:3739",
+              "sample_index": 2
+            },
+            {
+              "case_id": "leetcode:3692",
+              "sample_index": 3
+            }
+          ],
+          "nominal_noninferiority": true,
+          "strict_noninferiority": false,
+          "strict": {
+            "harmed_questions": 11,
+            "questions": 199,
+            "possible_additional_harmed_questions": 0,
+            "upper_probability_97_5": 0.09675069727404298,
+            "threshold": 0.03,
+            "strict_less_than": true,
+            "harmed_question_ids": [
+              "leetcode:3677",
+              "leetcode:3714",
+              "leetcode:3753",
+              "leetcode:3760",
+              "leetcode:3705",
+              "leetcode:3788",
+              "leetcode:3750",
+              "leetcode:3801",
+              "leetcode:3744",
+              "leetcode:3739",
+              "leetcode:3692"
+            ],
+            "assumptions": "One-sided 97.5% binomial Clopper-Pearson upper bound for the probability a question has at least one N PASS / HYB-B FAIL sample. Exact coverage requires independent Bernoulli question indicators with a common p. Fixed heterogeneous collection/difficulty quotas do not establish this assumption; no unconditional exact coverage claim for their mixture. ANY-harm is stronger than mean net pass-rate loss, depends on sample_count, and is not per-sample harm probability."
+          },
+          "decision_scope": "COMPLETE",
+          "secondary_n_success_subset": {
+            "role": "secondary",
+            "used_for_primary_decision": false,
+            "status": "COMPLETE_SECONDARY_DIAGNOSTIC",
+            "eligibility": "At least one N PASS among all predeclared samples for the question",
+            "harm": "At least one paired sample with N PASS and HYB-B FAIL",
+            "original_population_questions": 199,
+            "eligible_questions_known": 91,
+            "eligible_questions_bounds": [
+              91,
+              91
+            ],
+            "excluded_all_n_failed_questions": 108,
+            "eligibility_unknown_questions": 0,
+            "eligibility_known_questions": 199,
+            "eligibility_coverage": 1.0,
+            "eligible_harmed_questions_known": 11,
+            "eligible_harm_unknown_questions": 0,
+            "eligible_harm_known_questions": 91,
+            "unknown_n_sample_labels": 0,
+            "unknown_candidate_sample_labels": 0,
+            "harm_indicator_identified": true,
+            "parent_comparison_complete": true,
+            "harmed_proportion": 0.12087912087912088,
+            "upper_probability_97_5": 0.2060005992565852,
+            "eligible_question_ids": [
+              "codeforces:2110A",
+              "codeforces:2110B",
+              "codeforces:2111A",
+              "codeforces:2113A",
+              "codeforces:2114B",
+              "codeforces:2114C",
+              "codeforces:2114E",
+              "codeforces:2118D1",
+              "codeforces:2120A",
+              "codeforces:2120B",
+              "codeforces:2121F",
+              "codeforces:2121G",
+              "atcoder:abc387_b",
+              "atcoder:abc387_a",
+              "atcoder:abc387_c",
+              "atcoder:abc388_b",
+              "atcoder:abc388_g",
+              "atcoder:abc389_d",
+              "atcoder:abc389_a",
+              "atcoder:abc389_f",
+              "atcoder:abc390_f",
+              "atcoder:abc391_f",
+              "atcoder:abc391_a",
+              "atcoder:abc391_b",
+              "atcoder:abc392_b",
+              "atcoder:abc393_f",
+              "atcoder:abc393_e",
+              "atcoder:abc393_d",
+              "atcoder:abc393_b",
+              "atcoder:abc395_f",
+              "atcoder:abc395_b",
+              "atcoder:abc396_g",
+              "atcoder:abc396_c",
+              "atcoder:abc396_b",
+              "atcoder:abc396_d",
+              "atcoder:abc397_f",
+              "atcoder:abc397_c",
+              "atcoder:abc397_b",
+              "atcoder:abc398_d",
+              "atcoder:abc398_c",
+              "atcoder:abc399_c",
+              "atcoder:abc399_f",
+              "atcoder:abc399_b",
+              "atcoder:abc400_e",
+              "atcoder:arc191_d",
+              "atcoder:arc194_b",
+              "atcoder:arc194_e",
+              "atcoder:arc195_a",
+              "leetcode:3708",
+              "leetcode:3677",
+              "leetcode:3720",
+              "leetcode:3731",
+              "leetcode:3714",
+              "leetcode:3737",
+              "leetcode:3704",
+              "leetcode:3721",
+              "leetcode:3753",
+              "leetcode:3754",
+              "leetcode:3748",
+              "leetcode:3760",
+              "leetcode:3709",
+              "leetcode:3771",
+              "leetcode:3733",
+              "leetcode:3768",
+              "leetcode:3764",
+              "leetcode:3705",
+              "leetcode:3786",
+              "leetcode:3722",
+              "leetcode:3759",
+              "leetcode:3788",
+              "leetcode:3750",
+              "leetcode:3801",
+              "leetcode:3817",
+              "leetcode:3809",
+              "leetcode:3744",
+              "leetcode:3832",
+              "leetcode:3793",
+              "leetcode:3773",
+              "leetcode:3747",
+              "leetcode:3739",
+              "leetcode:3736",
+              "leetcode:3723",
+              "leetcode:3692",
+              "leetcode:3778",
+              "leetcode:3785",
+              "leetcode:3783",
+              "leetcode:3799",
+              "leetcode:3784",
+              "leetcode:3811",
+              "leetcode:3805",
+              "leetcode:3765"
+            ],
+            "excluded_all_n_failed_question_ids": [
+              "codeforces:2101B",
+              "codeforces:2101C",
+              "codeforces:2101D",
+              "codeforces:2101E",
+              "codeforces:2102A",
+              "codeforces:2102B",
+              "codeforces:2107B",
+              "codeforces:2107D",
+              "codeforces:2107F1",
+              "codeforces:2107F2",
+              "codeforces:2108A",
+              "codeforces:2108B",
+              "codeforces:2108C",
+              "codeforces:2108F",
+              "codeforces:2109A",
+              "codeforces:2109D",
+              "codeforces:2109E",
+              "codeforces:2109F",
+              "codeforces:2110D",
+              "codeforces:2110F",
+              "codeforces:2111B",
+              "codeforces:2111C",
+              "codeforces:2111E",
+              "codeforces:2112A",
+              "codeforces:2112B",
+              "codeforces:2112C",
+              "codeforces:2112E",
+              "codeforces:2112F",
+              "codeforces:2113B",
+              "codeforces:2113C",
+              "codeforces:2113D",
+              "codeforces:2113E",
+              "codeforces:2114D",
+              "codeforces:2114F",
+              "codeforces:2114G",
+              "codeforces:2115A",
+              "codeforces:2115D",
+              "codeforces:2115E",
+              "codeforces:2115F1",
+              "codeforces:2115F2",
+              "codeforces:2116A",
+              "codeforces:2116B",
+              "codeforces:2117A",
+              "codeforces:2117C",
+              "codeforces:2117D",
+              "codeforces:2117E",
+              "codeforces:2117F",
+              "codeforces:2117G",
+              "codeforces:2117H",
+              "codeforces:2118C",
+              "codeforces:2118D2",
+              "codeforces:2118F",
+              "codeforces:2120D",
+              "codeforces:2120E",
+              "codeforces:2120F",
+              "codeforces:2120G",
+              "codeforces:2121A",
+              "codeforces:2121B",
+              "codeforces:2121C",
+              "codeforces:2121E",
+              "codeforces:2121H",
+              "atcoder:abc387_f",
+              "atcoder:abc388_f",
+              "atcoder:abc389_g",
+              "atcoder:abc390_e",
+              "atcoder:abc390_g",
+              "atcoder:abc391_e",
+              "atcoder:abc391_g",
+              "atcoder:abc392_g",
+              "atcoder:abc392_f",
+              "atcoder:abc394_f",
+              "atcoder:abc394_e",
+              "atcoder:abc396_f",
+              "atcoder:abc397_g",
+              "atcoder:abc397_e",
+              "atcoder:abc398_g",
+              "atcoder:abc399_e",
+              "atcoder:abc399_d",
+              "atcoder:abc400_g",
+              "atcoder:arc191_a",
+              "atcoder:arc192_d",
+              "atcoder:arc193_b",
+              "atcoder:arc193_d",
+              "atcoder:arc194_d",
+              "atcoder:arc195_b",
+              "atcoder:arc195_c",
+              "atcoder:arc195_d",
+              "atcoder:arc196_a",
+              "leetcode:3674",
+              "leetcode:3725",
+              "leetcode:3751",
+              "leetcode:3697",
+              "leetcode:3696",
+              "leetcode:3762",
+              "leetcode:3779",
+              "leetcode:3781",
+              "leetcode:3770",
+              "leetcode:3791",
+              "leetcode:3789",
+              "leetcode:3795",
+              "leetcode:3794",
+              "leetcode:3717",
+              "leetcode:3777",
+              "leetcode:3687",
+              "leetcode:3743",
+              "leetcode:3701",
+              "leetcode:3763",
+              "leetcode:3776"
+            ],
+            "eligibility_unknown_question_ids": [],
+            "harmed_question_ids": [
+              "leetcode:3677",
+              "leetcode:3714",
+              "leetcode:3753",
+              "leetcode:3760",
+              "leetcode:3705",
+              "leetcode:3788",
+              "leetcode:3750",
+              "leetcode:3801",
+              "leetcode:3744",
+              "leetcode:3739",
+              "leetcode:3692"
+            ],
+            "eligible_harm_unknown_question_ids": [],
+            "denominator_explanation": "N-all-FAIL questions cannot have N PASS / HYB-B FAIL and widen the overall denominator. Removing them changes the estimand to harm among empirically N-solvable questions; this does not change the primary pooled analysis.",
+            "missing_rule": "Any incomplete primary comparison keeps the conditional proportion and CP bound UNKNOWN; known/unknown eligibility and harm counts remain explicit. No expected missing label is treated as N-all-FAIL.",
+            "assumptions": "One-sided 97.5% binomial Clopper-Pearson upper bound for the probability a question has at least one N PASS / HYB-B FAIL sample. Exact coverage requires independent Bernoulli question indicators with a common p. Fixed heterogeneous collection/difficulty quotas do not establish this assumption; no unconditional exact coverage claim for their mixture. ANY-harm is stronger than mean net pass-rate loss, depends on sample_count, and is not per-sample harm probability. Here the population is additionally conditioned on N passing at least one predeclared sample. A binomial-exact interpretation requires independent common-p harm indicators within this conditional population; observed eligibility does not establish those assumptions or remove sample-count/collection heterogeneity. This is a secondary diagnostic, not a new primary test or noninferiority gate."
+          }
+        },
+        "BF@4096": {
+          "candidate": "HYB-B",
+          "reference": "BF@4096",
+          "complete": true,
+          "formal_eligible": true,
+          "pass_difference_pp": 1.6331658291457274,
+          "pass_difference_pp_ci95": [
+            -0.502512562814067,
+            3.7688442211055273
+          ],
+          "pass_difference_pp_bounds": [
+            1.6331658291457287,
+            1.6331658291457287
+          ],
+          "token_saving_percent": -10.220386794958202,
+          "token_saving_percent_ci95": [
+            -14.881553040210953,
+            -6.007161673195172
+          ],
+          "mean_token_difference": 1484.2839195979905,
+          "mean_token_difference_ci95": [
+            886.6215452261308,
+            2102.49525753769
+          ],
+          "rescued_question_equivalents": 6.25,
+          "harmed_question_equivalents": 3.0,
+          "paired_outcome_unknown": 0,
+          "rescued_pairs": [
+            {
+              "case_id": "codeforces:2110A",
+              "sample_index": 0
+            },
+            {
+              "case_id": "codeforces:2111A",
+              "sample_index": 1
+            },
+            {
+              "case_id": "codeforces:2118D1",
+              "sample_index": 0
+            },
+            {
+              "case_id": "codeforces:2121F",
+              "sample_index": 0
+            },
+            {
+              "case_id": "atcoder:abc387_c",
+              "sample_index": 1
+            },
+            {
+              "case_id": "atcoder:abc393_d",
+              "sample_index": 1
+            },
+            {
+              "case_id": "atcoder:abc395_f",
+              "sample_index": 1
+            },
+            {
+              "case_id": "atcoder:abc396_c",
+              "sample_index": 1
+            },
+            {
+              "case_id": "atcoder:abc396_d",
+              "sample_index": 3
+            },
+            {
+              "case_id": "atcoder:abc397_b",
+              "sample_index": 0
+            },
+            {
+              "case_id": "atcoder:abc397_b",
+              "sample_index": 1
+            },
+            {
+              "case_id": "atcoder:abc399_f",
+              "sample_index": 0
+            },
+            {
+              "case_id": "leetcode:3708",
+              "sample_index": 0
+            },
+            {
+              "case_id": "leetcode:3714",
+              "sample_index": 1
+            },
+            {
+              "case_id": "leetcode:3737",
+              "sample_index": 1
+            },
+            {
+              "case_id": "leetcode:3722",
+              "sample_index": 2
+            },
+            {
+              "case_id": "leetcode:3832",
+              "sample_index": 0
+            },
+            {
+              "case_id": "leetcode:3832",
+              "sample_index": 1
+            },
+            {
+              "case_id": "leetcode:3832",
+              "sample_index": 2
+            },
+            {
+              "case_id": "leetcode:3832",
+              "sample_index": 3
+            },
+            {
+              "case_id": "leetcode:3692",
+              "sample_index": 1
+            }
+          ],
+          "harmed_pairs": [
+            {
+              "case_id": "leetcode:3753",
+              "sample_index": 0
+            },
+            {
+              "case_id": "leetcode:3753",
+              "sample_index": 1
+            },
+            {
+              "case_id": "leetcode:3753",
+              "sample_index": 2
+            },
+            {
+              "case_id": "leetcode:3753",
+              "sample_index": 3
+            },
+            {
+              "case_id": "leetcode:3760",
+              "sample_index": 1
+            },
+            {
+              "case_id": "leetcode:3705",
+              "sample_index": 0
+            },
+            {
+              "case_id": "leetcode:3705",
+              "sample_index": 2
+            },
+            {
+              "case_id": "leetcode:3705",
+              "sample_index": 3
+            },
+            {
+              "case_id": "leetcode:3750",
+              "sample_index": 2
+            },
+            {
+              "case_id": "leetcode:3801",
+              "sample_index": 0
+            },
+            {
+              "case_id": "leetcode:3744",
+              "sample_index": 0
+            },
+            {
+              "case_id": "leetcode:3739",
+              "sample_index": 0
+            }
+          ],
+          "nominal_superiority": false
+        }
+      }
+    },
+    {
+      "version": "original",
+      "population": "collection:hv6_atcoder",
+      "questions": 63,
+      "estimates": {
+        "N": {
+          "name": "N",
+          "questions": 63,
+          "fixed_samples": 252,
+          "unknown_outcomes": 0,
+          "unknown_costs": 0,
+          "mean_passed_questions": 30.0,
+          "pass_rate": 0.47619047619047616,
+          "pass_rate_ci95": [
+            0.3888888888888889,
+            0.5674603174603174
+          ],
+          "pass_rate_bounds": [
+            0.47619047619047616,
+            0.47619047619047616
+          ],
+          "mean_tokens": 16681.242063492064,
+          "mean_tokens_ci95": [
+            15340.73482142857,
+            18004.949702380953
+          ],
+          "known_token_sum": 4203673.0
+        },
+        "BF@4096": {
+          "name": "BF@4096",
+          "questions": 63,
+          "fixed_samples": 252,
+          "unknown_outcomes": 0,
+          "unknown_costs": 0,
+          "mean_passed_questions": 28.25,
+          "pass_rate": 0.44841269841269843,
+          "pass_rate_ci95": [
+            0.36507936507936506,
+            0.5317460317460317
+          ],
+          "pass_rate_bounds": [
+            0.44841269841269843,
+            0.44841269841269843
+          ],
+          "mean_tokens": 14196.940476190477,
+          "mean_tokens_ci95": [
+            12604.58521825397,
+            15760.796726190476
+          ],
+          "known_token_sum": 3577629.0
+        },
+        "HYB-B": {
+          "name": "HYB-B",
+          "questions": 63,
+          "fixed_samples": 252,
+          "unknown_outcomes": 0,
+          "unknown_costs": 0,
+          "mean_passed_questions": 30.25,
+          "pass_rate": 0.4801587301587302,
+          "pass_rate_ci95": [
+            0.3888888888888889,
+            0.5714285714285714
+          ],
+          "pass_rate_bounds": [
+            0.4801587301587302,
+            0.4801587301587302
+          ],
+          "mean_tokens": 15058.079365079366,
+          "mean_tokens_ci95": [
+            13150.601686507936,
+            16914.169543650794
+          ],
+          "known_token_sum": 3794636.0
+        }
+      },
+      "comparisons": {
+        "N": {
+          "candidate": "HYB-B",
+          "reference": "N",
+          "complete": true,
+          "formal_eligible": true,
+          "pass_difference_pp": 0.39682539682540097,
+          "pass_difference_pp_ci95": [
+            0.0,
+            1.1904761904761918
+          ],
+          "pass_difference_pp_bounds": [
+            0.3968253968253968,
+            0.3968253968253968
+          ],
+          "token_saving_percent": 9.730466665699256,
+          "token_saving_percent_ci95": [
+            3.889282349980787,
+            17.17274828148031
+          ],
+          "mean_token_difference": -1623.1626984126979,
+          "mean_token_difference_ci95": [
+            -2806.090575396826,
+            -667.1162698412718
+          ],
+          "rescued_question_equivalents": 0.25,
+          "harmed_question_equivalents": 0.0,
+          "paired_outcome_unknown": 0,
+          "rescued_pairs": [
+            {
+              "case_id": "atcoder:abc396_d",
+              "sample_index": 3
+            }
+          ],
+          "harmed_pairs": [],
+          "nominal_noninferiority": true,
+          "strict_noninferiority": false,
+          "strict": {
+            "harmed_questions": 0,
+            "questions": 63,
+            "possible_additional_harmed_questions": 0,
+            "upper_probability_97_5": 0.05687235233201626,
+            "threshold": 0.03,
+            "strict_less_than": true,
+            "harmed_question_ids": [],
+            "assumptions": "One-sided 97.5% binomial Clopper-Pearson upper bound for the probability a question has at least one N PASS / HYB-B FAIL sample. Exact coverage requires independent Bernoulli question indicators with a common p. Fixed heterogeneous collection/difficulty quotas do not establish this assumption; no unconditional exact coverage claim for their mixture. ANY-harm is stronger than mean net pass-rate loss, depends on sample_count, and is not per-sample harm probability."
+          },
+          "decision_scope": "COMPLETE",
+          "secondary_n_success_subset": {
+            "role": "secondary",
+            "used_for_primary_decision": false,
+            "status": "COMPLETE_SECONDARY_DIAGNOSTIC",
+            "eligibility": "At least one N PASS among all predeclared samples for the question",
+            "harm": "At least one paired sample with N PASS and HYB-B FAIL",
+            "original_population_questions": 63,
+            "eligible_questions_known": 36,
+            "eligible_questions_bounds": [
+              36,
+              36
+            ],
+            "excluded_all_n_failed_questions": 27,
+            "eligibility_unknown_questions": 0,
+            "eligibility_known_questions": 63,
+            "eligibility_coverage": 1.0,
+            "eligible_harmed_questions_known": 0,
+            "eligible_harm_unknown_questions": 0,
+            "eligible_harm_known_questions": 36,
+            "unknown_n_sample_labels": 0,
+            "unknown_candidate_sample_labels": 0,
+            "harm_indicator_identified": true,
+            "parent_comparison_complete": true,
+            "harmed_proportion": 0.0,
+            "upper_probability_97_5": 0.09739375591449194,
+            "eligible_question_ids": [
+              "atcoder:abc387_b",
+              "atcoder:abc387_a",
+              "atcoder:abc387_c",
+              "atcoder:abc388_b",
+              "atcoder:abc388_g",
+              "atcoder:abc389_d",
+              "atcoder:abc389_a",
+              "atcoder:abc389_f",
+              "atcoder:abc390_f",
+              "atcoder:abc391_f",
+              "atcoder:abc391_a",
+              "atcoder:abc391_b",
+              "atcoder:abc392_b",
+              "atcoder:abc393_f",
+              "atcoder:abc393_e",
+              "atcoder:abc393_d",
+              "atcoder:abc393_b",
+              "atcoder:abc395_f",
+              "atcoder:abc395_b",
+              "atcoder:abc396_g",
+              "atcoder:abc396_c",
+              "atcoder:abc396_b",
+              "atcoder:abc396_d",
+              "atcoder:abc397_f",
+              "atcoder:abc397_c",
+              "atcoder:abc397_b",
+              "atcoder:abc398_d",
+              "atcoder:abc398_c",
+              "atcoder:abc399_c",
+              "atcoder:abc399_f",
+              "atcoder:abc399_b",
+              "atcoder:abc400_e",
+              "atcoder:arc191_d",
+              "atcoder:arc194_b",
+              "atcoder:arc194_e",
+              "atcoder:arc195_a"
+            ],
+            "excluded_all_n_failed_question_ids": [
+              "atcoder:abc387_f",
+              "atcoder:abc388_f",
+              "atcoder:abc389_g",
+              "atcoder:abc390_e",
+              "atcoder:abc390_g",
+              "atcoder:abc391_e",
+              "atcoder:abc391_g",
+              "atcoder:abc392_g",
+              "atcoder:abc392_f",
+              "atcoder:abc394_f",
+              "atcoder:abc394_e",
+              "atcoder:abc396_f",
+              "atcoder:abc397_g",
+              "atcoder:abc397_e",
+              "atcoder:abc398_g",
+              "atcoder:abc399_e",
+              "atcoder:abc399_d",
+              "atcoder:abc400_g",
+              "atcoder:arc191_a",
+              "atcoder:arc192_d",
+              "atcoder:arc193_b",
+              "atcoder:arc193_d",
+              "atcoder:arc194_d",
+              "atcoder:arc195_b",
+              "atcoder:arc195_c",
+              "atcoder:arc195_d",
+              "atcoder:arc196_a"
+            ],
+            "eligibility_unknown_question_ids": [],
+            "harmed_question_ids": [],
+            "eligible_harm_unknown_question_ids": [],
+            "denominator_explanation": "N-all-FAIL questions cannot have N PASS / HYB-B FAIL and widen the overall denominator. Removing them changes the estimand to harm among empirically N-solvable questions; this does not change the primary pooled analysis.",
+            "missing_rule": "Any incomplete primary comparison keeps the conditional proportion and CP bound UNKNOWN; known/unknown eligibility and harm counts remain explicit. No expected missing label is treated as N-all-FAIL.",
+            "assumptions": "One-sided 97.5% binomial Clopper-Pearson upper bound for the probability a question has at least one N PASS / HYB-B FAIL sample. Exact coverage requires independent Bernoulli question indicators with a common p. Fixed heterogeneous collection/difficulty quotas do not establish this assumption; no unconditional exact coverage claim for their mixture. ANY-harm is stronger than mean net pass-rate loss, depends on sample_count, and is not per-sample harm probability. Here the population is additionally conditioned on N passing at least one predeclared sample. A binomial-exact interpretation requires independent common-p harm indicators within this conditional population; observed eligibility does not establish those assumptions or remove sample-count/collection heterogeneity. This is a secondary diagnostic, not a new primary test or noninferiority gate."
+          }
+        },
+        "BF@4096": {
+          "candidate": "HYB-B",
+          "reference": "BF@4096",
+          "complete": true,
+          "formal_eligible": true,
+          "pass_difference_pp": 3.1746031746031744,
+          "pass_difference_pp_ci95": [
+            1.1904761904761918,
+            5.555555555555553
+          ],
+          "pass_difference_pp_bounds": [
+            3.1746031746031744,
+            3.1746031746031744
+          ],
+          "token_saving_percent": -6.065665277198939,
+          "token_saving_percent_ci95": [
+            -13.970896792642826,
+            1.2866471304820457
+          ],
+          "mean_token_difference": 861.1388888888887,
+          "mean_token_difference_ci95": [
+            -179.57728174603093,
+            1929.1193452380953
+          ],
+          "rescued_question_equivalents": 2.0,
+          "harmed_question_equivalents": 0.0,
+          "paired_outcome_unknown": 0,
+          "rescued_pairs": [
+            {
+              "case_id": "atcoder:abc387_c",
+              "sample_index": 1
+            },
+            {
+              "case_id": "atcoder:abc393_d",
+              "sample_index": 1
+            },
+            {
+              "case_id": "atcoder:abc395_f",
+              "sample_index": 1
+            },
+            {
+              "case_id": "atcoder:abc396_c",
+              "sample_index": 1
+            },
+            {
+              "case_id": "atcoder:abc396_d",
+              "sample_index": 3
+            },
+            {
+              "case_id": "atcoder:abc397_b",
+              "sample_index": 0
+            },
+            {
+              "case_id": "atcoder:abc397_b",
+              "sample_index": 1
+            },
+            {
+              "case_id": "atcoder:abc399_f",
+              "sample_index": 0
+            }
+          ],
+          "harmed_pairs": [],
+          "nominal_superiority": true
+        }
+      }
+    },
+    {
+      "version": "original",
+      "population": "collection:hv6_leetcode",
+      "questions": 63,
+      "estimates": {
+        "N": {
+          "name": "N",
+          "questions": 63,
+          "fixed_samples": 252,
+          "unknown_outcomes": 0,
+          "unknown_costs": 0,
+          "mean_passed_questions": 34.0,
+          "pass_rate": 0.5396825396825397,
+          "pass_rate_ci95": [
+            0.4603174603174603,
+            0.623015873015873
+          ],
+          "pass_rate_bounds": [
+            0.5396825396825397,
+            0.5396825396825397
+          ],
+          "mean_tokens": 13576.666666666666,
+          "mean_tokens_ci95": [
+            12399.878075396826,
+            14751.51359126984
+          ],
+          "known_token_sum": 3421320.0
+        },
+        "BF@4096": {
+          "name": "BF@4096",
+          "questions": 63,
+          "fixed_samples": 252,
+          "unknown_outcomes": 0,
+          "unknown_costs": 0,
+          "mean_passed_questions": 30.75,
+          "pass_rate": 0.4880952380952381,
+          "pass_rate_ci95": [
+            0.4007936507936508,
+            0.5753968253968254
+          ],
+          "pass_rate_bounds": [
+            0.4880952380952381,
+            0.4880952380952381
+          ],
+          "mean_tokens": 9650.789682539682,
+          "mean_tokens_ci95": [
+            8259.001388888888,
+            11045.024007936507
+          ],
+          "known_token_sum": 2431999.0
+        },
+        "HYB-B": {
+          "name": "HYB-B",
+          "questions": 63,
+          "fixed_samples": 252,
+          "unknown_outcomes": 0,
+          "unknown_costs": 0,
+          "mean_passed_questions": 30.0,
+          "pass_rate": 0.47619047619047616,
+          "pass_rate_ci95": [
+            0.3888888888888889,
+            0.5634920634920635
+          ],
+          "pass_rate_bounds": [
+            0.47619047619047616,
+            0.47619047619047616
+          ],
+          "mean_tokens": 10678.253968253968,
+          "mean_tokens_ci95": [
+            8985.194146825397,
+            12373.306944444445
+          ],
+          "known_token_sum": 2690920.0
+        }
+      },
+      "comparisons": {
+        "N": {
+          "candidate": "HYB-B",
+          "reference": "N",
+          "complete": true,
+          "formal_eligible": true,
+          "pass_difference_pp": -6.349206349206349,
+          "pass_difference_pp_ci95": [
+            -11.11111111111111,
+            -2.3809523809523836
+          ],
+          "pass_difference_pp_bounds": [
+            -6.349206349206349,
+            -6.349206349206349
+          ],
+          "token_saving_percent": 21.348485379911843,
+          "token_saving_percent_ci95": [
+            13.659888250614637,
+            29.63306530091497
+          ],
+          "mean_token_difference": -2898.412698412698,
+          "mean_token_difference_ci95": [
+            -3938.394543650794,
+            -1910.31011904762
+          ],
+          "rescued_question_equivalents": 0.25,
+          "harmed_question_equivalents": 4.25,
+          "paired_outcome_unknown": 0,
+          "rescued_pairs": [
+            {
+              "case_id": "leetcode:3714",
+              "sample_index": 1
+            }
+          ],
+          "harmed_pairs": [
+            {
+              "case_id": "leetcode:3677",
+              "sample_index": 1
+            },
+            {
+              "case_id": "leetcode:3714",
+              "sample_index": 0
+            },
+            {
+              "case_id": "leetcode:3753",
+              "sample_index": 0
+            },
+            {
+              "case_id": "leetcode:3753",
+              "sample_index": 1
+            },
+            {
+              "case_id": "leetcode:3753",
+              "sample_index": 2
+            },
+            {
+              "case_id": "leetcode:3753",
+              "sample_index": 3
+            },
+            {
+              "case_id": "leetcode:3760",
+              "sample_index": 1
+            },
+            {
+              "case_id": "leetcode:3705",
+              "sample_index": 0
+            },
+            {
+              "case_id": "leetcode:3705",
+              "sample_index": 2
+            },
+            {
+              "case_id": "leetcode:3705",
+              "sample_index": 3
+            },
+            {
+              "case_id": "leetcode:3788",
+              "sample_index": 0
+            },
+            {
+              "case_id": "leetcode:3750",
+              "sample_index": 2
+            },
+            {
+              "case_id": "leetcode:3801",
+              "sample_index": 0
+            },
+            {
+              "case_id": "leetcode:3744",
+              "sample_index": 0
+            },
+            {
+              "case_id": "leetcode:3739",
+              "sample_index": 0
+            },
+            {
+              "case_id": "leetcode:3739",
+              "sample_index": 2
+            },
+            {
+              "case_id": "leetcode:3692",
+              "sample_index": 3
+            }
+          ],
+          "nominal_noninferiority": false,
+          "strict_noninferiority": false,
+          "strict": {
+            "harmed_questions": 11,
+            "questions": 63,
+            "possible_additional_harmed_questions": 0,
+            "upper_probability_97_5": 0.2909709490808725,
+            "threshold": 0.03,
+            "strict_less_than": true,
+            "harmed_question_ids": [
+              "leetcode:3677",
+              "leetcode:3714",
+              "leetcode:3753",
+              "leetcode:3760",
+              "leetcode:3705",
+              "leetcode:3788",
+              "leetcode:3750",
+              "leetcode:3801",
+              "leetcode:3744",
+              "leetcode:3739",
+              "leetcode:3692"
+            ],
+            "assumptions": "One-sided 97.5% binomial Clopper-Pearson upper bound for the probability a question has at least one N PASS / HYB-B FAIL sample. Exact coverage requires independent Bernoulli question indicators with a common p. Fixed heterogeneous collection/difficulty quotas do not establish this assumption; no unconditional exact coverage claim for their mixture. ANY-harm is stronger than mean net pass-rate loss, depends on sample_count, and is not per-sample harm probability."
+          },
+          "decision_scope": "COMPLETE",
+          "secondary_n_success_subset": {
+            "role": "secondary",
+            "used_for_primary_decision": false,
+            "status": "COMPLETE_SECONDARY_DIAGNOSTIC",
+            "eligibility": "At least one N PASS among all predeclared samples for the question",
+            "harm": "At least one paired sample with N PASS and HYB-B FAIL",
+            "original_population_questions": 63,
+            "eligible_questions_known": 43,
+            "eligible_questions_bounds": [
+              43,
+              43
+            ],
+            "excluded_all_n_failed_questions": 20,
+            "eligibility_unknown_questions": 0,
+            "eligibility_known_questions": 63,
+            "eligibility_coverage": 1.0,
+            "eligible_harmed_questions_known": 11,
+            "eligible_harm_unknown_questions": 0,
+            "eligible_harm_known_questions": 43,
+            "unknown_n_sample_labels": 0,
+            "unknown_candidate_sample_labels": 0,
+            "harm_indicator_identified": true,
+            "parent_comparison_complete": true,
+            "harmed_proportion": 0.2558139534883721,
+            "upper_probability_97_5": 0.41171572108486,
+            "eligible_question_ids": [
+              "leetcode:3708",
+              "leetcode:3677",
+              "leetcode:3720",
+              "leetcode:3731",
+              "leetcode:3714",
+              "leetcode:3737",
+              "leetcode:3704",
+              "leetcode:3721",
+              "leetcode:3753",
+              "leetcode:3754",
+              "leetcode:3748",
+              "leetcode:3760",
+              "leetcode:3709",
+              "leetcode:3771",
+              "leetcode:3733",
+              "leetcode:3768",
+              "leetcode:3764",
+              "leetcode:3705",
+              "leetcode:3786",
+              "leetcode:3722",
+              "leetcode:3759",
+              "leetcode:3788",
+              "leetcode:3750",
+              "leetcode:3801",
+              "leetcode:3817",
+              "leetcode:3809",
+              "leetcode:3744",
+              "leetcode:3832",
+              "leetcode:3793",
+              "leetcode:3773",
+              "leetcode:3747",
+              "leetcode:3739",
+              "leetcode:3736",
+              "leetcode:3723",
+              "leetcode:3692",
+              "leetcode:3778",
+              "leetcode:3785",
+              "leetcode:3783",
+              "leetcode:3799",
+              "leetcode:3784",
+              "leetcode:3811",
+              "leetcode:3805",
+              "leetcode:3765"
+            ],
+            "excluded_all_n_failed_question_ids": [
+              "leetcode:3674",
+              "leetcode:3725",
+              "leetcode:3751",
+              "leetcode:3697",
+              "leetcode:3696",
+              "leetcode:3762",
+              "leetcode:3779",
+              "leetcode:3781",
+              "leetcode:3770",
+              "leetcode:3791",
+              "leetcode:3789",
+              "leetcode:3795",
+              "leetcode:3794",
+              "leetcode:3717",
+              "leetcode:3777",
+              "leetcode:3687",
+              "leetcode:3743",
+              "leetcode:3701",
+              "leetcode:3763",
+              "leetcode:3776"
+            ],
+            "eligibility_unknown_question_ids": [],
+            "harmed_question_ids": [
+              "leetcode:3677",
+              "leetcode:3714",
+              "leetcode:3753",
+              "leetcode:3760",
+              "leetcode:3705",
+              "leetcode:3788",
+              "leetcode:3750",
+              "leetcode:3801",
+              "leetcode:3744",
+              "leetcode:3739",
+              "leetcode:3692"
+            ],
+            "eligible_harm_unknown_question_ids": [],
+            "denominator_explanation": "N-all-FAIL questions cannot have N PASS / HYB-B FAIL and widen the overall denominator. Removing them changes the estimand to harm among empirically N-solvable questions; this does not change the primary pooled analysis.",
+            "missing_rule": "Any incomplete primary comparison keeps the conditional proportion and CP bound UNKNOWN; known/unknown eligibility and harm counts remain explicit. No expected missing label is treated as N-all-FAIL.",
+            "assumptions": "One-sided 97.5% binomial Clopper-Pearson upper bound for the probability a question has at least one N PASS / HYB-B FAIL sample. Exact coverage requires independent Bernoulli question indicators with a common p. Fixed heterogeneous collection/difficulty quotas do not establish this assumption; no unconditional exact coverage claim for their mixture. ANY-harm is stronger than mean net pass-rate loss, depends on sample_count, and is not per-sample harm probability. Here the population is additionally conditioned on N passing at least one predeclared sample. A binomial-exact interpretation requires independent common-p harm indicators within this conditional population; observed eligibility does not establish those assumptions or remove sample-count/collection heterogeneity. This is a secondary diagnostic, not a new primary test or noninferiority gate."
+          }
+        },
+        "BF@4096": {
+          "candidate": "HYB-B",
+          "reference": "BF@4096",
+          "complete": true,
+          "formal_eligible": true,
+          "pass_difference_pp": -1.1904761904761918,
+          "pass_difference_pp_ci95": [
+            -6.74603174603175,
+            4.3650793650793664
+          ],
+          "pass_difference_pp_bounds": [
+            -1.1904761904761905,
+            -1.1904761904761905
+          ],
+          "token_saving_percent": -10.646427075011133,
+          "token_saving_percent_ci95": [
+            -24.9935432111006,
+            1.3220123244379376
+          ],
+          "mean_token_difference": 1027.4642857142862,
+          "mean_token_difference_ci95": [
+            -131.94007936507865,
+            2286.994047619044
+          ],
+          "rescued_question_equivalents": 2.25,
+          "harmed_question_equivalents": 3.0,
+          "paired_outcome_unknown": 0,
+          "rescued_pairs": [
+            {
+              "case_id": "leetcode:3708",
+              "sample_index": 0
+            },
+            {
+              "case_id": "leetcode:3714",
+              "sample_index": 1
+            },
+            {
+              "case_id": "leetcode:3737",
+              "sample_index": 1
+            },
+            {
+              "case_id": "leetcode:3722",
+              "sample_index": 2
+            },
+            {
+              "case_id": "leetcode:3832",
+              "sample_index": 0
+            },
+            {
+              "case_id": "leetcode:3832",
+              "sample_index": 1
+            },
+            {
+              "case_id": "leetcode:3832",
+              "sample_index": 2
+            },
+            {
+              "case_id": "leetcode:3832",
+              "sample_index": 3
+            },
+            {
+              "case_id": "leetcode:3692",
+              "sample_index": 1
+            }
+          ],
+          "harmed_pairs": [
+            {
+              "case_id": "leetcode:3753",
+              "sample_index": 0
+            },
+            {
+              "case_id": "leetcode:3753",
+              "sample_index": 1
+            },
+            {
+              "case_id": "leetcode:3753",
+              "sample_index": 2
+            },
+            {
+              "case_id": "leetcode:3753",
+              "sample_index": 3
+            },
+            {
+              "case_id": "leetcode:3760",
+              "sample_index": 1
+            },
+            {
+              "case_id": "leetcode:3705",
+              "sample_index": 0
+            },
+            {
+              "case_id": "leetcode:3705",
+              "sample_index": 2
+            },
+            {
+              "case_id": "leetcode:3705",
+              "sample_index": 3
+            },
+            {
+              "case_id": "leetcode:3750",
+              "sample_index": 2
+            },
+            {
+              "case_id": "leetcode:3801",
+              "sample_index": 0
+            },
+            {
+              "case_id": "leetcode:3744",
+              "sample_index": 0
+            },
+            {
+              "case_id": "leetcode:3739",
+              "sample_index": 0
+            }
+          ],
+          "nominal_superiority": false
+        }
+      }
+    },
+    {
+      "version": "original",
+      "population": "collection:lcbpro_2025",
+      "questions": 73,
+      "estimates": {
+        "N": {
+          "name": "N",
+          "questions": 73,
+          "fixed_samples": 146,
+          "unknown_outcomes": 0,
+          "unknown_costs": 0,
+          "mean_passed_questions": 9.0,
+          "pass_rate": 0.1232876712328767,
+          "pass_rate_ci95": [
+            0.06164383561643835,
+            0.1917808219178082
+          ],
+          "pass_rate_bounds": [
+            0.1232876712328767,
+            0.1232876712328767
+          ],
+          "mean_tokens": 21075.630136986303,
+          "mean_tokens_ci95": [
+            19885.914726027397,
+            22263.18493150685
+          ],
+          "known_token_sum": 3077042.0
+        },
+        "BF@4096": {
+          "name": "BF@4096",
+          "questions": 73,
+          "fixed_samples": 146,
+          "unknown_outcomes": 0,
+          "unknown_costs": 0,
+          "mean_passed_questions": 8.5,
+          "pass_rate": 0.11643835616438356,
+          "pass_rate_ci95": [
+            0.0547945205479452,
+            0.18493150684931506
+          ],
+          "pass_rate_bounds": [
+            0.11643835616438356,
+            0.11643835616438356
+          ],
+          "mean_tokens": 19008.568493150684,
+          "mean_tokens_ci95": [
+            17439.66198630137,
+            20518.914554794523
+          ],
+          "known_token_sum": 2775251.0
+        },
+        "HYB-B": {
+          "name": "HYB-B",
+          "questions": 73,
+          "fixed_samples": 146,
+          "unknown_outcomes": 0,
+          "unknown_costs": 0,
+          "mean_passed_questions": 10.5,
+          "pass_rate": 0.14383561643835616,
+          "pass_rate_ci95": [
+            0.07534246575342465,
+            0.2191780821917808
+          ],
+          "pass_rate_bounds": [
+            0.14383561643835616,
+            0.14383561643835616
+          ],
+          "mean_tokens": 21424.87671232877,
+          "mean_tokens_ci95": [
+            19958.569520547942,
+            22819.742636986302
+          ],
+          "known_token_sum": 3128032.0
+        }
+      },
+      "comparisons": {
+        "N": {
+          "candidate": "HYB-B",
+          "reference": "N",
+          "complete": true,
+          "formal_eligible": true,
+          "pass_difference_pp": 2.054794520547945,
+          "pass_difference_pp_ci95": [
+            0.0,
+            4.794520547945205
+          ],
+          "pass_difference_pp_bounds": [
+            2.054794520547945,
+            2.054794520547945
+          ],
+          "token_saving_percent": -1.6571109526616778,
+          "token_saving_percent_ci95": [
+            -3.8647667329733255,
+            1.059316679023086
+          ],
+          "mean_token_difference": 349.2465753424658,
+          "mean_token_difference_ci95": [
+            -218.0635273972596,
+            830.567294520547
+          ],
+          "rescued_question_equivalents": 1.5,
+          "harmed_question_equivalents": 0.0,
+          "paired_outcome_unknown": 0,
+          "rescued_pairs": [
+            {
+              "case_id": "codeforces:2113A",
+              "sample_index": 0
+            },
+            {
+              "case_id": "codeforces:2117D",
+              "sample_index": 0
+            },
+            {
+              "case_id": "codeforces:2121G",
+              "sample_index": 1
+            }
+          ],
+          "harmed_pairs": [],
+          "nominal_noninferiority": true,
+          "strict_noninferiority": false,
+          "strict": {
+            "harmed_questions": 0,
+            "questions": 73,
+            "possible_additional_harmed_questions": 0,
+            "upper_probability_97_5": 0.04927706089585928,
+            "threshold": 0.03,
+            "strict_less_than": true,
+            "harmed_question_ids": [],
+            "assumptions": "One-sided 97.5% binomial Clopper-Pearson upper bound for the probability a question has at least one N PASS / HYB-B FAIL sample. Exact coverage requires independent Bernoulli question indicators with a common p. Fixed heterogeneous collection/difficulty quotas do not establish this assumption; no unconditional exact coverage claim for their mixture. ANY-harm is stronger than mean net pass-rate loss, depends on sample_count, and is not per-sample harm probability."
+          },
+          "decision_scope": "COMPLETE",
+          "secondary_n_success_subset": {
+            "role": "secondary",
+            "used_for_primary_decision": false,
+            "status": "COMPLETE_SECONDARY_DIAGNOSTIC",
+            "eligibility": "At least one N PASS among all predeclared samples for the question",
+            "harm": "At least one paired sample with N PASS and HYB-B FAIL",
+            "original_population_questions": 73,
+            "eligible_questions_known": 12,
+            "eligible_questions_bounds": [
+              12,
+              12
+            ],
+            "excluded_all_n_failed_questions": 61,
+            "eligibility_unknown_questions": 0,
+            "eligibility_known_questions": 73,
+            "eligibility_coverage": 1.0,
+            "eligible_harmed_questions_known": 0,
+            "eligible_harm_unknown_questions": 0,
+            "eligible_harm_known_questions": 12,
+            "unknown_n_sample_labels": 0,
+            "unknown_candidate_sample_labels": 0,
+            "harm_indicator_identified": true,
+            "parent_comparison_complete": true,
+            "harmed_proportion": 0.0,
+            "upper_probability_97_5": 0.2646484693970512,
+            "eligible_question_ids": [
+              "codeforces:2110A",
+              "codeforces:2110B",
+              "codeforces:2111A",
+              "codeforces:2113A",
+              "codeforces:2114B",
+              "codeforces:2114C",
+              "codeforces:2114E",
+              "codeforces:2118D1",
+              "codeforces:2120A",
+              "codeforces:2120B",
+              "codeforces:2121F",
+              "codeforces:2121G"
+            ],
+            "excluded_all_n_failed_question_ids": [
+              "codeforces:2101B",
+              "codeforces:2101C",
+              "codeforces:2101D",
+              "codeforces:2101E",
+              "codeforces:2102A",
+              "codeforces:2102B",
+              "codeforces:2107B",
+              "codeforces:2107D",
+              "codeforces:2107F1",
+              "codeforces:2107F2",
+              "codeforces:2108A",
+              "codeforces:2108B",
+              "codeforces:2108C",
+              "codeforces:2108F",
+              "codeforces:2109A",
+              "codeforces:2109D",
+              "codeforces:2109E",
+              "codeforces:2109F",
+              "codeforces:2110D",
+              "codeforces:2110F",
+              "codeforces:2111B",
+              "codeforces:2111C",
+              "codeforces:2111E",
+              "codeforces:2112A",
+              "codeforces:2112B",
+              "codeforces:2112C",
+              "codeforces:2112E",
+              "codeforces:2112F",
+              "codeforces:2113B",
+              "codeforces:2113C",
+              "codeforces:2113D",
+              "codeforces:2113E",
+              "codeforces:2114D",
+              "codeforces:2114F",
+              "codeforces:2114G",
+              "codeforces:2115A",
+              "codeforces:2115D",
+              "codeforces:2115E",
+              "codeforces:2115F1",
+              "codeforces:2115F2",
+              "codeforces:2116A",
+              "codeforces:2116B",
+              "codeforces:2117A",
+              "codeforces:2117C",
+              "codeforces:2117D",
+              "codeforces:2117E",
+              "codeforces:2117F",
+              "codeforces:2117G",
+              "codeforces:2117H",
+              "codeforces:2118C",
+              "codeforces:2118D2",
+              "codeforces:2118F",
+              "codeforces:2120D",
+              "codeforces:2120E",
+              "codeforces:2120F",
+              "codeforces:2120G",
+              "codeforces:2121A",
+              "codeforces:2121B",
+              "codeforces:2121C",
+              "codeforces:2121E",
+              "codeforces:2121H"
+            ],
+            "eligibility_unknown_question_ids": [],
+            "harmed_question_ids": [],
+            "eligible_harm_unknown_question_ids": [],
+            "denominator_explanation": "N-all-FAIL questions cannot have N PASS / HYB-B FAIL and widen the overall denominator. Removing them changes the estimand to harm among empirically N-solvable questions; this does not change the primary pooled analysis.",
+            "missing_rule": "Any incomplete primary comparison keeps the conditional proportion and CP bound UNKNOWN; known/unknown eligibility and harm counts remain explicit. No expected missing label is treated as N-all-FAIL.",
+            "assumptions": "One-sided 97.5% binomial Clopper-Pearson upper bound for the probability a question has at least one N PASS / HYB-B FAIL sample. Exact coverage requires independent Bernoulli question indicators with a common p. Fixed heterogeneous collection/difficulty quotas do not establish this assumption; no unconditional exact coverage claim for their mixture. ANY-harm is stronger than mean net pass-rate loss, depends on sample_count, and is not per-sample harm probability. Here the population is additionally conditioned on N passing at least one predeclared sample. A binomial-exact interpretation requires independent common-p harm indicators within this conditional population; observed eligibility does not establish those assumptions or remove sample-count/collection heterogeneity. This is a secondary diagnostic, not a new primary test or noninferiority gate."
+          }
+        },
+        "BF@4096": {
+          "candidate": "HYB-B",
+          "reference": "BF@4096",
+          "complete": true,
+          "formal_eligible": true,
+          "pass_difference_pp": 2.73972602739726,
+          "pass_difference_pp_ci95": [
+            0.684931506849315,
+            5.47945205479452
+          ],
+          "pass_difference_pp_bounds": [
+            2.73972602739726,
+            2.73972602739726
+          ],
+          "token_saving_percent": -12.711679051732627,
+          "token_saving_percent_ci95": [
+            -18.992202749578126,
+            -7.810242207903499
+          ],
+          "mean_token_difference": 2416.308219178085,
+          "mean_token_difference_ci95": [
+            1537.238698630137,
+            3444.1613013698607
+          ],
+          "rescued_question_equivalents": 2.0,
+          "harmed_question_equivalents": 0.0,
+          "paired_outcome_unknown": 0,
+          "rescued_pairs": [
+            {
+              "case_id": "codeforces:2110A",
+              "sample_index": 0
+            },
+            {
+              "case_id": "codeforces:2111A",
+              "sample_index": 1
+            },
+            {
+              "case_id": "codeforces:2118D1",
+              "sample_index": 0
+            },
+            {
+              "case_id": "codeforces:2121F",
+              "sample_index": 0
+            }
+          ],
+          "harmed_pairs": [],
+          "nominal_superiority": true
+        }
+      }
+    },
+    {
+      "version": "erratum",
+      "population": "pooled",
+      "questions": 199,
+      "estimates": {
+        "N": {
+          "name": "N",
+          "questions": 199,
+          "fixed_samples": 650,
+          "unknown_outcomes": 0,
+          "unknown_costs": 0,
+          "mean_passed_questions": 81.5,
+          "pass_rate": 0.40954773869346733,
+          "pass_rate_ci95": [
+            0.3630653266331658,
+            0.45606155778894425
+          ],
+          "pass_rate_bounds": [
+            0.40954773869346733,
+            0.40954773869346733
+          ],
+          "mean_tokens": 17310.39824120603,
+          "mean_tokens_ci95": [
+            16602.898680904524,
+            18021.921388190956
+          ],
+          "known_token_sum": 10702035.0
+        },
+        "BF@4096": {
+          "name": "BF@4096",
+          "questions": 199,
+          "fixed_samples": 650,
+          "unknown_outcomes": 0,
+          "unknown_costs": 0,
+          "mean_passed_questions": 74.5,
+          "pass_rate": 0.3743718592964824,
+          "pass_rate_ci95": [
+            0.3278894472361809,
+            0.4221105527638191
+          ],
+          "pass_rate_bounds": [
+            0.3743718592964824,
+            0.3743718592964824
+          ],
+          "mean_tokens": 14522.776381909547,
+          "mean_tokens_ci95": [
+            13643.712374371858,
+            15402.757883165828
+          ],
+          "known_token_sum": 8784879.0
+        },
+        "HYB-B": {
+          "name": "HYB-B",
+          "questions": 199,
+          "fixed_samples": 650,
+          "unknown_outcomes": 0,
+          "unknown_costs": 0,
+          "mean_passed_questions": 77.75,
+          "pass_rate": 0.3907035175879397,
+          "pass_rate_ci95": [
+            0.34296482412060303,
+            0.43844221105527637
+          ],
+          "pass_rate_bounds": [
+            0.3907035175879397,
+            0.3907035175879397
+          ],
+          "mean_tokens": 15941.620603015075,
+          "mean_tokens_ci95": [
+            14944.227952261306,
+            16917.984359296483
+          ],
+          "known_token_sum": 9587543.0
+        }
+      },
+      "comparisons": {
+        "N": {
+          "candidate": "HYB-B",
+          "reference": "N",
+          "complete": true,
+          "formal_eligible": true,
+          "pass_difference_pp": -1.8844221105527637,
+          "pass_difference_pp_ci95": [
+            -3.391959798994976,
+            -0.6281407035175879
+          ],
+          "pass_difference_pp_bounds": [
+            -1.8844221105527637,
+            -1.8844221105527637
+          ],
+          "token_saving_percent": 7.907256777794325,
+          "token_saving_percent_ci95": [
+            4.971589071525813,
+            11.14578573725782
+          ],
+          "mean_token_difference": -1368.7776381909534,
+          "mean_token_difference_ci95": [
+            -1911.6961997487444,
+            -872.7979899497506
+          ],
+          "rescued_question_equivalents": 0.5,
+          "harmed_question_equivalents": 4.25,
+          "paired_outcome_unknown": 0,
+          "rescued_pairs": [
+            {
+              "case_id": "atcoder:abc396_d",
+              "sample_index": 3
+            },
+            {
+              "case_id": "leetcode:3714",
+              "sample_index": 1
+            }
+          ],
+          "harmed_pairs": [
+            {
+              "case_id": "leetcode:3677",
+              "sample_index": 1
+            },
+            {
+              "case_id": "leetcode:3714",
+              "sample_index": 0
+            },
+            {
+              "case_id": "leetcode:3753",
+              "sample_index": 0
+            },
+            {
+              "case_id": "leetcode:3753",
+              "sample_index": 1
+            },
+            {
+              "case_id": "leetcode:3753",
+              "sample_index": 2
+            },
+            {
+              "case_id": "leetcode:3753",
+              "sample_index": 3
+            },
+            {
+              "case_id": "leetcode:3760",
+              "sample_index": 1
+            },
+            {
+              "case_id": "leetcode:3705",
+              "sample_index": 0
+            },
+            {
+              "case_id": "leetcode:3705",
+              "sample_index": 2
+            },
+            {
+              "case_id": "leetcode:3705",
+              "sample_index": 3
+            },
+            {
+              "case_id": "leetcode:3788",
+              "sample_index": 0
+            },
+            {
+              "case_id": "leetcode:3750",
+              "sample_index": 2
+            },
+            {
+              "case_id": "leetcode:3801",
+              "sample_index": 0
+            },
+            {
+              "case_id": "leetcode:3744",
+              "sample_index": 0
+            },
+            {
+              "case_id": "leetcode:3739",
+              "sample_index": 0
+            },
+            {
+              "case_id": "leetcode:3739",
+              "sample_index": 2
+            },
+            {
+              "case_id": "leetcode:3692",
+              "sample_index": 3
+            }
+          ],
+          "nominal_noninferiority": false,
+          "strict_noninferiority": false,
+          "strict": {
+            "harmed_questions": 11,
+            "questions": 199,
+            "possible_additional_harmed_questions": 0,
+            "upper_probability_97_5": 0.09675069727404298,
+            "threshold": 0.03,
+            "strict_less_than": true,
+            "harmed_question_ids": [
+              "leetcode:3677",
+              "leetcode:3714",
+              "leetcode:3753",
+              "leetcode:3760",
+              "leetcode:3705",
+              "leetcode:3788",
+              "leetcode:3750",
+              "leetcode:3801",
+              "leetcode:3744",
+              "leetcode:3739",
+              "leetcode:3692"
+            ],
+            "assumptions": "One-sided 97.5% binomial Clopper-Pearson upper bound for the probability a question has at least one N PASS / HYB-B FAIL sample. Exact coverage requires independent Bernoulli question indicators with a common p. Fixed heterogeneous collection/difficulty quotas do not establish this assumption; no unconditional exact coverage claim for their mixture. ANY-harm is stronger than mean net pass-rate loss, depends on sample_count, and is not per-sample harm probability."
+          },
+          "decision_scope": "COMPLETE",
+          "secondary_n_success_subset": {
+            "role": "secondary",
+            "used_for_primary_decision": false,
+            "status": "COMPLETE_SECONDARY_DIAGNOSTIC",
+            "eligibility": "At least one N PASS among all predeclared samples for the question",
+            "harm": "At least one paired sample with N PASS and HYB-B FAIL",
+            "original_population_questions": 199,
+            "eligible_questions_known": 102,
+            "eligible_questions_bounds": [
+              102,
+              102
+            ],
+            "excluded_all_n_failed_questions": 97,
+            "eligibility_unknown_questions": 0,
+            "eligibility_known_questions": 199,
+            "eligibility_coverage": 1.0,
+            "eligible_harmed_questions_known": 11,
+            "eligible_harm_unknown_questions": 0,
+            "eligible_harm_known_questions": 102,
+            "unknown_n_sample_labels": 0,
+            "unknown_candidate_sample_labels": 0,
+            "harm_indicator_identified": true,
+            "parent_comparison_complete": true,
+            "harmed_proportion": 0.10784313725490197,
+            "upper_probability_97_5": 0.18477236497165878,
+            "eligible_question_ids": [
+              "codeforces:2102A",
+              "codeforces:2102B",
+              "codeforces:2108A",
+              "codeforces:2109A",
+              "codeforces:2110A",
+              "codeforces:2110B",
+              "codeforces:2111A",
+              "codeforces:2112A",
+              "codeforces:2112C",
+              "codeforces:2113A",
+              "codeforces:2114B",
+              "codeforces:2114C",
+              "codeforces:2114E",
+              "codeforces:2117A",
+              "codeforces:2117D",
+              "codeforces:2118D1",
+              "codeforces:2120A",
+              "codeforces:2120B",
+              "codeforces:2121A",
+              "codeforces:2121C",
+              "codeforces:2121E",
+              "codeforces:2121F",
+              "codeforces:2121G",
+              "atcoder:abc387_b",
+              "atcoder:abc387_a",
+              "atcoder:abc387_c",
+              "atcoder:abc388_b",
+              "atcoder:abc388_g",
+              "atcoder:abc389_d",
+              "atcoder:abc389_a",
+              "atcoder:abc389_f",
+              "atcoder:abc390_f",
+              "atcoder:abc391_f",
+              "atcoder:abc391_a",
+              "atcoder:abc391_b",
+              "atcoder:abc392_b",
+              "atcoder:abc393_f",
+              "atcoder:abc393_e",
+              "atcoder:abc393_d",
+              "atcoder:abc393_b",
+              "atcoder:abc395_f",
+              "atcoder:abc395_b",
+              "atcoder:abc396_g",
+              "atcoder:abc396_c",
+              "atcoder:abc396_b",
+              "atcoder:abc396_d",
+              "atcoder:abc397_f",
+              "atcoder:abc397_c",
+              "atcoder:abc397_b",
+              "atcoder:abc398_d",
+              "atcoder:abc398_c",
+              "atcoder:abc399_c",
+              "atcoder:abc399_f",
+              "atcoder:abc399_b",
+              "atcoder:abc400_e",
+              "atcoder:arc191_d",
+              "atcoder:arc194_b",
+              "atcoder:arc194_e",
+              "atcoder:arc195_a",
+              "leetcode:3708",
+              "leetcode:3677",
+              "leetcode:3720",
+              "leetcode:3731",
+              "leetcode:3714",
+              "leetcode:3737",
+              "leetcode:3704",
+              "leetcode:3721",
+              "leetcode:3753",
+              "leetcode:3754",
+              "leetcode:3748",
+              "leetcode:3760",
+              "leetcode:3709",
+              "leetcode:3771",
+              "leetcode:3733",
+              "leetcode:3768",
+              "leetcode:3764",
+              "leetcode:3705",
+              "leetcode:3786",
+              "leetcode:3722",
+              "leetcode:3759",
+              "leetcode:3788",
+              "leetcode:3750",
+              "leetcode:3801",
+              "leetcode:3817",
+              "leetcode:3809",
+              "leetcode:3744",
+              "leetcode:3832",
+              "leetcode:3793",
+              "leetcode:3773",
+              "leetcode:3747",
+              "leetcode:3739",
+              "leetcode:3736",
+              "leetcode:3723",
+              "leetcode:3692",
+              "leetcode:3778",
+              "leetcode:3785",
+              "leetcode:3783",
+              "leetcode:3799",
+              "leetcode:3784",
+              "leetcode:3811",
+              "leetcode:3805",
+              "leetcode:3765"
+            ],
+            "excluded_all_n_failed_question_ids": [
+              "codeforces:2101B",
+              "codeforces:2101C",
+              "codeforces:2101D",
+              "codeforces:2101E",
+              "codeforces:2107B",
+              "codeforces:2107D",
+              "codeforces:2107F1",
+              "codeforces:2107F2",
+              "codeforces:2108B",
+              "codeforces:2108C",
+              "codeforces:2108F",
+              "codeforces:2109D",
+              "codeforces:2109E",
+              "codeforces:2109F",
+              "codeforces:2110D",
+              "codeforces:2110F",
+              "codeforces:2111B",
+              "codeforces:2111C",
+              "codeforces:2111E",
+              "codeforces:2112B",
+              "codeforces:2112E",
+              "codeforces:2112F",
+              "codeforces:2113B",
+              "codeforces:2113C",
+              "codeforces:2113D",
+              "codeforces:2113E",
+              "codeforces:2114D",
+              "codeforces:2114F",
+              "codeforces:2114G",
+              "codeforces:2115A",
+              "codeforces:2115D",
+              "codeforces:2115E",
+              "codeforces:2115F1",
+              "codeforces:2115F2",
+              "codeforces:2116A",
+              "codeforces:2116B",
+              "codeforces:2117C",
+              "codeforces:2117E",
+              "codeforces:2117F",
+              "codeforces:2117G",
+              "codeforces:2117H",
+              "codeforces:2118C",
+              "codeforces:2118D2",
+              "codeforces:2118F",
+              "codeforces:2120D",
+              "codeforces:2120E",
+              "codeforces:2120F",
+              "codeforces:2120G",
+              "codeforces:2121B",
+              "codeforces:2121H",
+              "atcoder:abc387_f",
+              "atcoder:abc388_f",
+              "atcoder:abc389_g",
+              "atcoder:abc390_e",
+              "atcoder:abc390_g",
+              "atcoder:abc391_e",
+              "atcoder:abc391_g",
+              "atcoder:abc392_g",
+              "atcoder:abc392_f",
+              "atcoder:abc394_f",
+              "atcoder:abc394_e",
+              "atcoder:abc396_f",
+              "atcoder:abc397_g",
+              "atcoder:abc397_e",
+              "atcoder:abc398_g",
+              "atcoder:abc399_e",
+              "atcoder:abc399_d",
+              "atcoder:abc400_g",
+              "atcoder:arc191_a",
+              "atcoder:arc192_d",
+              "atcoder:arc193_b",
+              "atcoder:arc193_d",
+              "atcoder:arc194_d",
+              "atcoder:arc195_b",
+              "atcoder:arc195_c",
+              "atcoder:arc195_d",
+              "atcoder:arc196_a",
+              "leetcode:3674",
+              "leetcode:3725",
+              "leetcode:3751",
+              "leetcode:3697",
+              "leetcode:3696",
+              "leetcode:3762",
+              "leetcode:3779",
+              "leetcode:3781",
+              "leetcode:3770",
+              "leetcode:3791",
+              "leetcode:3789",
+              "leetcode:3795",
+              "leetcode:3794",
+              "leetcode:3717",
+              "leetcode:3777",
+              "leetcode:3687",
+              "leetcode:3743",
+              "leetcode:3701",
+              "leetcode:3763",
+              "leetcode:3776"
+            ],
+            "eligibility_unknown_question_ids": [],
+            "harmed_question_ids": [
+              "leetcode:3677",
+              "leetcode:3714",
+              "leetcode:3753",
+              "leetcode:3760",
+              "leetcode:3705",
+              "leetcode:3788",
+              "leetcode:3750",
+              "leetcode:3801",
+              "leetcode:3744",
+              "leetcode:3739",
+              "leetcode:3692"
+            ],
+            "eligible_harm_unknown_question_ids": [],
+            "denominator_explanation": "N-all-FAIL questions cannot have N PASS / HYB-B FAIL and widen the overall denominator. Removing them changes the estimand to harm among empirically N-solvable questions; this does not change the primary pooled analysis.",
+            "missing_rule": "Any incomplete primary comparison keeps the conditional proportion and CP bound UNKNOWN; known/unknown eligibility and harm counts remain explicit. No expected missing label is treated as N-all-FAIL.",
+            "assumptions": "One-sided 97.5% binomial Clopper-Pearson upper bound for the probability a question has at least one N PASS / HYB-B FAIL sample. Exact coverage requires independent Bernoulli question indicators with a common p. Fixed heterogeneous collection/difficulty quotas do not establish this assumption; no unconditional exact coverage claim for their mixture. ANY-harm is stronger than mean net pass-rate loss, depends on sample_count, and is not per-sample harm probability. Here the population is additionally conditioned on N passing at least one predeclared sample. A binomial-exact interpretation requires independent common-p harm indicators within this conditional population; observed eligibility does not establish those assumptions or remove sample-count/collection heterogeneity. This is a secondary diagnostic, not a new primary test or noninferiority gate."
+          }
+        },
+        "BF@4096": {
+          "candidate": "HYB-B",
+          "reference": "BF@4096",
+          "complete": true,
+          "formal_eligible": true,
+          "pass_difference_pp": 1.6331658291457274,
+          "pass_difference_pp_ci95": [
+            -0.502512562814067,
+            3.7688442211055273
+          ],
+          "pass_difference_pp_bounds": [
+            1.6331658291457287,
+            1.6331658291457287
+          ],
+          "token_saving_percent": -9.769786325932328,
+          "token_saving_percent_ci95": [
+            -14.357141902173487,
+            -5.562851428609732
+          ],
+          "mean_token_difference": 1418.844221105528,
+          "mean_token_difference_ci95": [
+            820.8604585427145,
+            2042.2097675879406
+          ],
+          "rescued_question_equivalents": 6.25,
+          "harmed_question_equivalents": 3.0,
+          "paired_outcome_unknown": 0,
+          "rescued_pairs": [
+            {
+              "case_id": "codeforces:2111A",
+              "sample_index": 1
+            },
+            {
+              "case_id": "codeforces:2118D1",
+              "sample_index": 0
+            },
+            {
+              "case_id": "codeforces:2121C",
+              "sample_index": 0
+            },
+            {
+              "case_id": "codeforces:2121F",
+              "sample_index": 0
+            },
+            {
+              "case_id": "atcoder:abc387_c",
+              "sample_index": 1
+            },
+            {
+              "case_id": "atcoder:abc393_d",
+              "sample_index": 1
+            },
+            {
+              "case_id": "atcoder:abc395_f",
+              "sample_index": 1
+            },
+            {
+              "case_id": "atcoder:abc396_c",
+              "sample_index": 1
+            },
+            {
+              "case_id": "atcoder:abc396_d",
+              "sample_index": 3
+            },
+            {
+              "case_id": "atcoder:abc397_b",
+              "sample_index": 0
+            },
+            {
+              "case_id": "atcoder:abc397_b",
+              "sample_index": 1
+            },
+            {
+              "case_id": "atcoder:abc399_f",
+              "sample_index": 0
+            },
+            {
+              "case_id": "leetcode:3708",
+              "sample_index": 0
+            },
+            {
+              "case_id": "leetcode:3714",
+              "sample_index": 1
+            },
+            {
+              "case_id": "leetcode:3737",
+              "sample_index": 1
+            },
+            {
+              "case_id": "leetcode:3722",
+              "sample_index": 2
+            },
+            {
+              "case_id": "leetcode:3832",
+              "sample_index": 0
+            },
+            {
+              "case_id": "leetcode:3832",
+              "sample_index": 1
+            },
+            {
+              "case_id": "leetcode:3832",
+              "sample_index": 2
+            },
+            {
+              "case_id": "leetcode:3832",
+              "sample_index": 3
+            },
+            {
+              "case_id": "leetcode:3692",
+              "sample_index": 1
+            }
+          ],
+          "harmed_pairs": [
+            {
+              "case_id": "leetcode:3753",
+              "sample_index": 0
+            },
+            {
+              "case_id": "leetcode:3753",
+              "sample_index": 1
+            },
+            {
+              "case_id": "leetcode:3753",
+              "sample_index": 2
+            },
+            {
+              "case_id": "leetcode:3753",
+              "sample_index": 3
+            },
+            {
+              "case_id": "leetcode:3760",
+              "sample_index": 1
+            },
+            {
+              "case_id": "leetcode:3705",
+              "sample_index": 0
+            },
+            {
+              "case_id": "leetcode:3705",
+              "sample_index": 2
+            },
+            {
+              "case_id": "leetcode:3705",
+              "sample_index": 3
+            },
+            {
+              "case_id": "leetcode:3750",
+              "sample_index": 2
+            },
+            {
+              "case_id": "leetcode:3801",
+              "sample_index": 0
+            },
+            {
+              "case_id": "leetcode:3744",
+              "sample_index": 0
+            },
+            {
+              "case_id": "leetcode:3739",
+              "sample_index": 0
+            }
+          ],
+          "nominal_superiority": false
+        }
+      }
+    },
+    {
+      "version": "erratum",
+      "population": "collection:hv6_atcoder",
+      "questions": 63,
+      "estimates": {
+        "N": {
+          "name": "N",
+          "questions": 63,
+          "fixed_samples": 252,
+          "unknown_outcomes": 0,
+          "unknown_costs": 0,
+          "mean_passed_questions": 30.0,
+          "pass_rate": 0.47619047619047616,
+          "pass_rate_ci95": [
+            0.3888888888888889,
+            0.5674603174603174
+          ],
+          "pass_rate_bounds": [
+            0.47619047619047616,
+            0.47619047619047616
+          ],
+          "mean_tokens": 16681.242063492064,
+          "mean_tokens_ci95": [
+            15340.73482142857,
+            18004.949702380953
+          ],
+          "known_token_sum": 4203673.0
+        },
+        "BF@4096": {
+          "name": "BF@4096",
+          "questions": 63,
+          "fixed_samples": 252,
+          "unknown_outcomes": 0,
+          "unknown_costs": 0,
+          "mean_passed_questions": 28.25,
+          "pass_rate": 0.44841269841269843,
+          "pass_rate_ci95": [
+            0.36507936507936506,
+            0.5317460317460317
+          ],
+          "pass_rate_bounds": [
+            0.44841269841269843,
+            0.44841269841269843
+          ],
+          "mean_tokens": 14196.940476190477,
+          "mean_tokens_ci95": [
+            12604.58521825397,
+            15760.796726190476
+          ],
+          "known_token_sum": 3577629.0
+        },
+        "HYB-B": {
+          "name": "HYB-B",
+          "questions": 63,
+          "fixed_samples": 252,
+          "unknown_outcomes": 0,
+          "unknown_costs": 0,
+          "mean_passed_questions": 30.25,
+          "pass_rate": 0.4801587301587302,
+          "pass_rate_ci95": [
+            0.3888888888888889,
+            0.5714285714285714
+          ],
+          "pass_rate_bounds": [
+            0.4801587301587302,
+            0.4801587301587302
+          ],
+          "mean_tokens": 15058.079365079366,
+          "mean_tokens_ci95": [
+            13150.601686507936,
+            16914.169543650794
+          ],
+          "known_token_sum": 3794636.0
+        }
+      },
+      "comparisons": {
+        "N": {
+          "candidate": "HYB-B",
+          "reference": "N",
+          "complete": true,
+          "formal_eligible": true,
+          "pass_difference_pp": 0.39682539682540097,
+          "pass_difference_pp_ci95": [
+            0.0,
+            1.1904761904761918
+          ],
+          "pass_difference_pp_bounds": [
+            0.3968253968253968,
+            0.3968253968253968
+          ],
+          "token_saving_percent": 9.730466665699256,
+          "token_saving_percent_ci95": [
+            3.889282349980787,
+            17.17274828148031
+          ],
+          "mean_token_difference": -1623.1626984126979,
+          "mean_token_difference_ci95": [
+            -2806.090575396826,
+            -667.1162698412718
+          ],
+          "rescued_question_equivalents": 0.25,
+          "harmed_question_equivalents": 0.0,
+          "paired_outcome_unknown": 0,
+          "rescued_pairs": [
+            {
+              "case_id": "atcoder:abc396_d",
+              "sample_index": 3
+            }
+          ],
+          "harmed_pairs": [],
+          "nominal_noninferiority": true,
+          "strict_noninferiority": false,
+          "strict": {
+            "harmed_questions": 0,
+            "questions": 63,
+            "possible_additional_harmed_questions": 0,
+            "upper_probability_97_5": 0.05687235233201626,
+            "threshold": 0.03,
+            "strict_less_than": true,
+            "harmed_question_ids": [],
+            "assumptions": "One-sided 97.5% binomial Clopper-Pearson upper bound for the probability a question has at least one N PASS / HYB-B FAIL sample. Exact coverage requires independent Bernoulli question indicators with a common p. Fixed heterogeneous collection/difficulty quotas do not establish this assumption; no unconditional exact coverage claim for their mixture. ANY-harm is stronger than mean net pass-rate loss, depends on sample_count, and is not per-sample harm probability."
+          },
+          "decision_scope": "COMPLETE",
+          "secondary_n_success_subset": {
+            "role": "secondary",
+            "used_for_primary_decision": false,
+            "status": "COMPLETE_SECONDARY_DIAGNOSTIC",
+            "eligibility": "At least one N PASS among all predeclared samples for the question",
+            "harm": "At least one paired sample with N PASS and HYB-B FAIL",
+            "original_population_questions": 63,
+            "eligible_questions_known": 36,
+            "eligible_questions_bounds": [
+              36,
+              36
+            ],
+            "excluded_all_n_failed_questions": 27,
+            "eligibility_unknown_questions": 0,
+            "eligibility_known_questions": 63,
+            "eligibility_coverage": 1.0,
+            "eligible_harmed_questions_known": 0,
+            "eligible_harm_unknown_questions": 0,
+            "eligible_harm_known_questions": 36,
+            "unknown_n_sample_labels": 0,
+            "unknown_candidate_sample_labels": 0,
+            "harm_indicator_identified": true,
+            "parent_comparison_complete": true,
+            "harmed_proportion": 0.0,
+            "upper_probability_97_5": 0.09739375591449194,
+            "eligible_question_ids": [
+              "atcoder:abc387_b",
+              "atcoder:abc387_a",
+              "atcoder:abc387_c",
+              "atcoder:abc388_b",
+              "atcoder:abc388_g",
+              "atcoder:abc389_d",
+              "atcoder:abc389_a",
+              "atcoder:abc389_f",
+              "atcoder:abc390_f",
+              "atcoder:abc391_f",
+              "atcoder:abc391_a",
+              "atcoder:abc391_b",
+              "atcoder:abc392_b",
+              "atcoder:abc393_f",
+              "atcoder:abc393_e",
+              "atcoder:abc393_d",
+              "atcoder:abc393_b",
+              "atcoder:abc395_f",
+              "atcoder:abc395_b",
+              "atcoder:abc396_g",
+              "atcoder:abc396_c",
+              "atcoder:abc396_b",
+              "atcoder:abc396_d",
+              "atcoder:abc397_f",
+              "atcoder:abc397_c",
+              "atcoder:abc397_b",
+              "atcoder:abc398_d",
+              "atcoder:abc398_c",
+              "atcoder:abc399_c",
+              "atcoder:abc399_f",
+              "atcoder:abc399_b",
+              "atcoder:abc400_e",
+              "atcoder:arc191_d",
+              "atcoder:arc194_b",
+              "atcoder:arc194_e",
+              "atcoder:arc195_a"
+            ],
+            "excluded_all_n_failed_question_ids": [
+              "atcoder:abc387_f",
+              "atcoder:abc388_f",
+              "atcoder:abc389_g",
+              "atcoder:abc390_e",
+              "atcoder:abc390_g",
+              "atcoder:abc391_e",
+              "atcoder:abc391_g",
+              "atcoder:abc392_g",
+              "atcoder:abc392_f",
+              "atcoder:abc394_f",
+              "atcoder:abc394_e",
+              "atcoder:abc396_f",
+              "atcoder:abc397_g",
+              "atcoder:abc397_e",
+              "atcoder:abc398_g",
+              "atcoder:abc399_e",
+              "atcoder:abc399_d",
+              "atcoder:abc400_g",
+              "atcoder:arc191_a",
+              "atcoder:arc192_d",
+              "atcoder:arc193_b",
+              "atcoder:arc193_d",
+              "atcoder:arc194_d",
+              "atcoder:arc195_b",
+              "atcoder:arc195_c",
+              "atcoder:arc195_d",
+              "atcoder:arc196_a"
+            ],
+            "eligibility_unknown_question_ids": [],
+            "harmed_question_ids": [],
+            "eligible_harm_unknown_question_ids": [],
+            "denominator_explanation": "N-all-FAIL questions cannot have N PASS / HYB-B FAIL and widen the overall denominator. Removing them changes the estimand to harm among empirically N-solvable questions; this does not change the primary pooled analysis.",
+            "missing_rule": "Any incomplete primary comparison keeps the conditional proportion and CP bound UNKNOWN; known/unknown eligibility and harm counts remain explicit. No expected missing label is treated as N-all-FAIL.",
+            "assumptions": "One-sided 97.5% binomial Clopper-Pearson upper bound for the probability a question has at least one N PASS / HYB-B FAIL sample. Exact coverage requires independent Bernoulli question indicators with a common p. Fixed heterogeneous collection/difficulty quotas do not establish this assumption; no unconditional exact coverage claim for their mixture. ANY-harm is stronger than mean net pass-rate loss, depends on sample_count, and is not per-sample harm probability. Here the population is additionally conditioned on N passing at least one predeclared sample. A binomial-exact interpretation requires independent common-p harm indicators within this conditional population; observed eligibility does not establish those assumptions or remove sample-count/collection heterogeneity. This is a secondary diagnostic, not a new primary test or noninferiority gate."
+          }
+        },
+        "BF@4096": {
+          "candidate": "HYB-B",
+          "reference": "BF@4096",
+          "complete": true,
+          "formal_eligible": true,
+          "pass_difference_pp": 3.1746031746031744,
+          "pass_difference_pp_ci95": [
+            1.1904761904761918,
+            5.555555555555553
+          ],
+          "pass_difference_pp_bounds": [
+            3.1746031746031744,
+            3.1746031746031744
+          ],
+          "token_saving_percent": -6.065665277198939,
+          "token_saving_percent_ci95": [
+            -13.970896792642826,
+            1.2866471304820457
+          ],
+          "mean_token_difference": 861.1388888888887,
+          "mean_token_difference_ci95": [
+            -179.57728174603093,
+            1929.1193452380953
+          ],
+          "rescued_question_equivalents": 2.0,
+          "harmed_question_equivalents": 0.0,
+          "paired_outcome_unknown": 0,
+          "rescued_pairs": [
+            {
+              "case_id": "atcoder:abc387_c",
+              "sample_index": 1
+            },
+            {
+              "case_id": "atcoder:abc393_d",
+              "sample_index": 1
+            },
+            {
+              "case_id": "atcoder:abc395_f",
+              "sample_index": 1
+            },
+            {
+              "case_id": "atcoder:abc396_c",
+              "sample_index": 1
+            },
+            {
+              "case_id": "atcoder:abc396_d",
+              "sample_index": 3
+            },
+            {
+              "case_id": "atcoder:abc397_b",
+              "sample_index": 0
+            },
+            {
+              "case_id": "atcoder:abc397_b",
+              "sample_index": 1
+            },
+            {
+              "case_id": "atcoder:abc399_f",
+              "sample_index": 0
+            }
+          ],
+          "harmed_pairs": [],
+          "nominal_superiority": true
+        }
+      }
+    },
+    {
+      "version": "erratum",
+      "population": "collection:hv6_leetcode",
+      "questions": 63,
+      "estimates": {
+        "N": {
+          "name": "N",
+          "questions": 63,
+          "fixed_samples": 252,
+          "unknown_outcomes": 0,
+          "unknown_costs": 0,
+          "mean_passed_questions": 34.0,
+          "pass_rate": 0.5396825396825397,
+          "pass_rate_ci95": [
+            0.4603174603174603,
+            0.623015873015873
+          ],
+          "pass_rate_bounds": [
+            0.5396825396825397,
+            0.5396825396825397
+          ],
+          "mean_tokens": 13576.666666666666,
+          "mean_tokens_ci95": [
+            12399.878075396826,
+            14751.51359126984
+          ],
+          "known_token_sum": 3421320.0
+        },
+        "BF@4096": {
+          "name": "BF@4096",
+          "questions": 63,
+          "fixed_samples": 252,
+          "unknown_outcomes": 0,
+          "unknown_costs": 0,
+          "mean_passed_questions": 30.75,
+          "pass_rate": 0.4880952380952381,
+          "pass_rate_ci95": [
+            0.4007936507936508,
+            0.5753968253968254
+          ],
+          "pass_rate_bounds": [
+            0.4880952380952381,
+            0.4880952380952381
+          ],
+          "mean_tokens": 9650.789682539682,
+          "mean_tokens_ci95": [
+            8259.001388888888,
+            11045.024007936507
+          ],
+          "known_token_sum": 2431999.0
+        },
+        "HYB-B": {
+          "name": "HYB-B",
+          "questions": 63,
+          "fixed_samples": 252,
+          "unknown_outcomes": 0,
+          "unknown_costs": 0,
+          "mean_passed_questions": 30.0,
+          "pass_rate": 0.47619047619047616,
+          "pass_rate_ci95": [
+            0.3888888888888889,
+            0.5634920634920635
+          ],
+          "pass_rate_bounds": [
+            0.47619047619047616,
+            0.47619047619047616
+          ],
+          "mean_tokens": 10678.253968253968,
+          "mean_tokens_ci95": [
+            8985.194146825397,
+            12373.306944444445
+          ],
+          "known_token_sum": 2690920.0
+        }
+      },
+      "comparisons": {
+        "N": {
+          "candidate": "HYB-B",
+          "reference": "N",
+          "complete": true,
+          "formal_eligible": true,
+          "pass_difference_pp": -6.349206349206349,
+          "pass_difference_pp_ci95": [
+            -11.11111111111111,
+            -2.3809523809523836
+          ],
+          "pass_difference_pp_bounds": [
+            -6.349206349206349,
+            -6.349206349206349
+          ],
+          "token_saving_percent": 21.348485379911843,
+          "token_saving_percent_ci95": [
+            13.659888250614637,
+            29.63306530091497
+          ],
+          "mean_token_difference": -2898.412698412698,
+          "mean_token_difference_ci95": [
+            -3938.394543650794,
+            -1910.31011904762
+          ],
+          "rescued_question_equivalents": 0.25,
+          "harmed_question_equivalents": 4.25,
+          "paired_outcome_unknown": 0,
+          "rescued_pairs": [
+            {
+              "case_id": "leetcode:3714",
+              "sample_index": 1
+            }
+          ],
+          "harmed_pairs": [
+            {
+              "case_id": "leetcode:3677",
+              "sample_index": 1
+            },
+            {
+              "case_id": "leetcode:3714",
+              "sample_index": 0
+            },
+            {
+              "case_id": "leetcode:3753",
+              "sample_index": 0
+            },
+            {
+              "case_id": "leetcode:3753",
+              "sample_index": 1
+            },
+            {
+              "case_id": "leetcode:3753",
+              "sample_index": 2
+            },
+            {
+              "case_id": "leetcode:3753",
+              "sample_index": 3
+            },
+            {
+              "case_id": "leetcode:3760",
+              "sample_index": 1
+            },
+            {
+              "case_id": "leetcode:3705",
+              "sample_index": 0
+            },
+            {
+              "case_id": "leetcode:3705",
+              "sample_index": 2
+            },
+            {
+              "case_id": "leetcode:3705",
+              "sample_index": 3
+            },
+            {
+              "case_id": "leetcode:3788",
+              "sample_index": 0
+            },
+            {
+              "case_id": "leetcode:3750",
+              "sample_index": 2
+            },
+            {
+              "case_id": "leetcode:3801",
+              "sample_index": 0
+            },
+            {
+              "case_id": "leetcode:3744",
+              "sample_index": 0
+            },
+            {
+              "case_id": "leetcode:3739",
+              "sample_index": 0
+            },
+            {
+              "case_id": "leetcode:3739",
+              "sample_index": 2
+            },
+            {
+              "case_id": "leetcode:3692",
+              "sample_index": 3
+            }
+          ],
+          "nominal_noninferiority": false,
+          "strict_noninferiority": false,
+          "strict": {
+            "harmed_questions": 11,
+            "questions": 63,
+            "possible_additional_harmed_questions": 0,
+            "upper_probability_97_5": 0.2909709490808725,
+            "threshold": 0.03,
+            "strict_less_than": true,
+            "harmed_question_ids": [
+              "leetcode:3677",
+              "leetcode:3714",
+              "leetcode:3753",
+              "leetcode:3760",
+              "leetcode:3705",
+              "leetcode:3788",
+              "leetcode:3750",
+              "leetcode:3801",
+              "leetcode:3744",
+              "leetcode:3739",
+              "leetcode:3692"
+            ],
+            "assumptions": "One-sided 97.5% binomial Clopper-Pearson upper bound for the probability a question has at least one N PASS / HYB-B FAIL sample. Exact coverage requires independent Bernoulli question indicators with a common p. Fixed heterogeneous collection/difficulty quotas do not establish this assumption; no unconditional exact coverage claim for their mixture. ANY-harm is stronger than mean net pass-rate loss, depends on sample_count, and is not per-sample harm probability."
+          },
+          "decision_scope": "COMPLETE",
+          "secondary_n_success_subset": {
+            "role": "secondary",
+            "used_for_primary_decision": false,
+            "status": "COMPLETE_SECONDARY_DIAGNOSTIC",
+            "eligibility": "At least one N PASS among all predeclared samples for the question",
+            "harm": "At least one paired sample with N PASS and HYB-B FAIL",
+            "original_population_questions": 63,
+            "eligible_questions_known": 43,
+            "eligible_questions_bounds": [
+              43,
+              43
+            ],
+            "excluded_all_n_failed_questions": 20,
+            "eligibility_unknown_questions": 0,
+            "eligibility_known_questions": 63,
+            "eligibility_coverage": 1.0,
+            "eligible_harmed_questions_known": 11,
+            "eligible_harm_unknown_questions": 0,
+            "eligible_harm_known_questions": 43,
+            "unknown_n_sample_labels": 0,
+            "unknown_candidate_sample_labels": 0,
+            "harm_indicator_identified": true,
+            "parent_comparison_complete": true,
+            "harmed_proportion": 0.2558139534883721,
+            "upper_probability_97_5": 0.41171572108486,
+            "eligible_question_ids": [
+              "leetcode:3708",
+              "leetcode:3677",
+              "leetcode:3720",
+              "leetcode:3731",
+              "leetcode:3714",
+              "leetcode:3737",
+              "leetcode:3704",
+              "leetcode:3721",
+              "leetcode:3753",
+              "leetcode:3754",
+              "leetcode:3748",
+              "leetcode:3760",
+              "leetcode:3709",
+              "leetcode:3771",
+              "leetcode:3733",
+              "leetcode:3768",
+              "leetcode:3764",
+              "leetcode:3705",
+              "leetcode:3786",
+              "leetcode:3722",
+              "leetcode:3759",
+              "leetcode:3788",
+              "leetcode:3750",
+              "leetcode:3801",
+              "leetcode:3817",
+              "leetcode:3809",
+              "leetcode:3744",
+              "leetcode:3832",
+              "leetcode:3793",
+              "leetcode:3773",
+              "leetcode:3747",
+              "leetcode:3739",
+              "leetcode:3736",
+              "leetcode:3723",
+              "leetcode:3692",
+              "leetcode:3778",
+              "leetcode:3785",
+              "leetcode:3783",
+              "leetcode:3799",
+              "leetcode:3784",
+              "leetcode:3811",
+              "leetcode:3805",
+              "leetcode:3765"
+            ],
+            "excluded_all_n_failed_question_ids": [
+              "leetcode:3674",
+              "leetcode:3725",
+              "leetcode:3751",
+              "leetcode:3697",
+              "leetcode:3696",
+              "leetcode:3762",
+              "leetcode:3779",
+              "leetcode:3781",
+              "leetcode:3770",
+              "leetcode:3791",
+              "leetcode:3789",
+              "leetcode:3795",
+              "leetcode:3794",
+              "leetcode:3717",
+              "leetcode:3777",
+              "leetcode:3687",
+              "leetcode:3743",
+              "leetcode:3701",
+              "leetcode:3763",
+              "leetcode:3776"
+            ],
+            "eligibility_unknown_question_ids": [],
+            "harmed_question_ids": [
+              "leetcode:3677",
+              "leetcode:3714",
+              "leetcode:3753",
+              "leetcode:3760",
+              "leetcode:3705",
+              "leetcode:3788",
+              "leetcode:3750",
+              "leetcode:3801",
+              "leetcode:3744",
+              "leetcode:3739",
+              "leetcode:3692"
+            ],
+            "eligible_harm_unknown_question_ids": [],
+            "denominator_explanation": "N-all-FAIL questions cannot have N PASS / HYB-B FAIL and widen the overall denominator. Removing them changes the estimand to harm among empirically N-solvable questions; this does not change the primary pooled analysis.",
+            "missing_rule": "Any incomplete primary comparison keeps the conditional proportion and CP bound UNKNOWN; known/unknown eligibility and harm counts remain explicit. No expected missing label is treated as N-all-FAIL.",
+            "assumptions": "One-sided 97.5% binomial Clopper-Pearson upper bound for the probability a question has at least one N PASS / HYB-B FAIL sample. Exact coverage requires independent Bernoulli question indicators with a common p. Fixed heterogeneous collection/difficulty quotas do not establish this assumption; no unconditional exact coverage claim for their mixture. ANY-harm is stronger than mean net pass-rate loss, depends on sample_count, and is not per-sample harm probability. Here the population is additionally conditioned on N passing at least one predeclared sample. A binomial-exact interpretation requires independent common-p harm indicators within this conditional population; observed eligibility does not establish those assumptions or remove sample-count/collection heterogeneity. This is a secondary diagnostic, not a new primary test or noninferiority gate."
+          }
+        },
+        "BF@4096": {
+          "candidate": "HYB-B",
+          "reference": "BF@4096",
+          "complete": true,
+          "formal_eligible": true,
+          "pass_difference_pp": -1.1904761904761918,
+          "pass_difference_pp_ci95": [
+            -6.74603174603175,
+            4.3650793650793664
+          ],
+          "pass_difference_pp_bounds": [
+            -1.1904761904761905,
+            -1.1904761904761905
+          ],
+          "token_saving_percent": -10.646427075011133,
+          "token_saving_percent_ci95": [
+            -24.9935432111006,
+            1.3220123244379376
+          ],
+          "mean_token_difference": 1027.4642857142862,
+          "mean_token_difference_ci95": [
+            -131.94007936507865,
+            2286.994047619044
+          ],
+          "rescued_question_equivalents": 2.25,
+          "harmed_question_equivalents": 3.0,
+          "paired_outcome_unknown": 0,
+          "rescued_pairs": [
+            {
+              "case_id": "leetcode:3708",
+              "sample_index": 0
+            },
+            {
+              "case_id": "leetcode:3714",
+              "sample_index": 1
+            },
+            {
+              "case_id": "leetcode:3737",
+              "sample_index": 1
+            },
+            {
+              "case_id": "leetcode:3722",
+              "sample_index": 2
+            },
+            {
+              "case_id": "leetcode:3832",
+              "sample_index": 0
+            },
+            {
+              "case_id": "leetcode:3832",
+              "sample_index": 1
+            },
+            {
+              "case_id": "leetcode:3832",
+              "sample_index": 2
+            },
+            {
+              "case_id": "leetcode:3832",
+              "sample_index": 3
+            },
+            {
+              "case_id": "leetcode:3692",
+              "sample_index": 1
+            }
+          ],
+          "harmed_pairs": [
+            {
+              "case_id": "leetcode:3753",
+              "sample_index": 0
+            },
+            {
+              "case_id": "leetcode:3753",
+              "sample_index": 1
+            },
+            {
+              "case_id": "leetcode:3753",
+              "sample_index": 2
+            },
+            {
+              "case_id": "leetcode:3753",
+              "sample_index": 3
+            },
+            {
+              "case_id": "leetcode:3760",
+              "sample_index": 1
+            },
+            {
+              "case_id": "leetcode:3705",
+              "sample_index": 0
+            },
+            {
+              "case_id": "leetcode:3705",
+              "sample_index": 2
+            },
+            {
+              "case_id": "leetcode:3705",
+              "sample_index": 3
+            },
+            {
+              "case_id": "leetcode:3750",
+              "sample_index": 2
+            },
+            {
+              "case_id": "leetcode:3801",
+              "sample_index": 0
+            },
+            {
+              "case_id": "leetcode:3744",
+              "sample_index": 0
+            },
+            {
+              "case_id": "leetcode:3739",
+              "sample_index": 0
+            }
+          ],
+          "nominal_superiority": false
+        }
+      }
+    },
+    {
+      "version": "erratum",
+      "population": "collection:lcbpro_2025",
+      "questions": 73,
+      "estimates": {
+        "N": {
+          "name": "N",
+          "questions": 73,
+          "fixed_samples": 146,
+          "unknown_outcomes": 0,
+          "unknown_costs": 0,
+          "mean_passed_questions": 17.5,
+          "pass_rate": 0.23972602739726026,
+          "pass_rate_ci95": [
+            0.1643835616438356,
+            0.3150684931506849
+          ],
+          "pass_rate_bounds": [
+            0.23972602739726026,
+            0.23972602739726026
+          ],
+          "mean_tokens": 21075.630136986303,
+          "mean_tokens_ci95": [
+            19885.914726027397,
+            22263.18493150685
+          ],
+          "known_token_sum": 3077042.0
+        },
+        "BF@4096": {
+          "name": "BF@4096",
+          "questions": 73,
+          "fixed_samples": 146,
+          "unknown_outcomes": 0,
+          "unknown_costs": 0,
+          "mean_passed_questions": 15.5,
+          "pass_rate": 0.21232876712328766,
+          "pass_rate_ci95": [
+            0.136986301369863,
+            0.2876712328767123
+          ],
+          "pass_rate_bounds": [
+            0.21232876712328766,
+            0.21232876712328766
+          ],
+          "mean_tokens": 19008.568493150684,
+          "mean_tokens_ci95": [
+            17439.66198630137,
+            20518.914554794523
+          ],
+          "known_token_sum": 2775251.0
+        },
+        "HYB-B": {
+          "name": "HYB-B",
+          "questions": 73,
+          "fixed_samples": 146,
+          "unknown_outcomes": 0,
+          "unknown_costs": 0,
+          "mean_passed_questions": 17.5,
+          "pass_rate": 0.23972602739726026,
+          "pass_rate_ci95": [
+            0.1643835616438356,
+            0.3150684931506849
+          ],
+          "pass_rate_bounds": [
+            0.23972602739726026,
+            0.23972602739726026
+          ],
+          "mean_tokens": 21246.486301369863,
+          "mean_tokens_ci95": [
+            19727.369006849316,
+            22721.829109589038
+          ],
+          "known_token_sum": 3101987.0
+        }
+      },
+      "comparisons": {
+        "N": {
+          "candidate": "HYB-B",
+          "reference": "N",
+          "complete": true,
+          "formal_eligible": true,
+          "pass_difference_pp": 0.0,
+          "pass_difference_pp_ci95": [
+            0.0,
+            0.0
+          ],
+          "pass_difference_pp_bounds": [
+            0.0,
+            0.0
+          ],
+          "token_saving_percent": -0.8106811671728886,
+          "token_saving_percent_ci95": [
+            -3.214685284936952,
+            2.0272919501039817
+          ],
+          "mean_token_difference": 170.8561643835601,
+          "mean_token_difference_ci95": [
+            -418.3691780821946,
+            695.4619863013704
+          ],
+          "rescued_question_equivalents": 0.0,
+          "harmed_question_equivalents": 0.0,
+          "paired_outcome_unknown": 0,
+          "rescued_pairs": [],
+          "harmed_pairs": [],
+          "nominal_noninferiority": true,
+          "strict_noninferiority": false,
+          "strict": {
+            "harmed_questions": 0,
+            "questions": 73,
+            "possible_additional_harmed_questions": 0,
+            "upper_probability_97_5": 0.04927706089585928,
+            "threshold": 0.03,
+            "strict_less_than": true,
+            "harmed_question_ids": [],
+            "assumptions": "One-sided 97.5% binomial Clopper-Pearson upper bound for the probability a question has at least one N PASS / HYB-B FAIL sample. Exact coverage requires independent Bernoulli question indicators with a common p. Fixed heterogeneous collection/difficulty quotas do not establish this assumption; no unconditional exact coverage claim for their mixture. ANY-harm is stronger than mean net pass-rate loss, depends on sample_count, and is not per-sample harm probability."
+          },
+          "decision_scope": "COMPLETE",
+          "secondary_n_success_subset": {
+            "role": "secondary",
+            "used_for_primary_decision": false,
+            "status": "COMPLETE_SECONDARY_DIAGNOSTIC",
+            "eligibility": "At least one N PASS among all predeclared samples for the question",
+            "harm": "At least one paired sample with N PASS and HYB-B FAIL",
+            "original_population_questions": 73,
+            "eligible_questions_known": 23,
+            "eligible_questions_bounds": [
+              23,
+              23
+            ],
+            "excluded_all_n_failed_questions": 50,
+            "eligibility_unknown_questions": 0,
+            "eligibility_known_questions": 73,
+            "eligibility_coverage": 1.0,
+            "eligible_harmed_questions_known": 0,
+            "eligible_harm_unknown_questions": 0,
+            "eligible_harm_known_questions": 23,
+            "unknown_n_sample_labels": 0,
+            "unknown_candidate_sample_labels": 0,
+            "harm_indicator_identified": true,
+            "parent_comparison_complete": true,
+            "harmed_proportion": 0.0,
+            "upper_probability_97_5": 0.1481851289152244,
+            "eligible_question_ids": [
+              "codeforces:2102A",
+              "codeforces:2102B",
+              "codeforces:2108A",
+              "codeforces:2109A",
+              "codeforces:2110A",
+              "codeforces:2110B",
+              "codeforces:2111A",
+              "codeforces:2112A",
+              "codeforces:2112C",
+              "codeforces:2113A",
+              "codeforces:2114B",
+              "codeforces:2114C",
+              "codeforces:2114E",
+              "codeforces:2117A",
+              "codeforces:2117D",
+              "codeforces:2118D1",
+              "codeforces:2120A",
+              "codeforces:2120B",
+              "codeforces:2121A",
+              "codeforces:2121C",
+              "codeforces:2121E",
+              "codeforces:2121F",
+              "codeforces:2121G"
+            ],
+            "excluded_all_n_failed_question_ids": [
+              "codeforces:2101B",
+              "codeforces:2101C",
+              "codeforces:2101D",
+              "codeforces:2101E",
+              "codeforces:2107B",
+              "codeforces:2107D",
+              "codeforces:2107F1",
+              "codeforces:2107F2",
+              "codeforces:2108B",
+              "codeforces:2108C",
+              "codeforces:2108F",
+              "codeforces:2109D",
+              "codeforces:2109E",
+              "codeforces:2109F",
+              "codeforces:2110D",
+              "codeforces:2110F",
+              "codeforces:2111B",
+              "codeforces:2111C",
+              "codeforces:2111E",
+              "codeforces:2112B",
+              "codeforces:2112E",
+              "codeforces:2112F",
+              "codeforces:2113B",
+              "codeforces:2113C",
+              "codeforces:2113D",
+              "codeforces:2113E",
+              "codeforces:2114D",
+              "codeforces:2114F",
+              "codeforces:2114G",
+              "codeforces:2115A",
+              "codeforces:2115D",
+              "codeforces:2115E",
+              "codeforces:2115F1",
+              "codeforces:2115F2",
+              "codeforces:2116A",
+              "codeforces:2116B",
+              "codeforces:2117C",
+              "codeforces:2117E",
+              "codeforces:2117F",
+              "codeforces:2117G",
+              "codeforces:2117H",
+              "codeforces:2118C",
+              "codeforces:2118D2",
+              "codeforces:2118F",
+              "codeforces:2120D",
+              "codeforces:2120E",
+              "codeforces:2120F",
+              "codeforces:2120G",
+              "codeforces:2121B",
+              "codeforces:2121H"
+            ],
+            "eligibility_unknown_question_ids": [],
+            "harmed_question_ids": [],
+            "eligible_harm_unknown_question_ids": [],
+            "denominator_explanation": "N-all-FAIL questions cannot have N PASS / HYB-B FAIL and widen the overall denominator. Removing them changes the estimand to harm among empirically N-solvable questions; this does not change the primary pooled analysis.",
+            "missing_rule": "Any incomplete primary comparison keeps the conditional proportion and CP bound UNKNOWN; known/unknown eligibility and harm counts remain explicit. No expected missing label is treated as N-all-FAIL.",
+            "assumptions": "One-sided 97.5% binomial Clopper-Pearson upper bound for the probability a question has at least one N PASS / HYB-B FAIL sample. Exact coverage requires independent Bernoulli question indicators with a common p. Fixed heterogeneous collection/difficulty quotas do not establish this assumption; no unconditional exact coverage claim for their mixture. ANY-harm is stronger than mean net pass-rate loss, depends on sample_count, and is not per-sample harm probability. Here the population is additionally conditioned on N passing at least one predeclared sample. A binomial-exact interpretation requires independent common-p harm indicators within this conditional population; observed eligibility does not establish those assumptions or remove sample-count/collection heterogeneity. This is a secondary diagnostic, not a new primary test or noninferiority gate."
+          }
+        },
+        "BF@4096": {
+          "candidate": "HYB-B",
+          "reference": "BF@4096",
+          "complete": true,
+          "formal_eligible": true,
+          "pass_difference_pp": 2.73972602739726,
+          "pass_difference_pp_ci95": [
+            0.684931506849315,
+            5.47945205479452
+          ],
+          "pass_difference_pp_bounds": [
+            2.73972602739726,
+            2.73972602739726
+          ],
+          "token_saving_percent": -11.773205378540542,
+          "token_saving_percent_ci95": [
+            -17.9617351723436,
+            -6.957105228709657
+          ],
+          "mean_token_difference": 2237.9178082191793,
+          "mean_token_difference_ci95": [
+            1364.5684931506873,
+            3277.995376712329
+          ],
+          "rescued_question_equivalents": 2.0,
+          "harmed_question_equivalents": 0.0,
+          "paired_outcome_unknown": 0,
+          "rescued_pairs": [
+            {
+              "case_id": "codeforces:2111A",
+              "sample_index": 1
+            },
+            {
+              "case_id": "codeforces:2118D1",
+              "sample_index": 0
+            },
+            {
+              "case_id": "codeforces:2121C",
+              "sample_index": 0
+            },
+            {
+              "case_id": "codeforces:2121F",
+              "sample_index": 0
+            }
+          ],
+          "harmed_pairs": [],
+          "nominal_superiority": true
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "status": "COMPLETE",
+  "discrepancies": 19,
+  "N": 2,
+  "probes": 17,
+  "unique_programs": 19,
+  "unique_questions": 2,
+  "by_question": {
+    "atcoder:abc398_d": 15,
+    "atcoder:arc195_a": 4
+  },
+  "by_cause": {
+    "single_initial_smoke_only_omits_new_smoke_births": 11,
+    "reverse_suffix_single_smoke_instead_of_all_birth_times": 4,
+    "alternative_occurrence_without_valid_remaining_subsequence": 4
+  },
+  "public_wrong_answer": 19,
+  "public_runtime_error": 0,
+  "public_data_bug_found": false,
+  "source_projection_match_tasks_per_sample": 63,
+  "source_projection_match_public_tests_per_sample": 165,
+  "official_public_samples_match": 6,
+  "recommendation": "Keep all 19 public FAIL and final FAIL labels. Do not normalize/exempt AtCoder PUB based on private-only PASS. No scoring or replay change indicated by this audit.",
+  "frozen_records_modified": false,
+  "model_program_executions": 0
+}

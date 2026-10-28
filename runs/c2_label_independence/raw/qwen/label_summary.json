@@ -1,0 +1,106 @@
+{
+  "status": "COMPLETE_RECORDED_LABELS",
+  "counts": {
+    "rows": 4204,
+    "PASS": 1159,
+    "first_timeout": 310,
+    "first_timeout_flipped_to_pass": 2,
+    "different_from_original_joint": 858,
+    "known_label_changes": 15,
+    "became_unknown": 843,
+    "FAIL": 2202,
+    "UNKNOWN": 843,
+    "unknown_UNOBSERVED_RETAINED_CASES": 843
+  },
+  "by_collection": {
+    "hv6_atcoder": {
+      "rows": 1469,
+      "PASS": 459,
+      "first_timeout": 83,
+      "first_timeout_flipped_to_pass": 0,
+      "different_from_original_joint": 37,
+      "known_label_changes": 15,
+      "became_unknown": 22,
+      "FAIL": 988,
+      "UNKNOWN": 22,
+      "unknown_UNOBSERVED_RETAINED_CASES": 22
+    },
+    "hv6_leetcode": {
+      "rows": 1843,
+      "UNKNOWN": 821,
+      "first_timeout": 187,
+      "first_timeout_flipped_to_pass": 2,
+      "different_from_original_joint": 821,
+      "known_label_changes": 0,
+      "became_unknown": 821,
+      "unknown_UNOBSERVED_RETAINED_CASES": 821,
+      "PASS": 518,
+      "FAIL": 504
+    },
+    "lcbpro_2025": {
+      "rows": 892,
+      "FAIL": 710,
+      "first_timeout": 40,
+      "first_timeout_flipped_to_pass": 0,
+      "different_from_original_joint": 0,
+      "known_label_changes": 0,
+      "became_unknown": 0,
+      "PASS": 182
+    }
+  },
+  "sources": [
+    {
+      "path": "/root/autodl-tmp/cs336-new/runs/qwen_c1c2_erratum_view/jobs/qwen3_hv6_atcoder_s0/qwen3_hv6_atcoder_s0_probe_evaluation/raw/evaluations.jsonl",
+      "sha256": "343a357a39cba55236bc30cf6ce4dd8be78179923f9e615fe401643b0d42f1ea"
+    },
+    {
+      "path": "/root/autodl-tmp/cs336-new/runs/qwen_c1c2_erratum_view/jobs/qwen3_hv6_atcoder_s1/qwen3_hv6_atcoder_s1_probe_evaluation/raw/evaluations.jsonl",
+      "sha256": "bfd423cf76e8c1321f3346d0b11a77de2cbdcb384602d9fd9f9b73c24443e358"
+    },
+    {
+      "path": "/root/autodl-tmp/cs336-new/runs/qwen_c1c2_erratum_view/jobs/qwen3_hv6_atcoder_s2/qwen3_hv6_atcoder_s2_probe_evaluation/raw/evaluations.jsonl",
+      "sha256": "fdd5fa812a0d4431158899049b17a4c5dbd7b663e245aef5c3768e053aa116e3"
+    },
+    {
+      "path": "/root/autodl-tmp/cs336-new/runs/qwen_c1c2_erratum_view/jobs/qwen3_hv6_atcoder_s3/qwen3_hv6_atcoder_s3_probe_evaluation/raw/evaluations.jsonl",
+      "sha256": "d9a61d54f8a5c50886c50e4fa8c0da0256f1cff7f6f0130678d7634e3ab6fbb4"
+    },
+    {
+      "path": "/root/autodl-tmp/cs336-new/runs/qwen_c1c2_erratum_view/jobs/qwen3_hv6_leetcode_s0/qwen3_hv6_leetcode_s0_probe_evaluation/raw/evaluations.jsonl",
+      "sha256": "0483785a9b9e510049582b14539b5de8b1fab5df3ce751fa36c186c2150ef1c5"
+    },
+    {
+      "path": "/root/autodl-tmp/cs336-new/runs/qwen_c1c2_erratum_view/jobs/qwen3_hv6_leetcode_s1/qwen3_hv6_leetcode_s1_probe_evaluation/raw/evaluations.jsonl",
+      "sha256": "a54ae4a0d910c10710cf0fae8c7c47aa75020eada60b2f45a28fe7fa8437e266"
+    },
+    {
+      "path": "/root/autodl-tmp/cs336-new/runs/qwen_c1c2_erratum_view/jobs/qwen3_hv6_leetcode_s2/qwen3_hv6_leetcode_s2_probe_evaluation/raw/evaluations.jsonl",
+      "sha256": "de21bcb8202d0ad4eb158aca044da25fcaaf2890cb6d6f128f4a90f10a9dca79"
+    },
+    {
+      "path": "/root/autodl-tmp/cs336-new/runs/qwen_c1c2_erratum_view/jobs/qwen3_hv6_leetcode_s3/qwen3_hv6_leetcode_s3_probe_evaluation/raw/evaluations.jsonl",
+      "sha256": "a5dfcfad162af007ee353553fa5a9edc838143821a35154a226a098ed3330975"
+    },
+    {
+      "path": "/root/autodl-tmp/cs336-new/runs/qwen_c1c2_erratum_view/jobs/qwen3_lcbpro_2025_s0/qwen3_lcbpro_2025_s0_probe_evaluation/raw/evaluations.jsonl",
+      "sha256": "0cd26fea10bb5e1352cc3acdaf26a2886086d4af3e0400762d93a95fd14aee0c"
+    },
+    {
+      "path": "/root/autodl-tmp/cs336-new/runs/qwen_c1c2_erratum_view/jobs/qwen3_lcbpro_2025_s1/qwen3_lcbpro_2025_s1_probe_evaluation/raw/evaluations.jsonl",
+      "sha256": "55faa85cf75993305b9f8d6fb4bb5d9c7b937833dae3f3ccb9ecfe42336a53ca"
+    }
+  ],
+  "signals": {
+    "path": "runs/qwen_c1c2_erratum/raw/probe_signals.jsonl",
+    "sha256": "09d8833edd9f881c469f45ba6d1248a5d106954bd98f4c6b640a21b68d3e3c73"
+  },
+  "identities": {
+    "path": "runs/qwen_c1c2_erratum/raw/input_identities.json",
+    "sha256": "ef3a94a11f0c9de310372eb91754aa455e7b24c4a24aaf3c8acab184108eea89"
+  },
+  "overlap": {
+    "path": "runs/c2_label_independence/raw/overlap_tasks.jsonl",
+    "sha256": "35de9d4367d8cccaeb2e4f84231995c0994e6b8ce32692fe55e07d7752c05f94"
+  },
+  "label_scope": "Original execution order, filtered private case observations; no new execution; UNKNOWN retained"
+}

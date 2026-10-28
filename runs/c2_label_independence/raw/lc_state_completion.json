@@ -1,0 +1,77 @@
+{
+  "status": "PASS",
+  "actual_programs_executed": 93,
+  "planned_unique_programs": 93,
+  "actual_suite_attempts": 105,
+  "unexecuted_programs": 0,
+  "programs_with_repeated_attempts": 6,
+  "candidate_child_cpu_seconds": 1140.670247,
+  "wall_seconds": 1152.4830933138728,
+  "budget_cap_hit": false,
+  "source_sha256_at_start_and_end": "c667367fc2ae8d7f778b2ad931a3251ac7f0465784f55593716a3b5dfff2252a",
+  "all_cache_records_match_current_machine_identity": true,
+  "first_failure_status_by_attempt": {
+    "TIMEOUT_CPU": 18,
+    "WRONG_ANSWER": 61,
+    "RUNTIME_ERROR": 26
+  },
+  "labels_observed_sha256_at_completion": {
+    "qwen": "7333283297144bee28fe39c6ba084e35028bd3b03cb18c2c08d2a9e8f879868d",
+    "ds": "e6715fcbf3b2cf7871a6e8c110691c038a59f9ce71a3e230ab977082f1ddf76b"
+  },
+  "comparison": {
+    "status": "COMPLETE",
+    "groups": [
+      {
+        "model": "qwen",
+        "public_group": "PASS",
+        "drafts": 7,
+        "transitions": {
+          "FAIL -> FAIL": 7
+        },
+        "known_pass_fail_flips": 0,
+        "old_unknown_now_known": 0,
+        "old_known_now_unknown": 0
+      },
+      {
+        "model": "qwen",
+        "public_group": "NOT_PASS",
+        "drafts": 29,
+        "transitions": {
+          "UNKNOWN -> FAIL": 29
+        },
+        "known_pass_fail_flips": 0,
+        "old_unknown_now_known": 29,
+        "old_known_now_unknown": 0
+      },
+      {
+        "model": "ds",
+        "public_group": "PASS",
+        "drafts": 0,
+        "transitions": {},
+        "known_pass_fail_flips": 0,
+        "old_unknown_now_known": 0,
+        "old_known_now_unknown": 0
+      },
+      {
+        "model": "ds",
+        "public_group": "NOT_PASS",
+        "drafts": 59,
+        "transitions": {
+          "UNKNOWN -> FAIL": 59
+        },
+        "known_pass_fail_flips": 0,
+        "old_unknown_now_known": 59,
+        "old_known_now_unknown": 0
+      }
+    ],
+    "interpretation": "Descriptive repeat on a new private-only call sequence, not a causal state estimate; machine/time variation is not separately controlled."
+  },
+  "limitations": [
+    "Static flags do not prove state persistence; unflagged code may still contain indirect state.",
+    "All seven previously known labels in the flagged population were FAIL; no previously known PASS was covered.",
+    "88 UNKNOWN-to-FAIL descriptions are not PASS/FAIL flips and were not written back into main labels.",
+    "CPU machine differs from historical scoring, so this is not a causal state-only experiment.",
+    "Child CPU here sums candidate suite children; setup child CPU was about 0.82 seconds in the live /proc check."
+  ]
+}

@@ -1,0 +1,677 @@
+{
+  "c2_signal_quality": {
+    "sources": [
+      {
+        "path": "runs/qwen_c1c2_erratum/raw/signal_metrics.jsonl",
+        "sha256": "36f28b3a630e1ae71b913f986d5bbfde7fe36e0ad99ac5a33f4a526b347f91d6"
+      },
+      {
+        "path": "runs/ds_c1c2_erratum/raw/signal_metrics.jsonl",
+        "sha256": "e2e08c56001cf154b08992470382063da903abe4b03e995e017aae1976aa005a"
+      }
+    ],
+    "selector": "corpus=virtual_v1_pipeline; scope=complete_deliverable; 4 populations; CONF-50/CONF-full/PUB",
+    "fields": [
+      "signal_metrics.auroc",
+      "signal_metrics.auroc_ci",
+      "baseline.auroc",
+      "baseline.auroc_ci"
+    ],
+    "evidence_level": {
+      "CONF AUROC, Qwen3-8B": "预登记次要",
+      "CONF AUROC, DS-R1-Qwen-7B": "DS-R1 次要（冻结时登记）",
+      "PUB AUROC and AUROC contrasts, both models": "事后"
+    }
+  },
+  "pareto_43": {
+    "outputs": [
+      "docs/execexit/figures/pareto_43.png",
+      "docs/execexit/figures/pareto_43_dark.png"
+    ],
+    "sources": [
+      {
+        "path": "runs/qwen_erratum/secondary_intervals43/raw/comparisons.jsonl",
+        "sha256": "d614d0173cce00d774a5264b4a4d70178e0269d40de48ebe778a12e6d814b516",
+        "selector": "JSONL: population=pooled; reference=N; all candidates",
+        "fields": [
+          "candidate",
+          "reference",
+          "pass_difference_pp",
+          "pass_difference_pp_ci95",
+          "token_saving_percent",
+          "token_saving_percent_ci95",
+          "complete",
+          "role"
+        ]
+      },
+      {
+        "path": "runs/queue_rebuild/ds_checkpoint_recovery1/result/secondary_intervals43/raw/comparisons.jsonl",
+        "sha256": "5400d2424c1ee62abc4114e5bddf08c8fa700190a8413a5cddf9ccb7db9a05fe",
+        "selector": "JSONL: population=pooled; reference=N; all candidates",
+        "fields": [
+          "candidate",
+          "reference",
+          "pass_difference_pp",
+          "pass_difference_pp_ci95",
+          "token_saving_percent",
+          "token_saving_percent_ci95",
+          "complete",
+          "role"
+        ]
+      },
+      {
+        "path": "runs/llama_execution_repair1/blind/analysis/results/intervals43.json",
+        "sha256": "3fb8ec8522ffb7cee346258cdd6e8eeaa2fffdb184f9e3950af1c2cb57d79c81",
+        "selector": "populations[population=pooled].comparisons[reference=N]; all candidates",
+        "fields": [
+          "candidate",
+          "reference",
+          "pass_difference_pp",
+          "pass_difference_pp_ci95",
+          "token_saving_percent",
+          "token_saving_percent_ci95",
+          "complete",
+          "role"
+        ]
+      },
+      {
+        "path": "runs/qwen_erratum_comparison/raw/comparisons.json",
+        "sha256": "902a374d95e5200a9cb532adbba7826f36a19bed3618ec3e263ed0cc8d63d32a",
+        "selector": "[version=erratum, population=pooled]",
+        "fields": [
+          "questions",
+          "comparisons.N.nominal_noninferiority"
+        ]
+      },
+      {
+        "path": "runs/queue_rebuild/ds_checkpoint_recovery1/result/statistics/summary.json",
+        "sha256": "8579db1cc74d4e6eb3d94a62eab1f56cbfe7e91b3004d4e52b6d18c2b0f83d90",
+        "selector": "populations[population=pooled]",
+        "fields": [
+          "questions",
+          "comparisons.N.nominal_noninferiority"
+        ]
+      },
+      {
+        "path": "runs/report_figures/source/stats.py",
+        "sha256": "84de482847d57703e27bd570d4f72cbbc35dc70e1498050df3d082b135460c32",
+        "selector": "summarize(): nominal_noninferiority; line 264",
+        "fields": [
+          "pass_difference_pp_ci95[0] > -3; strict lower-bound criterion"
+        ]
+      }
+    ],
+    "selector": "pooled; reference=N; all 43 configurations in each of three models",
+    "fields": [
+      "pass_difference_pp",
+      "pass_difference_pp_ci95",
+      "token_saving_percent",
+      "token_saving_percent_ci95"
+    ],
+    "evidence_level": {
+      "Qwen3-8B HYB-B vs N": "pre-registered primary, corrected labels",
+      "Qwen3-8B other configurations": "pre-registered secondary, pointwise nominal intervals",
+      "DS-R1-Qwen-7B": "registered secondary at original freeze",
+      "DS-R1-Llama-8B": "registered replication; registered secondary policy outputs; no registered HYB-B margin"
+    },
+    "fields_for_annotations": {
+      "configurations": "Llama source: configurations (43), matched by both JSONL selections",
+      "questions_per_model": "Llama populations[population=pooled].questions; Qwen/DS saved statistics questions (199)",
+      "other_configurations": "43 configurations excluding HYB-B (42)",
+      "nominal_ci_level": "Saved *_ci95 fields (95%)",
+      "margin_pp": "runs/report_figures/source/stats.py::summarize.nominal_noninferiority; pass_difference_pp_ci95[0] > -3; Qwen/DS HYB-B vs N only",
+      "intervals": "Saved pass_difference_pp_ci95 and token_saving_percent_ci95"
+    }
+  },
+  "c1_qwen": {
+    "sources": [
+      {
+        "path": "docs/execexit/figures/c1_qwen.png",
+        "sha256": "db2c9633e8916ae941c46672cc3b24ae73a5adeff4c36c57500067e2ab2e7a0f"
+      }
+    ],
+    "selector": "Unmodified existing figure",
+    "fields": [
+      "Existing rendered image; no data recomputation"
+    ],
+    "evidence_level": "预登记次要",
+    "unavailable_historical_formats": [
+      {
+        "format": "PDF",
+        "sha256": "bfc3a5df041c24fcedab983302ffd5fc096d2ea5ae659ef1ee225995ad361370",
+        "status": "Not present in this workspace; no replacement asserted"
+      }
+    ]
+  },
+  "c1_ds": {
+    "sources": [
+      {
+        "path": "docs/execexit/figures/c1_ds.png",
+        "sha256": "5ff68f98bed658c9e5d1e9a2ea6c76d629428acab0e0ff0b0463e34ca5734953"
+      }
+    ],
+    "selector": "Unmodified existing figure",
+    "fields": [
+      "Existing rendered image; no data recomputation"
+    ],
+    "evidence_level": "DS-R1 次要（冻结时登记）",
+    "unavailable_historical_formats": [
+      {
+        "format": "PDF",
+        "sha256": "cf3c2e8885544b130b3f0142b32f4b6634a9557416779c254682315d5c126529",
+        "status": "Not present in this workspace; no replacement asserted"
+      }
+    ]
+  },
+  "safety_by_collection": {
+    "sources": [
+      {
+        "path": "runs/c2_label_completion/raw/qwen_completed/main/summary.json",
+        "sha256": "562c5b4a8583a6d63acf625a89a9bac126c196a32d8411ce3a6458972e025ba5",
+        "selector": "comparisons[population=collection:*, comparison=PUB, signal_name=PUB, PRIV-IND]",
+        "fields": [
+          "signal_metrics.precision",
+          "signal_metrics.precision_ci",
+          "signal_metrics.weighting",
+          "signal_metrics.raw_counts",
+          "population_coverage.public_pass_drafts"
+        ]
+      },
+      {
+        "path": "runs/qwen_erratum_comparison/raw/comparisons.json",
+        "sha256": "902a374d95e5200a9cb532adbba7826f36a19bed3618ec3e263ed0cc8d63d32a",
+        "selector": "[version=erratum, population=collection:*]",
+        "fields": [
+          "comparisons.N.strict.harmed_questions",
+          "comparisons.N.strict.questions",
+          "comparisons.N.strict.assumptions"
+        ]
+      },
+      {
+        "path": "runs/c2_label_completion/raw/ds_completed/main/summary.json",
+        "sha256": "bbb6622b39e4d418270db734a4a544c2b88f5c7197870eed6c4a30cd3468bc4e",
+        "selector": "comparisons[population=collection:*, comparison=PUB, signal_name=PUB, PRIV-IND]",
+        "fields": [
+          "signal_metrics.precision",
+          "signal_metrics.precision_ci",
+          "signal_metrics.weighting",
+          "signal_metrics.raw_counts",
+          "population_coverage.public_pass_drafts"
+        ]
+      },
+      {
+        "path": "runs/queue_rebuild/ds_checkpoint_recovery1/result/statistics/summary.json",
+        "sha256": "8579db1cc74d4e6eb3d94a62eab1f56cbfe7e91b3004d4e52b6d18c2b0f83d90",
+        "selector": "populations[population=collection:*]",
+        "fields": [
+          "comparisons.N.strict.harmed_questions",
+          "comparisons.N.strict.questions",
+          "comparisons.N.strict.assumptions"
+        ]
+      },
+      {
+        "path": "runs/llama_execution_repair1/blind/analysis/results/private_c2.json",
+        "sha256": "510e67aa10081f364243bb648db745e2bda4f1668f774c5f6564d6620561a927",
+        "selector": "comparisons[population=collection:*, comparison=PUB, signal_name=PUB, PRIV-IND]",
+        "fields": [
+          "signal_metrics.precision",
+          "signal_metrics.precision_ci",
+          "signal_metrics.weighting",
+          "signal_metrics.raw_counts",
+          "population_coverage.public_pass_drafts"
+        ]
+      },
+      {
+        "path": "runs/llama_execution_repair1/blind/analysis/results/statistics.json",
+        "sha256": "730cc9e08854db480b0b8e00986126246f47247dc255a8b32a2545c8986d58cd",
+        "selector": "populations[population=collection:*]",
+        "fields": [
+          "comparisons.N.strict.harmed_questions",
+          "comparisons.N.strict.questions",
+          "comparisons.N.strict.assumptions"
+        ]
+      }
+    ],
+    "outputs": [
+      "docs/execexit/figures/safety_by_collection.png"
+    ],
+    "evidence_level": "Harm: Qwen/DS registered secondary, Llama descriptive; PRIV-IND error rates: Qwen/DS post hoc, Llama descriptive frozen-code output",
+    "fields": {
+      "error_rate": "1 - signal_metrics.precision",
+      "error_ci": "[1 - precision_ci.upper, 1 - precision_ci.lower]",
+      "raw_label": "signal_metrics.raw_counts.fp / population_coverage.public_pass_drafts (=tp+fp)"
+    },
+    "copied_saved_source": {
+      "path": "runs/llama_execution_repair1/blind/analysis/results/statistics.json",
+      "sha256": "730cc9e08854db480b0b8e00986126246f47247dc255a8b32a2545c8986d58cd"
+    }
+  },
+  "c4_latency": {
+    "sources": [
+      {
+        "path": "runs/c4_recovery1/latency_analysis/summary.json",
+        "sha256": "c0596f07aed974ef04e2d4f18b7185d045d50accb309078deb27011a7b875fe6"
+      },
+      {
+        "path": "runs/c4_recovery1/sensitivity/summary.json",
+        "sha256": "02fb4afa511c96a93a20a5713425f208abf580b0f3343b1b506abb9a38a9293f",
+        "manifest_audit": {
+          "previous_sha256": "48f3f8dccdd1e31a00cc0f95a41f0b3b93520475e9c0b735322e871241d33da7"
+        }
+      }
+    ],
+    "selector": "primary and registered 37-question sensitivity",
+    "fields": [
+      "ratio_of_means",
+      "ci95_percentile",
+      "pairs"
+    ],
+    "evidence_level": {
+      "main": "预登记次要",
+      "sensitivity": "事后"
+    }
+  },
+  "atcoder_ablation": {
+    "sources": [
+      {
+        "path": "runs/qwen_atcoder_ablation/heldout/comparison_tables.json",
+        "sha256": "4543e9885b6fac6a66a5e37960af6c565361b30c145c69ab9b5b8ab3d0c04d8b"
+      }
+    ],
+    "selector": "difficulty=all; sample_index=pooled; all k in 1,2,4 × m in 0,2048; use saved pooled fields",
+    "fields": [
+      "table.configuration",
+      "table.passed",
+      "table.mean_generated_tokens_with_tools",
+      "table.unknown"
+    ],
+    "evidence_level": "预登记次要"
+  },
+  "public_check_risk": {
+    "outputs": [
+      "docs/execexit/figures/public_check_risk.png",
+      "docs/execexit/figures/public_check_risk_dark.png"
+    ],
+    "sources": [
+      {
+        "path": "runs/c2_label_completion/raw/qwen_completed/main/summary.json",
+        "sha256": "562c5b4a8583a6d63acf625a89a9bac126c196a32d8411ce3a6458972e025ba5",
+        "selector": {
+          "comparisons": {
+            "population": "pooled",
+            "signal_name": "PUB",
+            "comparison": "PUB",
+            "label": "PRIV-IND",
+            "corpus": "virtual_v1_pipeline",
+            "scope": "complete_deliverable"
+          }
+        },
+        "fields": [
+          "signal_metrics.recall",
+          "signal_metrics.recall_ci.lower",
+          "signal_metrics.recall_ci.upper",
+          "signal_metrics.precision",
+          "signal_metrics.precision_ci.lower",
+          "signal_metrics.precision_ci.upper",
+          "signal_metrics.weighting",
+          "population_coverage.public_pass_drafts",
+          "population_coverage.public_pass_questions",
+          "excluded_missing_rows"
+        ]
+      },
+      {
+        "path": "runs/c2_label_completion/raw/ds_completed/main/summary.json",
+        "sha256": "bbb6622b39e4d418270db734a4a544c2b88f5c7197870eed6c4a30cd3468bc4e",
+        "selector": {
+          "comparisons": {
+            "population": "pooled",
+            "signal_name": "PUB",
+            "comparison": "PUB",
+            "label": "PRIV-IND",
+            "corpus": "virtual_v1_pipeline",
+            "scope": "complete_deliverable"
+          }
+        },
+        "fields": [
+          "signal_metrics.recall",
+          "signal_metrics.recall_ci.lower",
+          "signal_metrics.recall_ci.upper",
+          "signal_metrics.precision",
+          "signal_metrics.precision_ci.lower",
+          "signal_metrics.precision_ci.upper",
+          "signal_metrics.weighting",
+          "population_coverage.public_pass_drafts",
+          "population_coverage.public_pass_questions",
+          "excluded_missing_rows"
+        ]
+      },
+      {
+        "path": "runs/llama_execution_repair1/blind/analysis/results/private_c2.json",
+        "sha256": "510e67aa10081f364243bb648db745e2bda4f1668f774c5f6564d6620561a927",
+        "selector": {
+          "comparisons": {
+            "population": "pooled",
+            "signal_name": "PUB",
+            "comparison": "PUB",
+            "label": "PRIV-IND",
+            "corpus": "virtual_v1_pipeline",
+            "scope": "complete_deliverable"
+          }
+        },
+        "fields": [
+          "signal_metrics.recall",
+          "signal_metrics.recall_ci.lower",
+          "signal_metrics.recall_ci.upper",
+          "signal_metrics.precision",
+          "signal_metrics.precision_ci.lower",
+          "signal_metrics.precision_ci.upper",
+          "signal_metrics.weighting",
+          "population_coverage.public_pass_drafts",
+          "population_coverage.public_pass_questions",
+          "excluded_missing_rows"
+        ]
+      },
+      {
+        "path": "runs/public_test_strength/summary.json",
+        "sha256": "0a96529be532d7bcb458cdbfba80d044d66414ed6c310c6c99121093ed7cd983",
+        "selector": "M3_harm_prediction.{qwen,ds,llama}",
+        "fields": [
+          "auroc",
+          "ci95.lower",
+          "ci95.upper",
+          "harmed",
+          "problems",
+          "harmed_by_collection"
+        ]
+      },
+      {
+        "path": "runs/public_test_strength/posthoc_within_leetcode.json",
+        "sha256": "fcabe21bc846a4058490692c5b993943baeea98cc0df519c8ebe0f33b1ea3063",
+        "selector": "Root; results selected for qwen/ds/llama",
+        "fields": [
+          "results.{model}.leetcode_auroc",
+          "results.{model}.leetcode_ci95.lower",
+          "results.{model}.leetcode_ci95.upper",
+          "results.{model}.leetcode_harmed",
+          "results.{model}.leetcode_problems",
+          "results.{model}.collection_only_auroc",
+          "classification"
+        ]
+      },
+      {
+        "path": "runs/qwen_erratum_comparison/raw/comparisons.json",
+        "sha256": "902a374d95e5200a9cb532adbba7826f36a19bed3618ec3e263ed0cc8d63d32a",
+        "selector": "[version=erratum, population=pooled].comparisons.N.strict",
+        "fields": [
+          "harmed_questions",
+          "questions"
+        ]
+      }
+    ],
+    "selector": "Left: pooled PUB, known PRIV-IND, virtual_v1_pipeline, complete_deliverable; right: qwen/ds/llama M3 and saved LeetCode follow-up",
+    "fields": {
+      "recall": "signal_metrics.recall and recall_ci.lower/upper",
+      "wrong_among_accepted": "1 - signal_metrics.precision; bounds = [1 - precision_ci.upper, 1 - precision_ci.lower]",
+      "percentage_units": "100 times the selected saved rate or its complement; display transform only",
+      "accepted_denominators": "population_coverage.public_pass_drafts and population_coverage.public_pass_questions (separate counts)",
+      "unknown_excluded": "comparisons[pooled PUB].excluded_missing_rows",
+      "overall_risk": "M3_harm_prediction.{model}.auroc, ci95.lower/upper, harmed, problems",
+      "leetcode_risk": "results.{model}.leetcode_auroc, leetcode_ci95.lower/upper, leetcode_harmed, leetcode_problems",
+      "collection_reference": "results.{model}.collection_only_auroc; no saved interval",
+      "primary_harm_caption": "Qwen erratum pooled comparisons.N.strict.harmed_questions/questions",
+      "chance_reference": "AUROC 0.5 by definition; reference line, not an estimated result"
+    },
+    "evidence_level": {
+      "left Qwen/DS": "post hoc after completion of PRIV-IND labels",
+      "left Llama": "descriptive frozen-code output; registered R1 is AUROC, not precision/recall",
+      "right M3": "exploratory, post hoc on existing questions",
+      "right LeetCode and collection identity": "post-hoc addition after seeing M3"
+    },
+    "display_text": {
+      "left_subtitle": "Independent hidden-test labels · Qwen/DS post hoc · Llama descriptive",
+      "accepted_counts": "{public_pass_drafts:,} accepted · {public_pass_questions} questions",
+      "left_caption": "Left: question-weighted rates."
+    }
+  },
+  "c2_nested_comparison": {
+    "sources": [
+      {
+        "path": "runs/c2_label_completion/raw/qwen_completed/main/summary.json",
+        "sha256": "562c5b4a8583a6d63acf625a89a9bac126c196a32d8411ce3a6458972e025ba5",
+        "selector": "comparisons[pooled, PUB, PRIV-IND, virtual_v1_pipeline, complete_deliverable]",
+        "fields": [
+          "baseline_plus_signal.auroc",
+          "paired_differences.baseline_plus_signal_minus_baseline.auroc",
+          "signal_metrics.recall"
+        ]
+      },
+      {
+        "path": "runs/c2_label_completion/raw/ds_completed/main/summary.json",
+        "sha256": "bbb6622b39e4d418270db734a4a544c2b88f5c7197870eed6c4a30cd3468bc4e",
+        "selector": "comparisons[pooled, PUB, PRIV-IND, virtual_v1_pipeline, complete_deliverable]",
+        "fields": [
+          "baseline_plus_signal.auroc",
+          "paired_differences.baseline_plus_signal_minus_baseline.auroc",
+          "signal_metrics.recall"
+        ]
+      },
+      {
+        "path": "runs/llama_execution_repair1/blind/analysis/results/private_c2.json",
+        "sha256": "510e67aa10081f364243bb648db745e2bda4f1668f774c5f6564d6620561a927",
+        "selector": "comparisons[pooled, PUB, PRIV-IND, virtual_v1_pipeline, complete_deliverable]",
+        "fields": [
+          "baseline_plus_signal.auroc",
+          "paired_differences.baseline_plus_signal_minus_baseline.auroc",
+          "signal_metrics.recall"
+        ]
+      }
+    ],
+    "evidence_level": "Qwen/DS post hoc; Llama descriptive frozen-code output, not R1"
+  },
+  "signals_after_public_pass": {
+    "sources": [
+      {
+        "path": "runs/c2_label_completion/raw/qwen_completed/main/summary.json",
+        "sha256": "562c5b4a8583a6d63acf625a89a9bac126c196a32d8411ce3a6458972e025ba5",
+        "selector": "comparisons[population=pooled, comparison=PUB_PASS_CONF50, signal_name=CONF-50, PRIV-IND]",
+        "fields": [
+          "baseline.auroc",
+          "baseline.auroc_ci",
+          "signal_metrics.auroc",
+          "signal_metrics.auroc_ci",
+          "paired_differences.signal_minus_baseline.auroc",
+          "matched_rows",
+          "matched_questions"
+        ]
+      },
+      {
+        "path": "runs/probe_execution/fit/qwen/heldout/summary.json",
+        "sha256": "3205e714792016e920115a6cb52959470d02206049a0b85f897557a2adff9ef9",
+        "selector": "comparisons[population=pooled, position=draft_end, comparison=probe_minus_baseline_pub_pass or probe_pub_minus_pub]",
+        "fields": [
+          "candidate_auroc",
+          "reference_auroc",
+          "difference",
+          "ci",
+          "drafts",
+          "questions"
+        ]
+      },
+      {
+        "path": "runs/c2_label_completion/raw/ds_completed/main/summary.json",
+        "sha256": "bbb6622b39e4d418270db734a4a544c2b88f5c7197870eed6c4a30cd3468bc4e",
+        "selector": "comparisons[population=pooled, comparison=PUB_PASS_CONF50, signal_name=CONF-50, PRIV-IND]",
+        "fields": [
+          "baseline.auroc",
+          "baseline.auroc_ci",
+          "signal_metrics.auroc",
+          "signal_metrics.auroc_ci",
+          "paired_differences.signal_minus_baseline.auroc",
+          "matched_rows",
+          "matched_questions"
+        ]
+      },
+      {
+        "path": "runs/probe_execution/fit/ds/heldout/summary.json",
+        "sha256": "832306c1d23639e860b5647f5aeffc5d54df7bec6642deb3e4cf0105a5d995da",
+        "selector": "comparisons[population=pooled, position=draft_end, comparison=probe_minus_baseline_pub_pass or probe_pub_minus_pub]",
+        "fields": [
+          "candidate_auroc",
+          "reference_auroc",
+          "difference",
+          "ci",
+          "drafts",
+          "questions"
+        ]
+      },
+      {
+        "path": "runs/llama_execution_repair1/blind/analysis/results/private_c2.json",
+        "sha256": "510e67aa10081f364243bb648db745e2bda4f1668f774c5f6564d6620561a927",
+        "selector": "comparisons[population=pooled, comparison=PUB_PASS_CONF50, signal_name=CONF-50, PRIV-IND]",
+        "fields": [
+          "baseline.auroc",
+          "baseline.auroc_ci",
+          "signal_metrics.auroc",
+          "signal_metrics.auroc_ci",
+          "paired_differences.signal_minus_baseline.auroc",
+          "matched_rows",
+          "matched_questions"
+        ]
+      },
+      {
+        "path": "runs/probe_execution/fit/llama/heldout/summary.json",
+        "sha256": "a2d9d9e19bffd151ed3e3b58b690e31a20eabc0a526bcef9608ffa6837320fe9",
+        "selector": "comparisons[population=pooled, position=draft_end, comparison=probe_minus_baseline_pub_pass or probe_pub_minus_pub]",
+        "fields": [
+          "candidate_auroc",
+          "reference_auroc",
+          "difference",
+          "ci",
+          "drafts",
+          "questions"
+        ]
+      }
+    ],
+    "outputs": [
+      "docs/execexit/figures/signals_after_public_pass.png"
+    ],
+    "evidence_level": "H-P2: registered probe addendum; CONF-50 subset contrasts: Qwen/DS post hoc, Llama frozen-code output, not a registered criterion"
+  },
+  "llama_policy_results": {
+    "sources": [
+      {
+        "path": "runs/llama_execution_repair1/blind/analysis/results/intervals43.json",
+        "sha256": "3fb8ec8522ffb7cee346258cdd6e8eeaa2fffdb184f9e3950af1c2cb57d79c81",
+        "selector": "populations[population=pooled].comparisons[reference=N, candidate=HYB-B/BF@4096/CONF-50:k1:m0]",
+        "fields": [
+          "pass_difference_pp",
+          "pass_difference_pp_ci95",
+          "token_saving_percent",
+          "token_saving_percent_ci95"
+        ]
+      }
+    ],
+    "evidence_level": "43 pointwise intervals output under Llama addendum; no registered HYB-B non-inferiority criterion"
+  },
+  "llama_harm_overall": {
+    "sources": [
+      {
+        "path": "runs/llama_execution_repair1/blind/analysis/results/statistics.json",
+        "sha256": "730cc9e08854db480b0b8e00986126246f47247dc255a8b32a2545c8986d58cd",
+        "selector": "populations[population=pooled].comparisons.N.strict",
+        "fields": [
+          "harmed_questions",
+          "questions"
+        ]
+      }
+    ],
+    "evidence_level": "Descriptive same-definition ANY-harm count; no registered Llama HYB-B NI test"
+  },
+  "main_results": {
+    "outputs": [
+      "docs/execexit/figures/main_results.svg"
+    ],
+    "sources": [
+      {
+        "path": "runs/c2_label_completion/raw/qwen_completed/main/summary.json",
+        "sha256": "562c5b4a8583a6d63acf625a89a9bac126c196a32d8411ce3a6458972e025ba5",
+        "selector": "comparisons[pooled PUB PRIV-IND]",
+        "fields": [
+          "paired_differences.signal_minus_baseline.auroc"
+        ]
+      },
+      {
+        "path": "runs/c2_label_completion/raw/ds_completed/main/summary.json",
+        "sha256": "bbb6622b39e4d418270db734a4a544c2b88f5c7197870eed6c4a30cd3468bc4e",
+        "selector": "comparisons[pooled PUB PRIV-IND]",
+        "fields": [
+          "paired_differences.signal_minus_baseline.auroc"
+        ]
+      },
+      {
+        "path": "runs/llama_execution_repair1/blind/analysis/results/private_c2.json",
+        "sha256": "510e67aa10081f364243bb648db745e2bda4f1668f774c5f6564d6620561a927",
+        "selector": "comparisons[pooled PUB PRIV-IND]",
+        "fields": [
+          "paired_differences.signal_minus_baseline.auroc"
+        ]
+      },
+      {
+        "path": "runs/qwen_erratum_comparison/raw/comparisons.json",
+        "sha256": "902a374d95e5200a9cb532adbba7826f36a19bed3618ec3e263ed0cc8d63d32a",
+        "selector": "[version=erratum, population=pooled].comparisons.N",
+        "fields": [
+          "pass_difference_pp",
+          "pass_difference_pp_ci95"
+        ]
+      },
+      {
+        "path": "runs/queue_rebuild/ds_checkpoint_recovery1/result/statistics/summary.json",
+        "sha256": "8579db1cc74d4e6eb3d94a62eab1f56cbfe7e91b3004d4e52b6d18c2b0f83d90",
+        "selector": "populations[population=pooled].comparisons.N",
+        "fields": [
+          "pass_difference_pp",
+          "pass_difference_pp_ci95"
+        ]
+      },
+      {
+        "path": "runs/llama_execution_repair1/blind/analysis/results/intervals43.json",
+        "sha256": "3fb8ec8522ffb7cee346258cdd6e8eeaa2fffdb184f9e3950af1c2cb57d79c81",
+        "selector": "populations[population=pooled].comparisons[reference=N, candidate=HYB-B]",
+        "fields": [
+          "pass_difference_pp",
+          "pass_difference_pp_ci95"
+        ]
+      },
+      {
+        "path": "runs/c4_recovery1/latency_analysis/summary.json",
+        "sha256": "c0596f07aed974ef04e2d4f18b7185d045d50accb309078deb27011a7b875fe6",
+        "selector": "primary",
+        "fields": [
+          "ratio_of_means",
+          "ci95_percentile",
+          "pairs"
+        ]
+      },
+      {
+        "path": "runs/c4_recovery1/sensitivity/summary.json",
+        "sha256": "02fb4afa511c96a93a20a5713425f208abf580b0f3343b1b506abb9a38a9293f",
+        "selector": "sensitivity",
+        "fields": [
+          "ratio_of_means",
+          "ci95_percentile",
+          "pairs"
+        ]
+      },
+      {
+        "path": "runs/report_figures/source/stats.py",
+        "sha256": "84de482847d57703e27bd570d4f72cbbc35dc70e1498050df3d082b135460c32",
+        "selector": "summarize(): nominal_noninferiority; line 264",
+        "fields": [
+          "pass_difference_pp_ci95[0] > -3; strict lower-bound criterion"
+        ]
+      }
+    ],
+    "evidence_level": "C2: Qwen/DS post hoc, Llama registered R1 replication; C3: Qwen primary, DS registered secondary, Llama registered replication without NI margin; C4: registered secondary / post-freeze sensitivity"
+  }
+}

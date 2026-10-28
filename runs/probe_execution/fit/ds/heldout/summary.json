@@ -1,0 +1,1918 @@
+{
+  "status": "COMPLETE",
+  "model": "ds",
+  "comparisons": [
+    {
+      "population": "pooled",
+      "position": "draft_end",
+      "comparison": "probe_minus_pub",
+      "label": "PRIV-IND",
+      "corpus": "virtual_v1_pipeline",
+      "scope": "complete_deliverable",
+      "status": "COMPLETE",
+      "candidate_auroc": 0.9301923140335613,
+      "reference_auroc": 0.9376215345842106,
+      "difference": -0.007429220550649318,
+      "ci": {
+        "lower": -0.034612816328842985,
+        "upper": 0.01651682557746128,
+        "valid_replicates": 10000,
+        "undefined_replicates": 0
+      },
+      "decision": "NOT_SUPPORTED",
+      "drafts": 7023,
+      "questions": 199,
+      "folds": [
+        {
+          "fold": 0,
+          "training_rows": 5621,
+          "validation_rows": 1402,
+          "training_questions": 159,
+          "validation_questions": 40,
+          "training_labels": {
+            "PASS": 687,
+            "FAIL": 4934
+          },
+          "validation_labels": {
+            "PASS": 146,
+            "FAIL": 1256
+          },
+          "status": "EVALUABLE",
+          "reasons": []
+        },
+        {
+          "fold": 1,
+          "training_rows": 5596,
+          "validation_rows": 1427,
+          "training_questions": 159,
+          "validation_questions": 40,
+          "training_labels": {
+            "PASS": 745,
+            "FAIL": 4851
+          },
+          "validation_labels": {
+            "FAIL": 1339,
+            "PASS": 88
+          },
+          "status": "EVALUABLE",
+          "reasons": []
+        },
+        {
+          "fold": 2,
+          "training_rows": 5638,
+          "validation_rows": 1385,
+          "training_questions": 159,
+          "validation_questions": 40,
+          "training_labels": {
+            "PASS": 580,
+            "FAIL": 5058
+          },
+          "validation_labels": {
+            "FAIL": 1132,
+            "PASS": 253
+          },
+          "status": "EVALUABLE",
+          "reasons": []
+        },
+        {
+          "fold": 3,
+          "training_rows": 5541,
+          "validation_rows": 1482,
+          "training_questions": 159,
+          "validation_questions": 40,
+          "training_labels": {
+            "PASS": 658,
+            "FAIL": 4883
+          },
+          "validation_labels": {
+            "FAIL": 1307,
+            "PASS": 175
+          },
+          "status": "EVALUABLE",
+          "reasons": []
+        },
+        {
+          "fold": 4,
+          "training_rows": 5696,
+          "validation_rows": 1327,
+          "training_questions": 160,
+          "validation_questions": 39,
+          "training_labels": {
+            "FAIL": 5034,
+            "PASS": 662
+          },
+          "validation_labels": {
+            "PASS": 171,
+            "FAIL": 1156
+          },
+          "status": "EVALUABLE",
+          "reasons": []
+        }
+      ]
+    },
+    {
+      "population": "pooled",
+      "position": "draft_end",
+      "comparison": "probe_pub_minus_pub",
+      "label": "PRIV-IND",
+      "corpus": "virtual_v1_pipeline",
+      "scope": "complete_deliverable",
+      "status": "COMPLETE",
+      "candidate_auroc": 0.9800604687467602,
+      "reference_auroc": 0.9376215345842106,
+      "difference": 0.042438934162549624,
+      "ci": {
+        "lower": 0.03180637036377025,
+        "upper": 0.05416779906413613,
+        "valid_replicates": 10000,
+        "undefined_replicates": 0
+      },
+      "decision": "SUPPORT",
+      "drafts": 7023,
+      "questions": 199
+    },
+    {
+      "population": "pooled",
+      "position": "draft_end",
+      "comparison": "probe_minus_baseline_pub_pass",
+      "label": "PRIV-IND",
+      "corpus": "virtual_v1_pipeline",
+      "scope": "complete_deliverable",
+      "status": "COMPLETE",
+      "candidate_auroc": 0.7963960305671045,
+      "reference_auroc": 0.7348793684723598,
+      "difference": 0.06151666209474471,
+      "ci": {
+        "lower": -0.011484972650820987,
+        "upper": 0.13413039548672878,
+        "valid_replicates": 10000,
+        "undefined_replicates": 0
+      },
+      "decision": "NOT_SUPPORTED",
+      "drafts": 1453,
+      "questions": 133,
+      "folds": [
+        {
+          "fold": 0,
+          "training_rows": 1181,
+          "validation_rows": 272,
+          "training_questions": 107,
+          "validation_questions": 26,
+          "training_labels": {
+            "PASS": 660,
+            "FAIL": 521
+          },
+          "validation_labels": {
+            "PASS": 146,
+            "FAIL": 126
+          },
+          "status": "EVALUABLE",
+          "reasons": []
+        },
+        {
+          "fold": 1,
+          "training_rows": 1258,
+          "validation_rows": 195,
+          "training_questions": 111,
+          "validation_questions": 22,
+          "training_labels": {
+            "PASS": 719,
+            "FAIL": 539
+          },
+          "validation_labels": {
+            "FAIL": 108,
+            "PASS": 87
+          },
+          "status": "EVALUABLE",
+          "reasons": []
+        },
+        {
+          "fold": 2,
+          "training_rows": 1029,
+          "validation_rows": 424,
+          "training_questions": 101,
+          "validation_questions": 32,
+          "training_labels": {
+            "PASS": 579,
+            "FAIL": 450
+          },
+          "validation_labels": {
+            "PASS": 227,
+            "FAIL": 197
+          },
+          "status": "EVALUABLE",
+          "reasons": []
+        },
+        {
+          "fold": 3,
+          "training_rows": 1188,
+          "validation_rows": 265,
+          "training_questions": 107,
+          "validation_questions": 26,
+          "training_labels": {
+            "PASS": 631,
+            "FAIL": 557
+          },
+          "validation_labels": {
+            "PASS": 175,
+            "FAIL": 90
+          },
+          "status": "EVALUABLE",
+          "reasons": []
+        },
+        {
+          "fold": 4,
+          "training_rows": 1156,
+          "validation_rows": 297,
+          "training_questions": 106,
+          "validation_questions": 27,
+          "training_labels": {
+            "PASS": 635,
+            "FAIL": 521
+          },
+          "validation_labels": {
+            "PASS": 171,
+            "FAIL": 126
+          },
+          "status": "EVALUABLE",
+          "reasons": []
+        }
+      ]
+    },
+    {
+      "population": "pooled",
+      "position": "candidate",
+      "comparison": "probe_minus_pub",
+      "label": "PRIV-IND",
+      "corpus": "virtual_v1_pipeline",
+      "scope": "complete_deliverable",
+      "status": "COMPLETE",
+      "candidate_auroc": 0.8967816370422317,
+      "reference_auroc": 0.9376215345842106,
+      "difference": -0.04083989754197892,
+      "ci": {
+        "lower": -0.07274397926180773,
+        "upper": -0.013144916870755053,
+        "valid_replicates": 10000,
+        "undefined_replicates": 0
+      },
+      "decision": "REVERSE",
+      "drafts": 7023,
+      "questions": 199,
+      "folds": [
+        {
+          "fold": 0,
+          "training_rows": 5621,
+          "validation_rows": 1402,
+          "training_questions": 159,
+          "validation_questions": 40,
+          "training_labels": {
+            "PASS": 687,
+            "FAIL": 4934
+          },
+          "validation_labels": {
+            "PASS": 146,
+            "FAIL": 1256
+          },
+          "status": "EVALUABLE",
+          "reasons": []
+        },
+        {
+          "fold": 1,
+          "training_rows": 5596,
+          "validation_rows": 1427,
+          "training_questions": 159,
+          "validation_questions": 40,
+          "training_labels": {
+            "PASS": 745,
+            "FAIL": 4851
+          },
+          "validation_labels": {
+            "FAIL": 1339,
+            "PASS": 88
+          },
+          "status": "EVALUABLE",
+          "reasons": []
+        },
+        {
+          "fold": 2,
+          "training_rows": 5638,
+          "validation_rows": 1385,
+          "training_questions": 159,
+          "validation_questions": 40,
+          "training_labels": {
+            "PASS": 580,
+            "FAIL": 5058
+          },
+          "validation_labels": {
+            "FAIL": 1132,
+            "PASS": 253
+          },
+          "status": "EVALUABLE",
+          "reasons": []
+        },
+        {
+          "fold": 3,
+          "training_rows": 5541,
+          "validation_rows": 1482,
+          "training_questions": 159,
+          "validation_questions": 40,
+          "training_labels": {
+            "PASS": 658,
+            "FAIL": 4883
+          },
+          "validation_labels": {
+            "FAIL": 1307,
+            "PASS": 175
+          },
+          "status": "EVALUABLE",
+          "reasons": []
+        },
+        {
+          "fold": 4,
+          "training_rows": 5696,
+          "validation_rows": 1327,
+          "training_questions": 160,
+          "validation_questions": 39,
+          "training_labels": {
+            "FAIL": 5034,
+            "PASS": 662
+          },
+          "validation_labels": {
+            "PASS": 171,
+            "FAIL": 1156
+          },
+          "status": "EVALUABLE",
+          "reasons": []
+        }
+      ]
+    },
+    {
+      "population": "pooled",
+      "position": "candidate",
+      "comparison": "probe_pub_minus_pub",
+      "label": "PRIV-IND",
+      "corpus": "virtual_v1_pipeline",
+      "scope": "complete_deliverable",
+      "status": "COMPLETE",
+      "candidate_auroc": 0.9745680337239458,
+      "reference_auroc": 0.9376215345842106,
+      "difference": 0.036946499139735245,
+      "ci": {
+        "lower": 0.02743682794980316,
+        "upper": 0.046976685295483704,
+        "valid_replicates": 10000,
+        "undefined_replicates": 0
+      },
+      "decision": "SUPPORT",
+      "drafts": 7023,
+      "questions": 199
+    },
+    {
+      "population": "pooled",
+      "position": "candidate",
+      "comparison": "probe_minus_baseline_pub_pass",
+      "label": "PRIV-IND",
+      "corpus": "virtual_v1_pipeline",
+      "scope": "complete_deliverable",
+      "status": "COMPLETE",
+      "candidate_auroc": 0.7538905345345044,
+      "reference_auroc": 0.7348793684723598,
+      "difference": 0.01901116606214459,
+      "ci": {
+        "lower": -0.05207342786362217,
+        "upper": 0.08834811207848592,
+        "valid_replicates": 10000,
+        "undefined_replicates": 0
+      },
+      "decision": "NOT_SUPPORTED",
+      "drafts": 1453,
+      "questions": 133,
+      "folds": [
+        {
+          "fold": 0,
+          "training_rows": 1181,
+          "validation_rows": 272,
+          "training_questions": 107,
+          "validation_questions": 26,
+          "training_labels": {
+            "PASS": 660,
+            "FAIL": 521
+          },
+          "validation_labels": {
+            "PASS": 146,
+            "FAIL": 126
+          },
+          "status": "EVALUABLE",
+          "reasons": []
+        },
+        {
+          "fold": 1,
+          "training_rows": 1258,
+          "validation_rows": 195,
+          "training_questions": 111,
+          "validation_questions": 22,
+          "training_labels": {
+            "PASS": 719,
+            "FAIL": 539
+          },
+          "validation_labels": {
+            "FAIL": 108,
+            "PASS": 87
+          },
+          "status": "EVALUABLE",
+          "reasons": []
+        },
+        {
+          "fold": 2,
+          "training_rows": 1029,
+          "validation_rows": 424,
+          "training_questions": 101,
+          "validation_questions": 32,
+          "training_labels": {
+            "PASS": 579,
+            "FAIL": 450
+          },
+          "validation_labels": {
+            "PASS": 227,
+            "FAIL": 197
+          },
+          "status": "EVALUABLE",
+          "reasons": []
+        },
+        {
+          "fold": 3,
+          "training_rows": 1188,
+          "validation_rows": 265,
+          "training_questions": 107,
+          "validation_questions": 26,
+          "training_labels": {
+            "PASS": 631,
+            "FAIL": 557
+          },
+          "validation_labels": {
+            "PASS": 175,
+            "FAIL": 90
+          },
+          "status": "EVALUABLE",
+          "reasons": []
+        },
+        {
+          "fold": 4,
+          "training_rows": 1156,
+          "validation_rows": 297,
+          "training_questions": 106,
+          "validation_questions": 27,
+          "training_labels": {
+            "PASS": 635,
+            "FAIL": 521
+          },
+          "validation_labels": {
+            "PASS": 171,
+            "FAIL": 126
+          },
+          "status": "EVALUABLE",
+          "reasons": []
+        }
+      ]
+    },
+    {
+      "population": "collection:hv6_atcoder",
+      "position": "draft_end",
+      "comparison": "probe_minus_pub",
+      "label": "PRIV-IND",
+      "corpus": "virtual_v1_pipeline",
+      "scope": "complete_deliverable",
+      "status": "COMPLETE",
+      "candidate_auroc": 0.9347010786399302,
+      "reference_auroc": 0.927891006481667,
+      "difference": 0.006810072158263236,
+      "ci": {
+        "lower": -0.033963035884558415,
+        "upper": 0.04315695323406967,
+        "valid_replicates": 10000,
+        "undefined_replicates": 0
+      },
+      "decision": "NOT_SUPPORTED",
+      "drafts": 2559,
+      "questions": 63,
+      "folds": [
+        {
+          "fold": 0,
+          "training_rows": 2114,
+          "validation_rows": 445,
+          "training_questions": 52,
+          "validation_questions": 11,
+          "training_labels": {
+            "PASS": 324,
+            "FAIL": 1790
+          },
+          "validation_labels": {
+            "PASS": 45,
+            "FAIL": 400
+          },
+          "status": "EVALUABLE",
+          "reasons": []
+        },
+        {
+          "fold": 1,
+          "training_rows": 1943,
+          "validation_rows": 616,
+          "training_questions": 49,
+          "validation_questions": 14,
+          "training_labels": {
+            "PASS": 302,
+            "FAIL": 1641
+          },
+          "validation_labels": {
+            "FAIL": 549,
+            "PASS": 67
+          },
+          "status": "EVALUABLE",
+          "reasons": []
+        },
+        {
+          "fold": 2,
+          "training_rows": 2160,
+          "validation_rows": 399,
+          "training_questions": 51,
+          "validation_questions": 12,
+          "training_labels": {
+            "PASS": 280,
+            "FAIL": 1880
+          },
+          "validation_labels": {
+            "FAIL": 310,
+            "PASS": 89
+          },
+          "status": "EVALUABLE",
+          "reasons": []
+        },
+        {
+          "fold": 3,
+          "training_rows": 1912,
+          "validation_rows": 647,
+          "training_questions": 50,
+          "validation_questions": 13,
+          "training_labels": {
+            "PASS": 263,
+            "FAIL": 1649
+          },
+          "validation_labels": {
+            "FAIL": 541,
+            "PASS": 106
+          },
+          "status": "EVALUABLE",
+          "reasons": []
+        },
+        {
+          "fold": 4,
+          "training_rows": 2107,
+          "validation_rows": 452,
+          "training_questions": 50,
+          "validation_questions": 13,
+          "training_labels": {
+            "FAIL": 1800,
+            "PASS": 307
+          },
+          "validation_labels": {
+            "PASS": 62,
+            "FAIL": 390
+          },
+          "status": "EVALUABLE",
+          "reasons": []
+        }
+      ]
+    },
+    {
+      "population": "collection:hv6_atcoder",
+      "position": "draft_end",
+      "comparison": "probe_pub_minus_pub",
+      "label": "PRIV-IND",
+      "corpus": "virtual_v1_pipeline",
+      "scope": "complete_deliverable",
+      "status": "COMPLETE",
+      "candidate_auroc": 0.9737917311736267,
+      "reference_auroc": 0.927891006481667,
+      "difference": 0.045900724691959716,
+      "ci": {
+        "lower": 0.026089857168208042,
+        "upper": 0.06829898065809316,
+        "valid_replicates": 10000,
+        "undefined_replicates": 0
+      },
+      "decision": "SUPPORT",
+      "drafts": 2559,
+      "questions": 63
+    },
+    {
+      "population": "collection:hv6_atcoder",
+      "position": "draft_end",
+      "comparison": "probe_minus_baseline_pub_pass",
+      "label": "PRIV-IND",
+      "corpus": "virtual_v1_pipeline",
+      "scope": "complete_deliverable",
+      "status": "COMPLETE",
+      "candidate_auroc": 0.7900914019647025,
+      "reference_auroc": 0.8253279182960044,
+      "difference": -0.03523651633130187,
+      "ci": {
+        "lower": -0.1422032228332018,
+        "upper": 0.06348475372478556,
+        "valid_replicates": 10000,
+        "undefined_replicates": 0
+      },
+      "decision": "NOT_SUPPORTED",
+      "drafts": 563,
+      "questions": 45,
+      "folds": [
+        {
+          "fold": 0,
+          "training_rows": 508,
+          "validation_rows": 55,
+          "training_questions": 38,
+          "validation_questions": 7,
+          "training_labels": {
+            "PASS": 297,
+            "FAIL": 211
+          },
+          "validation_labels": {
+            "PASS": 45,
+            "FAIL": 10
+          },
+          "status": "EVALUABLE",
+          "reasons": []
+        },
+        {
+          "fold": 1,
+          "training_rows": 426,
+          "validation_rows": 137,
+          "training_questions": 33,
+          "validation_questions": 12,
+          "training_labels": {
+            "PASS": 276,
+            "FAIL": 150
+          },
+          "validation_labels": {
+            "FAIL": 71,
+            "PASS": 66
+          },
+          "status": "EVALUABLE",
+          "reasons": []
+        },
+        {
+          "fold": 2,
+          "training_rows": 437,
+          "validation_rows": 126,
+          "training_questions": 35,
+          "validation_questions": 10,
+          "training_labels": {
+            "PASS": 279,
+            "FAIL": 158
+          },
+          "validation_labels": {
+            "PASS": 63,
+            "FAIL": 63
+          },
+          "status": "EVALUABLE",
+          "reasons": []
+        },
+        {
+          "fold": 3,
+          "training_rows": 428,
+          "validation_rows": 135,
+          "training_questions": 37,
+          "validation_questions": 8,
+          "training_labels": {
+            "PASS": 236,
+            "FAIL": 192
+          },
+          "validation_labels": {
+            "PASS": 106,
+            "FAIL": 29
+          },
+          "status": "EVALUABLE",
+          "reasons": []
+        },
+        {
+          "fold": 4,
+          "training_rows": 453,
+          "validation_rows": 110,
+          "training_questions": 37,
+          "validation_questions": 8,
+          "training_labels": {
+            "PASS": 280,
+            "FAIL": 173
+          },
+          "validation_labels": {
+            "PASS": 62,
+            "FAIL": 48
+          },
+          "status": "EVALUABLE",
+          "reasons": []
+        }
+      ]
+    },
+    {
+      "population": "collection:hv6_atcoder",
+      "position": "candidate",
+      "comparison": "probe_minus_pub",
+      "label": "PRIV-IND",
+      "corpus": "virtual_v1_pipeline",
+      "scope": "complete_deliverable",
+      "status": "COMPLETE",
+      "candidate_auroc": 0.8811995460137647,
+      "reference_auroc": 0.927891006481667,
+      "difference": -0.04669146046790229,
+      "ci": {
+        "lower": -0.10616848350371821,
+        "upper": 0.001545078192423003,
+        "valid_replicates": 10000,
+        "undefined_replicates": 0
+      },
+      "decision": "NOT_SUPPORTED",
+      "drafts": 2559,
+      "questions": 63,
+      "folds": [
+        {
+          "fold": 0,
+          "training_rows": 2114,
+          "validation_rows": 445,
+          "training_questions": 52,
+          "validation_questions": 11,
+          "training_labels": {
+            "PASS": 324,
+            "FAIL": 1790
+          },
+          "validation_labels": {
+            "PASS": 45,
+            "FAIL": 400
+          },
+          "status": "EVALUABLE",
+          "reasons": []
+        },
+        {
+          "fold": 1,
+          "training_rows": 1943,
+          "validation_rows": 616,
+          "training_questions": 49,
+          "validation_questions": 14,
+          "training_labels": {
+            "PASS": 302,
+            "FAIL": 1641
+          },
+          "validation_labels": {
+            "FAIL": 549,
+            "PASS": 67
+          },
+          "status": "EVALUABLE",
+          "reasons": []
+        },
+        {
+          "fold": 2,
+          "training_rows": 2160,
+          "validation_rows": 399,
+          "training_questions": 51,
+          "validation_questions": 12,
+          "training_labels": {
+            "PASS": 280,
+            "FAIL": 1880
+          },
+          "validation_labels": {
+            "FAIL": 310,
+            "PASS": 89
+          },
+          "status": "EVALUABLE",
+          "reasons": []
+        },
+        {
+          "fold": 3,
+          "training_rows": 1912,
+          "validation_rows": 647,
+          "training_questions": 50,
+          "validation_questions": 13,
+          "training_labels": {
+            "PASS": 263,
+            "FAIL": 1649
+          },
+          "validation_labels": {
+            "FAIL": 541,
+            "PASS": 106
+          },
+          "status": "EVALUABLE",
+          "reasons": []
+        },
+        {
+          "fold": 4,
+          "training_rows": 2107,
+          "validation_rows": 452,
+          "training_questions": 50,
+          "validation_questions": 13,
+          "training_labels": {
+            "FAIL": 1800,
+            "PASS": 307
+          },
+          "validation_labels": {
+            "PASS": 62,
+            "FAIL": 390
+          },
+          "status": "EVALUABLE",
+          "reasons": []
+        }
+      ]
+    },
+    {
+      "population": "collection:hv6_atcoder",
+      "position": "candidate",
+      "comparison": "probe_pub_minus_pub",
+      "label": "PRIV-IND",
+      "corpus": "virtual_v1_pipeline",
+      "scope": "complete_deliverable",
+      "status": "COMPLETE",
+      "candidate_auroc": 0.9679990909043716,
+      "reference_auroc": 0.927891006481667,
+      "difference": 0.04010808442270464,
+      "ci": {
+        "lower": 0.02288908156367799,
+        "upper": 0.05953117701012479,
+        "valid_replicates": 10000,
+        "undefined_replicates": 0
+      },
+      "decision": "SUPPORT",
+      "drafts": 2559,
+      "questions": 63
+    },
+    {
+      "population": "collection:hv6_atcoder",
+      "position": "candidate",
+      "comparison": "probe_minus_baseline_pub_pass",
+      "label": "PRIV-IND",
+      "corpus": "virtual_v1_pipeline",
+      "scope": "complete_deliverable",
+      "status": "COMPLETE",
+      "candidate_auroc": 0.7936521271659581,
+      "reference_auroc": 0.8253279182960044,
+      "difference": -0.03167579113004626,
+      "ci": {
+        "lower": -0.12216870943931553,
+        "upper": 0.0623490217796446,
+        "valid_replicates": 10000,
+        "undefined_replicates": 0
+      },
+      "decision": "NOT_SUPPORTED",
+      "drafts": 563,
+      "questions": 45,
+      "folds": [
+        {
+          "fold": 0,
+          "training_rows": 508,
+          "validation_rows": 55,
+          "training_questions": 38,
+          "validation_questions": 7,
+          "training_labels": {
+            "PASS": 297,
+            "FAIL": 211
+          },
+          "validation_labels": {
+            "PASS": 45,
+            "FAIL": 10
+          },
+          "status": "EVALUABLE",
+          "reasons": []
+        },
+        {
+          "fold": 1,
+          "training_rows": 426,
+          "validation_rows": 137,
+          "training_questions": 33,
+          "validation_questions": 12,
+          "training_labels": {
+            "PASS": 276,
+            "FAIL": 150
+          },
+          "validation_labels": {
+            "FAIL": 71,
+            "PASS": 66
+          },
+          "status": "EVALUABLE",
+          "reasons": []
+        },
+        {
+          "fold": 2,
+          "training_rows": 437,
+          "validation_rows": 126,
+          "training_questions": 35,
+          "validation_questions": 10,
+          "training_labels": {
+            "PASS": 279,
+            "FAIL": 158
+          },
+          "validation_labels": {
+            "PASS": 63,
+            "FAIL": 63
+          },
+          "status": "EVALUABLE",
+          "reasons": []
+        },
+        {
+          "fold": 3,
+          "training_rows": 428,
+          "validation_rows": 135,
+          "training_questions": 37,
+          "validation_questions": 8,
+          "training_labels": {
+            "PASS": 236,
+            "FAIL": 192
+          },
+          "validation_labels": {
+            "PASS": 106,
+            "FAIL": 29
+          },
+          "status": "EVALUABLE",
+          "reasons": []
+        },
+        {
+          "fold": 4,
+          "training_rows": 453,
+          "validation_rows": 110,
+          "training_questions": 37,
+          "validation_questions": 8,
+          "training_labels": {
+            "PASS": 280,
+            "FAIL": 173
+          },
+          "validation_labels": {
+            "PASS": 62,
+            "FAIL": 48
+          },
+          "status": "EVALUABLE",
+          "reasons": []
+        }
+      ]
+    },
+    {
+      "population": "collection:hv6_leetcode",
+      "position": "draft_end",
+      "comparison": "probe_minus_pub",
+      "label": "PRIV-IND",
+      "corpus": "virtual_v1_pipeline",
+      "scope": "complete_deliverable",
+      "status": "COMPLETE",
+      "candidate_auroc": 0.9210532106716179,
+      "reference_auroc": 0.9170952692806038,
+      "difference": 0.00395794139101413,
+      "ci": {
+        "lower": -0.04301018281686836,
+        "upper": 0.04170284378995497,
+        "valid_replicates": 10000,
+        "undefined_replicates": 0
+      },
+      "decision": "NOT_SUPPORTED",
+      "drafts": 2630,
+      "questions": 63,
+      "folds": [
+        {
+          "fold": 0,
+          "training_rows": 2110,
+          "validation_rows": 520,
+          "training_questions": 50,
+          "validation_questions": 13,
+          "training_labels": {
+            "FAIL": 1818,
+            "PASS": 292
+          },
+          "validation_labels": {
+            "PASS": 74,
+            "FAIL": 446
+          },
+          "status": "EVALUABLE",
+          "reasons": []
+        },
+        {
+          "fold": 1,
+          "training_rows": 2268,
+          "validation_rows": 362,
+          "training_questions": 55,
+          "validation_questions": 8,
+          "training_labels": {
+            "FAIL": 1912,
+            "PASS": 356
+          },
+          "validation_labels": {
+            "FAIL": 352,
+            "PASS": 10
+          },
+          "status": "EVALUABLE",
+          "reasons": []
+        },
+        {
+          "fold": 2,
+          "training_rows": 1993,
+          "validation_rows": 637,
+          "training_questions": 48,
+          "validation_questions": 15,
+          "training_labels": {
+            "FAIL": 1781,
+            "PASS": 212
+          },
+          "validation_labels": {
+            "FAIL": 483,
+            "PASS": 154
+          },
+          "status": "EVALUABLE",
+          "reasons": []
+        },
+        {
+          "fold": 3,
+          "training_rows": 2166,
+          "validation_rows": 464,
+          "training_questions": 51,
+          "validation_questions": 12,
+          "training_labels": {
+            "FAIL": 1846,
+            "PASS": 320
+          },
+          "validation_labels": {
+            "FAIL": 418,
+            "PASS": 46
+          },
+          "status": "EVALUABLE",
+          "reasons": []
+        },
+        {
+          "fold": 4,
+          "training_rows": 1983,
+          "validation_rows": 647,
+          "training_questions": 48,
+          "validation_questions": 15,
+          "training_labels": {
+            "FAIL": 1699,
+            "PASS": 284
+          },
+          "validation_labels": {
+            "FAIL": 565,
+            "PASS": 82
+          },
+          "status": "EVALUABLE",
+          "reasons": []
+        }
+      ]
+    },
+    {
+      "population": "collection:hv6_leetcode",
+      "position": "draft_end",
+      "comparison": "probe_pub_minus_pub",
+      "label": "PRIV-IND",
+      "corpus": "virtual_v1_pipeline",
+      "scope": "complete_deliverable",
+      "status": "COMPLETE",
+      "candidate_auroc": 0.9768224070278204,
+      "reference_auroc": 0.9170952692806038,
+      "difference": 0.05972713774721661,
+      "ci": {
+        "lower": 0.039970177879671775,
+        "upper": 0.08173843653948241,
+        "valid_replicates": 10000,
+        "undefined_replicates": 0
+      },
+      "decision": "SUPPORT",
+      "drafts": 2630,
+      "questions": 63
+    },
+    {
+      "population": "collection:hv6_leetcode",
+      "position": "draft_end",
+      "comparison": "probe_minus_baseline_pub_pass",
+      "label": "PRIV-IND",
+      "corpus": "virtual_v1_pipeline",
+      "scope": "complete_deliverable",
+      "status": "COMPLETE",
+      "candidate_auroc": 0.8156848642410462,
+      "reference_auroc": 0.7794481430890117,
+      "difference": 0.03623672115203458,
+      "ci": {
+        "lower": -0.06483975933214724,
+        "upper": 0.13440006379539396,
+        "valid_replicates": 10000,
+        "undefined_replicates": 0
+      },
+      "decision": "NOT_SUPPORTED",
+      "drafts": 672,
+      "questions": 55,
+      "folds": [
+        {
+          "fold": 0,
+          "training_rows": 502,
+          "validation_rows": 170,
+          "training_questions": 43,
+          "validation_questions": 12,
+          "training_labels": {
+            "FAIL": 210,
+            "PASS": 292
+          },
+          "validation_labels": {
+            "PASS": 74,
+            "FAIL": 96
+          },
+          "status": "EVALUABLE",
+          "reasons": []
+        },
+        {
+          "fold": 1,
+          "training_rows": 640,
+          "validation_rows": 32,
+          "training_questions": 51,
+          "validation_questions": 4,
+          "training_labels": {
+            "FAIL": 284,
+            "PASS": 356
+          },
+          "validation_labels": {
+            "FAIL": 22,
+            "PASS": 10
+          },
+          "status": "EVALUABLE",
+          "reasons": []
+        },
+        {
+          "fold": 2,
+          "training_rows": 434,
+          "validation_rows": 238,
+          "training_questions": 40,
+          "validation_questions": 15,
+          "training_labels": {
+            "FAIL": 222,
+            "PASS": 212
+          },
+          "validation_labels": {
+            "PASS": 154,
+            "FAIL": 84
+          },
+          "status": "EVALUABLE",
+          "reasons": []
+        },
+        {
+          "fold": 3,
+          "training_rows": 587,
+          "validation_rows": 85,
+          "training_questions": 44,
+          "validation_questions": 11,
+          "training_labels": {
+            "FAIL": 267,
+            "PASS": 320
+          },
+          "validation_labels": {
+            "FAIL": 39,
+            "PASS": 46
+          },
+          "status": "EVALUABLE",
+          "reasons": []
+        },
+        {
+          "fold": 4,
+          "training_rows": 525,
+          "validation_rows": 147,
+          "training_questions": 42,
+          "validation_questions": 13,
+          "training_labels": {
+            "PASS": 284,
+            "FAIL": 241
+          },
+          "validation_labels": {
+            "FAIL": 65,
+            "PASS": 82
+          },
+          "status": "EVALUABLE",
+          "reasons": []
+        }
+      ]
+    },
+    {
+      "population": "collection:hv6_leetcode",
+      "position": "candidate",
+      "comparison": "probe_minus_pub",
+      "label": "PRIV-IND",
+      "corpus": "virtual_v1_pipeline",
+      "scope": "complete_deliverable",
+      "status": "COMPLETE",
+      "candidate_auroc": 0.8887822216142871,
+      "reference_auroc": 0.9170952692806038,
+      "difference": -0.028313047666316704,
+      "ci": {
+        "lower": -0.08261072211984646,
+        "upper": 0.014633361835413472,
+        "valid_replicates": 10000,
+        "undefined_replicates": 0
+      },
+      "decision": "NOT_SUPPORTED",
+      "drafts": 2630,
+      "questions": 63,
+      "folds": [
+        {
+          "fold": 0,
+          "training_rows": 2110,
+          "validation_rows": 520,
+          "training_questions": 50,
+          "validation_questions": 13,
+          "training_labels": {
+            "FAIL": 1818,
+            "PASS": 292
+          },
+          "validation_labels": {
+            "PASS": 74,
+            "FAIL": 446
+          },
+          "status": "EVALUABLE",
+          "reasons": []
+        },
+        {
+          "fold": 1,
+          "training_rows": 2268,
+          "validation_rows": 362,
+          "training_questions": 55,
+          "validation_questions": 8,
+          "training_labels": {
+            "FAIL": 1912,
+            "PASS": 356
+          },
+          "validation_labels": {
+            "FAIL": 352,
+            "PASS": 10
+          },
+          "status": "EVALUABLE",
+          "reasons": []
+        },
+        {
+          "fold": 2,
+          "training_rows": 1993,
+          "validation_rows": 637,
+          "training_questions": 48,
+          "validation_questions": 15,
+          "training_labels": {
+            "FAIL": 1781,
+            "PASS": 212
+          },
+          "validation_labels": {
+            "FAIL": 483,
+            "PASS": 154
+          },
+          "status": "EVALUABLE",
+          "reasons": []
+        },
+        {
+          "fold": 3,
+          "training_rows": 2166,
+          "validation_rows": 464,
+          "training_questions": 51,
+          "validation_questions": 12,
+          "training_labels": {
+            "FAIL": 1846,
+            "PASS": 320
+          },
+          "validation_labels": {
+            "FAIL": 418,
+            "PASS": 46
+          },
+          "status": "EVALUABLE",
+          "reasons": []
+        },
+        {
+          "fold": 4,
+          "training_rows": 1983,
+          "validation_rows": 647,
+          "training_questions": 48,
+          "validation_questions": 15,
+          "training_labels": {
+            "FAIL": 1699,
+            "PASS": 284
+          },
+          "validation_labels": {
+            "FAIL": 565,
+            "PASS": 82
+          },
+          "status": "EVALUABLE",
+          "reasons": []
+        }
+      ]
+    },
+    {
+      "population": "collection:hv6_leetcode",
+      "position": "candidate",
+      "comparison": "probe_pub_minus_pub",
+      "label": "PRIV-IND",
+      "corpus": "virtual_v1_pipeline",
+      "scope": "complete_deliverable",
+      "status": "COMPLETE",
+      "candidate_auroc": 0.9674566794170619,
+      "reference_auroc": 0.9170952692806038,
+      "difference": 0.05036141013645812,
+      "ci": {
+        "lower": 0.03220257576886762,
+        "upper": 0.06978579749674294,
+        "valid_replicates": 10000,
+        "undefined_replicates": 0
+      },
+      "decision": "SUPPORT",
+      "drafts": 2630,
+      "questions": 63
+    },
+    {
+      "population": "collection:hv6_leetcode",
+      "position": "candidate",
+      "comparison": "probe_minus_baseline_pub_pass",
+      "label": "PRIV-IND",
+      "corpus": "virtual_v1_pipeline",
+      "scope": "complete_deliverable",
+      "status": "COMPLETE",
+      "candidate_auroc": 0.7861785318952406,
+      "reference_auroc": 0.7794481430890117,
+      "difference": 0.006730388806228893,
+      "ci": {
+        "lower": -0.08622149360082033,
+        "upper": 0.10610495685979598,
+        "valid_replicates": 10000,
+        "undefined_replicates": 0
+      },
+      "decision": "NOT_SUPPORTED",
+      "drafts": 672,
+      "questions": 55,
+      "folds": [
+        {
+          "fold": 0,
+          "training_rows": 502,
+          "validation_rows": 170,
+          "training_questions": 43,
+          "validation_questions": 12,
+          "training_labels": {
+            "FAIL": 210,
+            "PASS": 292
+          },
+          "validation_labels": {
+            "PASS": 74,
+            "FAIL": 96
+          },
+          "status": "EVALUABLE",
+          "reasons": []
+        },
+        {
+          "fold": 1,
+          "training_rows": 640,
+          "validation_rows": 32,
+          "training_questions": 51,
+          "validation_questions": 4,
+          "training_labels": {
+            "FAIL": 284,
+            "PASS": 356
+          },
+          "validation_labels": {
+            "FAIL": 22,
+            "PASS": 10
+          },
+          "status": "EVALUABLE",
+          "reasons": []
+        },
+        {
+          "fold": 2,
+          "training_rows": 434,
+          "validation_rows": 238,
+          "training_questions": 40,
+          "validation_questions": 15,
+          "training_labels": {
+            "FAIL": 222,
+            "PASS": 212
+          },
+          "validation_labels": {
+            "PASS": 154,
+            "FAIL": 84
+          },
+          "status": "EVALUABLE",
+          "reasons": []
+        },
+        {
+          "fold": 3,
+          "training_rows": 587,
+          "validation_rows": 85,
+          "training_questions": 44,
+          "validation_questions": 11,
+          "training_labels": {
+            "FAIL": 267,
+            "PASS": 320
+          },
+          "validation_labels": {
+            "FAIL": 39,
+            "PASS": 46
+          },
+          "status": "EVALUABLE",
+          "reasons": []
+        },
+        {
+          "fold": 4,
+          "training_rows": 525,
+          "validation_rows": 147,
+          "training_questions": 42,
+          "validation_questions": 13,
+          "training_labels": {
+            "PASS": 284,
+            "FAIL": 241
+          },
+          "validation_labels": {
+            "FAIL": 65,
+            "PASS": 82
+          },
+          "status": "EVALUABLE",
+          "reasons": []
+        }
+      ]
+    },
+    {
+      "population": "collection:lcbpro_2025",
+      "position": "draft_end",
+      "comparison": "probe_minus_pub",
+      "label": "PRIV-IND",
+      "corpus": "virtual_v1_pipeline",
+      "scope": "complete_deliverable",
+      "status": "COMPLETE",
+      "candidate_auroc": 0.9117878627183804,
+      "reference_auroc": 0.9634011485779378,
+      "difference": -0.05161328585955738,
+      "ci": {
+        "lower": -0.11539681339009468,
+        "upper": -0.002443804639277175,
+        "valid_replicates": 10000,
+        "undefined_replicates": 0
+      },
+      "decision": "REVERSE",
+      "drafts": 1834,
+      "questions": 73,
+      "folds": [
+        {
+          "fold": 0,
+          "training_rows": 1397,
+          "validation_rows": 437,
+          "training_questions": 57,
+          "validation_questions": 16,
+          "training_labels": {
+            "FAIL": 1326,
+            "PASS": 71
+          },
+          "validation_labels": {
+            "FAIL": 410,
+            "PASS": 27
+          },
+          "status": "EVALUABLE",
+          "reasons": []
+        },
+        {
+          "fold": 1,
+          "training_rows": 1385,
+          "validation_rows": 449,
+          "training_questions": 55,
+          "validation_questions": 18,
+          "training_labels": {
+            "FAIL": 1298,
+            "PASS": 87
+          },
+          "validation_labels": {
+            "FAIL": 438,
+            "PASS": 11
+          },
+          "status": "EVALUABLE",
+          "reasons": []
+        },
+        {
+          "fold": 2,
+          "training_rows": 1485,
+          "validation_rows": 349,
+          "training_questions": 60,
+          "validation_questions": 13,
+          "training_labels": {
+            "FAIL": 1397,
+            "PASS": 88
+          },
+          "validation_labels": {
+            "FAIL": 339,
+            "PASS": 10
+          },
+          "status": "EVALUABLE",
+          "reasons": []
+        },
+        {
+          "fold": 3,
+          "training_rows": 1463,
+          "validation_rows": 371,
+          "training_questions": 58,
+          "validation_questions": 15,
+          "training_labels": {
+            "FAIL": 1388,
+            "PASS": 75
+          },
+          "validation_labels": {
+            "FAIL": 348,
+            "PASS": 23
+          },
+          "status": "EVALUABLE",
+          "reasons": []
+        },
+        {
+          "fold": 4,
+          "training_rows": 1606,
+          "validation_rows": 228,
+          "training_questions": 62,
+          "validation_questions": 11,
+          "training_labels": {
+            "FAIL": 1535,
+            "PASS": 71
+          },
+          "validation_labels": {
+            "FAIL": 201,
+            "PASS": 27
+          },
+          "status": "EVALUABLE",
+          "reasons": []
+        }
+      ]
+    },
+    {
+      "population": "collection:lcbpro_2025",
+      "position": "draft_end",
+      "comparison": "probe_pub_minus_pub",
+      "label": "PRIV-IND",
+      "corpus": "virtual_v1_pipeline",
+      "scope": "complete_deliverable",
+      "status": "COMPLETE",
+      "candidate_auroc": 0.9860545311791381,
+      "reference_auroc": 0.9634011485779378,
+      "difference": 0.02265338260120031,
+      "ci": {
+        "lower": 0.009837526857883222,
+        "upper": 0.038069376051721504,
+        "valid_replicates": 10000,
+        "undefined_replicates": 0
+      },
+      "decision": "SUPPORT",
+      "drafts": 1834,
+      "questions": 73
+    },
+    {
+      "population": "collection:lcbpro_2025",
+      "position": "draft_end",
+      "comparison": "probe_minus_baseline_pub_pass",
+      "label": "PRIV-IND",
+      "corpus": "virtual_v1_pipeline",
+      "scope": "complete_deliverable",
+      "status": "COMPLETE",
+      "candidate_auroc": 0.7456432920409711,
+      "reference_auroc": 0.5239875839678281,
+      "difference": 0.22165570807314305,
+      "ci": {
+        "lower": 0.00041158962636656096,
+        "upper": 0.43503296326143287,
+        "valid_replicates": 10000,
+        "undefined_replicates": 0
+      },
+      "decision": "SUPPORT",
+      "drafts": 218,
+      "questions": 33,
+      "folds": [
+        {
+          "fold": 0,
+          "training_rows": 171,
+          "validation_rows": 47,
+          "training_questions": 26,
+          "validation_questions": 7,
+          "training_labels": {
+            "FAIL": 100,
+            "PASS": 71
+          },
+          "validation_labels": {
+            "FAIL": 20,
+            "PASS": 27
+          },
+          "status": "EVALUABLE",
+          "reasons": []
+        },
+        {
+          "fold": 1,
+          "training_rows": 192,
+          "validation_rows": 26,
+          "training_questions": 27,
+          "validation_questions": 6,
+          "training_labels": {
+            "FAIL": 105,
+            "PASS": 87
+          },
+          "validation_labels": {
+            "FAIL": 15,
+            "PASS": 11
+          },
+          "status": "EVALUABLE",
+          "reasons": []
+        },
+        {
+          "fold": 2,
+          "training_rows": 158,
+          "validation_rows": 60,
+          "training_questions": 26,
+          "validation_questions": 7,
+          "training_labels": {
+            "FAIL": 70,
+            "PASS": 88
+          },
+          "validation_labels": {
+            "FAIL": 50,
+            "PASS": 10
+          },
+          "status": "EVALUABLE",
+          "reasons": []
+        },
+        {
+          "fold": 3,
+          "training_rows": 173,
+          "validation_rows": 45,
+          "training_questions": 26,
+          "validation_questions": 7,
+          "training_labels": {
+            "FAIL": 98,
+            "PASS": 75
+          },
+          "validation_labels": {
+            "FAIL": 22,
+            "PASS": 23
+          },
+          "status": "EVALUABLE",
+          "reasons": []
+        },
+        {
+          "fold": 4,
+          "training_rows": 178,
+          "validation_rows": 40,
+          "training_questions": 27,
+          "validation_questions": 6,
+          "training_labels": {
+            "FAIL": 107,
+            "PASS": 71
+          },
+          "validation_labels": {
+            "FAIL": 13,
+            "PASS": 27
+          },
+          "status": "EVALUABLE",
+          "reasons": []
+        }
+      ]
+    },
+    {
+      "population": "collection:lcbpro_2025",
+      "position": "candidate",
+      "comparison": "probe_minus_pub",
+      "label": "PRIV-IND",
+      "corpus": "virtual_v1_pipeline",
+      "scope": "complete_deliverable",
+      "status": "COMPLETE",
+      "candidate_auroc": 0.8307755562758323,
+      "reference_auroc": 0.9634011485779378,
+      "difference": -0.13262559230210547,
+      "ci": {
+        "lower": -0.20404283924814748,
+        "upper": -0.07689339713257409,
+        "valid_replicates": 10000,
+        "undefined_replicates": 0
+      },
+      "decision": "REVERSE",
+      "drafts": 1834,
+      "questions": 73,
+      "folds": [
+        {
+          "fold": 0,
+          "training_rows": 1397,
+          "validation_rows": 437,
+          "training_questions": 57,
+          "validation_questions": 16,
+          "training_labels": {
+            "FAIL": 1326,
+            "PASS": 71
+          },
+          "validation_labels": {
+            "FAIL": 410,
+            "PASS": 27
+          },
+          "status": "EVALUABLE",
+          "reasons": []
+        },
+        {
+          "fold": 1,
+          "training_rows": 1385,
+          "validation_rows": 449,
+          "training_questions": 55,
+          "validation_questions": 18,
+          "training_labels": {
+            "FAIL": 1298,
+            "PASS": 87
+          },
+          "validation_labels": {
+            "FAIL": 438,
+            "PASS": 11
+          },
+          "status": "EVALUABLE",
+          "reasons": []
+        },
+        {
+          "fold": 2,
+          "training_rows": 1485,
+          "validation_rows": 349,
+          "training_questions": 60,
+          "validation_questions": 13,
+          "training_labels": {
+            "FAIL": 1397,
+            "PASS": 88
+          },
+          "validation_labels": {
+            "FAIL": 339,
+            "PASS": 10
+          },
+          "status": "EVALUABLE",
+          "reasons": []
+        },
+        {
+          "fold": 3,
+          "training_rows": 1463,
+          "validation_rows": 371,
+          "training_questions": 58,
+          "validation_questions": 15,
+          "training_labels": {
+            "FAIL": 1388,
+            "PASS": 75
+          },
+          "validation_labels": {
+            "FAIL": 348,
+            "PASS": 23
+          },
+          "status": "EVALUABLE",
+          "reasons": []
+        },
+        {
+          "fold": 4,
+          "training_rows": 1606,
+          "validation_rows": 228,
+          "training_questions": 62,
+          "validation_questions": 11,
+          "training_labels": {
+            "FAIL": 1535,
+            "PASS": 71
+          },
+          "validation_labels": {
+            "FAIL": 201,
+            "PASS": 27
+          },
+          "status": "EVALUABLE",
+          "reasons": []
+        }
+      ]
+    },
+    {
+      "population": "collection:lcbpro_2025",
+      "position": "candidate",
+      "comparison": "probe_pub_minus_pub",
+      "label": "PRIV-IND",
+      "corpus": "virtual_v1_pipeline",
+      "scope": "complete_deliverable",
+      "status": "COMPLETE",
+      "candidate_auroc": 0.9798177321773747,
+      "reference_auroc": 0.9634011485779378,
+      "difference": 0.016416583599436874,
+      "ci": {
+        "lower": 0.007019638280682187,
+        "upper": 0.027533071763581777,
+        "valid_replicates": 10000,
+        "undefined_replicates": 0
+      },
+      "decision": "SUPPORT",
+      "drafts": 1834,
+      "questions": 73
+    },
+    {
+      "population": "collection:lcbpro_2025",
+      "position": "candidate",
+      "comparison": "probe_minus_baseline_pub_pass",
+      "label": "PRIV-IND",
+      "corpus": "virtual_v1_pipeline",
+      "scope": "complete_deliverable",
+      "status": "COMPLETE",
+      "candidate_auroc": 0.4885972802153101,
+      "reference_auroc": 0.5239875839678281,
+      "difference": -0.03539030375251795,
+      "ci": {
+        "lower": -0.2608447684309973,
+        "upper": 0.18250367552507785,
+        "valid_replicates": 10000,
+        "undefined_replicates": 0
+      },
+      "decision": "NOT_SUPPORTED",
+      "drafts": 218,
+      "questions": 33,
+      "folds": [
+        {
+          "fold": 0,
+          "training_rows": 171,
+          "validation_rows": 47,
+          "training_questions": 26,
+          "validation_questions": 7,
+          "training_labels": {
+            "FAIL": 100,
+            "PASS": 71
+          },
+          "validation_labels": {
+            "FAIL": 20,
+            "PASS": 27
+          },
+          "status": "EVALUABLE",
+          "reasons": []
+        },
+        {
+          "fold": 1,
+          "training_rows": 192,
+          "validation_rows": 26,
+          "training_questions": 27,
+          "validation_questions": 6,
+          "training_labels": {
+            "FAIL": 105,
+            "PASS": 87
+          },
+          "validation_labels": {
+            "FAIL": 15,
+            "PASS": 11
+          },
+          "status": "EVALUABLE",
+          "reasons": []
+        },
+        {
+          "fold": 2,
+          "training_rows": 158,
+          "validation_rows": 60,
+          "training_questions": 26,
+          "validation_questions": 7,
+          "training_labels": {
+            "FAIL": 70,
+            "PASS": 88
+          },
+          "validation_labels": {
+            "FAIL": 50,
+            "PASS": 10
+          },
+          "status": "EVALUABLE",
+          "reasons": []
+        },
+        {
+          "fold": 3,
+          "training_rows": 173,
+          "validation_rows": 45,
+          "training_questions": 26,
+          "validation_questions": 7,
+          "training_labels": {
+            "FAIL": 98,
+            "PASS": 75
+          },
+          "validation_labels": {
+            "FAIL": 22,
+            "PASS": 23
+          },
+          "status": "EVALUABLE",
+          "reasons": []
+        },
+        {
+          "fold": 4,
+          "training_rows": 178,
+          "validation_rows": 40,
+          "training_questions": 27,
+          "validation_questions": 6,
+          "training_labels": {
+            "FAIL": 107,
+            "PASS": 71
+          },
+          "validation_labels": {
+            "FAIL": 13,
+            "PASS": 27
+          },
+          "status": "EVALUABLE",
+          "reasons": []
+        }
+      ]
+    }
+  ],
+  "bootstrap": {
+    "seed": 20261014,
+    "replicates": 10000,
+    "unit": "question",
+    "fixed_oof": true,
+    "stratified": false,
+    "model_refit_in_bootstrap": false
+  },
+  "intervals": "Pointwise nominal 95%; no multiplicity correction",
+  "coverage": {
+    "source_drafts": 7128,
+    "matched_drafts": 7023,
+    "unknown_labels": 105,
+    "missing_features": 0,
+    "matched_questions": 199
+  }
+}

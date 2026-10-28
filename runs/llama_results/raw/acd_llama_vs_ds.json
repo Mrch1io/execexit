@@ -1,0 +1,28 @@
+{
+  "classification": "Descriptive secondary, no hypothesis",
+  "left": "llama",
+  "right": "ds",
+  "result": {
+    "acd": {
+      "status": "COMPLETE",
+      "difference": -0.04,
+      "ci95": {
+        "lower": -0.06838905775075987,
+        "upper": -0.013846153846153847,
+        "valid_replicates": 10000,
+        "undefined_replicates": 0
+      }
+    },
+    "stable_acd": {
+      "status": "COMPLETE",
+      "difference": -0.024615384615384615,
+      "ci95": {
+        "lower": -0.04711246200607903,
+        "upper": -0.0045871559633027525,
+        "valid_replicates": 10000,
+        "undefined_replicates": 0
+      }
+    }
+  },
+  "source": "raw/acd_audit.py; independently confirmed frozen paired_difference"
+}

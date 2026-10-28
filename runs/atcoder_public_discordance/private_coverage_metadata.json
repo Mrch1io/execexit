@@ -1,0 +1,33 @@
+[
+  {
+    "case_id": "atcoder:abc398_d",
+    "private_count": 40,
+    "source_sha256": "e203a936cf41c6354d7bab9444f99a7ef1c79deb35749df6665f3e32a7273835",
+    "public_sample_input_occurrences_private": [
+      0,
+      0,
+      0
+    ],
+    "private_input_contents_not_copied": true,
+    "all_zero_expected": 38,
+    "positive_expected_test_lengths": [
+      1,
+      1
+    ]
+  },
+  {
+    "case_id": "atcoder:arc195_a",
+    "private_count": 40,
+    "source_sha256": "e203a936cf41c6354d7bab9444f99a7ef1c79deb35749df6665f3e32a7273835",
+    "public_sample_input_occurrences_private": [
+      0,
+      0,
+      0
+    ],
+    "private_input_contents_not_copied": true,
+    "expected_output_counts": {
+      "No": 37,
+      "Yes": 3
+    }
+  }
+]

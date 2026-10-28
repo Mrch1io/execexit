@@ -1,0 +1,907 @@
+{
+  "planned_applications": 135,
+  "planned_main_applications": 108,
+  "distinct_main_tasks": 36,
+  "distinct_main_contests": 18,
+  "by_arm": {
+    "N": {
+      "planned": 36,
+      "acceptance": {
+        "planned": 36,
+        "pass": 19,
+        "fail": 17,
+        "unknown": 0,
+        "fraction_lower": 0.5277777777777778,
+        "fraction_upper": 0.5277777777777778
+      },
+      "public": {
+        "planned": 36,
+        "pass": 21,
+        "fail": 1,
+        "unknown": 14,
+        "fraction_lower": 0.5833333333333334,
+        "fraction_upper": 0.9722222222222222
+      },
+      "private": {
+        "planned": 36,
+        "pass": 19,
+        "fail": 3,
+        "unknown": 14,
+        "fraction_lower": 0.5277777777777778,
+        "fraction_upper": 0.9166666666666666
+      },
+      "natural_stop": {
+        "planned": 36,
+        "pass": 22,
+        "fail": 14,
+        "unknown": 0,
+        "fraction_lower": 0.6111111111111112,
+        "fraction_upper": 0.6111111111111112
+      },
+      "last_close_offline_Q": {
+        "planned": 36,
+        "pass": 19,
+        "fail": 17,
+        "unknown": 0,
+        "fraction_lower": 0.5277777777777778,
+        "fraction_upper": 0.5277777777777778
+      },
+      "delivered": 36,
+      "cap_hits": 14,
+      "triggered": {
+        "planned": 36,
+        "pass": 0,
+        "fail": 36,
+        "unknown": 0,
+        "fraction_lower": 0.0,
+        "fraction_upper": 0.0
+      },
+      "accepted_probes": 0,
+      "rejected_probes": 0,
+      "confidence": {
+        "n": 0,
+        "mean": null,
+        "p50": null,
+        "p95": null,
+        "max": null
+      },
+      "confidence_unknown_probes": 0,
+      "unsuccessful_client_latency_s": {
+        "n": 17,
+        "mean": 180.9507557519412,
+        "p50": 181.674792287,
+        "p95": 182.7952804996,
+        "max": 183.568294822
+      },
+      "unknown_outcome_client_latency_s": {
+        "n": 0,
+        "mean": null,
+        "p50": null,
+        "p95": null,
+        "max": null
+      },
+      "input_minus_cached_metadata_total": 22452,
+      "prefill_work_measurement": "UNKNOWN_actual_GPU_work; input-minus-native-cache is metadata only",
+      "logprob_processing_scope": "Measured host serialization/alignment/collection CPU and wall; GPU logprob overhead not separately isolated and remains in total native/client wall.",
+      "opportunity_reasons": {
+        "single_call_native_baseline": 36
+      },
+      "extraction_statuses": {
+        "parsed": 22,
+        "reasoning_boundary_unknown": 13,
+        "ambiguous_or_unclosed_code_fence": 1
+      },
+      "all_costs_known": true,
+      "totals": {
+        "output_tokens": 360436,
+        "input_tokens": 22452,
+        "control_tokens": 0,
+        "total_budget_used": 360436,
+        "discarded_generated_tokens": 0,
+        "native_calls": 36
+      },
+      "observed_partial_totals": {
+        "output_tokens": 360436,
+        "input_tokens": 22452,
+        "control_tokens": 0,
+        "total_budget_used": 360436,
+        "discarded_generated_tokens": 0,
+        "observed_native_calls": 36,
+        "observed_raw_output_tokens": 360436
+      },
+      "cost_note": "Missing evidence stays UNKNOWN; partial recorded sums are explicitly not total zero-cost imputations.",
+      "client_latency_s": {
+        "n": 36,
+        "mean": 110.07714345233333,
+        "p50": 99.278384488,
+        "p95": 182.52765469825,
+        "max": 183.568294822
+      },
+      "native_call_wall_sum_s": {
+        "n": 36,
+        "mean": 110.01967025380556,
+        "p50": 99.21549585700001,
+        "p95": 182.42458740450002,
+        "max": 183.466705114
+      },
+      "probe_call_wall_s": {
+        "n": 36,
+        "mean": 0,
+        "p50": 0.0,
+        "p95": 0.0,
+        "max": 0
+      },
+      "continuation_call_wall_s": {
+        "n": 36,
+        "mean": 0,
+        "p50": 0.0,
+        "p95": 0.0,
+        "max": 0
+      },
+      "inter_call_gap_s": {
+        "n": 36,
+        "mean": 0,
+        "p50": 0.0,
+        "p95": 0.0,
+        "max": 0
+      },
+      "decision_cpu_s": {
+        "n": 36,
+        "mean": 3.9986194444444446e-05,
+        "p50": 4.71525e-05,
+        "p95": 7.62265e-05,
+        "max": 8.8944e-05
+      },
+      "decision_wall_s": {
+        "n": 36,
+        "mean": 4.1708444444444444e-05,
+        "p50": 4.8494e-05,
+        "p95": 7.79555e-05,
+        "max": 9.1903e-05
+      },
+      "preparation_cpu_s": {
+        "n": 36,
+        "mean": 0.005377925027777778,
+        "p50": 0.0053411959999999994,
+        "p95": 0.00935906725,
+        "max": 0.013608427999999999
+      },
+      "preparation_wall_s": {
+        "n": 36,
+        "mean": 0.00539337425,
+        "p50": 0.005349301,
+        "p95": 0.0093864395,
+        "max": 0.013628602
+      },
+      "parsing_cpu_s": {
+        "n": 36,
+        "mean": 0.01996134047222222,
+        "p50": 0.022415949999999997,
+        "p95": 0.036549973,
+        "max": 0.04031538
+      },
+      "parsing_wall_s": {
+        "n": 36,
+        "mean": 0.020039533666666668,
+        "p50": 0.022487956500000003,
+        "p95": 0.036613717,
+        "max": 0.040454194
+      },
+      "final_bridge_delay_s": {
+        "n": 36,
+        "mean": 0.0036325121944444446,
+        "p50": 0.0032454185,
+        "p95": 0.00627391075,
+        "max": 0.007488908
+      },
+      "output_tokens": {
+        "n": 36,
+        "mean": 10012.111111111111,
+        "p50": 9200.5,
+        "p95": 16384.0,
+        "max": 16384
+      },
+      "input_tokens": {
+        "n": 36,
+        "mean": 623.6666666666666,
+        "p50": 560.0,
+        "p95": 1281.25,
+        "max": 1673
+      },
+      "control_tokens": {
+        "n": 36,
+        "mean": 0,
+        "p50": 0.0,
+        "p95": 0.0,
+        "max": 0
+      },
+      "total_budget_used": {
+        "n": 36,
+        "mean": 10012.111111111111,
+        "p50": 9200.5,
+        "p95": 16384.0,
+        "max": 16384
+      },
+      "discarded_generated_tokens": {
+        "n": 36,
+        "mean": 0,
+        "p50": 0.0,
+        "p95": 0.0,
+        "max": 0
+      },
+      "native_calls": {
+        "n": 36,
+        "mean": 1,
+        "p50": 1.0,
+        "p95": 1.0,
+        "max": 1
+      },
+      "logprob_processing_cpu_s": {
+        "n": 36,
+        "mean": 0.0,
+        "p50": 0.0,
+        "p95": 0.0,
+        "max": 0.0
+      },
+      "logprob_processing_wall_s": {
+        "n": 36,
+        "mean": 0.0,
+        "p50": 0.0,
+        "p95": 0.0,
+        "max": 0.0
+      }
+    },
+    "S": {
+      "planned": 36,
+      "acceptance": {
+        "planned": 36,
+        "pass": 13,
+        "fail": 23,
+        "unknown": 0,
+        "fraction_lower": 0.3611111111111111,
+        "fraction_upper": 0.3611111111111111
+      },
+      "public": {
+        "planned": 36,
+        "pass": 15,
+        "fail": 6,
+        "unknown": 15,
+        "fraction_lower": 0.4166666666666667,
+        "fraction_upper": 0.8333333333333334
+      },
+      "private": {
+        "planned": 36,
+        "pass": 13,
+        "fail": 8,
+        "unknown": 15,
+        "fraction_lower": 0.3611111111111111,
+        "fraction_upper": 0.7777777777777778
+      },
+      "natural_stop": {
+        "planned": 36,
+        "pass": 31,
+        "fail": 5,
+        "unknown": 0,
+        "fraction_lower": 0.8611111111111112,
+        "fraction_upper": 0.8611111111111112
+      },
+      "last_close_offline_Q": {
+        "planned": 36,
+        "pass": 17,
+        "fail": 19,
+        "unknown": 0,
+        "fraction_lower": 0.4722222222222222,
+        "fraction_upper": 0.4722222222222222
+      },
+      "delivered": 36,
+      "cap_hits": 5,
+      "triggered": {
+        "planned": 36,
+        "pass": 36,
+        "fail": 0,
+        "unknown": 0,
+        "fraction_lower": 1.0,
+        "fraction_upper": 1.0
+      },
+      "accepted_probes": 36,
+      "rejected_probes": 0,
+      "confidence": {
+        "n": 36,
+        "mean": 0.9209161188040729,
+        "p50": 0.9601619672814091,
+        "p95": 0.9875358893659665,
+        "max": 0.9995869492199918
+      },
+      "confidence_unknown_probes": 0,
+      "unsuccessful_client_latency_s": {
+        "n": 23,
+        "mean": 99.51021861647826,
+        "p50": 82.875412156,
+        "p95": 182.2628746739,
+        "max": 183.259740261
+      },
+      "unknown_outcome_client_latency_s": {
+        "n": 0,
+        "mean": null,
+        "p50": null,
+        "p95": null,
+        "max": null
+      },
+      "input_minus_cached_metadata_total": 23022,
+      "prefill_work_measurement": "UNKNOWN_actual_GPU_work; input-minus-native-cache is metadata only",
+      "logprob_processing_scope": "Measured host serialization/alignment/collection CPU and wall; GPU logprob overhead not separately isolated and remains in total native/client wall.",
+      "opportunity_reasons": {
+        "first_legal_ATP": 36
+      },
+      "extraction_statuses": {
+        "parsed": 20,
+        "ambiguous_or_unclosed_code_fence": 15,
+        "syntax_error": 1
+      },
+      "all_costs_known": true,
+      "totals": {
+        "output_tokens": 215755,
+        "input_tokens": 86734,
+        "control_tokens": 36,
+        "total_budget_used": 215791,
+        "discarded_generated_tokens": 0,
+        "native_calls": 106
+      },
+      "observed_partial_totals": {
+        "output_tokens": 215755,
+        "input_tokens": 86734,
+        "control_tokens": 36,
+        "total_budget_used": 215791,
+        "discarded_generated_tokens": 0,
+        "observed_native_calls": 106,
+        "observed_raw_output_tokens": 215755
+      },
+      "cost_note": "Missing evidence stays UNKNOWN; partial recorded sums are explicitly not total zero-cost imputations.",
+      "client_latency_s": {
+        "n": 36,
+        "mean": 65.82801031080555,
+        "p50": 19.6578167615,
+        "p95": 182.17456469175,
+        "max": 183.259740261
+      },
+      "native_call_wall_sum_s": {
+        "n": 36,
+        "mean": 65.78035875386111,
+        "p50": 19.6227304345,
+        "p95": 182.07197063225,
+        "max": 183.13103102099998
+      },
+      "probe_call_wall_s": {
+        "n": 36,
+        "mean": 0.5425030729166667,
+        "p50": 0.542947819,
+        "p95": 0.54708778875,
+        "max": 0.562250933
+      },
+      "continuation_call_wall_s": {
+        "n": 36,
+        "mean": 62.52724640061111,
+        "p50": 15.732121342,
+        "p95": 179.48109615024998,
+        "max": 180.505472423
+      },
+      "inter_call_gap_s": {
+        "n": 36,
+        "mean": 0.007164287472222222,
+        "p50": 0.0069686225,
+        "p95": 0.010348824749999999,
+        "max": 0.013487536000000001
+      },
+      "decision_cpu_s": {
+        "n": 36,
+        "mean": 0.0007674038055555556,
+        "p50": 0.000718437,
+        "p95": 0.0009261225000000001,
+        "max": 0.002217353
+      },
+      "decision_wall_s": {
+        "n": 36,
+        "mean": 0.0007691988611111111,
+        "p50": 0.00072015,
+        "p95": 0.0009280655,
+        "max": 0.002219088
+      },
+      "preparation_cpu_s": {
+        "n": 36,
+        "mean": 0.008284094916666667,
+        "p50": 0.0078073199999999995,
+        "p95": 0.014458537499999998,
+        "max": 0.016238518
+      },
+      "preparation_wall_s": {
+        "n": 36,
+        "mean": 0.008463957555555556,
+        "p50": 0.0079940295,
+        "p95": 0.014682609000000001,
+        "max": 0.016503267
+      },
+      "parsing_cpu_s": {
+        "n": 36,
+        "mean": 0.01603633622222222,
+        "p50": 0.007917039,
+        "p95": 0.04721950425,
+        "max": 0.050345042
+      },
+      "parsing_wall_s": {
+        "n": 36,
+        "mean": 0.016036300222222223,
+        "p50": 0.007916792,
+        "p95": 0.04722009025,
+        "max": 0.05034625
+      },
+      "final_bridge_delay_s": {
+        "n": 36,
+        "mean": 0.002877457527777778,
+        "p50": 0.001561831,
+        "p95": 0.0063394425,
+        "max": 0.006403643
+      },
+      "output_tokens": {
+        "n": 36,
+        "mean": 5993.194444444444,
+        "p50": 1874.5,
+        "p95": 16383.0,
+        "max": 16383
+      },
+      "input_tokens": {
+        "n": 36,
+        "mean": 2409.277777777778,
+        "p50": 2160.5,
+        "p95": 4379.75,
+        "max": 5553
+      },
+      "control_tokens": {
+        "n": 36,
+        "mean": 1,
+        "p50": 1.0,
+        "p95": 1.0,
+        "max": 1
+      },
+      "total_budget_used": {
+        "n": 36,
+        "mean": 5994.194444444444,
+        "p50": 1875.5,
+        "p95": 16384.0,
+        "max": 16384
+      },
+      "discarded_generated_tokens": {
+        "n": 36,
+        "mean": 0,
+        "p50": 0.0,
+        "p95": 0.0,
+        "max": 0
+      },
+      "native_calls": {
+        "n": 36,
+        "mean": 2.9444444444444446,
+        "p50": 3.0,
+        "p95": 3.0,
+        "max": 3
+      },
+      "logprob_processing_cpu_s": {
+        "n": 36,
+        "mean": 0.0005372431666666667,
+        "p50": 0.0005291505,
+        "p95": 0.0006951609999999999,
+        "max": 0.000742208
+      },
+      "logprob_processing_wall_s": {
+        "n": 36,
+        "mean": 0.000531683,
+        "p50": 0.0005213715,
+        "p95": 0.0006938115,
+        "max": 0.000742607
+      }
+    },
+    "D": {
+      "planned": 36,
+      "acceptance": {
+        "planned": 36,
+        "pass": 14,
+        "fail": 22,
+        "unknown": 0,
+        "fraction_lower": 0.3888888888888889,
+        "fraction_upper": 0.3888888888888889
+      },
+      "public": {
+        "planned": 36,
+        "pass": 14,
+        "fail": 4,
+        "unknown": 18,
+        "fraction_lower": 0.3888888888888889,
+        "fraction_upper": 0.8888888888888888
+      },
+      "private": {
+        "planned": 36,
+        "pass": 14,
+        "fail": 4,
+        "unknown": 18,
+        "fraction_lower": 0.3888888888888889,
+        "fraction_upper": 0.8888888888888888
+      },
+      "natural_stop": {
+        "planned": 36,
+        "pass": 23,
+        "fail": 13,
+        "unknown": 0,
+        "fraction_lower": 0.6388888888888888,
+        "fraction_upper": 0.6388888888888888
+      },
+      "last_close_offline_Q": {
+        "planned": 36,
+        "pass": 17,
+        "fail": 19,
+        "unknown": 0,
+        "fraction_lower": 0.4722222222222222,
+        "fraction_upper": 0.4722222222222222
+      },
+      "delivered": 36,
+      "cap_hits": 13,
+      "triggered": {
+        "planned": 36,
+        "pass": 36,
+        "fail": 0,
+        "unknown": 0,
+        "fraction_lower": 1.0,
+        "fraction_upper": 1.0
+      },
+      "accepted_probes": 19,
+      "rejected_probes": 17,
+      "confidence": {
+        "n": 36,
+        "mean": 0.9209161188040729,
+        "p50": 0.9601619672814091,
+        "p95": 0.9875358893659665,
+        "max": 0.9995869492199918
+      },
+      "confidence_unknown_probes": 0,
+      "unsuccessful_client_latency_s": {
+        "n": 22,
+        "mean": 131.79390788722728,
+        "p50": 181.5220540785,
+        "p95": 182.7161336526,
+        "max": 183.210243075
+      },
+      "unknown_outcome_client_latency_s": {
+        "n": 0,
+        "mean": null,
+        "p50": null,
+        "p95": null,
+        "max": null
+      },
+      "input_minus_cached_metadata_total": 23035,
+      "prefill_work_measurement": "UNKNOWN_actual_GPU_work; input-minus-native-cache is metadata only",
+      "logprob_processing_scope": "Measured host serialization/alignment/collection CPU and wall; GPU logprob overhead not separately isolated and remains in total native/client wall.",
+      "opportunity_reasons": {
+        "first_legal_ATP": 36
+      },
+      "extraction_statuses": {
+        "parsed": 18,
+        "reasoning_boundary_unknown": 12,
+        "ambiguous_or_unclosed_code_fence": 6
+      },
+      "all_costs_known": true,
+      "totals": {
+        "output_tokens": 294419,
+        "input_tokens": 85867,
+        "control_tokens": 36,
+        "total_budget_used": 294455,
+        "discarded_generated_tokens": 850,
+        "native_calls": 106
+      },
+      "observed_partial_totals": {
+        "output_tokens": 294419,
+        "input_tokens": 85867,
+        "control_tokens": 36,
+        "total_budget_used": 294455,
+        "discarded_generated_tokens": 850,
+        "observed_native_calls": 106,
+        "observed_raw_output_tokens": 294419
+      },
+      "cost_note": "Missing evidence stays UNKNOWN; partial recorded sums are explicitly not total zero-cost imputations.",
+      "client_latency_s": {
+        "n": 36,
+        "mean": 90.11016195077778,
+        "p50": 84.156400228,
+        "p95": 182.566171667,
+        "max": 183.210243075
+      },
+      "native_call_wall_sum_s": {
+        "n": 36,
+        "mean": 90.0559164525,
+        "p50": 84.113897594,
+        "p95": 182.452409229,
+        "max": 183.12087886
+      },
+      "probe_call_wall_s": {
+        "n": 36,
+        "mean": 0.5424505451111111,
+        "p50": 0.5431465675,
+        "p95": 0.54863960775,
+        "max": 0.554150052
+      },
+      "continuation_call_wall_s": {
+        "n": 36,
+        "mean": 86.8043542346389,
+        "p50": 80.6777915735,
+        "p95": 179.5213466565,
+        "max": 180.150508738
+      },
+      "inter_call_gap_s": {
+        "n": 36,
+        "mean": 0.007372403277777778,
+        "p50": 0.007005837,
+        "p95": 0.012436289,
+        "max": 0.014257897999999998
+      },
+      "decision_cpu_s": {
+        "n": 36,
+        "mean": 0.0007957050555555556,
+        "p50": 0.00072948,
+        "p95": 0.00121308175,
+        "max": 0.002298087
+      },
+      "decision_wall_s": {
+        "n": 36,
+        "mean": 0.0008002144444444444,
+        "p50": 0.000734902,
+        "p95": 0.0012144595,
+        "max": 0.002299878
+      },
+      "preparation_cpu_s": {
+        "n": 36,
+        "mean": 0.008440428277777778,
+        "p50": 0.0071665205,
+        "p95": 0.015299838999999999,
+        "max": 0.024206351
+      },
+      "preparation_wall_s": {
+        "n": 36,
+        "mean": 0.008591475972222222,
+        "p50": 0.0072253555,
+        "p95": 0.0155669085,
+        "max": 0.024468735999999998
+      },
+      "parsing_cpu_s": {
+        "n": 36,
+        "mean": 0.016561429111111112,
+        "p50": 0.011982985,
+        "p95": 0.0384130825,
+        "max": 0.049191358
+      },
+      "parsing_wall_s": {
+        "n": 36,
+        "mean": 0.01656276861111111,
+        "p50": 0.011982865,
+        "p95": 0.03841132875,
+        "max": 0.049194699
+      },
+      "final_bridge_delay_s": {
+        "n": 36,
+        "mean": 0.003096920416666667,
+        "p50": 0.0026479645,
+        "p95": 0.006349059,
+        "max": 0.006792207
+      },
+      "output_tokens": {
+        "n": 36,
+        "mean": 8178.305555555556,
+        "p50": 7860.5,
+        "p95": 16383.0,
+        "max": 16383
+      },
+      "input_tokens": {
+        "n": 36,
+        "mean": 2385.1944444444443,
+        "p50": 2135.0,
+        "p95": 4367.0,
+        "max": 5502
+      },
+      "control_tokens": {
+        "n": 36,
+        "mean": 1,
+        "p50": 1.0,
+        "p95": 1.0,
+        "max": 1
+      },
+      "total_budget_used": {
+        "n": 36,
+        "mean": 8179.305555555556,
+        "p50": 7861.5,
+        "p95": 16384.0,
+        "max": 16384
+      },
+      "discarded_generated_tokens": {
+        "n": 36,
+        "mean": 23.61111111111111,
+        "p50": 0.0,
+        "p95": 50.0,
+        "max": 50
+      },
+      "native_calls": {
+        "n": 36,
+        "mean": 2.9444444444444446,
+        "p50": 3.0,
+        "p95": 3.0,
+        "max": 3
+      },
+      "logprob_processing_cpu_s": {
+        "n": 36,
+        "mean": 0.0005445692222222222,
+        "p50": 0.0005208834999999999,
+        "p95": 0.000808758,
+        "max": 0.000874954
+      },
+      "logprob_processing_wall_s": {
+        "n": 36,
+        "mean": 0.0005407221111111111,
+        "p50": 0.0005160305,
+        "p95": 0.0008062577499999999,
+        "max": 0.000868429
+      }
+    }
+  },
+  "comparisons": {
+    "D-N": {
+      "planned_pairs": 36,
+      "unknown_pairs": 0,
+      "net_successes": -5,
+      "J_delta_pp": -13.88888888888889,
+      "rescued": 1,
+      "harmed": 6,
+      "rescued_task_ids": [
+        "atcoder:abc394_d"
+      ],
+      "harmed_task_ids": [
+        "atcoder:abc390_b",
+        "atcoder:abc390_c",
+        "atcoder:abc392_c",
+        "atcoder:abc395_e",
+        "atcoder:abc400_b",
+        "atcoder:abc400_c"
+      ],
+      "by_difficulty_delta_pp": {
+        "easy": -16.666666666666668,
+        "medium": -16.666666666666668,
+        "hard": -8.333333333333334
+      },
+      "mean_latency_ratio": 0.8186091964659145,
+      "p95_latency_ratio": 1.0002110199071679,
+      "complete_latency_denominator": true
+    },
+    "D-S": {
+      "planned_pairs": 36,
+      "unknown_pairs": 0,
+      "net_successes": 1,
+      "J_delta_pp": 2.7777777777777777,
+      "rescued": 1,
+      "harmed": 0,
+      "rescued_task_ids": [
+        "atcoder:abc398_b"
+      ],
+      "harmed_task_ids": [],
+      "by_difficulty_delta_pp": {
+        "easy": 0.0,
+        "medium": 8.333333333333334,
+        "hard": 0.0
+      },
+      "mean_latency_ratio": 1.3688726353010605,
+      "p95_latency_ratio": 1.0021496248716861,
+      "complete_latency_denominator": true
+    },
+    "S-N": {
+      "planned_pairs": 36,
+      "unknown_pairs": 0,
+      "net_successes": -6,
+      "J_delta_pp": -16.666666666666668,
+      "rescued": 1,
+      "harmed": 7,
+      "rescued_task_ids": [
+        "atcoder:abc394_d"
+      ],
+      "harmed_task_ids": [
+        "atcoder:abc390_b",
+        "atcoder:abc390_c",
+        "atcoder:abc392_c",
+        "atcoder:abc395_e",
+        "atcoder:abc398_b",
+        "atcoder:abc400_b",
+        "atcoder:abc400_c"
+      ],
+      "by_difficulty_delta_pp": {
+        "easy": -16.666666666666668,
+        "medium": -25.0,
+        "hard": -8.333333333333334
+      },
+      "mean_latency_ratio": 0.5980170655437751,
+      "p95_latency_ratio": 0.9980655533700703,
+      "complete_latency_denominator": true
+    }
+  },
+  "integrity_issues": 0,
+  "all_service_runs_complete": true,
+  "endpoint": "Cold serial application arrival to actual final-program client receive, including all branches/control; no shared-load SLO or goodput claim.",
+  "independence": "Paired question is main unit, contest is a dependence cluster, A/A estimates execution variation and never expands the main denominator.",
+  "acceptance_scope": "Real client program + selected native EOS + public first-close extraction + original public/private finite suites. Not universal correctness.",
+  "sensitivity_scope": "Last-close is offline Q only and never substitutes for real first-close delivery J.",
+  "p95_definition": "Linear interpolation at (n-1)*0.95, identical across arms; missing latency never silently passes gates.",
+  "aa": {
+    "planned": 18,
+    "configuration_verified": 18,
+    "known_verdict_pairs": 18,
+    "verdict_changes": 0,
+    "latency_ratios": {
+      "n": 18,
+      "mean": 1.000317291531623,
+      "p50": 1.0002994021945617,
+      "p95": 1.0040503517023376,
+      "max": 1.0076683220085072
+    }
+  },
+  "development_gates": {
+    "complete_evidence": true,
+    "comparisons": {
+      "D-N": {
+        "status": "FAIL_DEVELOPMENT_SCREEN",
+        "efficiency": {
+          "class_guard": false,
+          "tail_guard": true,
+          "J_nondecrease": false,
+          "mean_saving_25_percent": false
+        },
+        "quality": {
+          "class_guard": false,
+          "tail_guard": true,
+          "J_gain_5pp": false,
+          "mean_overhead_at_most_10_percent": true
+        }
+      },
+      "S-N": {
+        "status": "FAIL_DEVELOPMENT_SCREEN",
+        "efficiency": {
+          "class_guard": false,
+          "tail_guard": true,
+          "J_nondecrease": false,
+          "mean_saving_25_percent": true
+        },
+        "quality": {
+          "class_guard": false,
+          "tail_guard": true,
+          "J_gain_5pp": false,
+          "mean_overhead_at_most_10_percent": true
+        }
+      },
+      "D-S": {
+        "status": "FAIL_OBSERVED_PARETO_SCREEN",
+        "criteria": {
+          "J_nondecrease": true,
+          "mean_nondecrease_in_efficiency": false,
+          "strict_coordinate": true,
+          "class_guard": true,
+          "tail_guard": true
+        }
+      }
+    },
+    "confidence_mechanism_interpretation_guard": {
+      "actual_D_rejections": 17,
+      "action_difference_observed": true,
+      "confidence_component_value_eligible": false,
+      "rule": "No observed D rejection means no realized D-vs-S gate difference; incidental Pareto point differences cannot establish confidence value."
+    },
+    "scope": "Frozen observed development screens only; not significance, calibrated probabilities, novelty or independent confirmation"
+  },
+  "actual_unique_test_executions": 111,
+  "known_unique_test_cpu_s": 442.427473501,
+  "unknown_cpu_execution_count": 0,
+  "actual_unique_test_cpu_s": 442.427473501,
+  "actual_unique_test_wall_s": 441.898393882,
+  "current_process_cpu_s": 30.845822297,
+  "current_process_wall_s": 467.4807620709762,
+  "executor_setup_wall_s": 0.96926231,
+  "execution_cost_note": "Exact program/tests/resources/runtime cache counted once. Child test CPU is part of externally measured scoring CPU; do not double-add."
+}

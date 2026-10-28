@@ -1,0 +1,391 @@
+{
+  "status": "STATIC_ONLY_NO_EXECUTION",
+  "sources": {
+    "qwen3_hv6_leetcode_s0": {
+      "signal_path": "/root/autodl-tmp/cs336-new/runs/qwen_c1c2_erratum/raw/probe_signals.jsonl",
+      "evaluation": {
+        "path": "/root/autodl-tmp/cs336-new/runs/qwen_c1c2_erratum_view/jobs/qwen3_hv6_leetcode_s0/qwen3_hv6_leetcode_s0_probe_evaluation/raw/evaluations.jsonl",
+        "sha256": "0483785a9b9e510049582b14539b5de8b1fab5df3ce751fa36c186c2150ef1c5"
+      },
+      "cache_root": "/root/autodl-tmp/cs336-new/runs/qwen_holdout_execution_cache_v2",
+      "extraction_source_sha256": "69097ff437183073e917437dcb24c97cf2e41b772a5f2dd8f71fb588c9ce29a1"
+    },
+    "qwen3_hv6_leetcode_s1": {
+      "signal_path": "/root/autodl-tmp/cs336-new/runs/qwen_c1c2_erratum/raw/probe_signals.jsonl",
+      "evaluation": {
+        "path": "/root/autodl-tmp/cs336-new/runs/qwen_c1c2_erratum_view/jobs/qwen3_hv6_leetcode_s1/qwen3_hv6_leetcode_s1_probe_evaluation/raw/evaluations.jsonl",
+        "sha256": "a54ae4a0d910c10710cf0fae8c7c47aa75020eada60b2f45a28fe7fa8437e266"
+      },
+      "cache_root": "/root/autodl-tmp/cs336-new/runs/qwen_holdout_execution_cache_v2",
+      "extraction_source_sha256": "69097ff437183073e917437dcb24c97cf2e41b772a5f2dd8f71fb588c9ce29a1"
+    },
+    "qwen3_hv6_leetcode_s2": {
+      "signal_path": "/root/autodl-tmp/cs336-new/runs/qwen_c1c2_erratum/raw/probe_signals.jsonl",
+      "evaluation": {
+        "path": "/root/autodl-tmp/cs336-new/runs/qwen_c1c2_erratum_view/jobs/qwen3_hv6_leetcode_s2/qwen3_hv6_leetcode_s2_probe_evaluation/raw/evaluations.jsonl",
+        "sha256": "de21bcb8202d0ad4eb158aca044da25fcaaf2890cb6d6f128f4a90f10a9dca79"
+      },
+      "cache_root": "/root/autodl-tmp/cs336-new/runs/qwen_holdout_execution_cache_v2",
+      "extraction_source_sha256": "69097ff437183073e917437dcb24c97cf2e41b772a5f2dd8f71fb588c9ce29a1"
+    },
+    "qwen3_hv6_leetcode_s3": {
+      "signal_path": "/root/autodl-tmp/cs336-new/runs/qwen_c1c2_erratum/raw/probe_signals.jsonl",
+      "evaluation": {
+        "path": "/root/autodl-tmp/cs336-new/runs/qwen_c1c2_erratum_view/jobs/qwen3_hv6_leetcode_s3/qwen3_hv6_leetcode_s3_probe_evaluation/raw/evaluations.jsonl",
+        "sha256": "a5dfcfad162af007ee353553fa5a9edc838143821a35154a226a098ed3330975"
+      },
+      "cache_root": "/root/autodl-tmp/cs336-new/runs/qwen_holdout_execution_cache_v2",
+      "extraction_source_sha256": "69097ff437183073e917437dcb24c97cf2e41b772a5f2dd8f71fb588c9ce29a1"
+    },
+    "dsr1_hv6_leetcode_s0": {
+      "signal_path": "/root/autodl-tmp/cs336-new/runs/ds_c1c2_erratum/raw/probe_signals.jsonl",
+      "evaluation": {
+        "path": "/root/autodl-tmp/cs336-new/runs/ds_c1c2_erratum_view/jobs/dsr1_hv6_leetcode_s0/dsr1_hv6_leetcode_s0_probe_evaluation/raw/evaluations.jsonl",
+        "sha256": "d90bae4f89159d5917bd9a170a3d2a917109733149f887c3e048bffd47328f46"
+      },
+      "cache_root": "/root/autodl-tmp/cs336-new/runs/ds_secondary_execution_cache_v2",
+      "extraction_source_sha256": "69097ff437183073e917437dcb24c97cf2e41b772a5f2dd8f71fb588c9ce29a1"
+    },
+    "dsr1_hv6_leetcode_s1": {
+      "signal_path": "/root/autodl-tmp/cs336-new/runs/ds_c1c2_erratum/raw/probe_signals.jsonl",
+      "evaluation": {
+        "path": "/root/autodl-tmp/cs336-new/runs/ds_c1c2_erratum_view/jobs/dsr1_hv6_leetcode_s1/dsr1_hv6_leetcode_s1_probe_evaluation/raw/evaluations.jsonl",
+        "sha256": "8a768bc73a7f1c957ef40e0a1ebec9590befe799b78882c434bd00db9a97351c"
+      },
+      "cache_root": "/root/autodl-tmp/cs336-new/runs/ds_secondary_execution_cache_v2",
+      "extraction_source_sha256": "69097ff437183073e917437dcb24c97cf2e41b772a5f2dd8f71fb588c9ce29a1"
+    },
+    "dsr1_hv6_leetcode_s2": {
+      "signal_path": "/root/autodl-tmp/cs336-new/runs/ds_c1c2_erratum/raw/probe_signals.jsonl",
+      "evaluation": {
+        "path": "/root/autodl-tmp/cs336-new/runs/ds_c1c2_erratum_view/jobs/dsr1_hv6_leetcode_s2/dsr1_hv6_leetcode_s2_probe_evaluation/raw/evaluations.jsonl",
+        "sha256": "cbd425c5b6d46e1c092fef4243cec8b03b8618803cff94812f7ff9e27124a376"
+      },
+      "cache_root": "/root/autodl-tmp/cs336-new/runs/ds_secondary_execution_cache_v2",
+      "extraction_source_sha256": "69097ff437183073e917437dcb24c97cf2e41b772a5f2dd8f71fb588c9ce29a1"
+    },
+    "dsr1_hv6_leetcode_s3": {
+      "signal_path": "/root/autodl-tmp/cs336-new/runs/ds_c1c2_erratum/raw/probe_signals.jsonl",
+      "evaluation": {
+        "path": "/root/autodl-tmp/cs336-new/runs/ds_c1c2_erratum_view/jobs/dsr1_hv6_leetcode_s3/dsr1_hv6_leetcode_s3_probe_evaluation/raw/evaluations.jsonl",
+        "sha256": "5696f2acff75416c8e6942906e235dda1eea1fb188fe9e04dc011e6cc0ba51f2"
+      },
+      "cache_root": "/root/autodl-tmp/cs336-new/runs/ds_secondary_execution_cache_v2",
+      "extraction_source_sha256": "69097ff437183073e917437dcb24c97cf2e41b772a5f2dd8f71fb588c9ce29a1"
+    }
+  },
+  "groups": [
+    {
+      "model": "qwen",
+      "public_group": "ALL",
+      "total": {
+        "drafts": 1843,
+        "questions": 63,
+        "unique_code_bytes": 1650,
+        "unique_task_code": 1650
+      },
+      "flagged": {
+        "drafts": 36,
+        "questions": 4,
+        "unique_code_bytes": 34,
+        "unique_task_code": 34
+      },
+      "kinds": {
+        "self_write": {
+          "drafts": 1,
+          "questions": 1,
+          "unique_code_bytes": 1,
+          "unique_task_code": 1
+        },
+        "class_mutable": {
+          "drafts": 7,
+          "questions": 1,
+          "unique_code_bytes": 6,
+          "unique_task_code": 6
+        },
+        "global_nonlocal": {
+          "drafts": 28,
+          "questions": 2,
+          "unique_code_bytes": 27,
+          "unique_task_code": 27
+        },
+        "method_cache": {
+          "drafts": 0,
+          "questions": 0,
+          "unique_code_bytes": 0,
+          "unique_task_code": 0
+        },
+        "module_cache": {
+          "drafts": 0,
+          "questions": 0,
+          "unique_code_bytes": 0,
+          "unique_task_code": 0
+        }
+      }
+    },
+    {
+      "model": "qwen",
+      "public_group": "PASS",
+      "total": {
+        "drafts": 1022,
+        "questions": 59,
+        "unique_code_bytes": 872,
+        "unique_task_code": 872
+      },
+      "flagged": {
+        "drafts": 7,
+        "questions": 2,
+        "unique_code_bytes": 6,
+        "unique_task_code": 6
+      },
+      "kinds": {
+        "self_write": {
+          "drafts": 0,
+          "questions": 0,
+          "unique_code_bytes": 0,
+          "unique_task_code": 0
+        },
+        "class_mutable": {
+          "drafts": 6,
+          "questions": 1,
+          "unique_code_bytes": 5,
+          "unique_task_code": 5
+        },
+        "global_nonlocal": {
+          "drafts": 1,
+          "questions": 1,
+          "unique_code_bytes": 1,
+          "unique_task_code": 1
+        },
+        "method_cache": {
+          "drafts": 0,
+          "questions": 0,
+          "unique_code_bytes": 0,
+          "unique_task_code": 0
+        },
+        "module_cache": {
+          "drafts": 0,
+          "questions": 0,
+          "unique_code_bytes": 0,
+          "unique_task_code": 0
+        }
+      }
+    },
+    {
+      "model": "qwen",
+      "public_group": "NOT_PASS",
+      "total": {
+        "drafts": 821,
+        "questions": 48,
+        "unique_code_bytes": 778,
+        "unique_task_code": 778
+      },
+      "flagged": {
+        "drafts": 29,
+        "questions": 3,
+        "unique_code_bytes": 28,
+        "unique_task_code": 28
+      },
+      "kinds": {
+        "self_write": {
+          "drafts": 1,
+          "questions": 1,
+          "unique_code_bytes": 1,
+          "unique_task_code": 1
+        },
+        "class_mutable": {
+          "drafts": 1,
+          "questions": 1,
+          "unique_code_bytes": 1,
+          "unique_task_code": 1
+        },
+        "global_nonlocal": {
+          "drafts": 27,
+          "questions": 1,
+          "unique_code_bytes": 26,
+          "unique_task_code": 26
+        },
+        "method_cache": {
+          "drafts": 0,
+          "questions": 0,
+          "unique_code_bytes": 0,
+          "unique_task_code": 0
+        },
+        "module_cache": {
+          "drafts": 0,
+          "questions": 0,
+          "unique_code_bytes": 0,
+          "unique_task_code": 0
+        }
+      }
+    },
+    {
+      "model": "ds",
+      "public_group": "ALL",
+      "total": {
+        "drafts": 2735,
+        "questions": 63,
+        "unique_code_bytes": 2601,
+        "unique_task_code": 2601
+      },
+      "flagged": {
+        "drafts": 59,
+        "questions": 9,
+        "unique_code_bytes": 59,
+        "unique_task_code": 59
+      },
+      "kinds": {
+        "self_write": {
+          "drafts": 6,
+          "questions": 3,
+          "unique_code_bytes": 6,
+          "unique_task_code": 6
+        },
+        "class_mutable": {
+          "drafts": 0,
+          "questions": 0,
+          "unique_code_bytes": 0,
+          "unique_task_code": 0
+        },
+        "global_nonlocal": {
+          "drafts": 49,
+          "questions": 4,
+          "unique_code_bytes": 49,
+          "unique_task_code": 49
+        },
+        "method_cache": {
+          "drafts": 0,
+          "questions": 0,
+          "unique_code_bytes": 0,
+          "unique_task_code": 0
+        },
+        "module_cache": {
+          "drafts": 4,
+          "questions": 2,
+          "unique_code_bytes": 4,
+          "unique_task_code": 4
+        }
+      }
+    },
+    {
+      "model": "ds",
+      "public_group": "PASS",
+      "total": {
+        "drafts": 672,
+        "questions": 55,
+        "unique_code_bytes": 606,
+        "unique_task_code": 606
+      },
+      "flagged": {
+        "drafts": 0,
+        "questions": 0,
+        "unique_code_bytes": 0,
+        "unique_task_code": 0
+      },
+      "kinds": {
+        "self_write": {
+          "drafts": 0,
+          "questions": 0,
+          "unique_code_bytes": 0,
+          "unique_task_code": 0
+        },
+        "class_mutable": {
+          "drafts": 0,
+          "questions": 0,
+          "unique_code_bytes": 0,
+          "unique_task_code": 0
+        },
+        "global_nonlocal": {
+          "drafts": 0,
+          "questions": 0,
+          "unique_code_bytes": 0,
+          "unique_task_code": 0
+        },
+        "method_cache": {
+          "drafts": 0,
+          "questions": 0,
+          "unique_code_bytes": 0,
+          "unique_task_code": 0
+        },
+        "module_cache": {
+          "drafts": 0,
+          "questions": 0,
+          "unique_code_bytes": 0,
+          "unique_task_code": 0
+        }
+      }
+    },
+    {
+      "model": "ds",
+      "public_group": "NOT_PASS",
+      "total": {
+        "drafts": 2063,
+        "questions": 50,
+        "unique_code_bytes": 1995,
+        "unique_task_code": 1995
+      },
+      "flagged": {
+        "drafts": 59,
+        "questions": 9,
+        "unique_code_bytes": 59,
+        "unique_task_code": 59
+      },
+      "kinds": {
+        "self_write": {
+          "drafts": 6,
+          "questions": 3,
+          "unique_code_bytes": 6,
+          "unique_task_code": 6
+        },
+        "class_mutable": {
+          "drafts": 0,
+          "questions": 0,
+          "unique_code_bytes": 0,
+          "unique_task_code": 0
+        },
+        "global_nonlocal": {
+          "drafts": 49,
+          "questions": 4,
+          "unique_code_bytes": 49,
+          "unique_task_code": 49
+        },
+        "method_cache": {
+          "drafts": 0,
+          "questions": 0,
+          "unique_code_bytes": 0,
+          "unique_task_code": 0
+        },
+        "module_cache": {
+          "drafts": 4,
+          "questions": 2,
+          "unique_code_bytes": 4,
+          "unique_task_code": 4
+        }
+      }
+    }
+  ],
+  "cost_proxy": {
+    "first_attempt": {
+      "unique_cache_keys": 93,
+      "cpu_seconds_min": 394.160778,
+      "cpu_seconds_max": 394.160778
+    },
+    "all_recorded_attempts": {
+      "unique_cache_keys": 105,
+      "cpu_seconds_min": 1119.798121,
+      "cpu_seconds_max": 1119.798121
+    }
+  },
+  "one_cpu_hour_limit_seconds": 3600,
+  "historical_first_attempt_exceeds_limit": false,
+  "source_sha256": "fb0c9e40ac3baa1c35b7ba6bacb31718643d55f5626f03a7c462fc882e839b8a",
+  "elapsed_seconds": 5.209577672183514,
+  "interpretation": [
+    "Flags describe possible state, not proven persistence or changed answers.",
+    "self writes may fully reset state; class/module containers may be read-only tables; nested nonlocal can be invocation-local.",
+    "Static inspection can miss aliases, reflection, imported state and C-extension state; no flag does not prove statelessness.",
+    "CPU proxy sums original PUB+private suite child CPU by cache identity, preserving min/max of repeated observations.",
+    "It is not a bound for execution with PUB removed: previously unexecuted suffixes may become reachable.",
+    "No rerun, no new labels, no AUROC and no change to the main population were performed."
+  ]
+}

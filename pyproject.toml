@@ -1,0 +1,66 @@
+[project]
+name = "execexit"
+version = "26.0.0"
+description = "ExecExit: execution-guided stopping for code reasoning, with a CS336 Transformer foundation"
+readme = "README.md"
+requires-python = ">=3.12,<3.14"
+dependencies = [
+    "matplotlib>=3.11",
+    "numpy>=2.4",
+    "regex>=2026.3.32", #分词规则使用regex扩展语法
+    "tiktoken>=0.12.0",
+    "torch~=2.11.0",
+    "tqdm>=4.67",
+]
+
+[project.optional-dependencies]
+pretrained = [
+    "transformers==4.51.3",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=9.0",
+    "pytest-timeout",
+    "ruff>=0.15.8",
+    "ty>=0.0.26",
+]
+
+[build-system]
+requires = ["uv_build>=0.11.0,<0.12.0"]
+build-backend = "uv_build"
+
+[tool.uv.build-backend]
+module-name = "cs336_basics"
+module-root = "src"
+
+[tool.uv]
+package = true
+python-preference = "managed"
+
+[tool.uv.sources]
+torch = [
+    { index = "pytorch-cu130", marker = "sys_platform == 'win32' or sys_platform == 'linux'" },
+]
+
+[[tool.uv.index]]
+name = "pytorch-cu130"
+url = "https://download.pytorch.org/whl/cu130"
+explicit = true
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+log_cli = true
+log_cli_level = "WARNING"
+addopts = "-s"
+
+[tool.ruff]
+line-length = 120
+
+[tool.ruff.lint.extend-per-file-ignores]
+#包入口允许集中导出符号
+"__init__.py" = ["E402", "F401", "F403", "E501"]
+
+[tool.ruff.lint]
+extend-select = ["UP"]
+ignore = ["F722"]

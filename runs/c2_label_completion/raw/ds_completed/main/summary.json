@@ -1,0 +1,2361 @@
+{
+  "status": "COMPLETE",
+  "model": "dsr1_distill_qwen7b",
+  "label": "PRIV-IND",
+  "comparisons": [
+    {
+      "signal_name": "PUB",
+      "status": "COMPLETE",
+      "source_rows": 7128,
+      "matched_rows": 7023,
+      "excluded_missing_rows": 105,
+      "matched_questions": 199,
+      "signal_metrics": {
+        "auroc": 0.9376215345842106,
+        "auroc_ci": {
+          "lower": 0.9181762436936713,
+          "upper": 0.9541984073290762,
+          "valid_replicates": 10000,
+          "undefined_replicates": 0
+        },
+        "precision": 0.7148771505355241,
+        "precision_ci": {
+          "lower": 0.6331385463419286,
+          "upper": 0.7856766607343824,
+          "valid_replicates": 10000,
+          "undefined_replicates": 0
+        },
+        "recall": 0.9839472495241459,
+        "recall_ci": {
+          "lower": 0.9563385734998694,
+          "upper": 1.0,
+          "valid_replicates": 10000,
+          "undefined_replicates": 0
+        },
+        "threshold": 0.5,
+        "raw_counts": {
+          "tp": 806,
+          "fp": 647,
+          "fn": 27,
+          "tn": 5543
+        },
+        "raw_precision": 0.5547143840330351,
+        "raw_recall": 0.9675870348139256,
+        "rows": 7023,
+        "questions": 199,
+        "positives": 833,
+        "negatives": 6190,
+        "weighting": "equal questions, equal covered samples within each question",
+        "ci_scope": "Question bootstrap of fixed OOF predictions; no model refit"
+      },
+      "baseline": {
+        "auroc": 0.8157417500925932,
+        "auroc_ci": {
+          "lower": 0.7641804751401811,
+          "upper": 0.8608907343138319,
+          "valid_replicates": 10000,
+          "undefined_replicates": 0
+        },
+        "precision": 0.673903174519345,
+        "precision_ci": {
+          "lower": 0.5555083573715212,
+          "upper": 0.770245184274256,
+          "valid_replicates": 10000,
+          "undefined_replicates": 0
+        },
+        "recall": 0.43868062324902574,
+        "recall_ci": {
+          "lower": 0.32270235038482226,
+          "upper": 0.5489473851502225,
+          "valid_replicates": 10000,
+          "undefined_replicates": 0
+        },
+        "threshold": 0.5,
+        "raw_counts": {
+          "tp": 179,
+          "fp": 210,
+          "fn": 654,
+          "tn": 5980
+        },
+        "raw_precision": 0.4601542416452442,
+        "raw_recall": 0.2148859543817527,
+        "rows": 7023,
+        "questions": 199,
+        "positives": 833,
+        "negatives": 6190,
+        "weighting": "equal questions, equal covered samples within each question",
+        "ci_scope": "Question bootstrap of fixed OOF predictions; no model refit"
+      },
+      "baseline_plus_signal": {
+        "auroc": 0.9590164196893994,
+        "auroc_ci": {
+          "lower": 0.932759975866799,
+          "upper": 0.9778704364561887,
+          "valid_replicates": 10000,
+          "undefined_replicates": 0
+        },
+        "precision": 0.7651259552223314,
+        "precision_ci": {
+          "lower": 0.6874817412780589,
+          "upper": 0.8319295402566881,
+          "valid_replicates": 10000,
+          "undefined_replicates": 0
+        },
+        "recall": 0.9035491348285882,
+        "recall_ci": {
+          "lower": 0.8486570875047384,
+          "upper": 0.9477088786420277,
+          "valid_replicates": 10000,
+          "undefined_replicates": 0
+        },
+        "threshold": 0.5,
+        "raw_counts": {
+          "tp": 651,
+          "fp": 409,
+          "fn": 182,
+          "tn": 5781
+        },
+        "raw_precision": 0.6141509433962264,
+        "raw_recall": 0.7815126050420168,
+        "rows": 7023,
+        "questions": 199,
+        "positives": 833,
+        "negatives": 6190,
+        "weighting": "equal questions, equal covered samples within each question",
+        "ci_scope": "Question bootstrap of fixed OOF predictions; no model refit"
+      },
+      "paired_differences": {
+        "signal_minus_baseline": {
+          "auroc": {
+            "difference": 0.1218797844916174,
+            "ci": {
+              "lower": 0.07804147585585887,
+              "upper": 0.1727983561447585,
+              "valid_replicates": 10000,
+              "undefined_replicates": 0
+            }
+          },
+          "precision": {
+            "difference": 0.04097397601617914,
+            "ci": {
+              "lower": -0.04379354358375799,
+              "upper": 0.1393681439325586,
+              "valid_replicates": 10000,
+              "undefined_replicates": 0
+            }
+          },
+          "recall": {
+            "difference": 0.5452666262751202,
+            "ci": {
+              "lower": 0.4365499092493459,
+              "upper": 0.6617775054768347,
+              "valid_replicates": 10000,
+              "undefined_replicates": 0
+            }
+          }
+        },
+        "baseline_plus_signal_minus_baseline": {
+          "auroc": {
+            "difference": 0.14327466959680624,
+            "ci": {
+              "lower": 0.1038610385050119,
+              "upper": 0.18871182280376422,
+              "valid_replicates": 10000,
+              "undefined_replicates": 0
+            }
+          },
+          "precision": {
+            "difference": 0.0912227807029864,
+            "ci": {
+              "lower": 0.014477224785973066,
+              "upper": 0.18418498868529948,
+              "valid_replicates": 10000,
+              "undefined_replicates": 0
+            }
+          },
+          "recall": {
+            "difference": 0.4648685115795625,
+            "ci": {
+              "lower": 0.36315582823700104,
+              "upper": 0.5704107930360105,
+              "valid_replicates": 10000,
+              "undefined_replicates": 0
+            }
+          }
+        }
+      },
+      "coverage": {
+        "source_drafts": 7128,
+        "source_questions": 199,
+        "unknown_label_drafts": 105,
+        "missing_signal_drafts": 0,
+        "matched_drafts": 7023,
+        "matched_questions": 199,
+        "excluded_drafts": 105,
+        "unknown_folds": 0,
+        "empty_validation_folds": 0
+      },
+      "folds": [
+        {
+          "fold": 0,
+          "training_rows": 5621,
+          "validation_rows": 1402,
+          "training_questions": 159,
+          "validation_questions": 40,
+          "training_labels": {
+            "PASS": 687,
+            "FAIL": 4934
+          },
+          "validation_labels": {
+            "PASS": 146,
+            "FAIL": 1256
+          },
+          "status": "EVALUABLE",
+          "reasons": []
+        },
+        {
+          "fold": 1,
+          "training_rows": 5596,
+          "validation_rows": 1427,
+          "training_questions": 159,
+          "validation_questions": 40,
+          "training_labels": {
+            "PASS": 745,
+            "FAIL": 4851
+          },
+          "validation_labels": {
+            "FAIL": 1339,
+            "PASS": 88
+          },
+          "status": "EVALUABLE",
+          "reasons": []
+        },
+        {
+          "fold": 2,
+          "training_rows": 5638,
+          "validation_rows": 1385,
+          "training_questions": 159,
+          "validation_questions": 40,
+          "training_labels": {
+            "PASS": 580,
+            "FAIL": 5058
+          },
+          "validation_labels": {
+            "FAIL": 1132,
+            "PASS": 253
+          },
+          "status": "EVALUABLE",
+          "reasons": []
+        },
+        {
+          "fold": 3,
+          "training_rows": 5541,
+          "validation_rows": 1482,
+          "training_questions": 159,
+          "validation_questions": 40,
+          "training_labels": {
+            "PASS": 658,
+            "FAIL": 4883
+          },
+          "validation_labels": {
+            "FAIL": 1307,
+            "PASS": 175
+          },
+          "status": "EVALUABLE",
+          "reasons": []
+        },
+        {
+          "fold": 4,
+          "training_rows": 5696,
+          "validation_rows": 1327,
+          "training_questions": 160,
+          "validation_questions": 39,
+          "training_labels": {
+            "FAIL": 5034,
+            "PASS": 662
+          },
+          "validation_labels": {
+            "PASS": 171,
+            "FAIL": 1156
+          },
+          "status": "EVALUABLE",
+          "reasons": []
+        }
+      ],
+      "model_id": "dsr1_distill_qwen7b",
+      "population": "pooled",
+      "comparison": "PUB",
+      "corpus": "virtual_v1_pipeline",
+      "scope": "complete_deliverable",
+      "label": "PRIV-IND",
+      "population_coverage": {
+        "eligible_drafts": 7128,
+        "eligible_questions": 199,
+        "public_pass_drafts": 1453,
+        "public_pass_questions": 133,
+        "public_unknown_drafts": 0
+      }
+    },
+    {
+      "signal_name": "CONF-50",
+      "status": "COMPLETE",
+      "source_rows": 1453,
+      "matched_rows": 1453,
+      "excluded_missing_rows": 0,
+      "matched_questions": 133,
+      "signal_metrics": {
+        "auroc": 0.6648802408074441,
+        "auroc_ci": {
+          "lower": 0.6045790190514897,
+          "upper": 0.7233231041070158,
+          "valid_replicates": 10000,
+          "undefined_replicates": 0
+        },
+        "precision": 0.48903355938130366,
+        "precision_ci": {
+          "lower": 0.4153254847439528,
+          "upper": 0.5640734995998155,
+          "valid_replicates": 10000,
+          "undefined_replicates": 0
+        },
+        "recall": 1.0,
+        "recall_ci": {
+          "lower": 1.0,
+          "upper": 1.0,
+          "valid_replicates": 10000,
+          "undefined_replicates": 0
+        },
+        "threshold": 0.5,
+        "raw_counts": {
+          "tp": 806,
+          "fp": 647,
+          "fn": 0,
+          "tn": 0
+        },
+        "raw_precision": 0.5547143840330351,
+        "raw_recall": 1.0,
+        "rows": 1453,
+        "questions": 133,
+        "positives": 806,
+        "negatives": 647,
+        "weighting": "equal questions, equal covered samples within each question",
+        "ci_scope": "Question bootstrap of fixed OOF predictions; no model refit"
+      },
+      "baseline": {
+        "auroc": 0.7348793684723598,
+        "auroc_ci": {
+          "lower": 0.6590347937954876,
+          "upper": 0.8054355964333615,
+          "valid_replicates": 10000,
+          "undefined_replicates": 0
+        },
+        "precision": 0.6726261733048481,
+        "precision_ci": {
+          "lower": 0.5756163763274749,
+          "upper": 0.7664094990735615,
+          "valid_replicates": 10000,
+          "undefined_replicates": 0
+        },
+        "recall": 0.6614995064657253,
+        "recall_ci": {
+          "lower": 0.5627327180564281,
+          "upper": 0.755075590289114,
+          "valid_replicates": 10000,
+          "undefined_replicates": 0
+        },
+        "threshold": 0.5,
+        "raw_counts": {
+          "tp": 433,
+          "fp": 193,
+          "fn": 373,
+          "tn": 454
+        },
+        "raw_precision": 0.6916932907348243,
+        "raw_recall": 0.5372208436724566,
+        "rows": 1453,
+        "questions": 133,
+        "positives": 806,
+        "negatives": 647,
+        "weighting": "equal questions, equal covered samples within each question",
+        "ci_scope": "Question bootstrap of fixed OOF predictions; no model refit"
+      },
+      "baseline_plus_signal": {
+        "auroc": 0.759500030609445,
+        "auroc_ci": {
+          "lower": 0.6900642919918915,
+          "upper": 0.8238116100726914,
+          "valid_replicates": 10000,
+          "undefined_replicates": 0
+        },
+        "precision": 0.6863815918094431,
+        "precision_ci": {
+          "lower": 0.5928483867779089,
+          "upper": 0.7756968404919937,
+          "valid_replicates": 10000,
+          "undefined_replicates": 0
+        },
+        "recall": 0.701693369583196,
+        "recall_ci": {
+          "lower": 0.610416865663952,
+          "upper": 0.7878741392049861,
+          "valid_replicates": 10000,
+          "undefined_replicates": 0
+        },
+        "threshold": 0.5,
+        "raw_counts": {
+          "tp": 490,
+          "fp": 207,
+          "fn": 316,
+          "tn": 440
+        },
+        "raw_precision": 0.703012912482066,
+        "raw_recall": 0.607940446650124,
+        "rows": 1453,
+        "questions": 133,
+        "positives": 806,
+        "negatives": 647,
+        "weighting": "equal questions, equal covered samples within each question",
+        "ci_scope": "Question bootstrap of fixed OOF predictions; no model refit"
+      },
+      "paired_differences": {
+        "signal_minus_baseline": {
+          "auroc": {
+            "difference": -0.06999912766491567,
+            "ci": {
+              "lower": -0.1508028100804717,
+              "upper": 0.014251373759642994,
+              "valid_replicates": 10000,
+              "undefined_replicates": 0
+            }
+          },
+          "precision": {
+            "difference": -0.18359261392354442,
+            "ci": {
+              "lower": -0.25897063629892686,
+              "upper": -0.11386083905885501,
+              "valid_replicates": 10000,
+              "undefined_replicates": 0
+            }
+          },
+          "recall": {
+            "difference": 0.3385004935342747,
+            "ci": {
+              "lower": 0.24492440971088597,
+              "upper": 0.4372672819435719,
+              "valid_replicates": 10000,
+              "undefined_replicates": 0
+            }
+          }
+        },
+        "baseline_plus_signal_minus_baseline": {
+          "auroc": {
+            "difference": 0.024620662137085247,
+            "ci": {
+              "lower": -0.004443018776463764,
+              "upper": 0.055003818157492716,
+              "valid_replicates": 10000,
+              "undefined_replicates": 0
+            }
+          },
+          "precision": {
+            "difference": 0.013755418504595052,
+            "ci": {
+              "lower": -0.018992853366182706,
+              "upper": 0.04707585368237965,
+              "valid_replicates": 10000,
+              "undefined_replicates": 0
+            }
+          },
+          "recall": {
+            "difference": 0.04019386311747064,
+            "ci": {
+              "lower": -0.0014839568912988874,
+              "upper": 0.08746563809656746,
+              "valid_replicates": 10000,
+              "undefined_replicates": 0
+            }
+          }
+        }
+      },
+      "coverage": {
+        "source_drafts": 1453,
+        "source_questions": 133,
+        "unknown_label_drafts": 0,
+        "missing_signal_drafts": 0,
+        "matched_drafts": 1453,
+        "matched_questions": 133,
+        "excluded_drafts": 0,
+        "unknown_folds": 0,
+        "empty_validation_folds": 0
+      },
+      "folds": [
+        {
+          "fold": 0,
+          "training_rows": 1181,
+          "validation_rows": 272,
+          "training_questions": 107,
+          "validation_questions": 26,
+          "training_labels": {
+            "PASS": 660,
+            "FAIL": 521
+          },
+          "validation_labels": {
+            "PASS": 146,
+            "FAIL": 126
+          },
+          "status": "EVALUABLE",
+          "reasons": []
+        },
+        {
+          "fold": 1,
+          "training_rows": 1258,
+          "validation_rows": 195,
+          "training_questions": 111,
+          "validation_questions": 22,
+          "training_labels": {
+            "PASS": 719,
+            "FAIL": 539
+          },
+          "validation_labels": {
+            "FAIL": 108,
+            "PASS": 87
+          },
+          "status": "EVALUABLE",
+          "reasons": []
+        },
+        {
+          "fold": 2,
+          "training_rows": 1029,
+          "validation_rows": 424,
+          "training_questions": 101,
+          "validation_questions": 32,
+          "training_labels": {
+            "PASS": 579,
+            "FAIL": 450
+          },
+          "validation_labels": {
+            "PASS": 227,
+            "FAIL": 197
+          },
+          "status": "EVALUABLE",
+          "reasons": []
+        },
+        {
+          "fold": 3,
+          "training_rows": 1188,
+          "validation_rows": 265,
+          "training_questions": 107,
+          "validation_questions": 26,
+          "training_labels": {
+            "PASS": 631,
+            "FAIL": 557
+          },
+          "validation_labels": {
+            "PASS": 175,
+            "FAIL": 90
+          },
+          "status": "EVALUABLE",
+          "reasons": []
+        },
+        {
+          "fold": 4,
+          "training_rows": 1156,
+          "validation_rows": 297,
+          "training_questions": 106,
+          "validation_questions": 27,
+          "training_labels": {
+            "PASS": 635,
+            "FAIL": 521
+          },
+          "validation_labels": {
+            "PASS": 171,
+            "FAIL": 126
+          },
+          "status": "EVALUABLE",
+          "reasons": []
+        }
+      ],
+      "model_id": "dsr1_distill_qwen7b",
+      "population": "pooled",
+      "comparison": "PUB_PASS_CONF50",
+      "corpus": "virtual_v1_pipeline",
+      "scope": "complete_deliverable",
+      "label": "PRIV-IND",
+      "population_coverage": {
+        "eligible_drafts": 7128,
+        "eligible_questions": 199,
+        "public_pass_drafts": 1453,
+        "public_pass_questions": 133,
+        "public_unknown_drafts": 0
+      }
+    },
+    {
+      "signal_name": "PUB",
+      "status": "COMPLETE",
+      "source_rows": 2559,
+      "matched_rows": 2559,
+      "excluded_missing_rows": 0,
+      "matched_questions": 63,
+      "signal_metrics": {
+        "auroc": 0.927891006481667,
+        "auroc_ci": {
+          "lower": 0.8851543601801843,
+          "upper": 0.9621136796877032,
+          "valid_replicates": 10000,
+          "undefined_replicates": 0
+        },
+        "precision": 0.7849810710726162,
+        "precision_ci": {
+          "lower": 0.6546649868416682,
+          "upper": 0.8838155559538694,
+          "valid_replicates": 10000,
+          "undefined_replicates": 0
+        },
+        "recall": 0.9616303578702261,
+        "recall_ci": {
+          "lower": 0.8948153585937572,
+          "upper": 1.0,
+          "valid_replicates": 10000,
+          "undefined_replicates": 0
+        },
+        "threshold": 0.5,
+        "raw_counts": {
+          "tp": 342,
+          "fp": 221,
+          "fn": 27,
+          "tn": 1969
+        },
+        "raw_precision": 0.6074600355239786,
+        "raw_recall": 0.926829268292683,
+        "rows": 2559,
+        "questions": 63,
+        "positives": 369,
+        "negatives": 2190,
+        "weighting": "equal questions, equal covered samples within each question",
+        "ci_scope": "Question bootstrap of fixed OOF predictions; no model refit"
+      },
+      "baseline": {
+        "auroc": 0.8683129602199748,
+        "auroc_ci": {
+          "lower": 0.7969939088521996,
+          "upper": 0.9249400386423666,
+          "valid_replicates": 10000,
+          "undefined_replicates": 0
+        },
+        "precision": 0.7902352336020136,
+        "precision_ci": {
+          "lower": 0.6531263164442309,
+          "upper": 0.8888911041248422,
+          "valid_replicates": 10000,
+          "undefined_replicates": 0
+        },
+        "recall": 0.6463043121000352,
+        "recall_ci": {
+          "lower": 0.46089994660114547,
+          "upper": 0.8034284872502038,
+          "valid_replicates": 10000,
+          "undefined_replicates": 0
+        },
+        "threshold": 0.5,
+        "raw_counts": {
+          "tp": 141,
+          "fp": 120,
+          "fn": 228,
+          "tn": 2070
+        },
+        "raw_precision": 0.5402298850574713,
+        "raw_recall": 0.3821138211382114,
+        "rows": 2559,
+        "questions": 63,
+        "positives": 369,
+        "negatives": 2190,
+        "weighting": "equal questions, equal covered samples within each question",
+        "ci_scope": "Question bootstrap of fixed OOF predictions; no model refit"
+      },
+      "baseline_plus_signal": {
+        "auroc": 0.9496061010746463,
+        "auroc_ci": {
+          "lower": 0.8882916171913582,
+          "upper": 0.9891959342384432,
+          "valid_replicates": 10000,
+          "undefined_replicates": 0
+        },
+        "precision": 0.8297539011665895,
+        "precision_ci": {
+          "lower": 0.706020708976832,
+          "upper": 0.9172635822650399,
+          "valid_replicates": 10000,
+          "undefined_replicates": 0
+        },
+        "recall": 0.8719882766040388,
+        "recall_ci": {
+          "lower": 0.771648563098306,
+          "upper": 0.9456902260753783,
+          "valid_replicates": 10000,
+          "undefined_replicates": 0
+        },
+        "threshold": 0.5,
+        "raw_counts": {
+          "tp": 262,
+          "fp": 144,
+          "fn": 107,
+          "tn": 2046
+        },
+        "raw_precision": 0.645320197044335,
+        "raw_recall": 0.7100271002710027,
+        "rows": 2559,
+        "questions": 63,
+        "positives": 369,
+        "negatives": 2190,
+        "weighting": "equal questions, equal covered samples within each question",
+        "ci_scope": "Question bootstrap of fixed OOF predictions; no model refit"
+      },
+      "paired_differences": {
+        "signal_minus_baseline": {
+          "auroc": {
+            "difference": 0.059578046261692164,
+            "ci": {
+              "lower": 0.00021321381517507858,
+              "upper": 0.13095474838657548,
+              "valid_replicates": 10000,
+              "undefined_replicates": 0
+            }
+          },
+          "precision": {
+            "difference": -0.005254162529397477,
+            "ci": {
+              "lower": -0.1341812465121696,
+              "upper": 0.12538550964684753,
+              "valid_replicates": 10000,
+              "undefined_replicates": 0
+            }
+          },
+          "recall": {
+            "difference": 0.31532604577019085,
+            "ci": {
+              "lower": 0.1647588816003483,
+              "upper": 0.4937905322017531,
+              "valid_replicates": 10000,
+              "undefined_replicates": 0
+            }
+          }
+        },
+        "baseline_plus_signal_minus_baseline": {
+          "auroc": {
+            "difference": 0.08129314085467143,
+            "ci": {
+              "lower": 0.025213329412113607,
+              "upper": 0.14661362291072777,
+              "valid_replicates": 10000,
+              "undefined_replicates": 0
+            }
+          },
+          "precision": {
+            "difference": 0.03951866756457589,
+            "ci": {
+              "lower": -0.08076700090253387,
+              "upper": 0.16099876433744117,
+              "valid_replicates": 10000,
+              "undefined_replicates": 0
+            }
+          },
+          "recall": {
+            "difference": 0.22568396450400352,
+            "ci": {
+              "lower": 0.1037067364178402,
+              "upper": 0.36937465377184114,
+              "valid_replicates": 10000,
+              "undefined_replicates": 0
+            }
+          }
+        }
+      },
+      "coverage": {
+        "source_drafts": 2559,
+        "source_questions": 63,
+        "unknown_label_drafts": 0,
+        "missing_signal_drafts": 0,
+        "matched_drafts": 2559,
+        "matched_questions": 63,
+        "excluded_drafts": 0,
+        "unknown_folds": 0,
+        "empty_validation_folds": 0
+      },
+      "folds": [
+        {
+          "fold": 0,
+          "training_rows": 2114,
+          "validation_rows": 445,
+          "training_questions": 52,
+          "validation_questions": 11,
+          "training_labels": {
+            "PASS": 324,
+            "FAIL": 1790
+          },
+          "validation_labels": {
+            "PASS": 45,
+            "FAIL": 400
+          },
+          "status": "EVALUABLE",
+          "reasons": []
+        },
+        {
+          "fold": 1,
+          "training_rows": 1943,
+          "validation_rows": 616,
+          "training_questions": 49,
+          "validation_questions": 14,
+          "training_labels": {
+            "PASS": 302,
+            "FAIL": 1641
+          },
+          "validation_labels": {
+            "FAIL": 549,
+            "PASS": 67
+          },
+          "status": "EVALUABLE",
+          "reasons": []
+        },
+        {
+          "fold": 2,
+          "training_rows": 2160,
+          "validation_rows": 399,
+          "training_questions": 51,
+          "validation_questions": 12,
+          "training_labels": {
+            "PASS": 280,
+            "FAIL": 1880
+          },
+          "validation_labels": {
+            "FAIL": 310,
+            "PASS": 89
+          },
+          "status": "EVALUABLE",
+          "reasons": []
+        },
+        {
+          "fold": 3,
+          "training_rows": 1912,
+          "validation_rows": 647,
+          "training_questions": 50,
+          "validation_questions": 13,
+          "training_labels": {
+            "PASS": 263,
+            "FAIL": 1649
+          },
+          "validation_labels": {
+            "FAIL": 541,
+            "PASS": 106
+          },
+          "status": "EVALUABLE",
+          "reasons": []
+        },
+        {
+          "fold": 4,
+          "training_rows": 2107,
+          "validation_rows": 452,
+          "training_questions": 50,
+          "validation_questions": 13,
+          "training_labels": {
+            "FAIL": 1800,
+            "PASS": 307
+          },
+          "validation_labels": {
+            "PASS": 62,
+            "FAIL": 390
+          },
+          "status": "EVALUABLE",
+          "reasons": []
+        }
+      ],
+      "model_id": "dsr1_distill_qwen7b",
+      "population": "collection:hv6_atcoder",
+      "comparison": "PUB",
+      "corpus": "virtual_v1_pipeline",
+      "scope": "complete_deliverable",
+      "label": "PRIV-IND",
+      "population_coverage": {
+        "eligible_drafts": 2559,
+        "eligible_questions": 63,
+        "public_pass_drafts": 563,
+        "public_pass_questions": 45,
+        "public_unknown_drafts": 0
+      }
+    },
+    {
+      "signal_name": "CONF-50",
+      "status": "COMPLETE",
+      "source_rows": 563,
+      "matched_rows": 563,
+      "excluded_missing_rows": 0,
+      "matched_questions": 45,
+      "signal_metrics": {
+        "auroc": 0.6901229443078433,
+        "auroc_ci": {
+          "lower": 0.5803681643530232,
+          "upper": 0.7897136267832016,
+          "valid_replicates": 10000,
+          "undefined_replicates": 0
+        },
+        "precision": 0.5615899070065737,
+        "precision_ci": {
+          "lower": 0.42600470979637656,
+          "upper": 0.6939645662978995,
+          "valid_replicates": 10000,
+          "undefined_replicates": 0
+        },
+        "recall": 1.0,
+        "recall_ci": {
+          "lower": 1.0,
+          "upper": 1.0,
+          "valid_replicates": 10000,
+          "undefined_replicates": 0
+        },
+        "threshold": 0.5,
+        "raw_counts": {
+          "tp": 342,
+          "fp": 221,
+          "fn": 0,
+          "tn": 0
+        },
+        "raw_precision": 0.6074600355239786,
+        "raw_recall": 1.0,
+        "rows": 563,
+        "questions": 45,
+        "positives": 342,
+        "negatives": 221,
+        "weighting": "equal questions, equal covered samples within each question",
+        "ci_scope": "Question bootstrap of fixed OOF predictions; no model refit"
+      },
+      "baseline": {
+        "auroc": 0.8253279182960044,
+        "auroc_ci": {
+          "lower": 0.7180692991747603,
+          "upper": 0.9113439976313593,
+          "valid_replicates": 10000,
+          "undefined_replicates": 0
+        },
+        "precision": 0.8010358791670495,
+        "precision_ci": {
+          "lower": 0.65855008183866,
+          "upper": 0.9172373112757981,
+          "valid_replicates": 10000,
+          "undefined_replicates": 0
+        },
+        "recall": 0.7188399880233067,
+        "recall_ci": {
+          "lower": 0.5644949290818013,
+          "upper": 0.8547681815822112,
+          "valid_replicates": 10000,
+          "undefined_replicates": 0
+        },
+        "threshold": 0.5,
+        "raw_counts": {
+          "tp": 211,
+          "fp": 66,
+          "fn": 131,
+          "tn": 155
+        },
+        "raw_precision": 0.7617328519855595,
+        "raw_recall": 0.6169590643274854,
+        "rows": 563,
+        "questions": 45,
+        "positives": 342,
+        "negatives": 221,
+        "weighting": "equal questions, equal covered samples within each question",
+        "ci_scope": "Question bootstrap of fixed OOF predictions; no model refit"
+      },
+      "baseline_plus_signal": {
+        "auroc": 0.84380378577693,
+        "auroc_ci": {
+          "lower": 0.7415738369247208,
+          "upper": 0.9247724794521406,
+          "valid_replicates": 10000,
+          "undefined_replicates": 0
+        },
+        "precision": 0.7757694469472085,
+        "precision_ci": {
+          "lower": 0.6391713484782737,
+          "upper": 0.8858846320059139,
+          "valid_replicates": 10000,
+          "undefined_replicates": 0
+        },
+        "recall": 0.7841622149602318,
+        "recall_ci": {
+          "lower": 0.6421037020508297,
+          "upper": 0.9018320905483925,
+          "valid_replicates": 10000,
+          "undefined_replicates": 0
+        },
+        "threshold": 0.5,
+        "raw_counts": {
+          "tp": 225,
+          "fp": 80,
+          "fn": 117,
+          "tn": 141
+        },
+        "raw_precision": 0.7377049180327869,
+        "raw_recall": 0.6578947368421053,
+        "rows": 563,
+        "questions": 45,
+        "positives": 342,
+        "negatives": 221,
+        "weighting": "equal questions, equal covered samples within each question",
+        "ci_scope": "Question bootstrap of fixed OOF predictions; no model refit"
+      },
+      "paired_differences": {
+        "signal_minus_baseline": {
+          "auroc": {
+            "difference": -0.13520497398816111,
+            "ci": {
+              "lower": -0.25191855229417276,
+              "upper": -0.012589402406200266,
+              "valid_replicates": 10000,
+              "undefined_replicates": 0
+            }
+          },
+          "precision": {
+            "difference": -0.2394459721604758,
+            "ci": {
+              "lower": -0.3610317140230959,
+              "upper": -0.12167525769948853,
+              "valid_replicates": 10000,
+              "undefined_replicates": 0
+            }
+          },
+          "recall": {
+            "difference": 0.28116001197669327,
+            "ci": {
+              "lower": 0.1452318184177887,
+              "upper": 0.4355050709181986,
+              "valid_replicates": 10000,
+              "undefined_replicates": 0
+            }
+          }
+        },
+        "baseline_plus_signal_minus_baseline": {
+          "auroc": {
+            "difference": 0.018475867480925667,
+            "ci": {
+              "lower": -0.019987377864705697,
+              "upper": 0.06102883915813906,
+              "valid_replicates": 10000,
+              "undefined_replicates": 0
+            }
+          },
+          "precision": {
+            "difference": -0.02526643221984104,
+            "ci": {
+              "lower": -0.09891671867927017,
+              "upper": 0.04036482938564212,
+              "valid_replicates": 10000,
+              "undefined_replicates": 0
+            }
+          },
+          "recall": {
+            "difference": 0.06532222693692502,
+            "ci": {
+              "lower": 0.0025383015304795264,
+              "upper": 0.16063301532719595,
+              "valid_replicates": 10000,
+              "undefined_replicates": 0
+            }
+          }
+        }
+      },
+      "coverage": {
+        "source_drafts": 563,
+        "source_questions": 45,
+        "unknown_label_drafts": 0,
+        "missing_signal_drafts": 0,
+        "matched_drafts": 563,
+        "matched_questions": 45,
+        "excluded_drafts": 0,
+        "unknown_folds": 0,
+        "empty_validation_folds": 0
+      },
+      "folds": [
+        {
+          "fold": 0,
+          "training_rows": 508,
+          "validation_rows": 55,
+          "training_questions": 38,
+          "validation_questions": 7,
+          "training_labels": {
+            "PASS": 297,
+            "FAIL": 211
+          },
+          "validation_labels": {
+            "PASS": 45,
+            "FAIL": 10
+          },
+          "status": "EVALUABLE",
+          "reasons": []
+        },
+        {
+          "fold": 1,
+          "training_rows": 426,
+          "validation_rows": 137,
+          "training_questions": 33,
+          "validation_questions": 12,
+          "training_labels": {
+            "PASS": 276,
+            "FAIL": 150
+          },
+          "validation_labels": {
+            "FAIL": 71,
+            "PASS": 66
+          },
+          "status": "EVALUABLE",
+          "reasons": []
+        },
+        {
+          "fold": 2,
+          "training_rows": 437,
+          "validation_rows": 126,
+          "training_questions": 35,
+          "validation_questions": 10,
+          "training_labels": {
+            "PASS": 279,
+            "FAIL": 158
+          },
+          "validation_labels": {
+            "PASS": 63,
+            "FAIL": 63
+          },
+          "status": "EVALUABLE",
+          "reasons": []
+        },
+        {
+          "fold": 3,
+          "training_rows": 428,
+          "validation_rows": 135,
+          "training_questions": 37,
+          "validation_questions": 8,
+          "training_labels": {
+            "PASS": 236,
+            "FAIL": 192
+          },
+          "validation_labels": {
+            "PASS": 106,
+            "FAIL": 29
+          },
+          "status": "EVALUABLE",
+          "reasons": []
+        },
+        {
+          "fold": 4,
+          "training_rows": 453,
+          "validation_rows": 110,
+          "training_questions": 37,
+          "validation_questions": 8,
+          "training_labels": {
+            "PASS": 280,
+            "FAIL": 173
+          },
+          "validation_labels": {
+            "PASS": 62,
+            "FAIL": 48
+          },
+          "status": "EVALUABLE",
+          "reasons": []
+        }
+      ],
+      "model_id": "dsr1_distill_qwen7b",
+      "population": "collection:hv6_atcoder",
+      "comparison": "PUB_PASS_CONF50",
+      "corpus": "virtual_v1_pipeline",
+      "scope": "complete_deliverable",
+      "label": "PRIV-IND",
+      "population_coverage": {
+        "eligible_drafts": 2559,
+        "eligible_questions": 63,
+        "public_pass_drafts": 563,
+        "public_pass_questions": 45,
+        "public_unknown_drafts": 0
+      }
+    },
+    {
+      "signal_name": "PUB",
+      "status": "COMPLETE",
+      "source_rows": 2735,
+      "matched_rows": 2630,
+      "excluded_missing_rows": 105,
+      "matched_questions": 63,
+      "signal_metrics": {
+        "auroc": 0.9170952692806038,
+        "auroc_ci": {
+          "lower": 0.8845790806189058,
+          "upper": 0.9454676991264945,
+          "valid_replicates": 10000,
+          "undefined_replicates": 0
+        },
+        "precision": 0.7240386265801749,
+        "precision_ci": {
+          "lower": 0.6004311225193876,
+          "upper": 0.8244935596153598,
+          "valid_replicates": 10000,
+          "undefined_replicates": 0
+        },
+        "recall": 1.0,
+        "recall_ci": {
+          "lower": 1.0,
+          "upper": 1.0,
+          "valid_replicates": 10000,
+          "undefined_replicates": 0
+        },
+        "threshold": 0.5,
+        "raw_counts": {
+          "tp": 366,
+          "fp": 306,
+          "fn": 0,
+          "tn": 1958
+        },
+        "raw_precision": 0.5446428571428571,
+        "raw_recall": 1.0,
+        "rows": 2630,
+        "questions": 63,
+        "positives": 366,
+        "negatives": 2264,
+        "weighting": "equal questions, equal covered samples within each question",
+        "ci_scope": "Question bootstrap of fixed OOF predictions; no model refit"
+      },
+      "baseline": {
+        "auroc": 0.8499175187776626,
+        "auroc_ci": {
+          "lower": 0.764617254220147,
+          "upper": 0.9132527797697422,
+          "valid_replicates": 10000,
+          "undefined_replicates": 0
+        },
+        "precision": 0.7571722599106055,
+        "precision_ci": {
+          "lower": 0.5691243838763549,
+          "upper": 0.913187264967302,
+          "valid_replicates": 10000,
+          "undefined_replicates": 0
+        },
+        "recall": 0.6423431138125025,
+        "recall_ci": {
+          "lower": 0.44033360955221895,
+          "upper": 0.8032124291432915,
+          "valid_replicates": 10000,
+          "undefined_replicates": 0
+        },
+        "threshold": 0.5,
+        "raw_counts": {
+          "tp": 147,
+          "fp": 146,
+          "fn": 219,
+          "tn": 2118
+        },
+        "raw_precision": 0.5017064846416383,
+        "raw_recall": 0.4016393442622951,
+        "rows": 2630,
+        "questions": 63,
+        "positives": 366,
+        "negatives": 2264,
+        "weighting": "equal questions, equal covered samples within each question",
+        "ci_scope": "Question bootstrap of fixed OOF predictions; no model refit"
+      },
+      "baseline_plus_signal": {
+        "auroc": 0.9586747055189854,
+        "auroc_ci": {
+          "lower": 0.9201713430937946,
+          "upper": 0.985322883097707,
+          "valid_replicates": 10000,
+          "undefined_replicates": 0
+        },
+        "precision": 0.8040251418737224,
+        "precision_ci": {
+          "lower": 0.6830331496584907,
+          "upper": 0.8963494627417598,
+          "valid_replicates": 10000,
+          "undefined_replicates": 0
+        },
+        "recall": 0.9550795660326682,
+        "recall_ci": {
+          "lower": 0.8884549905943515,
+          "upper": 0.9955109667512432,
+          "valid_replicates": 10000,
+          "undefined_replicates": 0
+        },
+        "threshold": 0.5,
+        "raw_counts": {
+          "tp": 332,
+          "fp": 161,
+          "fn": 34,
+          "tn": 2103
+        },
+        "raw_precision": 0.6734279918864098,
+        "raw_recall": 0.907103825136612,
+        "rows": 2630,
+        "questions": 63,
+        "positives": 366,
+        "negatives": 2264,
+        "weighting": "equal questions, equal covered samples within each question",
+        "ci_scope": "Question bootstrap of fixed OOF predictions; no model refit"
+      },
+      "paired_differences": {
+        "signal_minus_baseline": {
+          "auroc": {
+            "difference": 0.06717775050294117,
+            "ci": {
+              "lower": 0.005935968594477286,
+              "upper": 0.148729135838997,
+              "valid_replicates": 10000,
+              "undefined_replicates": 0
+            }
+          },
+          "precision": {
+            "difference": -0.03313363333043062,
+            "ci": {
+              "lower": -0.17309421323720164,
+              "upper": 0.109955673807429,
+              "valid_replicates": 10000,
+              "undefined_replicates": 0
+            }
+          },
+          "recall": {
+            "difference": 0.35765688618749747,
+            "ci": {
+              "lower": 0.1967875708567085,
+              "upper": 0.5596663904477809,
+              "valid_replicates": 10000,
+              "undefined_replicates": 0
+            }
+          }
+        },
+        "baseline_plus_signal_minus_baseline": {
+          "auroc": {
+            "difference": 0.10875718674132273,
+            "ci": {
+              "lower": 0.05785484802119526,
+              "upper": 0.17894625755771246,
+              "valid_replicates": 10000,
+              "undefined_replicates": 0
+            }
+          },
+          "precision": {
+            "difference": 0.04685288196311688,
+            "ci": {
+              "lower": -0.07782372750982383,
+              "upper": 0.18497502928442522,
+              "valid_replicates": 10000,
+              "undefined_replicates": 0
+            }
+          },
+          "recall": {
+            "difference": 0.31273645222016566,
+            "ci": {
+              "lower": 0.15651405628732376,
+              "upper": 0.5075242864821006,
+              "valid_replicates": 10000,
+              "undefined_replicates": 0
+            }
+          }
+        }
+      },
+      "coverage": {
+        "source_drafts": 2735,
+        "source_questions": 63,
+        "unknown_label_drafts": 105,
+        "missing_signal_drafts": 0,
+        "matched_drafts": 2630,
+        "matched_questions": 63,
+        "excluded_drafts": 105,
+        "unknown_folds": 0,
+        "empty_validation_folds": 0
+      },
+      "folds": [
+        {
+          "fold": 0,
+          "training_rows": 2110,
+          "validation_rows": 520,
+          "training_questions": 50,
+          "validation_questions": 13,
+          "training_labels": {
+            "FAIL": 1818,
+            "PASS": 292
+          },
+          "validation_labels": {
+            "PASS": 74,
+            "FAIL": 446
+          },
+          "status": "EVALUABLE",
+          "reasons": []
+        },
+        {
+          "fold": 1,
+          "training_rows": 2268,
+          "validation_rows": 362,
+          "training_questions": 55,
+          "validation_questions": 8,
+          "training_labels": {
+            "FAIL": 1912,
+            "PASS": 356
+          },
+          "validation_labels": {
+            "FAIL": 352,
+            "PASS": 10
+          },
+          "status": "EVALUABLE",
+          "reasons": []
+        },
+        {
+          "fold": 2,
+          "training_rows": 1993,
+          "validation_rows": 637,
+          "training_questions": 48,
+          "validation_questions": 15,
+          "training_labels": {
+            "FAIL": 1781,
+            "PASS": 212
+          },
+          "validation_labels": {
+            "FAIL": 483,
+            "PASS": 154
+          },
+          "status": "EVALUABLE",
+          "reasons": []
+        },
+        {
+          "fold": 3,
+          "training_rows": 2166,
+          "validation_rows": 464,
+          "training_questions": 51,
+          "validation_questions": 12,
+          "training_labels": {
+            "FAIL": 1846,
+            "PASS": 320
+          },
+          "validation_labels": {
+            "FAIL": 418,
+            "PASS": 46
+          },
+          "status": "EVALUABLE",
+          "reasons": []
+        },
+        {
+          "fold": 4,
+          "training_rows": 1983,
+          "validation_rows": 647,
+          "training_questions": 48,
+          "validation_questions": 15,
+          "training_labels": {
+            "FAIL": 1699,
+            "PASS": 284
+          },
+          "validation_labels": {
+            "FAIL": 565,
+            "PASS": 82
+          },
+          "status": "EVALUABLE",
+          "reasons": []
+        }
+      ],
+      "model_id": "dsr1_distill_qwen7b",
+      "population": "collection:hv6_leetcode",
+      "comparison": "PUB",
+      "corpus": "virtual_v1_pipeline",
+      "scope": "complete_deliverable",
+      "label": "PRIV-IND",
+      "population_coverage": {
+        "eligible_drafts": 2735,
+        "eligible_questions": 63,
+        "public_pass_drafts": 672,
+        "public_pass_questions": 55,
+        "public_unknown_drafts": 0
+      }
+    },
+    {
+      "signal_name": "CONF-50",
+      "status": "COMPLETE",
+      "source_rows": 672,
+      "matched_rows": 672,
+      "excluded_missing_rows": 0,
+      "matched_questions": 55,
+      "signal_metrics": {
+        "auroc": 0.699339881503772,
+        "auroc_ci": {
+          "lower": 0.61552198894206,
+          "upper": 0.7794804649332209,
+          "valid_replicates": 10000,
+          "undefined_replicates": 0
+        },
+        "precision": 0.460513653013653,
+        "precision_ci": {
+          "lower": 0.34688392857142847,
+          "upper": 0.5760893897768897,
+          "valid_replicates": 10000,
+          "undefined_replicates": 0
+        },
+        "recall": 1.0,
+        "recall_ci": {
+          "lower": 1.0,
+          "upper": 1.0,
+          "valid_replicates": 10000,
+          "undefined_replicates": 0
+        },
+        "threshold": 0.5,
+        "raw_counts": {
+          "tp": 366,
+          "fp": 306,
+          "fn": 0,
+          "tn": 0
+        },
+        "raw_precision": 0.5446428571428571,
+        "raw_recall": 1.0,
+        "rows": 672,
+        "questions": 55,
+        "positives": 366,
+        "negatives": 306,
+        "weighting": "equal questions, equal covered samples within each question",
+        "ci_scope": "Question bootstrap of fixed OOF predictions; no model refit"
+      },
+      "baseline": {
+        "auroc": 0.7794481430890117,
+        "auroc_ci": {
+          "lower": 0.6727102500288128,
+          "upper": 0.8692305946487284,
+          "valid_replicates": 10000,
+          "undefined_replicates": 0
+        },
+        "precision": 0.6821333075065716,
+        "precision_ci": {
+          "lower": 0.5116035393721052,
+          "upper": 0.8345384033910738,
+          "valid_replicates": 10000,
+          "undefined_replicates": 0
+        },
+        "recall": 0.6451081556148904,
+        "recall_ci": {
+          "lower": 0.4832832701905441,
+          "upper": 0.7893764920603553,
+          "valid_replicates": 10000,
+          "undefined_replicates": 0
+        },
+        "threshold": 0.5,
+        "raw_counts": {
+          "tp": 199,
+          "fp": 83,
+          "fn": 167,
+          "tn": 223
+        },
+        "raw_precision": 0.7056737588652482,
+        "raw_recall": 0.5437158469945356,
+        "rows": 672,
+        "questions": 55,
+        "positives": 366,
+        "negatives": 306,
+        "weighting": "equal questions, equal covered samples within each question",
+        "ci_scope": "Question bootstrap of fixed OOF predictions; no model refit"
+      },
+      "baseline_plus_signal": {
+        "auroc": 0.8082967093165145,
+        "auroc_ci": {
+          "lower": 0.7077012346783192,
+          "upper": 0.8943698198597722,
+          "valid_replicates": 10000,
+          "undefined_replicates": 0
+        },
+        "precision": 0.7275351530090202,
+        "precision_ci": {
+          "lower": 0.581531937552673,
+          "upper": 0.8584086492808624,
+          "valid_replicates": 10000,
+          "undefined_replicates": 0
+        },
+        "recall": 0.7249577736038474,
+        "recall_ci": {
+          "lower": 0.5927630687551959,
+          "upper": 0.8378403261086387,
+          "valid_replicates": 10000,
+          "undefined_replicates": 0
+        },
+        "threshold": 0.5,
+        "raw_counts": {
+          "tp": 251,
+          "fp": 91,
+          "fn": 115,
+          "tn": 215
+        },
+        "raw_precision": 0.7339181286549707,
+        "raw_recall": 0.6857923497267759,
+        "rows": 672,
+        "questions": 55,
+        "positives": 366,
+        "negatives": 306,
+        "weighting": "equal questions, equal covered samples within each question",
+        "ci_scope": "Question bootstrap of fixed OOF predictions; no model refit"
+      },
+      "paired_differences": {
+        "signal_minus_baseline": {
+          "auroc": {
+            "difference": -0.08010826158523965,
+            "ci": {
+              "lower": -0.181787194473054,
+              "upper": 0.028577821816439312,
+              "valid_replicates": 10000,
+              "undefined_replicates": 0
+            }
+          },
+          "precision": {
+            "difference": -0.22161965449291865,
+            "ci": {
+              "lower": -0.34600078819511426,
+              "upper": -0.10295389335641701,
+              "valid_replicates": 10000,
+              "undefined_replicates": 0
+            }
+          },
+          "recall": {
+            "difference": 0.35489184438510957,
+            "ci": {
+              "lower": 0.21062350793964463,
+              "upper": 0.5167167298094558,
+              "valid_replicates": 10000,
+              "undefined_replicates": 0
+            }
+          }
+        },
+        "baseline_plus_signal_minus_baseline": {
+          "auroc": {
+            "difference": 0.02884856622750287,
+            "ci": {
+              "lower": 0.0002407967539017314,
+              "upper": 0.06762086456631619,
+              "valid_replicates": 10000,
+              "undefined_replicates": 0
+            }
+          },
+          "precision": {
+            "difference": 0.04540184550244852,
+            "ci": {
+              "lower": -0.04128988169835209,
+              "upper": 0.14398820308328109,
+              "valid_replicates": 10000,
+              "undefined_replicates": 0
+            }
+          },
+          "recall": {
+            "difference": 0.07984961798895696,
+            "ci": {
+              "lower": 0.010117348722014951,
+              "upper": 0.16672076301141328,
+              "valid_replicates": 10000,
+              "undefined_replicates": 0
+            }
+          }
+        }
+      },
+      "coverage": {
+        "source_drafts": 672,
+        "source_questions": 55,
+        "unknown_label_drafts": 0,
+        "missing_signal_drafts": 0,
+        "matched_drafts": 672,
+        "matched_questions": 55,
+        "excluded_drafts": 0,
+        "unknown_folds": 0,
+        "empty_validation_folds": 0
+      },
+      "folds": [
+        {
+          "fold": 0,
+          "training_rows": 502,
+          "validation_rows": 170,
+          "training_questions": 43,
+          "validation_questions": 12,
+          "training_labels": {
+            "FAIL": 210,
+            "PASS": 292
+          },
+          "validation_labels": {
+            "PASS": 74,
+            "FAIL": 96
+          },
+          "status": "EVALUABLE",
+          "reasons": []
+        },
+        {
+          "fold": 1,
+          "training_rows": 640,
+          "validation_rows": 32,
+          "training_questions": 51,
+          "validation_questions": 4,
+          "training_labels": {
+            "FAIL": 284,
+            "PASS": 356
+          },
+          "validation_labels": {
+            "FAIL": 22,
+            "PASS": 10
+          },
+          "status": "EVALUABLE",
+          "reasons": []
+        },
+        {
+          "fold": 2,
+          "training_rows": 434,
+          "validation_rows": 238,
+          "training_questions": 40,
+          "validation_questions": 15,
+          "training_labels": {
+            "FAIL": 222,
+            "PASS": 212
+          },
+          "validation_labels": {
+            "PASS": 154,
+            "FAIL": 84
+          },
+          "status": "EVALUABLE",
+          "reasons": []
+        },
+        {
+          "fold": 3,
+          "training_rows": 587,
+          "validation_rows": 85,
+          "training_questions": 44,
+          "validation_questions": 11,
+          "training_labels": {
+            "FAIL": 267,
+            "PASS": 320
+          },
+          "validation_labels": {
+            "FAIL": 39,
+            "PASS": 46
+          },
+          "status": "EVALUABLE",
+          "reasons": []
+        },
+        {
+          "fold": 4,
+          "training_rows": 525,
+          "validation_rows": 147,
+          "training_questions": 42,
+          "validation_questions": 13,
+          "training_labels": {
+            "PASS": 284,
+            "FAIL": 241
+          },
+          "validation_labels": {
+            "FAIL": 65,
+            "PASS": 82
+          },
+          "status": "EVALUABLE",
+          "reasons": []
+        }
+      ],
+      "model_id": "dsr1_distill_qwen7b",
+      "population": "collection:hv6_leetcode",
+      "comparison": "PUB_PASS_CONF50",
+      "corpus": "virtual_v1_pipeline",
+      "scope": "complete_deliverable",
+      "label": "PRIV-IND",
+      "population_coverage": {
+        "eligible_drafts": 2735,
+        "eligible_questions": 63,
+        "public_pass_drafts": 672,
+        "public_pass_questions": 55,
+        "public_unknown_drafts": 0
+      }
+    },
+    {
+      "signal_name": "PUB",
+      "status": "COMPLETE",
+      "source_rows": 1834,
+      "matched_rows": 1834,
+      "excluded_missing_rows": 0,
+      "matched_questions": 73,
+      "signal_metrics": {
+        "auroc": 0.9634011485779378,
+        "auroc_ci": {
+          "lower": 0.9447983458041979,
+          "upper": 0.9791719035572326,
+          "valid_replicates": 10000,
+          "undefined_replicates": 0
+        },
+        "precision": 0.5505921354140219,
+        "precision_ci": {
+          "lower": 0.36173937402543216,
+          "upper": 0.7183987863031678,
+          "valid_replicates": 10000,
+          "undefined_replicates": 0
+        },
+        "recall": 1.0,
+        "recall_ci": {
+          "lower": 1.0,
+          "upper": 1.0,
+          "valid_replicates": 10000,
+          "undefined_replicates": 0
+        },
+        "threshold": 0.5,
+        "raw_counts": {
+          "tp": 98,
+          "fp": 120,
+          "fn": 0,
+          "tn": 1616
+        },
+        "raw_precision": 0.44954128440366975,
+        "raw_recall": 1.0,
+        "rows": 1834,
+        "questions": 73,
+        "positives": 98,
+        "negatives": 1736,
+        "weighting": "equal questions, equal covered samples within each question",
+        "ci_scope": "Question bootstrap of fixed OOF predictions; no model refit"
+      },
+      "baseline": {
+        "auroc": 0.7795700708296572,
+        "auroc_ci": {
+          "lower": 0.7090336893297782,
+          "upper": 0.8423926790926316,
+          "valid_replicates": 10000,
+          "undefined_replicates": 0
+        },
+        "precision": null,
+        "precision_ci": {
+          "lower": null,
+          "upper": null,
+          "valid_replicates": 0,
+          "undefined_replicates": 10000
+        },
+        "recall": 0.0,
+        "recall_ci": {
+          "lower": 0.0,
+          "upper": 0.0,
+          "valid_replicates": 10000,
+          "undefined_replicates": 0
+        },
+        "threshold": 0.5,
+        "raw_counts": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 98,
+          "tn": 1736
+        },
+        "raw_precision": null,
+        "raw_recall": 0.0,
+        "rows": 1834,
+        "questions": 73,
+        "positives": 98,
+        "negatives": 1736,
+        "weighting": "equal questions, equal covered samples within each question",
+        "ci_scope": "Question bootstrap of fixed OOF predictions; no model refit"
+      },
+      "baseline_plus_signal": {
+        "auroc": 0.9611958252689916,
+        "auroc_ci": {
+          "lower": 0.9382667482878337,
+          "upper": 0.9807040555979171,
+          "valid_replicates": 10000,
+          "undefined_replicates": 0
+        },
+        "precision": 0.5706195421643248,
+        "precision_ci": {
+          "lower": 0.36956747882572183,
+          "upper": 0.7445882336645783,
+          "valid_replicates": 10000,
+          "undefined_replicates": 0
+        },
+        "recall": 0.8680265437939574,
+        "recall_ci": {
+          "lower": 0.7575056236147168,
+          "upper": 0.942293135595542,
+          "valid_replicates": 10000,
+          "undefined_replicates": 0
+        },
+        "threshold": 0.5,
+        "raw_counts": {
+          "tp": 81,
+          "fp": 95,
+          "fn": 17,
+          "tn": 1641
+        },
+        "raw_precision": 0.4602272727272727,
+        "raw_recall": 0.826530612244898,
+        "rows": 1834,
+        "questions": 73,
+        "positives": 98,
+        "negatives": 1736,
+        "weighting": "equal questions, equal covered samples within each question",
+        "ci_scope": "Question bootstrap of fixed OOF predictions; no model refit"
+      },
+      "paired_differences": {
+        "signal_minus_baseline": {
+          "auroc": {
+            "difference": 0.18383107774828056,
+            "ci": {
+              "lower": 0.1231086841952081,
+              "upper": 0.25350784604328014,
+              "valid_replicates": 10000,
+              "undefined_replicates": 0
+            }
+          },
+          "precision": {
+            "difference": null,
+            "ci": {
+              "lower": null,
+              "upper": null,
+              "valid_replicates": 0,
+              "undefined_replicates": 10000
+            }
+          },
+          "recall": {
+            "difference": 1.0,
+            "ci": {
+              "lower": 1.0,
+              "upper": 1.0,
+              "valid_replicates": 10000,
+              "undefined_replicates": 0
+            }
+          }
+        },
+        "baseline_plus_signal_minus_baseline": {
+          "auroc": {
+            "difference": 0.18162575443933437,
+            "ci": {
+              "lower": 0.1266194407686748,
+              "upper": 0.2467127744486743,
+              "valid_replicates": 10000,
+              "undefined_replicates": 0
+            }
+          },
+          "precision": {
+            "difference": null,
+            "ci": {
+              "lower": null,
+              "upper": null,
+              "valid_replicates": 0,
+              "undefined_replicates": 10000
+            }
+          },
+          "recall": {
+            "difference": 0.8680265437939574,
+            "ci": {
+              "lower": 0.7575056236147168,
+              "upper": 0.942293135595542,
+              "valid_replicates": 10000,
+              "undefined_replicates": 0
+            }
+          }
+        }
+      },
+      "coverage": {
+        "source_drafts": 1834,
+        "source_questions": 73,
+        "unknown_label_drafts": 0,
+        "missing_signal_drafts": 0,
+        "matched_drafts": 1834,
+        "matched_questions": 73,
+        "excluded_drafts": 0,
+        "unknown_folds": 0,
+        "empty_validation_folds": 0
+      },
+      "folds": [
+        {
+          "fold": 0,
+          "training_rows": 1397,
+          "validation_rows": 437,
+          "training_questions": 57,
+          "validation_questions": 16,
+          "training_labels": {
+            "FAIL": 1326,
+            "PASS": 71
+          },
+          "validation_labels": {
+            "FAIL": 410,
+            "PASS": 27
+          },
+          "status": "EVALUABLE",
+          "reasons": []
+        },
+        {
+          "fold": 1,
+          "training_rows": 1385,
+          "validation_rows": 449,
+          "training_questions": 55,
+          "validation_questions": 18,
+          "training_labels": {
+            "FAIL": 1298,
+            "PASS": 87
+          },
+          "validation_labels": {
+            "FAIL": 438,
+            "PASS": 11
+          },
+          "status": "EVALUABLE",
+          "reasons": []
+        },
+        {
+          "fold": 2,
+          "training_rows": 1485,
+          "validation_rows": 349,
+          "training_questions": 60,
+          "validation_questions": 13,
+          "training_labels": {
+            "FAIL": 1397,
+            "PASS": 88
+          },
+          "validation_labels": {
+            "FAIL": 339,
+            "PASS": 10
+          },
+          "status": "EVALUABLE",
+          "reasons": []
+        },
+        {
+          "fold": 3,
+          "training_rows": 1463,
+          "validation_rows": 371,
+          "training_questions": 58,
+          "validation_questions": 15,
+          "training_labels": {
+            "FAIL": 1388,
+            "PASS": 75
+          },
+          "validation_labels": {
+            "FAIL": 348,
+            "PASS": 23
+          },
+          "status": "EVALUABLE",
+          "reasons": []
+        },
+        {
+          "fold": 4,
+          "training_rows": 1606,
+          "validation_rows": 228,
+          "training_questions": 62,
+          "validation_questions": 11,
+          "training_labels": {
+            "FAIL": 1535,
+            "PASS": 71
+          },
+          "validation_labels": {
+            "FAIL": 201,
+            "PASS": 27
+          },
+          "status": "EVALUABLE",
+          "reasons": []
+        }
+      ],
+      "model_id": "dsr1_distill_qwen7b",
+      "population": "collection:lcbpro_2025",
+      "comparison": "PUB",
+      "corpus": "virtual_v1_pipeline",
+      "scope": "complete_deliverable",
+      "label": "PRIV-IND",
+      "population_coverage": {
+        "eligible_drafts": 1834,
+        "eligible_questions": 73,
+        "public_pass_drafts": 218,
+        "public_pass_questions": 33,
+        "public_unknown_drafts": 0
+      }
+    },
+    {
+      "signal_name": "CONF-50",
+      "status": "COMPLETE",
+      "source_rows": 218,
+      "matched_rows": 218,
+      "excluded_missing_rows": 0,
+      "matched_questions": 33,
+      "signal_metrics": {
+        "auroc": 0.561373975980109,
+        "auroc_ci": {
+          "lower": 0.4083040392300636,
+          "upper": 0.7066626332832414,
+          "valid_replicates": 10000,
+          "undefined_replicates": 0
+        },
+        "precision": 0.43762626262626264,
+        "precision_ci": {
+          "lower": 0.2924242424242424,
+          "upper": 0.5891414141414142,
+          "valid_replicates": 10000,
+          "undefined_replicates": 0
+        },
+        "recall": 1.0,
+        "recall_ci": {
+          "lower": 1.0,
+          "upper": 1.0,
+          "valid_replicates": 10000,
+          "undefined_replicates": 0
+        },
+        "threshold": 0.5,
+        "raw_counts": {
+          "tp": 98,
+          "fp": 120,
+          "fn": 0,
+          "tn": 0
+        },
+        "raw_precision": 0.44954128440366975,
+        "raw_recall": 1.0,
+        "rows": 218,
+        "questions": 33,
+        "positives": 98,
+        "negatives": 120,
+        "weighting": "equal questions, equal covered samples within each question",
+        "ci_scope": "Question bootstrap of fixed OOF predictions; no model refit"
+      },
+      "baseline": {
+        "auroc": 0.5239875839678281,
+        "auroc_ci": {
+          "lower": 0.355846665889434,
+          "upper": 0.6863113956058172,
+          "valid_replicates": 10000,
+          "undefined_replicates": 0
+        },
+        "precision": 0.4342497269903201,
+        "precision_ci": {
+          "lower": 0.2547739363364824,
+          "upper": 0.6232301798960115,
+          "valid_replicates": 10000,
+          "undefined_replicates": 0
+        },
+        "recall": 0.4604057223791788,
+        "recall_ci": {
+          "lower": 0.29114129394292554,
+          "upper": 0.6438395313052064,
+          "valid_replicates": 10000,
+          "undefined_replicates": 0
+        },
+        "threshold": 0.5,
+        "raw_counts": {
+          "tp": 41,
+          "fp": 65,
+          "fn": 57,
+          "tn": 55
+        },
+        "raw_precision": 0.3867924528301887,
+        "raw_recall": 0.41836734693877553,
+        "rows": 218,
+        "questions": 33,
+        "positives": 98,
+        "negatives": 120,
+        "weighting": "equal questions, equal covered samples within each question",
+        "ci_scope": "Question bootstrap of fixed OOF predictions; no model refit"
+      },
+      "baseline_plus_signal": {
+        "auroc": 0.5959167274337577,
+        "auroc_ci": {
+          "lower": 0.4353211744307858,
+          "upper": 0.7513293846253171,
+          "valid_replicates": 10000,
+          "undefined_replicates": 0
+        },
+        "precision": 0.4938881183541379,
+        "precision_ci": {
+          "lower": 0.31473872733866504,
+          "upper": 0.6804674265536826,
+          "valid_replicates": 10000,
+          "undefined_replicates": 0
+        },
+        "recall": 0.6004226587030973,
+        "recall_ci": {
+          "lower": 0.4259079011136292,
+          "upper": 0.7704895175842579,
+          "valid_replicates": 10000,
+          "undefined_replicates": 0
+        },
+        "threshold": 0.5,
+        "raw_counts": {
+          "tp": 57,
+          "fp": 77,
+          "fn": 41,
+          "tn": 43
+        },
+        "raw_precision": 0.4253731343283582,
+        "raw_recall": 0.5816326530612245,
+        "rows": 218,
+        "questions": 33,
+        "positives": 98,
+        "negatives": 120,
+        "weighting": "equal questions, equal covered samples within each question",
+        "ci_scope": "Question bootstrap of fixed OOF predictions; no model refit"
+      },
+      "paired_differences": {
+        "signal_minus_baseline": {
+          "auroc": {
+            "difference": 0.03738639201228089,
+            "ci": {
+              "lower": -0.18491626562662386,
+              "upper": 0.2615672190553365,
+              "valid_replicates": 10000,
+              "undefined_replicates": 0
+            }
+          },
+          "precision": {
+            "difference": 0.0033765356359425347,
+            "ci": {
+              "lower": -0.13768827562020308,
+              "upper": 0.13412347359600024,
+              "valid_replicates": 10000,
+              "undefined_replicates": 0
+            }
+          },
+          "recall": {
+            "difference": 0.5395942776208211,
+            "ci": {
+              "lower": 0.3561604686947935,
+              "upper": 0.7088587060570745,
+              "valid_replicates": 10000,
+              "undefined_replicates": 0
+            }
+          }
+        },
+        "baseline_plus_signal_minus_baseline": {
+          "auroc": {
+            "difference": 0.0719291434659296,
+            "ci": {
+              "lower": -0.03637669831201323,
+              "upper": 0.19632431738399986,
+              "valid_replicates": 10000,
+              "undefined_replicates": 0
+            }
+          },
+          "precision": {
+            "difference": 0.059638391363817767,
+            "ci": {
+              "lower": -0.08028931518568701,
+              "upper": 0.2037917933171696,
+              "valid_replicates": 10000,
+              "undefined_replicates": 0
+            }
+          },
+          "recall": {
+            "difference": 0.14001693632391848,
+            "ci": {
+              "lower": -0.10297331083033966,
+              "upper": 0.3561646102025315,
+              "valid_replicates": 10000,
+              "undefined_replicates": 0
+            }
+          }
+        }
+      },
+      "coverage": {
+        "source_drafts": 218,
+        "source_questions": 33,
+        "unknown_label_drafts": 0,
+        "missing_signal_drafts": 0,
+        "matched_drafts": 218,
+        "matched_questions": 33,
+        "excluded_drafts": 0,
+        "unknown_folds": 0,
+        "empty_validation_folds": 0
+      },
+      "folds": [
+        {
+          "fold": 0,
+          "training_rows": 171,
+          "validation_rows": 47,
+          "training_questions": 26,
+          "validation_questions": 7,
+          "training_labels": {
+            "FAIL": 100,
+            "PASS": 71
+          },
+          "validation_labels": {
+            "FAIL": 20,
+            "PASS": 27
+          },
+          "status": "EVALUABLE",
+          "reasons": []
+        },
+        {
+          "fold": 1,
+          "training_rows": 192,
+          "validation_rows": 26,
+          "training_questions": 27,
+          "validation_questions": 6,
+          "training_labels": {
+            "FAIL": 105,
+            "PASS": 87
+          },
+          "validation_labels": {
+            "FAIL": 15,
+            "PASS": 11
+          },
+          "status": "EVALUABLE",
+          "reasons": []
+        },
+        {
+          "fold": 2,
+          "training_rows": 158,
+          "validation_rows": 60,
+          "training_questions": 26,
+          "validation_questions": 7,
+          "training_labels": {
+            "FAIL": 70,
+            "PASS": 88
+          },
+          "validation_labels": {
+            "FAIL": 50,
+            "PASS": 10
+          },
+          "status": "EVALUABLE",
+          "reasons": []
+        },
+        {
+          "fold": 3,
+          "training_rows": 173,
+          "validation_rows": 45,
+          "training_questions": 26,
+          "validation_questions": 7,
+          "training_labels": {
+            "FAIL": 98,
+            "PASS": 75
+          },
+          "validation_labels": {
+            "FAIL": 22,
+            "PASS": 23
+          },
+          "status": "EVALUABLE",
+          "reasons": []
+        },
+        {
+          "fold": 4,
+          "training_rows": 178,
+          "validation_rows": 40,
+          "training_questions": 27,
+          "validation_questions": 6,
+          "training_labels": {
+            "FAIL": 107,
+            "PASS": 71
+          },
+          "validation_labels": {
+            "FAIL": 13,
+            "PASS": 27
+          },
+          "status": "EVALUABLE",
+          "reasons": []
+        }
+      ],
+      "model_id": "dsr1_distill_qwen7b",
+      "population": "collection:lcbpro_2025",
+      "comparison": "PUB_PASS_CONF50",
+      "corpus": "virtual_v1_pipeline",
+      "scope": "complete_deliverable",
+      "label": "PRIV-IND",
+      "population_coverage": {
+        "eligible_drafts": 1834,
+        "eligible_questions": 73,
+        "public_pass_drafts": 218,
+        "public_pass_questions": 33,
+        "public_unknown_drafts": 0
+      }
+    }
+  ],
+  "bootstrap": {
+    "seed": 20261014,
+    "replicates": 10000,
+    "unit": "question",
+    "stratified": false,
+    "fixed_oof": true,
+    "model_refit_in_bootstrap": false
+  },
+  "subgroup": "PUB PASS only; refit within subgroup and same known CONF-50/label coverage; original folds retained",
+  "missing": "UNKNOWN labels and missing signals are reported, never imputed; R1 decision remains external"
+}

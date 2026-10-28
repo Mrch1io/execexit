@@ -1,0 +1,63 @@
+name: CPU examples and checks
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  cpu:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      CUDA_VISIBLE_DEVICES: ""
+      OMP_NUM_THREADS: "1"
+      MKL_NUM_THREADS: "1"
+      OPENBLAS_NUM_THREADS: "1"
+      PYTHONDONTWRITEBYTECODE: "1"
+      PYTHONPATH: src:.
+      MPLBACKEND: Agg
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: .github/workflows/cpu.yml
+      - name: Check maintained code with Ruff
+        run: |
+          python -m pip install ruff==0.15.8
+          ruff check --select F821,F822,F823 src exec_exit scripts tests docs/execexit/render_results.py
+          ruff check src scripts tests \
+            exec_exit/replay/policies.py exec_exit/replay/policies_v1.py \
+            exec_exit/replay/hybrid_v1.py exec_exit/replay/early_abort.py \
+            exec_exit/replay/execution_signals.py exec_exit/serve/heldout_service_template.py \
+            exec_exit/tests/test_heldout_service_template.py exec_exit/tests/test_execution_signals.py
+      - name: Replay the synthetic example without dependencies
+        run: python -m scripts.demo_execexit
+      - name: Check stopping rules
+        run: >-
+          python -m unittest
+          exec_exit.tests.test_policies
+          exec_exit.tests.test_policies_v1
+          exec_exit.tests.test_hybrid_v1
+          exec_exit.tests.test_execution_signals
+          exec_exit.tests.test_heldout_service_template
+          exec_exit.tests.test_early_abort
+          exec_exit.tests.test_service_experiment_v2
+      - name: Install the CPU check dependencies
+        # Match the root lock's versions, with a CPU torch wheel for this job.
+        # Historical generation and probe-fitting environments remain separate.
+        run: |
+          python -m pip install torch==2.11.0 --index-url https://download.pytorch.org/whl/cpu
+          python -m pip install numpy==2.4.4 matplotlib==3.11.1 pytest==9.0.2 pytest-timeout==2.4.0 regex==2026.3.32 tiktoken==0.12.0 tqdm==4.67.3
+      - name: Check tokenizer, attention, and KV cache behavior
+        run: >-
+          python -m pytest -q -o addopts=
+          tests/
+          exec_exit/analysis/test_stats.py
+      - name: Render the saved main results
+        run: python docs/execexit/render_results.py --output-dir artifacts/reproductions/main_results

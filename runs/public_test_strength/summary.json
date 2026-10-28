@@ -1,0 +1,192 @@
+{
+  "classification": "exploratory, post-hoc; plan in ONE_PAGE.md written first",
+  "seed": 20261020,
+  "replicates": 10000,
+  "unknown_excluded": {
+    "qwen": 1,
+    "ds": 105,
+    "llama": 5
+  },
+  "questions": 199,
+  "M1_cross_model_agreement": {
+    "qwen~ds": {
+      "problems": 149,
+      "spearman": 0.6440960962009961,
+      "ci95": {
+        "lower": 0.5198493507707449,
+        "upper": 0.7504875421764421,
+        "valid": 10000,
+        "undefined": 0
+      }
+    },
+    "qwen~llama": {
+      "problems": 149,
+      "spearman": 0.5812036209682108,
+      "ci95": {
+        "lower": 0.44800519040704373,
+        "upper": 0.6967605539758375,
+        "valid": 10000,
+        "undefined": 0
+      }
+    },
+    "ds~llama": {
+      "problems": 170,
+      "spearman": 0.6947637701247819,
+      "ci95": {
+        "lower": 0.5848192847942506,
+        "upper": 0.789003854645176,
+        "valid": 10000,
+        "undefined": 0
+      }
+    }
+  },
+  "M2_public_count_vs_miss_rate": {
+    "pooled": {
+      "problems": 181,
+      "spearman": 0.14426702961572213,
+      "ci95": {
+        "lower": 0.0008833910781551977,
+        "upper": 0.2866945384365436,
+        "valid": 10000,
+        "undefined": 0
+      }
+    },
+    "hv6_atcoder": {
+      "problems": 56,
+      "spearman": -0.14253898721583683,
+      "ci95": {
+        "lower": -0.3909949080035641,
+        "upper": 0.12288035640261867,
+        "valid": 10000,
+        "undefined": 0
+      }
+    },
+    "hv6_leetcode": {
+      "problems": 53,
+      "spearman": -0.08124525367562467,
+      "ci95": {
+        "lower": -0.33220513579294164,
+        "upper": 0.18753655341563746,
+        "valid": 10000,
+        "undefined": 0
+      }
+    },
+    "lcbpro_2025": {
+      "problems": 72,
+      "spearman": -0.19724375973031208,
+      "ci95": {
+        "lower": -0.29797277447225107,
+        "upper": -0.10512038761981328,
+        "valid": 9557,
+        "undefined": 443
+      }
+    }
+  },
+  "M3_harm_prediction": {
+    "qwen": {
+      "problems": 91,
+      "harmed": 10,
+      "auroc": 0.9092592592592592,
+      "ci95": {
+        "lower": 0.8180307922541251,
+        "upper": 0.9790697674418605,
+        "valid": 10000,
+        "undefined": 0
+      },
+      "harmed_by_collection": {
+        "hv6_leetcode": 10
+      }
+    },
+    "ds": {
+      "problems": 53,
+      "harmed": 9,
+      "auroc": 0.7638888888888888,
+      "ci95": {
+        "lower": 0.5669128787878788,
+        "upper": 0.9285714285714286,
+        "valid": 10000,
+        "undefined": 0
+      },
+      "harmed_by_collection": {
+        "hv6_atcoder": 2,
+        "lcbpro_2025": 1,
+        "hv6_leetcode": 6
+      }
+    },
+    "llama": {
+      "problems": 53,
+      "harmed": 8,
+      "auroc": 0.9194444444444444,
+      "ci95": {
+        "lower": 0.8226950354609929,
+        "upper": 0.987012987012987,
+        "valid": 9997,
+        "undefined": 3
+      },
+      "harmed_by_collection": {
+        "hv6_atcoder": 1,
+        "lcbpro_2025": 1,
+        "hv6_leetcode": 6
+      }
+    }
+  },
+  "M4_descriptive": {
+    "hv6_atcoder": {
+      "public_count": {
+        "min": 1.0,
+        "median": 3.0,
+        "max": 4.0
+      },
+      "qwen": {
+        "problems": 50,
+        "mean_miss_rate": 0.2128665397159
+      },
+      "ds": {
+        "problems": 57,
+        "mean_miss_rate": 0.09914647730358223
+      },
+      "llama": {
+        "problems": 58,
+        "mean_miss_rate": 0.05936433800508914
+      }
+    },
+    "hv6_leetcode": {
+      "public_count": {
+        "min": 2.0,
+        "median": 2.0,
+        "max": 4.0
+      },
+      "qwen": {
+        "problems": 50,
+        "mean_miss_rate": 0.36861635672014836
+      },
+      "ds": {
+        "problems": 52,
+        "mean_miss_rate": 0.18924492909713791
+      },
+      "llama": {
+        "problems": 56,
+        "mean_miss_rate": 0.2083770200988615
+      }
+    },
+    "lcbpro_2025": {
+      "public_count": {
+        "min": 1.0,
+        "median": 1.0,
+        "max": 3.0
+      },
+      "qwen": {
+        "problems": 65,
+        "mean_miss_rate": 0.12941590887744736
+      },
+      "ds": {
+        "problems": 72,
+        "mean_miss_rate": 0.07343274763594668
+      },
+      "llama": {
+        "problems": 73,
+        "mean_miss_rate": 0.08346734890101681
+      }
+    }
+  }
+}

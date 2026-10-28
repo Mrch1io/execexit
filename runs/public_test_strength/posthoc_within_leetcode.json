@@ -1,0 +1,41 @@
+{
+  "classification": "post-hoc addition after seeing M3",
+  "results": {
+    "qwen": {
+      "collection_only_auroc": 0.8395061728395061,
+      "leetcode_problems": 36,
+      "leetcode_harmed": 10,
+      "leetcode_auroc": 0.9076923076923077,
+      "leetcode_ci95": {
+        "lower": 0.7890625,
+        "upper": 0.9846153846153847,
+        "valid": 10000,
+        "undefined": 0
+      }
+    },
+    "ds": {
+      "collection_only_auroc": 0.6414141414141414,
+      "leetcode_problems": 22,
+      "leetcode_harmed": 6,
+      "leetcode_auroc": 0.75,
+      "leetcode_ci95": {
+        "lower": 0.4648761609907121,
+        "upper": 0.9824561403508771,
+        "valid": 9994,
+        "undefined": 6
+      }
+    },
+    "llama": {
+      "collection_only_auroc": 0.7569444444444444,
+      "leetcode_problems": 18,
+      "leetcode_harmed": 6,
+      "leetcode_auroc": 0.8888888888888888,
+      "leetcode_ci95": {
+        "lower": 0.6923076923076923,
+        "upper": 1.0,
+        "valid": 9990,
+        "undefined": 10
+      }
+    }
+  }
+}
